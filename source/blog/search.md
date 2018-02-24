@@ -1,0 +1,9 @@
+---
+layout: page
+title: Blog - Search
+---
+
+<div class="search-content">
+    <input type="text" id="blog-search" class="search-input" placeholder="Enter your search term here ..." />
+    <div id="blog-results" class="results"></div>
+</div>

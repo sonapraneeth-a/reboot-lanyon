@@ -1,0 +1,25 @@
+.category::before
+{
+    @include folder-open-icon;
+    padding-right: .5rem;
+    color: $category-foreground;
+}
+
+.category:hover::before
+{
+    color: $category-background;
+}
+
+.category
+{
+    background: $category-background;
+    color: $category-foreground;
+    border: 0.05rem solid $category-background;
+    &:hover
+    {
+        text-decoration: none;
+        background: $category-foreground;
+        color: $category-background;
+        border: 0.05rem solid $category-background;
+    }
+}

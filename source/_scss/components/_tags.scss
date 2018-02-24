@@ -1,0 +1,25 @@
+.tag::before
+{
+    @include tag-icon;
+    padding-right: .5rem;
+    color: $tag-foreground;
+}
+
+.tag:hover::before
+{
+    color: $tag-background;
+}
+
+.tag
+{
+    background: $tag-background;
+    color: $tag-foreground;
+    border: 0.05rem solid $tag-background;
+    &:hover
+    {
+        text-decoration: none;
+        background: $tag-foreground;
+        color: $tag-background;
+        border: 0.05rem solid $tag-background;
+    }
+}

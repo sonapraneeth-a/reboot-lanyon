@@ -1,0 +1,29 @@
+:lang(te)
+{
+    font-family: 'Tenali Ramakrishna';
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    &:lang(te)
+    {
+        font-family: 'Ramabhadra';
+    }
+}
+
+h2:lang(te)
+{
+    font-size: 30px;
+}
+
+.te *
+{
+    font-family: 'Tenali Ramakrishna';
+    font-size: 20px;
+}
+
+.te p
+{
+    margin: 10px 0;
+}

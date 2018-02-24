@@ -1,0 +1,33 @@
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+    <meta name="description" content="Website of {{site.author.name}}">
+    <!-- SEO Tags -->
+    <!-- Open Graph -->
+    {% if site.plugins contains 'jekyll-seo-tag' %}
+    {% comment %}
+      Add metadata for search engines and social networks if jekyll-seo-tag plugin is enabled
+    {% endcomment %}
+    {% include head-seo.html %}
+    {% endif %}
+    <!-- Style sheets -->
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <!-- Title of the page -->
+    <title>
+        {{ page.title }} &middot; {{ site.author.name }}
+    </title>
+    <!-- External style sheets -->
+    {% include fonts.html %}
+    {% if site.environment == "development" %}
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/fontello/css/fontawesome.css">
+    {% elsif site.environment == "production" %}
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% endif %}
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css">
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css">
+    {% feed_meta %}
+    {% include favicon-top.html %}
+    <link rel="manifest" type="application/manifest+json" href="{{site.baseurl}}/manifest.json">
+    {% include scripts-top.html %}
+</head>

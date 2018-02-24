@@ -1,0 +1,12 @@
+.chip
+{
+    display: inline-block;
+    padding: 0.05rem 0.2rem;
+    border-radius: $chip-radius;
+    font-size: 0.9rem;
+    font-family: $normal-font;
+    margin: 0.2rem;
+    text-decoration: none;
+    background: $chip-background;
+    color: $chip-foreground;
+}

@@ -1,0 +1,11 @@
+.time::before
+{
+    @include clock-icon;
+    padding-right: .25rem;
+}
+
+.time
+{
+    background: $time-background;
+    color: $time-foreground;
+}

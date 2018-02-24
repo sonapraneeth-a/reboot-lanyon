@@ -1,0 +1,28 @@
+<aside class="sidebar" id="sidebar" role="navigation">
+    <!--<label for="sidebar-toggle" class="sidebar-close"></label>-->
+    {% assign url = page.url | remove: 'index.html' %}
+    <ul class="sidebar-menu">
+    {% for menu in site.menu %}
+        <li>
+            <a href="{{site.baseurl}}{{menu.url}}" class="{{menu.class}} {% if url == menu.url %}active{% endif %}">&nbsp;&nbsp;{{menu.title}}
+            </a>
+            {% if menu.sublinks %}
+            <ul class="sidebar-dropdown-content">
+                    {% for sublink in menu.sublinks %}
+                    <li><a href="{{site.baseurl}}{{sublink.url}}" class="{{sublink.class}} {% if url == sublink.url %}active{% endif %}">&nbsp;&nbsp;{{sublink.title}}</a></li>
+                    {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+    <div class="sidebar-item">
+        &copy;&nbsp;Sona Praneeth Akula 2018
+    </div>
+    <div class="sidebar-item">
+        Made in <i class="icon-heart"></i> with Jekyll
+    </div>
+    <div class="sidebar-item">
+        <b>Version:</b> {{site.version}}
+    </div>
+</aside>

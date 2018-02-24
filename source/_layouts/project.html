@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<!--<section class="projects">
+    <h1 class="project-title">{{page.title}}</h1>
+    <div class="project-info">
+        <span>{{project.date-published}}</span>
+    </div>
+    <article class="project-content">
+    {{content}}
+    </div>
+</section>-->
+
+<section class="projects">
+    <h1>{{page.title}}</h1>
+    <span>{{page.date | date: "%B %Y"}} {{page.institution}}</span>
+    <div>
+        {% for tag in page.tags %}
+        <a class="chip tag" href="/projects/tags/#{{tag | slugify: 'pretty'}}">{{tag}}</a>
+        {% endfor %}
+        {% for category in page.categories %}
+        <a class="chip category" href="/projects/categories/#{{category | slugify: 'pretty'}}">{{category}}</a>
+        {% endfor %}
+    </div>
+    <article class="project-content">
+        <!-- https://github.com/allejo/jekyll-toc -->
+        {% if page.toc %}
+        <section class="toc-box" itemprop="text">
+            <aside class="toc-menu">
+                <nav class="toc">
+                <header><h4 class="toc-header"><!--<i class="fa fa-{{ page.toc_icon | default: 'file-alt' }}"></i>-->&nbsp;{{ page.toc_label | default: "Table of Contents" }}</h4></header>
+                <div class="toc-content">
+                    {% include toc.html sanitize=true html=content h_min=2 h_max=4 class="toc__menu" %}
+                </div>
+                </nav>
+              </aside>
+        </section>
+        {% endif %}
+        <section class="actual-content">
+            {{content}}
+            {% include sharing.html %}
+        </section>
+    </article>
+</section>
