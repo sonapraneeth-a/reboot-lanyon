@@ -39,10 +39,19 @@
 
 @mixin transform($property: none)
 {
-  @include prefixer(transform, $property, webkit moz ms o spec);
+    @include prefixer(transform, $property, webkit moz ms o spec);
 }
 
 @mixin transition($property: none)
 {
-  @include prefixer(transition, $property, webkit moz ms o spec);
+    @include prefixer(transition, $property, webkit moz ms o spec);
+}
+
+@mixin clearfix
+{
+    &:before, &:after
+    {
+        content: '';
+        display: table;
+    }
 }

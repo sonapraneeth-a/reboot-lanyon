@@ -1,0 +1,3 @@
+[submodule "source/assets"]
+	path = source/assets
+	url = https://github.com/sonapraneeth-a/assets.git

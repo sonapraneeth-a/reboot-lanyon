@@ -5,7 +5,13 @@ title: Blog - Tags
 
 <div style="display: inline;">
     {% for tag in site.tags %}
-    <a href="#{{ tag[0] | slugify: 'pretty' }}" class="chip tag">{{ tag[0] }}</a>
+    {% assign count = 0 %}
+    {% for post in tag[1] %}
+    {% assign count = count | plus: 1 %}
+    {% endfor %}
+    <a href="#{{ tag[0] | slugify: 'pretty' }}" class="chip tag">
+        <span>{{ tag[0] }}</span><!--<span class="tag-count">{{ count }}</span>-->
+    </a>
     {% endfor %}
 </div>
 

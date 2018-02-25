@@ -79,7 +79,10 @@
     max-height: 500px;
     overflow-y: auto;
     border: 2px solid #bbc8c8;
-    border-radius: 4px;
+    @if flat == false
+    {
+        border-radius: 4px;
+    }
     box-shadow: 0 5px 5px rgba(0,0,0,0.125);
 }
 

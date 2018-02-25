@@ -12,6 +12,7 @@
 
 .tag
 {
+    /*@extend .chip;*/
     background: $tag-background;
     color: $tag-foreground;
     border: 0.05rem solid $tag-background;
@@ -22,4 +23,11 @@
         color: $tag-background;
         border: 0.05rem solid $tag-background;
     }
+}
+.tag-count
+{
+    @extend .chip;
+    padding: 0.05rem 0.2rem;
+    background-color: darken($chip-background, 10%);
+    color: lighten($chip-foreground, 10%);
 }

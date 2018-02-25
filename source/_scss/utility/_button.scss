@@ -3,7 +3,10 @@
     background-color: $foreground-color;
     color: $background-color;
     font-weight: bold;
-    border-radius: 0.25rem;
+    @if flat == false
+    {
+        border-radius: $button-radius;
+    }
     cursor: pointer;
     padding: 0.5rem 1rem;
     border: none;

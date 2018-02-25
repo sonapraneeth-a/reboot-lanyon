@@ -15,15 +15,10 @@
     <noscript>Your browser does not support JavaScript!</noscript>
     <!-- Title of the page -->
     <title>
-        {{ page.title }} &middot; {{ site.author.name }}
+        {{ page.title }} &middot; {{ site.title }}
     </title>
     <!-- External style sheets -->
     {% include fonts.html %}
-    {% if site.environment == "development" %}
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/fontello/css/fontawesome.css">
-    {% elsif site.environment == "production" %}
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    {% endif %}
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css">
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css">
     {% feed_meta %}

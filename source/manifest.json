@@ -1,67 +1,57 @@
 {
     "name": "Sona Praneeth Akula",
-    "short_name": "Sona Praneeth Akula - Web page",
+    "short_name": "Reboot Lanyon",
     "description": "Webpage of Sona Praneeth Akula",
-    "start_url": "/",
+    "start_url": "/reboot-lanyon/",
     "theme_color": "#2262C9",
     "background_color": "#FFFFFF",
     "display": "fullscreen",
-    "orientation": "landscape",
+    "orientation": "portrait",
     "lang": "en-US",
     "icons": [
         {
-            "src": "/public/img/icons/icon16.png",
+            "src": "/reboot-lanyon/public/img/icons/favicon-16x16.png",
             "sizes": "16x16",
             "type": "image/png"
         },
         {
-            "src": "/public/img/icons/icon32.png",
+            "src": "/reboot-lanyon/public/img/icons/favicon-32x32.png",
             "sizes": "32x32",
             "type": "image/png"
         },
         {
-            "src": "/public/img/icons/apple-touch-icon-60x60.png",
+            "src": "/reboot-lanyon/public/img/icons/apple-touch-icon-60x60.png",
             "sizes": "60x60",
             "type": "image/png"
         },
         {
-            "src": "/public/img/icons/apple-touch-icon-72x72.png",
+            "src": "/reboot-lanyon/public/img/icons/apple-touch-icon-72x72.png",
             "sizes": "72x72",
             "type": "image/png"
         },
         {
-            "src": "/public/img/icons/apple-touch-icon-76x76.png",
+            "src": "/reboot-lanyon/public/img/icons/apple-touch-icon-76x76.png",
             "sizes": "76x76",
             "type": "image/png"
         },
         {
-            "src": "/public/img/icons/icon96.png",
+            "src": "/reboot-lanyon/public/img/icons/favicon-96x96.png",
             "sizes": "96x96",
             "type": "image/png"
         },
         {
-            "src": "/public/img/icons/apple-touch-icon-120x120.png",
+            "src": "/reboot-lanyon/public/img/icons/apple-touch-icon-120x120.png",
             "sizes": "120x120",
             "type": "image/png"
         },
         {
-            "src": "/public/img/icons/apple-touch-icon-152x152.png",
+            "src": "/reboot-lanyon/public/img/icons/apple-touch-icon-152x152.png",
             "sizes": "152x152",
             "type": "image/png"
         },
         {
-            "src": "/public/img/icons/icon180.png",
-            "sizes": "180x180",
-            "type": "image/png"
-        },
-        {
-            "src": "/public/img/icons/icon192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/public/img/icons/icon512.png",
-            "sizes": "512x512",
+            "src": "/reboot-lanyon/public/img/icons/favicon-196x196.png",
+            "sizes": "196x196",
             "type": "image/png"
         }
     ]

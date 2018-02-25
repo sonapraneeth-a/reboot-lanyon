@@ -6,7 +6,7 @@ destination : public_html
 skin        : default
 
 # Site info
-title       : Sona Praneeth Akula
+title       : Reboot lanyon
 description :
 tagline     : "Learner"
 baseurl     : "/reboot-lanyon"

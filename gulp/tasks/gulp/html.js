@@ -54,7 +54,7 @@ gulp.task("gulp::build-sass", (done) => {
     sass
     (paths.temp_src_dir + "_scss/main.scss",
         {
-            sourcemap: true,
+            sourcemap: false,
             style: "compressed",
     })
     .on("error", function (err)

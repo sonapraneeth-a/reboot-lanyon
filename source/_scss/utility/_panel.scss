@@ -1,7 +1,10 @@
 .panel
 {
     border: 0.05rem solid $foreground-color;
-    border-radius: 0.2rem;
+    @if flat == false
+    {
+        border-radius: 0.2rem;
+    }
     box-sizing: border-box;
 }
 .panel-header

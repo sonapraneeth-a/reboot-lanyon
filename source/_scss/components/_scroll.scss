@@ -11,7 +11,10 @@
     right: 10px;
     z-index: 100;
     padding: 10px;
-    border-radius: 10px;
+    @if flat == false
+    {
+        border-radius: 10px;
+    }
     cursor: pointer;
     color: $background-color;
     background-color: $foreground-color;
@@ -28,7 +31,10 @@
     font-size: 1rem;
     text-align: center;
     vertical-align: middle;
-    border-radius: 50%;
+    @if flat == false
+    {
+        border-radius: 50%;
+    }
     cursor: pointer;
     color: $background-color;
     background-color: $foreground-color;

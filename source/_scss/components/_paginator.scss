@@ -34,13 +34,19 @@
   }
   li.first-page
   {
-    border-bottom-left-radius: 0.25rem;
-    border-top-left-radius: 0.25rem;
+    @if flat == false
+    {
+      border-bottom-left-radius: 0.25rem;
+      border-top-left-radius: 0.25rem;
+    }
   }
   li.last-page
   {
-    border-bottom-right-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
+    @if flat == false
+    {
+      border-bottom-right-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+    }
   }
 }
 .first-page a::before
