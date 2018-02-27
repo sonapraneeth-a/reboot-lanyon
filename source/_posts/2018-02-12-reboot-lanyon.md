@@ -56,11 +56,27 @@ With the use of markdown, it is easy to generate the web-page content without wo
 
 ## Code highlighting
 
-This is a test code written in C++ highlighted using monokai theme of [prism.js](http://prismjs.com/).
+This is a test code written in C++ highlighted using monokai theme using rouge highlighter.
 
-{% prism cpp numbering highlight="5" file="/reboot-lanyon/assets/blog/2018-02-12-reboot-lanyon/test.cpp" %}
-// ...
-{% endprism %}
+{% highlight cpp linenos hl_lines="5 7" %}
+/* Multiline 
+ * comment 
+ */
+
+// Single line comment
+
+#include <cstdio>
+
+int main(int argc, char **argv)
+{
+    printf("Hello World highlight\n");
+    return 0;
+}
+{% endhighlight %}
+
+```bash
+$ sudo apt-get install vim-gnome
+```
 
 
 ## $\LaTeX$
