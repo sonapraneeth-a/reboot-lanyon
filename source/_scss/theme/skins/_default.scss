@@ -1,8 +1,8 @@
-$foreground-color      : hsl(217, 71%, 46%);//rgb(0, 0, 0);
+$foreground-color      : hsl(217, 71%, 46%);//rgb(34,98,201);
 $foreground-dark-color : darken($foreground-color, 20%);
 $background-color      : hsl(217, 50%, 98%);//rgb(255, 255, 255);
 $background-dark-color : darken($background-color, 20%);
-$header-font-color     : hsl(217, 71%, 46%);//rgb(0, 0, 0);
+$header-font-color     : hsl(217, 71%, 46%);//rgb(34,98,201);
 $normal-font-color     : hsl(0, 0%, 0%);//rgb(0, 0, 0);
 
 $content-foreground    : $background-color;
