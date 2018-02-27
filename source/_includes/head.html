@@ -2,7 +2,6 @@
     <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
-    <meta name="description" content="Website of {{site.author.name}}">
     <!-- SEO Tags -->
     <!-- Open Graph -->
     {% if site.plugins contains 'jekyll-seo-tag' %}
@@ -11,15 +10,6 @@
     {% endcomment %}
     {% include head-seo.html %}
     {% endif %}
-    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape }}">
-    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
-    <meta name="google-site-verification" content="{{site.webmaster_verifications.google}}" />
-    <meta property="og:image" content="{{site.baseurl}}/favicon.ico" />
-    <meta property="og:description" content="{{site.description}}" />
-    <meta property="og:url" content="{{site.baseurl}}{{page.url}}" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
-    <!-- Style sheets -->
-    <noscript>Your browser does not support JavaScript!</noscript>
     <!-- Title of the page -->
     <title>
         {{ page.title }} &middot; {{ site.title }}
@@ -27,9 +17,9 @@
     <!-- External style sheets -->
     {% include fonts.html %}
     <!--<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css">-->
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css">
-    {% feed_meta %}
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/all.css">
     {% include favicon-top.html %}
+    {% feed_meta %}
     <link rel="manifest" type="application/manifest+json" href="{{site.baseurl}}/manifest.json">
     {% include scripts-top.html %}
 </head>
