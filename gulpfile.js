@@ -29,10 +29,10 @@ gulp.task("gulp::sass", gulp.series("gulp::copy-sass", "gulp::move-sass", "gulp:
 gulp.task("gulp::css", gulp.series("gulp::compress-css"));
 gulp.task("gulp::assets", gulp.series("gulp::copy-assets"));
 gulp.task("gulp::compress", gulp.series("gulp::compress-html", "gulp::compress-css", "gulp::compress-scripts", "gulp::compress-images"));
-gulp.task("build::gulp-site", gulp.series("gulp::clean", "gulp::copy", "gulp::build", "gulp::sass", "gulp::css", 
+gulp.task("build::gulp::site", gulp.series("gulp::clean", "gulp::copy", "gulp::build", "gulp::sass", "gulp::css", 
                                 "gulp::assets", "gulp::compress"));
 gulp.task("serve::gulp-site", gulp.series("gulp::serve", "gulp::watch"));
-gulp.task("default::gulp", gulp.series("build::gulp-site", "serve::gulp-site"));
+gulp.task("default::gulp", gulp.series("build::gulp::site", "serve::gulp-site"));
 
 // Default task (Either default::gulp or default::jekyll)
 /* gulp default : No compression/minification */
