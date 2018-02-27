@@ -1,51 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us"><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="https://sonapraneeth-a.github.io/reboot-lanyon/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonapraneeth-a.github.io/reboot-lanyon/" rel="alternate" type="text/html" hreflang="en-us" /><updated>2018-02-24T22:31:39+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/</id><title type="html">Sona Praneeth Akula</title><author><name>Sona Praneeth Akula</name></author><entry><title type="html">CSS Components in Reload Lanyon</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/" rel="alternate" type="text/html" title="CSS Components in Reload Lanyon" /><published>2018-02-23T00:00:00+05:30</published><updated>2018-02-24T22:31:33+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/">&lt;h2 id=&quot;utility-classes&quot;&gt;Utility Classes&lt;/h2&gt;
-
-&lt;p&gt;Currently four utility classes are suported in theme: info, danger, success and warning.&lt;/p&gt;
-
-&lt;h3 id=&quot;styled-blockquotes&quot;&gt;Styled blockquotes&lt;/h3&gt;
-
-&lt;blockquote class=&quot;block info&quot;&gt;
-  &lt;p&gt;&lt;strong&gt;Information block&lt;/strong&gt;&lt;br /&gt;
-First line&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote class=&quot;block danger&quot;&gt;
-  &lt;p&gt;&lt;strong&gt;Danger block&lt;/strong&gt;&lt;br /&gt;
-First line&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote class=&quot;block success&quot;&gt;
-  &lt;p&gt;&lt;strong&gt;Success block&lt;/strong&gt;&lt;br /&gt;
-First line&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote class=&quot;block warning&quot;&gt;
-  &lt;p&gt;&lt;strong&gt;Warning block&lt;/strong&gt;&lt;br /&gt;
-First line&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;styled-text&quot;&gt;Styled text&lt;/h3&gt;
-
-&lt;ul class=&quot;info&quot;&gt;
-  &lt;li&gt;Information text&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul class=&quot;danger&quot;&gt;
-  &lt;li&gt;Danger text&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul class=&quot;success&quot;&gt;
-  &lt;li&gt;Success text&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul class=&quot;warning&quot;&gt;
-  &lt;li&gt;Warning text&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;panel&quot;&gt;Panel&lt;/h3&gt;
-
-&lt;div class=&quot;panel&quot;&gt;
-  &lt;p class=&quot;panel-header&quot;&gt;Heading&lt;/p&gt;
-  &lt;p class=&quot;panel-content&quot;&gt;Content&lt;/p&gt;
-  &lt;p class=&quot;panel-footer&quot;&gt;Footer&lt;/p&gt;
-&lt;/div&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Utility Classes Currently four utility classes are suported in theme: info, danger, success and warning. Styled blockquotes Information block First line Danger block First line Success block First line Warning block First line Styled text Information text Danger text Success text Warning text Panel Heading Content Footer</summary></entry><entry><title type="html">Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/" rel="alternate" type="text/html" title="Launching my new jekyll theme on website" /><published>2018-02-12T00:00:00+05:30</published><updated>2018-02-24T22:31:33+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us"><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="https://sonapraneeth-a.github.io/reboot-lanyon/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonapraneeth-a.github.io/reboot-lanyon/" rel="alternate" type="text/html" hreflang="en-us" /><updated>2018-02-27T20:25:21+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/</id><title type="html">Reboot lanyon</title><author><name>Sona Praneeth Akula</name></author><entry><title type="html">Test - Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/" rel="alternate" type="text/html" title="Test - Launching my new jekyll theme on website" /><published>2018-02-24T00:00:00+05:30</published><updated>2018-02-27T20:25:14+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;The theme is open-sourced under MIT License.&lt;/p&gt;
 
@@ -99,7 +52,223 @@ First line&lt;/p&gt;
 
 &lt;p&gt;This is a test code written in C++ highlighted using monokai theme of &lt;a href=&quot;http://prismjs.com/&quot;&gt;prism.js&lt;/a&gt;.&lt;/p&gt;
 
-&lt;pre class=&quot; language-cpp  line-numbers &quot; data-line=&quot;5&quot; data-src=&quot;/reboot-lanyon/assets/blog/2018-02-12-reboot-lanyon/test.cpp&quot;&gt;&lt;/pre&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cm&quot;&gt;/* Multiline 
+ * comment 
+ */&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Single line comment&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;cstdio&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World highlight&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;vim-gnome
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;latex&quot;&gt;$\LaTeX$&lt;/h2&gt;
+
+&lt;p&gt;LaTeX markup of Pythogoras theorem&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a^2 + b^2 = c^2&lt;/script&gt;
+
+&lt;h2 id=&quot;utility-classes&quot;&gt;Utility Classes&lt;/h2&gt;
+
+&lt;p&gt;Currently four utility classes are suported in theme: info, danger, success and warning.&lt;/p&gt;
+
+&lt;h3 id=&quot;several-styled-blockquotes&quot;&gt;Several styled blockquotes&lt;/h3&gt;
+
+&lt;blockquote class=&quot;block info&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Information block&lt;/strong&gt;&lt;br /&gt;
+First line&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;block danger&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Danger block&lt;/strong&gt;&lt;br /&gt;
+First line&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;block success&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Success block&lt;/strong&gt;&lt;br /&gt;
+First line&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;block warning&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Warning block&lt;/strong&gt;&lt;br /&gt;
+First line&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;several-styled-text&quot;&gt;Several styled text&lt;/h3&gt;
+
+&lt;ul class=&quot;info&quot;&gt;
+  &lt;li&gt;Information text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;danger&quot;&gt;
+  &lt;li&gt;Danger text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;success&quot;&gt;
+  &lt;li&gt;Success text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;warning&quot;&gt;
+  &lt;li&gt;Warning text&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;menu&quot;&gt;Menu&lt;/h2&gt;
+
+&lt;p&gt;There are two types of menu’s available in this theme.&lt;/p&gt;
+
+&lt;h3 id=&quot;sidebar&quot;&gt;Sidebar&lt;/h3&gt;
+
+&lt;p&gt;For convinience on mobile devices, there is a sidebar which can be toggled on/off by clicking on the hamburger icon (&lt;i class=&quot;icon-menu&quot;&gt;&lt;/i&gt;). The functional behaviour of the sidebar has been used from &lt;a href=&quot;https://codinfox.github.io&quot;&gt;codinfox&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;navbar&quot;&gt;Navbar&lt;/h3&gt;
+
+&lt;p&gt;For large screen devices, one can use the navigation bar present at the top of the screen for accessing various links. The navigation bar also highlights the current active page in the menu.&lt;/p&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Recently, I’ve been working on a jekyll theme which has the look and feel of the lanyon theme and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.</summary></entry><entry><title type="html">CSS Components in Reload Lanyon</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/" rel="alternate" type="text/html" title="CSS Components in Reload Lanyon" /><published>2018-02-23T00:00:00+05:30</published><updated>2018-02-27T20:25:14+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/">&lt;h2 id=&quot;utility-classes&quot;&gt;Utility Classes&lt;/h2&gt;
+
+&lt;p&gt;Currently four utility classes are suported in theme: info, danger, success and warning.&lt;/p&gt;
+
+&lt;h3 id=&quot;styled-blockquotes&quot;&gt;Styled blockquotes&lt;/h3&gt;
+
+&lt;blockquote class=&quot;block info&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Information block&lt;/strong&gt;&lt;br /&gt;
+First line&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;block danger&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Danger block&lt;/strong&gt;&lt;br /&gt;
+First line&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;block success&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Success block&lt;/strong&gt;&lt;br /&gt;
+First line&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote class=&quot;block warning&quot;&gt;
+  &lt;p&gt;&lt;strong&gt;Warning block&lt;/strong&gt;&lt;br /&gt;
+First line&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;styled-text&quot;&gt;Styled text&lt;/h3&gt;
+
+&lt;ul class=&quot;info&quot;&gt;
+  &lt;li&gt;Information text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;danger&quot;&gt;
+  &lt;li&gt;Danger text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;success&quot;&gt;
+  &lt;li&gt;Success text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;warning&quot;&gt;
+  &lt;li&gt;Warning text&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;panel&quot;&gt;Panel&lt;/h3&gt;
+
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;p class=&quot;panel-header&quot;&gt;Heading&lt;/p&gt;
+  &lt;p class=&quot;panel-content&quot;&gt;Content&lt;/p&gt;
+  &lt;p class=&quot;panel-footer&quot;&gt;Footer&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Utility Classes Currently four utility classes are suported in theme: info, danger, success and warning. Styled blockquotes Information block First line Danger block First line Success block First line Warning block First line Styled text Information text Danger text Success text Warning text Panel Heading Content Footer</summary></entry><entry><title type="html">Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/" rel="alternate" type="text/html" title="Launching my new jekyll theme on website" /><published>2018-02-12T00:00:00+05:30</published><updated>2018-02-27T20:25:14+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;The theme is open-sourced under MIT License.&lt;/p&gt;
+
+&lt;h1 id=&quot;instructions-to-use&quot;&gt;Instructions to use&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fork the repository from the following &lt;a href=&quot;https://github.com/sonapraneeth-a/jekyll_theme&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Update the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file present in the source folder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;features&quot;&gt;Features&lt;/h1&gt;
+
+&lt;p&gt;Some of the main features available on this theme:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Formatting text in markdown&lt;/li&gt;
+  &lt;li&gt;Code highlighting using &lt;a href=&quot;http://prismjs.com/&quot;&gt;prism.js&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Input code from file&lt;/li&gt;
+  &lt;li&gt;$\LaTeX$ integration&lt;/li&gt;
+  &lt;li&gt;Adding figures&lt;/li&gt;
+  &lt;li&gt;Utility classes like info, danger, success and warning&lt;/li&gt;
+  &lt;li&gt;Menus
+    &lt;ul&gt;
+      &lt;li&gt;Sidebar&lt;/li&gt;
+      &lt;li&gt;Navigation bar&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;FontAwesome icons for navigation menu items&lt;/li&gt;
+  &lt;li&gt;Blog posts
+    &lt;ul&gt;
+      &lt;li&gt;Sticky table of contents for the blog posts&lt;/li&gt;
+      &lt;li&gt;Estimated time to read the post as well last modified date for the post&lt;/li&gt;
+      &lt;li&gt;Sharing modules (facebook, gplus, twitter, linkedin etc.,) for all posts&lt;/li&gt;
+      &lt;li&gt;Search box for searching through posts based on key works&lt;/li&gt;
+      &lt;li&gt;Option for scrolling long posts&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Google Analytics for tracking&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;markdown-markup&quot;&gt;Markdown markup&lt;/h2&gt;
+
+&lt;p&gt;With the use of markdown, it is easy to generate the web-page content without worrying about HTML&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Italics&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.co.in&quot;&gt;Sample link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;code-highlighting&quot;&gt;Code highlighting&lt;/h2&gt;
+
+&lt;p&gt;This is a test code written in C++ highlighted using monokai theme using rouge highlighter.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cpp&quot; data-lang=&quot;cpp&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cm&quot;&gt;/* Multiline 
+ * comment 
+ */&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Single line comment&lt;/span&gt;
+
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;cstdio&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World highlight&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;vim-gnome
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;latex&quot;&gt;$\LaTeX$&lt;/h2&gt;
 
