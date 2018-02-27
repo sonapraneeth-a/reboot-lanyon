@@ -44,9 +44,9 @@ gulp.task("gulp::serve", (done) =>
 gulp.task("gulp::watch", (done) => {
     // Watch site settings
     gulp.watch([paths.md_files_glob, paths.html_files_glob, paths.yml_files_glob], gulp.series("gulp::copy", "gulp::build", "gulp::sass", "gulp::assets", reload));
-    gulp.watch(paths.css_files_glob, gulp.series("gulp::copy-css", "gulp::compress-css", reload));
+    gulp.watch(paths.css_files_glob, gulp.series("gulp::copy-css", "gulp::compress-css", "gulp::concat-css", reload));
     gulp.watch(paths.js_files_glob, gulp.series("gulp::copy-js", "gulp::compress-scripts", reload));
-    gulp.watch(paths.scss_files_glob, gulp.series("gulp::sass", reload));
+    gulp.watch(paths.scss_files_glob, gulp.series("gulp::sass", "gulp::css", reload));
     gulp.watch(paths.image_files_glob, gulp.series("gulp::assets", "gulp::compress-images", reload));
     done();
 })

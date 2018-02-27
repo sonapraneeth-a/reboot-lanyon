@@ -10,6 +10,7 @@ var strip = require("gulp-strip-comments");
 var cleanCSS = require("gulp-clean-css");
 var sourcemaps = require("gulp-sourcemaps");
 var sass = require("gulp-ruby-sass");
+var concatCss = require('gulp-concat-css');
 
 // include paths file
 var paths      = require("../../paths");
@@ -50,32 +51,60 @@ gulp.task("gulp::compress-scripts", (done) =>
 });
 
 gulp.task("gulp::build-sass", (done) => {
-    log("=== Compiling SASS ===");
-    sass
-    (paths.temp_src_dir + "_scss/main.scss",
-        {
-            sourcemap: false,
-            style: "compressed",
-    })
-    .on("error", function (err)
+    /*log("=== Compiling SASS ===");*/
+    if(argv.prod)
     {
-        console.error("Error!", err.message);
-    })
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(paths.temp_site_dir + "public/css"));
-    done();
+        return sass
+        (paths.temp_src_dir + "_scss/main.scss",
+            {
+                sourcemap: false,
+                style: "compressed",
+            }
+        )
+        .on("error", function (err)
+        {
+            console.error("Error!", err.message);
+        })
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(paths.temp_site_dir + "public/css"));
+    }
+    else
+    {
+        return sass
+        (paths.temp_src_dir + "_scss/main.scss",
+            {
+                sourcemap: true,
+                style: "expanded",
+                verbose: true,
+                emitCompileError: true,
+            }
+        )
+        .on('error', sass.logError)
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(paths.temp_site_dir + "public/css"));
+    }
+    /*done();*/
 });
 
-gulp.task("gulp::compress-css", (done) =>
+gulp.task("gulp::compress-css", () =>
 {
-    log("=== Minifying CSS files ===");
-    gulp.src([paths.temp_site_dir + "public" + paths.css_pattern, "!" + paths.temp_site_dir + "public/plugins/fontello/css/*.css"])
+    /*log("=== Minifying CSS files ===");*/
+    return gulp.src([paths.temp_site_dir + "public" + paths.css_pattern])
         .pipe(when(argv.prod, size({title: 'Original CSS', pretty: true, showFiles: true, showTotal: true})))
-        .pipe(when(argv.prod, cleanCSS({debug: true}, (details) => {
+        .pipe(when(argv.prod, cleanCSS({debug: true, rebase: false}, (details) => {
             console.log(`  Original ${details.name}: ${details.stats.originalSize} B`);
             console.log(`Compressed ${details.name}: ${details.stats.minifiedSize} B`);
           })))
         .pipe(when(argv.prod, gulp.dest(paths.temp_site_dir + "public")))
         .pipe(when(argv.prod, size({title: 'Compressed CSS', pretty: true, showFiles: true, showTotal: true})))
-    done();
+    /*done();*/
+});
+
+gulp.task("gulp::concat-css", () =>
+{
+    /*log("=== Concatenating CSS files ===");*/
+    return gulp.src([paths.temp_site_dir + "public/plugins/fontello/css/fontawesome.css", paths.temp_site_dir + "public/css/main.css"])
+        .pipe(concatCss("all.css"))
+        .pipe(gulp.dest(paths.temp_site_dir + "public/css/"));
+    /*done();*/
 });
