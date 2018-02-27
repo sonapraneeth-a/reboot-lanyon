@@ -48,4 +48,5 @@ gulp.task("gulp::watch", (done) => {
     gulp.watch(paths.js_files_glob, gulp.series("gulp::copy-js", "gulp::compress-scripts", reload));
     gulp.watch(paths.scss_files_glob, gulp.series("gulp::sass", reload));
     gulp.watch(paths.image_files_glob, gulp.series("gulp::assets", "gulp::compress-images", reload));
+    done();
 })
