@@ -10,7 +10,7 @@ var posts = [{% for post in site.posts %}
     "date" : "{{post.published}}",
     "categories" : {{post.categories | jsonify}},
     "tags" : {{post.tags | jsonify}},
-    "excerpt" : "{{post.excerpt | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip}}",
-    "content" : "{{post.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip}}"
+    "excerpt" : "{{post.excerpt | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | replace: '"', '\"'}}",
+    "content" : "{{post.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | replace: '"', '\"'}}"
 }{% unless forloop.last %},{% endunless %}{% endfor %}
-]
+];

@@ -9,7 +9,7 @@ var projects = [{% for project in site.projects %}{% if project.publish == true 
     "date" : "{{project.published}}",
     "categories" : {{project.categories | jsonify}},
     "tags" : {{project.tags | jsonify}},
-    "brief" : "{{project.brief | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip}}",
+    "brief" : "{{project.brief | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | replace: '"', '\"'}}",
     "content" : "{{project.content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | replace: '"', '\"'}}"
 }{% endif %}{% unless forloop.last %},{% endunless %}{% endfor %}
-]
+];
