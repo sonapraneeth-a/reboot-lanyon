@@ -17,6 +17,15 @@ const paths = require("../../paths");
 gulp.task("build::gulp-site", (done) =>
 {
     log("=== Generating public_html site ===");
-    shell.exec("bundle exec jekyll build --config _config-gulp.yml --incremental");
+    if(argv.prod)
+    {
+        log("=== Production website ===");
+        shell.exec("bundle exec jekyll build --config _config-gulp.yml --incremental");
+    }
+    else
+    {
+        log("=== Development website ===");
+        shell.exec("bundle exec jekyll build --config _config-gulp-dev.yml --incremental");
+    }
     done();
 });
