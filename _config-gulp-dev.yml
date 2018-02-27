@@ -6,13 +6,13 @@ destination : ./.tmp/public_html
 title       : Reboot lanyon
 description :
 tagline     : "Learner"
-baseurl     : "/reboot-lanyon"
+baseurl     : ""
 url         : https://sonapraneeth-a.github.io
 favicon     :
 lang        : en-us
 version     : 0.30.0 # Please use semantic versioning (semver.org)
 repository  : sonapraneeth-a.github.io
-environment : "production"
+environment : "development"
 
 # SEO
 logo:

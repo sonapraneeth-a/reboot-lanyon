@@ -1,18 +1,21 @@
 # Source and destination folder
-source      : ./.tmp/source
-destination : ./.tmp/public_html
+source      : source
+destination : public_html
+
+# Site config
+skin        : default
 
 # Site info
 title       : Reboot lanyon
 description :
 tagline     : "Learner"
-baseurl     : "/reboot-lanyon"
+baseurl     : ""
 url         : https://sonapraneeth-a.github.io
 favicon     :
 lang        : en-us
 version     : 0.30.0 # Please use semantic versioning (semver.org)
 repository  : sonapraneeth-a.github.io
-environment : "production"
+environment : "development"
 
 # SEO
 logo:
@@ -53,9 +56,9 @@ kramdown:
     hard_wrap     : false
     footnote_nr   : 1
     show_warnings : true
-# sass:
-#     style         : compressed
-#     sass_dir      : _scss
+sass:
+    style         : compressed
+    sass_dir      : _scss
 highlighter       : rouge
 timezone          : Asia/Kolkata
 encoding          : "utf-8"
