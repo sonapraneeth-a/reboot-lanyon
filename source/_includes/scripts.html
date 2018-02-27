@@ -16,14 +16,16 @@
 {% if url contains 'blog/search' %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.5/lunr.min.js" defer></script>
 <!--<script type="text/javascript" src="/public/plugins/lunr/posts.json"></script>-->
-<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/posts.js" defer></script>
-<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/search-blog.js" defer></script>
+<!--<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/posts.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/search-blog.js" defer></script>-->
+<script type="text/javascript" src="{{site.baseurl}}/public/js/blog.js" defer></script>
 {% endif %}
 {% if url contains 'projects/search' %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.5/lunr.min.js" defer></script>
 <!--<script type="text/javascript" src="/public/plugins/lunr/posts.json"></script>-->
-<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/projects.js" defer></script>
-<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/search-project.js" defer></script>
+<!--<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/projects.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/search-project.js" defer></script>-->
+<script type="text/javascript" src="{{site.baseurl}}/public/js/project.js" defer></script>
 {% endif %}
 <script>
 (function(document)
