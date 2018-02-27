@@ -25,8 +25,8 @@ gulp.task("default::jekyll", gulp.series("build::jekyll-site", "serve::jekyll-si
 gulp.task("gulp::clean", gulp.series("clean::tmp"));
 gulp.task("gulp::copy", gulp.series("copy::source"));
 gulp.task("gulp::build", gulp.series("build::gulp-site"));
-gulp.task("gulp::sass", gulp.series("gulp::copy-sass", "gulp::move-sass", "gulp::build-sass", "gulp::compress-css"));
-gulp.task("gulp::css", gulp.series("gulp::compress-css"));
+gulp.task("gulp::sass", gulp.series("gulp::copy-sass", "gulp::move-sass", "gulp::build-sass"));
+gulp.task("gulp::css", gulp.series("gulp::compress-css", "gulp::concat-css"));
 gulp.task("gulp::assets", gulp.series("gulp::copy-assets"));
 gulp.task("gulp::compress", gulp.series("gulp::compress-html", "gulp::compress-css", "gulp::compress-scripts", "gulp::compress-images"));
 gulp.task("build::gulp::site", gulp.series("gulp::clean", "gulp::copy", "gulp::build", "gulp::sass", "gulp::css", 
