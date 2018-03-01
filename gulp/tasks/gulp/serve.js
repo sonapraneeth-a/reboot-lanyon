@@ -4,15 +4,15 @@
 
 // https://aaronlasseigne.com/2016/02/03/using-gulp-with-jekyll/
 
-var gulp          = require("gulp");
-var browser_sync  = require("browser-sync").create();
-var log           = require("fancy-log");
-var devip         = require('dev-ip');
-var watch         = require('gulp-watch');
-var size          = require('gulp-size');
+const gulp          = require("gulp");
+const browser_sync  = require("browser-sync").create();
+const log           = require("fancy-log");
+const devip         = require('dev-ip');
+const watch         = require('gulp-watch');
+const size          = require('gulp-size');
 
 // include paths file
-var paths = require("../../paths");
+const paths = require("../../paths");
 
 function reload(done)
 {
@@ -43,7 +43,7 @@ gulp.task("gulp::serve", (done) =>
 
 gulp.task("gulp::watch", (done) => {
     // Watch site settings
-    gulp.watch([paths.md_files_glob, paths.html_files_glob, paths.yml_files_glob], gulp.series("gulp::copy", "gulp::build", "gulp::sass", "gulp::assets", reload));
+    gulp.watch([paths.md_files_glob, paths.html_files_glob, paths.yml_files_glob], gulp.series("build::gulp::site", reload));
     gulp.watch(paths.css_files_glob, gulp.series("gulp::copy-css", "gulp::compress-css", "gulp::concat-css", reload));
     gulp.watch(paths.js_files_glob, gulp.series("gulp::copy-js", "gulp::js", reload));
     gulp.watch(paths.scss_files_glob, gulp.series("gulp::sass", "gulp::css", reload));

@@ -1,14 +1,12 @@
 "use strict";
-var gulp  = require("gulp");
-var argv = require("yargs").argv;
-var size = require("gulp-size");
-var notify = require("gulp-notify");
-// var newer = require("gulp-newer");
-var log   = require("fancy-log");
-var rename = require("gulp-rename");
+const gulp   = require("gulp");
+const argv   = require("yargs").argv;
+const size   = require("gulp-size");
+const log    = require("fancy-log");
+const rename = require("gulp-rename");
 
 // include paths file
-var paths = require("../../paths");
+const paths = require("../../paths");
 
 // "gulp copy:source" --
 gulp.task("copy::source", () =>

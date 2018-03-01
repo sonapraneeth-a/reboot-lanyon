@@ -1,20 +1,20 @@
 'use strict';
-var gulp     = require('gulp');
-var imagemin = require('gulp-imagemin');
-var size     = require('gulp-size');
-var log      = require('fancy-log');
-var when     = require('gulp-if');
-var argv     = require('yargs').argv;
+const gulp     = require('gulp');
+const imagemin = require('gulp-imagemin');
+const size     = require('gulp-size');
+const log      = require('fancy-log');
+const when     = require('gulp-if');
+const argv     = require('yargs').argv;
 
 // include paths file
-var paths      = require('../../paths');
+const paths    = require('../../paths');
 
 /* 'gulp gulp::compress-images' -- optimize images */
-gulp.task('gulp::compress-images', (done) => 
+gulp.task('gulp::compress-images', () => 
 {
-    log("=== Optimizing Images ===");
+    /*log("=== Optimizing Images ===");*/
     /*log(paths.temp_dir + paths.site_folder + paths.image_pattern);*/
-    gulp.src([paths.temp_dir + paths.site_folder + paths.image_pattern])
+    return gulp.src([paths.temp_dir + paths.site_folder + paths.image_pattern])
         .pipe(when(argv.prod, size({title: 'Original images'})))
         .pipe(when(argv.prod, imagemin([
             imagemin.gifsicle({interlaced: true}),
@@ -24,5 +24,5 @@ gulp.task('gulp::compress-images', (done) =>
         ], {verbose: true})))
         .pipe(when(argv.prod, gulp.dest(paths.temp_dir + paths.site_folder)))
         .pipe(when(argv.prod, size({title: 'Optimized images'})))
-    done();
+    /*done();*/
 });

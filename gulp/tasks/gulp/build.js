@@ -1,21 +1,15 @@
 "use strict";
-const argv     = require("yargs").argv;
-const gulp     = require("gulp");
-const shell    = require("shelljs");
-const log      = require("fancy-log");
-const using    = require("gulp-using")
-const when     = require("gulp-if");
-const uglify   = require("gulp-uglifyes");
-const size     = require("gulp-size");
-const exec     = require("child_process").exec;
-const strip    = require("gulp-strip-comments");
-const cleanCSS = require("gulp-clean-css");
-const sass = require("gulp-ruby-sass");
-var sourcemaps = require("gulp-sourcemaps");
+const argv       = require("yargs").argv;
+const gulp       = require("gulp");
+const shell      = require("shelljs");
+const log        = require("fancy-log");
+const sass       = require("gulp-ruby-sass");
+const sourcemaps = require("gulp-sourcemaps");
 
 // include paths file
 const paths = require("../../paths");
 
+// "gulp build::gulp-site --prod" -- Compiles the source code to html files
 gulp.task("build::gulp-site", (done) =>
 {
     log("=== Generating public_html site ===");
@@ -32,7 +26,8 @@ gulp.task("build::gulp-site", (done) =>
     done();
 });
 
-gulp.task("gulp::build-sass", (done) => {
+// "gulp gulp::build-sass --prod" -- Compiles the sass code to css (main.css)
+gulp.task("gulp::build-sass", () => {
     /*log("=== Compiling SASS ===");*/
     if(argv.prod)
     {

@@ -1,24 +1,20 @@
 "use strict";
-var argv       = require("yargs").argv;
-var gulp       = require("gulp");
-var htmlmin    = require("gulp-htmlmin");
-var size       = require("gulp-size");
-var when       = require("gulp-if");
-var log        = require("fancy-log");
-var uglify= require("gulp-uglifyes");
-var strip = require("gulp-strip-comments");
-var cleanCSS = require("gulp-clean-css");
-var sourcemaps = require("gulp-sourcemaps");
-var sass = require("gulp-ruby-sass");
-var concatCss = require('gulp-concat-css');
-var concatJs = require('gulp-concat');
+const argv       = require("yargs").argv;
+const gulp       = require("gulp");
+const htmlmin    = require("gulp-htmlmin");
+const size       = require("gulp-size");
+const when       = require("gulp-if");
+const log        = require("fancy-log");
+const uglify     = require("gulp-uglifyes");
+const strip      = require("gulp-strip-comments");
+const cleanCSS   = require("gulp-clean-css");
 
 // include paths file
-var paths      = require("../../paths");
+const paths      = require("../../paths");
 
 // "gulp html" -- does nothing
 // "gulp html --prod" -- minifies and gzips HTML files for production
-gulp.task("gulp::compress-html", (done) => 
+gulp.task("gulp::compress-html", () => 
 {
     /*log("=== Compressing HTML ===");*/
     return gulp.src(paths.temp_site_dir + paths.html_pattern)
