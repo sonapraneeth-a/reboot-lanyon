@@ -1,7 +1,7 @@
 .tag::before
 {
     @include tag-icon;
-    padding: .25rem;
+    padding: 0.05rem 0.2rem;
     color: $tag-foreground;
 }
 
@@ -10,7 +10,7 @@
     color: $tag-background;
 }
 
-.tag
+/*.tag
 {
     @extend .chip;
     background: $tag-background;
@@ -37,4 +37,6 @@
         background-color: darken($chip-background, 10%);
         color: lighten($chip-foreground, 10%);
     }
-}
+}*/
+
+@include chip-component(tag, $tag-background, $tag-foreground, $hover: true, $count: true);

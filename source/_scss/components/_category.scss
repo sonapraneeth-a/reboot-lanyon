@@ -1,7 +1,7 @@
 .category::before
 {
     @include folder-open-icon;
-    padding: .25rem;
+    padding: 0.05rem 0.2rem;
     color: $category-foreground;
 }
 
@@ -10,7 +10,7 @@
     color: $category-background;
 }
 
-.category
+/*.category
 {
     @extend .chip;
     background: $category-background;
@@ -37,4 +37,6 @@
         background-color: darken($chip-background, 10%);
         color: lighten($chip-foreground, 10%);
     }
-}
+}*/
+
+@include chip-component(tag, $category-background, $category-foreground, $hover: true, $count: true);

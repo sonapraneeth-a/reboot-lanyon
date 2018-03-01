@@ -55,3 +55,39 @@
         display: table;
     }
 }
+
+@mixin chip-component($component, $background, $foreground, $hover: false, $count: false)
+{
+    .#{$component}
+    {
+        @extend .chip;
+        background-color: $background;
+        color: $foreground;
+        border: 0.05rem solid $background;
+        @if $hover == true
+        {
+            &:hover
+            {
+                text-decoration: none;
+                background-color: $foreground;
+                color: $background;
+                border: 0.05rem solid $background;
+            }
+        }
+        .#{$component}-content
+        {
+            padding: 0.05rem 0.2rem;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+        @if $count == true
+        {
+            .#{$component}-count
+            {
+                padding: 0.05rem 0.2rem;
+                font-size: 0.9rem;
+                border-left: 0.05rem solid darken($foreground, 10%);
+            }
+        }
+    }
+}

@@ -1,10 +1,10 @@
 .date::before
 {
     @include calendar-icon;
-    padding: .25rem;
+    padding: 0.05rem 0.2rem;
 }
 
-.date
+/*.date
 {
     @extend .chip;
     background: $date-background;
@@ -15,4 +15,6 @@
         display: inline-block;
         font-size: 0.9rem;
     }
-}
+}*/
+
+@include chip-component(time, $date-background, $date-foreground);

@@ -1,10 +1,10 @@
 .time::before
 {
     @include clock-icon;
-    padding: .25rem;
+    padding: 0.05rem 0.2rem;
 }
 
-.time
+/*.time
 {
     @extend .chip;
     background: $time-background;
@@ -15,4 +15,6 @@
         display: inline-block;
         font-size: 0.9rem;
     }
-}
+}*/
+
+@include chip-component(time, $time-background, $time-foreground);
