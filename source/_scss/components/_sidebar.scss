@@ -55,8 +55,8 @@
     }
     cursor: pointer;
     color: $normal-font-color;
-    top: 1.4rem;
-    left: 1.2rem;
+    top: $hamburger-position-top;
+    left: $hamburger-position-left;
     @include until($tablet)
     {
         left: 1rem;
@@ -137,14 +137,14 @@
         color: $background-color;
         &:hover
         {
-            background-color: $background-color;
-            color: $foreground-color;
+            background-color: darken($foreground-color, 25%);
+            color: $background-color;
         }
     }
-    .active
+    .sidebar-active
     {
-        background-color: $background-color;
-        color: $foreground-color;
+        background-color: darken($foreground-color, 25%);
+        color: $background-color;
     }
     .sidebar-dropdown-content
     {

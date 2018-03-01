@@ -1,6 +1,3 @@
-$navbar-margin: 1rem;
-$navbar-visible-screen: $tablet;
-
 .navbar
 {
     display: flex;
@@ -23,7 +20,7 @@ $navbar-visible-screen: $tablet;
     /*display: inline-block;*/
     a
     {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: $navbar-font-color;
         text-decoration: none;
         &:hover
@@ -59,9 +56,10 @@ $navbar-visible-screen: $tablet;
     li
     {
         /*display: inline-block;*/
+        box-sizing: border-box;
         position: relative;
         min-width: 4rem;
-        margin: 0 0.25rem;
+        margin: auto 0.25rem;
         color: $navbar-font-color;
     }
     li a
@@ -72,7 +70,8 @@ $navbar-visible-screen: $tablet;
         color: $navbar-font-color;
         &:hover
         {
-            border-bottom: 0.1rem solid $navbar-font-color;
+            background-color: darken($foreground-color, 25%);
+            border-bottom: 0.15rem solid $navbar-font-color;
         }
         &::before
         {
@@ -82,6 +81,11 @@ $navbar-visible-screen: $tablet;
         {
             @include transition(width 0.3s);
         }
+    }
+    .navbar-menu-active
+    {
+        background-color: darken($foreground-color, 25%);
+        border-bottom: 0.15rem solid $navbar-font-color;
     }
     @include until($navbar-visible-screen)
     {

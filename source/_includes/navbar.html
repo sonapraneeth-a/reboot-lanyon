@@ -7,9 +7,9 @@
       <li>
           <a href="{{site.baseurl}}{{menu.url}}" class="{{menu.class}}
           {% if menu.url != '/' and page.url contains menu.url %}
-          active
+          navbar-menu-active
           {% elsif page.url == menu.url %}
-          active
+          navbar-menu-active
           {% endif %}">&nbsp;{{menu.title}}
           </a>
           <!--{% if menu.sublinks %}dropdown{% endif %}
