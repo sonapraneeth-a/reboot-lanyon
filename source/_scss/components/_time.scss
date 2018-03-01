@@ -1,11 +1,18 @@
 .time::before
 {
     @include clock-icon;
-    padding-right: .25rem;
+    padding: .25rem;
 }
 
 .time
 {
+    @extend .chip;
     background: $time-background;
     color: $time-foreground;
+    .time-content
+    {
+        padding: 0.05rem 0.2rem;
+        display: inline-block;
+        font-size: 0.9rem;
+    }
 }

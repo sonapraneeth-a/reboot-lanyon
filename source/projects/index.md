@@ -25,13 +25,13 @@ title: Projects
         </div>
         <div>
             <!--<span>{{project.guide}}</span>-->
-            <span>{{project.date | date: "%B %Y"}}</span>
+            <span class="date"><span class="date-content">{{project.date | date: "%B %Y"}}</span></span>
             <span>{{project.institution}}</span>
             <!--<span>{{project.course}}</span>-->
         </div>
         <div>
             {% for tag in project.tags %}
-            <a class="chip tag" href="{{site.baseurl}}/projects/tags/#{{tag | slugify: 'pretty'}}">{{tag}}</a>
+            <a class="tag" href="{{site.baseurl}}/projects/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content">{{tag}}</span></a>
             {% endfor %}
         </div>
         <div>

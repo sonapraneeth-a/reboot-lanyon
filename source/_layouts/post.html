@@ -5,15 +5,15 @@ layout: default
 <section class="post">
     <h1 class="post-title">{{page.title}}</h1>
     <div class="post-info">
-        <span class="chip date"><b>Published:</b> {{page.published | date: "%d %B %Y %R IST"}} </span>
-        <span class="chip date"><b>Modified:</b> {{page.last_modified_at | date: "%d %B %Y %R IST"}}</span>
-        <span class="chip time">{% assign words_per_minute = site.words_per_minute | default: 200 %}
+        <span class="date"><span class="date-content"><b>Published:</b> {{page.published | date: "%d %B %Y %R IST"}} </span></span>
+        <span class="date"><span class="date-content"><b>Modified:</b> {{page.last_modified_at | date: "%d %B %Y %R IST"}}</span></span>
+        <span class="time"><span class="time-content">{% assign words_per_minute = site.words_per_minute | default: 200 %}
         {% assign words = page.content | strip_html | number_of_words %}
         {% if words < words_per_minute %}
         ~1&nbsp;min&nbsp;read
         {% else %}
         {{ words | divided_by:words_per_minute }}&nbsp;min&nbsp;read
-        {% endif %}</span>
+        {% endif %}</span></span>
     </div>
     <!--<span>Tags: {% for tag in post.tags %} {{tag}} {% endfor %}</span>-->
     <div>

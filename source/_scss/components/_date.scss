@@ -1,11 +1,18 @@
 .date::before
 {
     @include calendar-icon;
-    padding-right: .5rem;
+    padding: .25rem;
 }
 
 .date
 {
+    @extend .chip;
     background: $date-background;
     color: $date-foreground;
+    .date-content
+    {
+        padding: 0.05rem 0.2rem;
+        display: inline-block;
+        font-size: 0.9rem;
+    }
 }
