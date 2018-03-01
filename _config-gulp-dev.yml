@@ -10,8 +10,8 @@ baseurl     : ""
 url         : https://sonapraneeth-a.github.io
 favicon     :
 lang        : en-us
-version     : 0.31.0 # Please use semantic versioning (semver.org)
-repository  : sonapraneeth-a.github.io
+version     : 0.32.0 # Please use semantic versioning (semver.org)
+repository  : sonapraneeth-a.github.io/reboot-lanyon
 environment : "development"
 
 # SEO
@@ -165,10 +165,6 @@ menu:
           url   : '/blog/archives/'
           icon  : 'archive'
           class : 'archives'
-    - title : 'Contact'
-      url   : '/contact/'
-      icon  : 'phone'
-      class : 'contact'
 
 google_analytics_token : 'UA-90733014-1' # leave blank if you don't want google analytics
 disqus_short_name      : 'sonapraneethakula' # leave blank if you don't want disqus
