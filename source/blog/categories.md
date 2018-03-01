@@ -5,7 +5,9 @@ title: Blog - Categories
 
 <div style="display: inline;">
     {% for category in site.categories %}
-    <a href="#{{ category[0] | slugify: 'pretty' }}" class="chip category">{{ category[0] }}</a>
+    <a href="#{{ category[0] | slugify: 'pretty' }}" class="category">
+        <span class="category-content">{{ category[0] }}</span>
+    </a>
     {% endfor %}
 </div>
 

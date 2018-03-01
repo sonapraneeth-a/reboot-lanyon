@@ -28,7 +28,7 @@ title: Projects - Categories
 
 <div style="display: inline;">
 {% for category in categories %}
-<a href="#{{ category | slugify: 'pretty' }}" class="chip category">{{ category }}</a>
+<a href="#{{ category | slugify: 'pretty' }}" class="category"><span class="category-content">{{ category }}</span></a>
 {% endfor %}
 </div>
 

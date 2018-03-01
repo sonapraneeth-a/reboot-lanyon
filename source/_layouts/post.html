@@ -21,7 +21,7 @@ layout: default
         <a class="tag" href="/blog/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content">{{tag}}</span></a>
         {% endfor %}
         {% for category in page.categories %}
-        <a class="chip category" href="/blog/categories/#{{category | slugify: 'pretty'}}">{{category}}</a>
+        <a class="category" href="/blog/categories/#{{category | slugify: 'pretty'}}"><span class="category-content">{{category}}</span></a>
         {% endfor %}
     </div>
     <article class="post-content">
