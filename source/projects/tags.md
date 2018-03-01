@@ -28,7 +28,9 @@ title: Projects - Tags
 
 <div style="display: inline;">
 {% for tag in tags %}
-<a href="#{{ tag | slugify: 'pretty' }}" class="chip tag">{{ tag }}</a>
+<a href="#{{ tag | slugify: 'pretty' }}" class="tag">
+<span class="tag-content">{{ tag }}</span>
+</a>
 {% endfor %}
 </div>
 

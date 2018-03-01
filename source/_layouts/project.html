@@ -17,7 +17,7 @@ layout: default
     <span>{{page.date | date: "%B %Y"}} {{page.institution}}</span>
     <div>
         {% for tag in page.tags %}
-        <a class="chip tag" href="/projects/tags/#{{tag | slugify: 'pretty'}}">{{tag}}</a>
+        <a class="tag" href="/projects/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content">{{tag}}</span></a>
         {% endfor %}
         {% for category in page.categories %}
         <a class="chip category" href="/projects/categories/#{{category | slugify: 'pretty'}}">{{category}}</a>

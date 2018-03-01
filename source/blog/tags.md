@@ -9,8 +9,9 @@ title: Blog - Tags
     {% for post in tag[1] %}
     {% assign count = count | plus: 1 %}
     {% endfor %}
-    <a href="#{{ tag[0] | slugify: 'pretty' }}" class="chip tag">
-        <span>{{ tag[0] }}</span><!--<span class="tag-count">{{ count }}</span>-->
+    <a href="#{{ tag[0] | slugify: 'pretty' }}" class="tag">
+        <span class="tag-content">{{ tag[0] }}</span>
+        <span class="tag-count">{{ count }}</span>
     </a>
     {% endfor %}
 </div>

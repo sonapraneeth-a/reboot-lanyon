@@ -1,7 +1,7 @@
 .chip
 {
     display: inline-block;
-    padding: 0.05rem 0.2rem;
+    /*padding: 0.05rem 0.2rem;*/
     @if flat == false
     {
         border-radius: $chip-radius;
@@ -16,7 +16,7 @@
     {
         text-decoration: none;
     }
-    .count
+    .chip-count &
     {
         padding: 0.05rem 0.2rem;
         background-color: darken($chip-background, 10%);
