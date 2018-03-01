@@ -1,7 +1,9 @@
 <noscript>Your browser does not support JavaScript!</noscript>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" defer></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" defer></script>-->
 <!--<script src="{{site.baseurl}}/public/plugins/prism/prism.js" defer></script>-->
 <script src="{{site.baseurl}}/public/plugins/highlight/highlight.js" defer></script>
+{% assign url = page.url %}
+{% if url contains 'blog' or url contains 'projects' %}
 <script type="text/x-mathjax-config" defer>
     MathJax.Hub.Config({
         tex2jax: {
@@ -12,7 +14,7 @@
     });
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML-full" defer></script>
-{% assign url = page.url %}
+{% endif %}
 {% if url contains 'blog/search' %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.5/lunr.min.js" defer></script>
 <!--<script type="text/javascript" src="/public/plugins/lunr/posts.json"></script>-->
@@ -49,4 +51,6 @@
     }, false);
 })(document);
 </script>
+{% if site.environment == "production" %}
 {% include google-analytics.html %}
+{% endif %}
