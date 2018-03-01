@@ -5,8 +5,13 @@ title: Blog - Categories
 
 <div style="display: inline;">
     {% for category in site.categories %}
+    {% assign count = 0 %}
+    {% for post in category[1] %}
+    {% assign count = count | plus: 1 %}
+    {% endfor %}
     <a href="#{{ category[0] | slugify: 'pretty' }}" class="category">
         <span class="category-content">{{ category[0] }}</span>
+        <span class="category-count">{{ count }}</span>
     </a>
     {% endfor %}
 </div>

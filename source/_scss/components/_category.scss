@@ -39,4 +39,4 @@
     }
 }*/
 
-@include chip-component(tag, $category-background, $category-foreground, $hover: true, $count: true);
+@include chip-component(category, $category-background, $category-foreground, $hover: true, $count: true);
