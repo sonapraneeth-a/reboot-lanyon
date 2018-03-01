@@ -16,6 +16,12 @@
     {
         text-decoration: none;
     }
+    .chip-content &
+    {
+        padding: 0.05rem 0.2rem;
+        display: inline-block;
+        font-size: 0.9rem;
+    }
     .chip-count &
     {
         padding: 0.05rem 0.2rem;
