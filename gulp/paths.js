@@ -10,8 +10,6 @@ paths.current_folder = ".";
 paths.temp_folder = ".tmp";
 paths.sass_folder = "_scss";
 
-paths.prod_url            = "https://sonapraneeth-a.github.io/";
-
 // Directory locations.
 paths.temp_dir            = paths.temp_folder + "/";
 paths.source_dir          = paths.source_folder + "/";
@@ -28,6 +26,7 @@ paths.scss_pattern        = "/**/*.scss";
 paths.css_pattern         = "/**/*.css";
 paths.js_pattern          = "/**/*.js";
 paths.image_pattern       = "/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|gif|GIF|webp|WEBP|tif|TIF)";
+paths.font_pattern        = "/**/*.+(woff|ttf|eot|woff2)";
 paths.markdown_pattern    = "/**/*.+(md|MD|markdown|MARKDOWN)";
 paths.html_pattern        = "/**/*.html";
 paths.txt_pattern         = "/**/*.txt";

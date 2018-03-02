@@ -12,8 +12,10 @@ const paths = require("../../paths");
 gulp.task("copy::source", () =>
 {
     /*log("=== Copying source files to tmp folder ===");*/
-    return gulp.src([paths.source_dir + "**/*", "!" + paths.source_dir + "assets/**/*", "!" + paths.source_dir + "_scss/**/*", 
-                "!" + paths.source_dir + "public/css/main.scss", "!" + paths.source_dir + "public/css/main-gulp.scss"])
+    return gulp.src([paths.source_dir + "**/*", "!" + paths.source_dir + "assets/**/*", "!" + paths.source_dir + "assets",
+                    "!" + paths.source_dir + "_scss/**/*",  "!" + paths.source_dir + "_scss", "!" + paths.source_dir + "public/**/*.css", 
+                    "!" + paths.source_dir + "public/css/main.scss", "!" + paths.source_dir + "public/css/main-gulp.scss", 
+                    "!" + paths.source_dir + "public/**/*.js", "!" + paths.source_dir + "public/" + paths.image_pattern])
         .pipe(
             size
             ({
@@ -25,6 +27,14 @@ gulp.task("copy::source", () =>
         .pipe(gulp.dest(paths.temp_dir + paths.source_folder))
     /*done();*/
 });
+
+gulp.task("gulp::move-html", () => 
+{
+    /*log("=== Moving Main Website files ===");*/
+    return gulp.src(["./.tmp/public_html_temp/**/*", "!./.tmp/public_html_temp/**/*.js", "!./.tmp/public_html_temp/**/*.css"])
+        .pipe(gulp.dest(paths.temp_site_dir))
+    /*done();*/
+})
 
 gulp.task("gulp::move-sass", () => 
 {
@@ -51,10 +61,10 @@ gulp.task("gulp::copy-assets", () =>
     /*done();*/
 });
 
-gulp.task("gulp::copy-css", (done) =>
+gulp.task("gulp::copy-css", () =>
 {
-    log("=== Copying CSS files ===");
-    gulp.src([paths.source_dir + "public" + paths.css_pattern])
+    /*log("=== Copying CSS files ===");*/
+    return gulp.src([paths.source_dir + "public" + paths.css_pattern])
         .pipe(
             size
             ({
@@ -64,7 +74,7 @@ gulp.task("gulp::copy-css", (done) =>
             })
         )
         .pipe(gulp.dest(paths.temp_site_dir + "public"))
-    done();
+    /*done();*/
 });
 
 gulp.task("gulp::copy-sass", () =>
@@ -83,10 +93,10 @@ gulp.task("gulp::copy-sass", () =>
     /*done();*/
 });
 
-gulp.task("gulp::copy-js", (done) =>
+gulp.task("gulp::copy-js", () =>
 {
-    log("=== Copying JS files ===");
-    gulp.src([paths.source_dir + "public" + paths.js_pattern])
+    /*log("=== Copying JS files /*===");*/
+    return gulp.src([paths.source_dir + "public" + paths.js_pattern])
         .pipe(
             size
             ({
@@ -95,6 +105,22 @@ gulp.task("gulp::copy-js", (done) =>
                 pretty: true
             })
         )
-        .pipe(gulp.dest(paths.temp_src_dir + "public"))
-    done();
+        .pipe(gulp.dest(paths.temp_site_dir + "public"))
+    /*done();*/
+});
+
+gulp.task("gulp::copy-images", () =>
+{
+    /*log("=== Copying JS files /*===");*/
+    return gulp.src([paths.source_dir + "public" + paths.image_pattern])
+        .pipe(
+            size
+            ({
+                title: "Copying:",
+                showFiles: true,
+                pretty: true
+            })
+        )
+        .pipe(gulp.dest(paths.temp_site_dir + "public"))
+    /*done();*/
 });
