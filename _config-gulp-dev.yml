@@ -4,7 +4,7 @@ destination : ./.tmp/public_html_temp
 
 # Site info
 title       : Reboot lanyon
-description :
+description : "Demo site for Reboot lanyon theme"
 tagline     : "Learner"
 baseurl     : ""
 url         : https://sonapraneeth-a.github.io
@@ -175,10 +175,10 @@ staticman:
 
 webmaster_verifications:
     google: -RmPuAcL0rqC5SPAGz0s2KbMQETk08-zni-fkB2aQuQ
-    bing: 1234
-    alexa: 1234
-    yandex: 1234
-    baidu: 1234
+    bing: 
+    alexa: 
+    yandex: 
+    baidu: 
 
 # Exclude these files from your production _site
 exclude:
