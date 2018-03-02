@@ -1,6 +1,6 @@
 # Source and destination folder
 source      : ./.tmp/source
-destination : ./.tmp/public_html
+destination : ./.tmp/public_html_temp
 
 # Site info
 title       : Reboot lanyon
@@ -42,6 +42,7 @@ plugins:
     - jekyll-seo-tag
     - jekyll-typogrify
     - jekyll/figure
+    - jekyll-gist
 #    - html-proofer
 markdown: kramdown
 kramdown:

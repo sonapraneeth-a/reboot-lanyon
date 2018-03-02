@@ -45,6 +45,7 @@ plugins:
     - jekyll-seo-tag
     - jekyll-typogrify
     - jekyll/figure
+    - jekyll-gist
 #    - html-proofer
 markdown: kramdown
 kramdown:
