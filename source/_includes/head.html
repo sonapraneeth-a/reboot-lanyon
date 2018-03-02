@@ -2,8 +2,6 @@
     <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
-    <!-- SEO Tags -->
-    <!-- Open Graph -->
     {% if site.plugins contains 'jekyll-seo-tag' %}
     {% comment %}
       Add metadata for search engines and social networks if jekyll-seo-tag plugin is enabled
@@ -12,7 +10,7 @@
     {% endif %}
     <!-- Title of the page -->
     <title>
-        {{ page.title }} &middot; {{ site.title }}
+        {{ page.title }} | {{ site.title }}
     </title>
     <!-- External style sheets -->
     {% include fonts.html %}
