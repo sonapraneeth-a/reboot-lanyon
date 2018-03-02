@@ -1,6 +1,6 @@
 # Source and destination folder
 source      : ./.tmp/source
-destination : ./.tmp/public_html
+destination : ./.tmp/public_html_temp
 
 # Site info
 title       : Reboot lanyon
@@ -10,9 +10,10 @@ baseurl     : "/reboot-lanyon"
 url         : https://sonapraneeth-a.github.io
 favicon     :
 lang        : en-us
-version     : 0.32.0 # Please use semantic versioning (semver.org)
+version     : 0.34.1 # Please use semantic versioning (semver.org)
 repository  : sonapraneeth-a.github.io/reboot-lanyon
 environment : "production"
+build       : "gulp"
 
 # SEO
 logo:
