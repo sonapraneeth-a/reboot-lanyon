@@ -3,10 +3,15 @@ layout: page
 title: Home
 ---
 
-This is a jekyll theme which has been built with from ground up to resemble [lanyon theme](http://lanyon.getpoole.com/).
+## Introduction
+
+This is a jekyll theme which has been built from ground up to resemble [lanyon theme](http://lanyon.getpoole.com/). Currently, it doesnot support all the features of lanyon theme (like sidebar positioning)
 
 ## Download
 
-Reboot lanyon is developed on and hosted with GitHub. Head to the [GitHub repository](https://github.com/sonapraneeth-a/reboot-lanyon/) for downloads, bug reports, and features requests.
+The source code of the project is available on Github. You can get the source code from [here](https://github.com/sonapraneeth-a/reboot-lanyon/tree/master).
+
+Please refer to [link]({{site.baseurl}}/blog/2018/02/12/reboot-lanyon/) for instructions on how to use and features available in the current theme.
 
 Thanks!
+
