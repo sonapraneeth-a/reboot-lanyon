@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us"><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="https://sonapraneeth-a.github.io/reboot-lanyon/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonapraneeth-a.github.io/reboot-lanyon/" rel="alternate" type="text/html" hreflang="en-us" /><updated>2018-03-01T20:44:25+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/</id><title type="html">Reboot lanyon</title><author><name>Sona Praneeth Akula</name></author><entry><title type="html">Test - Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/" rel="alternate" type="text/html" title="Test - Launching my new jekyll theme on website" /><published>2018-02-24T00:00:00+05:30</published><updated>2018-03-01T20:44:14+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us"><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://sonapraneeth-a.github.io/reboot-lanyon/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonapraneeth-a.github.io/reboot-lanyon/" rel="alternate" type="text/html" hreflang="en-us" /><updated>2018-03-02T20:42:49+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/</id><title type="html">Reboot lanyon</title><author><name>Sona Praneeth Akula</name></author><entry><title type="html">Test - Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/" rel="alternate" type="text/html" title="Test - Launching my new jekyll theme on website" /><published>2018-02-24T00:00:00+05:30</published><updated>2018-03-02T20:42:42+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;The theme is open-sourced under MIT License.&lt;/p&gt;
 
@@ -139,7 +139,68 @@ First line&lt;/p&gt;
 
 &lt;h3 id=&quot;navbar&quot;&gt;Navbar&lt;/h3&gt;
 
-&lt;p&gt;For large screen devices, one can use the navigation bar present at the top of the screen for accessing various links. The navigation bar also highlights the current active page in the menu.&lt;/p&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Recently, I’ve been working on a jekyll theme which has the look and feel of the lanyon theme and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.</summary></entry><entry><title type="html">CSS Components in Reload Lanyon</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/" rel="alternate" type="text/html" title="CSS Components in Reload Lanyon" /><published>2018-02-23T00:00:00+05:30</published><updated>2018-03-01T20:44:14+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/">&lt;h2 id=&quot;utility-classes&quot;&gt;Utility Classes&lt;/h2&gt;
+&lt;p&gt;For large screen devices, one can use the navigation bar present at the top of the screen for accessing various links. The navigation bar also highlights the current active page in the menu.&lt;/p&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Recently, I’ve been working on a jekyll theme which has the look and feel of the lanyon theme and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.</summary></entry><entry><title type="html">CSS Components in Reload Lanyon</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/" rel="alternate" type="text/html" title="CSS Components in Reload Lanyon" /><published>2018-02-23T00:00:00+05:30</published><updated>2018-03-02T20:42:42+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/">&lt;p&gt;In this blog, we present various css options available in this theme &lt;!--more--&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h2&gt;
+
+&lt;h3 id=&quot;tables&quot;&gt;Tables&lt;/h3&gt;
+
+&lt;table class=&quot;table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Heading 1&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Heading 2&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Heading 3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Text 1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Text 2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Text 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Text 1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Text 2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Text 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Text 1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Text 2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Text 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Text 1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Text 2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Text 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;buttons&quot;&gt;Buttons&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot; class=&quot;button&quot;&gt;Click me&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;components&quot;&gt;Components&lt;/h2&gt;
+
+&lt;h3 id=&quot;chip&quot;&gt;Chip&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;chip&quot;&gt;
+    &lt;span class=&quot;chip-content&quot;&gt;
+        &lt;b&gt;Date: &lt;/b&gt; 25-01-2018
+    &lt;/span&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;card&quot;&gt;Card&lt;/h3&gt;
+
+&lt;div class=&quot;card&quot;&gt;
+    &lt;p class=&quot;card-title&quot;&gt;Title&lt;/p&gt;
+    &lt;p class=&quot;card-content&quot;&gt;
+    Content
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;utility-classes&quot;&gt;Utility Classes&lt;/h2&gt;
 
 &lt;p&gt;Currently four utility classes are suported in theme: info, danger, success and warning.&lt;/p&gt;
 
@@ -186,7 +247,7 @@ First line&lt;/p&gt;
   &lt;p class=&quot;panel-header&quot;&gt;Heading&lt;/p&gt;
   &lt;p class=&quot;panel-content&quot;&gt;Content&lt;/p&gt;
   &lt;p class=&quot;panel-footer&quot;&gt;Footer&lt;/p&gt;
-&lt;/div&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Utility Classes Currently four utility classes are suported in theme: info, danger, success and warning. Styled blockquotes Information block First line Danger block First line Success block First line Warning block First line Styled text Information text Danger text Success text Warning text Panel Heading Content Footer</summary></entry><entry><title type="html">Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/" rel="alternate" type="text/html" title="Launching my new jekyll theme on website" /><published>2018-02-12T00:00:00+05:30</published><updated>2018-03-01T20:44:14+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">In this blog, we present various css options available in this theme</summary></entry><entry><title type="html">Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/" rel="alternate" type="text/html" title="Launching my new jekyll theme on website" /><published>2018-02-12T00:00:00+05:30</published><updated>2018-03-02T20:42:42+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;The theme is open-sourced under MIT License.&lt;/p&gt;
 
@@ -269,6 +330,9 @@ First line&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;vim-gnome
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/a4a981d0e479446054ee38cad99f5383.js&quot;&gt; &lt;/script&gt;
 
 &lt;h2 id=&quot;latex&quot;&gt;$\LaTeX$&lt;/h2&gt;
 
