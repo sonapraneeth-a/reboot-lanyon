@@ -4,7 +4,7 @@
 @import 'base/all';
 @import 'plugins/all';
 @import 'theme/skins/{{site.skin | default: 'default'}}';
-@import 'config';
+@import 'config/all';
 @import 'highlight/all';
 @import 'components/all';
 @import 'utility/all';

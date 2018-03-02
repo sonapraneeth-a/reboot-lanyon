@@ -1,0 +1,16 @@
+/* Sidebar variables */
+// Position from where the sidebar is to be revealed
+$sidebar-pos             : left;
+// Should the sidebar be overlaid over the content or push the content 
+// to reveal itself
+$sidebar-overlay         : false;
+// Width of the sidebar
+$sidebar-width           : 12rem;
+
+
+
+/* Hamburger variables */
+// Top and left position of hamburger which triggers opening of sidebar
+$hamburger-position-top  : 1.4rem;
+$hamburger-position-left : 1.2rem;
+
