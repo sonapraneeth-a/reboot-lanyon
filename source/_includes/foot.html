@@ -2,10 +2,12 @@
     <center>
         <p>
             &copy;&nbsp;<a href="{{site.baseurl}}">{{site.author.name}}</a>. Last Modified:
+            <span id="#last-modified"></span>
             <script>
                 let date = new Date(document.lastModified);
                 let date_string = date.toDateString() + " " + date.toLocaleTimeString();
-                document.write(" " + date_string);
+                last_modified = document.getElementById("#last-modified");
+                last_modified.innerHTML = date_string;
             </script>
         </p>
     </center>

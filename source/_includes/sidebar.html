@@ -17,7 +17,14 @@
     {% endfor %}
     </ul>
     <div class="sidebar-item">
-        &copy;&nbsp;Sona Praneeth Akula 2018
+        &copy;&nbsp;Sona Praneeth Akula
+        <span id="#last-modified-year"></span>
+        <script>
+            let date_year = new Date(document.lastModified);
+            let date_string_year = date_year.getFullYear();
+            let last_modified_year = document.getElementById("#last-modified-year");
+            last_modified_year.innerHTML = date_string_year;
+        </script>
     </div>
     <div class="sidebar-item">
         Made in <i class="icon-heart"></i> with Jekyll
