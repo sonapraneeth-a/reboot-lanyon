@@ -15,7 +15,7 @@ gulp.task("copy::source", () =>
     return gulp.src([paths.source_dir + "**/*", "!" + paths.source_dir + "assets/**/*", "!" + paths.source_dir + "assets",
                     "!" + paths.source_dir + "_scss/**/*",  "!" + paths.source_dir + "_scss", "!" + paths.source_dir + "public/**/*.css", 
                     "!" + paths.source_dir + "public/css/main.scss", "!" + paths.source_dir + "public/css/main-gulp.scss", 
-                    "!" + paths.source_dir + "public/**/*.js", "!" + paths.source_dir + "public/" + paths.image_pattern])
+                    "!" + paths.source_dir + "public/" + paths.image_pattern])
         .pipe(
             size
             ({
@@ -31,7 +31,7 @@ gulp.task("copy::source", () =>
 gulp.task("gulp::move-html", () => 
 {
     /*log("=== Moving Main Website files ===");*/
-    return gulp.src(["./.tmp/public_html_temp/**/*", "!./.tmp/public_html_temp/**/*.js", "!./.tmp/public_html_temp/**/*.css"])
+    return gulp.src(["./.tmp/public_html_temp/**/*"])
         .pipe(gulp.dest(paths.temp_site_dir))
     /*done();*/
 })

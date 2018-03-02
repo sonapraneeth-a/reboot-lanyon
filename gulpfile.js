@@ -27,7 +27,7 @@ gulp.task("gulp::build", gulp.series("copy::source", "build::gulp-site", "gulp::
 gulp.task("gulp::sass", gulp.series("gulp::copy-sass", "gulp::move-sass", "gulp::build-sass"));
 gulp.task("gulp::css", gulp.series("gulp::copy-css", "gulp::compress-css", "gulp::concat-css"));
 gulp.task("gulp::assets", gulp.series("gulp::copy-assets", "gulp::copy-images", "gulp::compress-images"));
-gulp.task("gulp::js", gulp.series("gulp::copy-js", "gulp::compress-scripts", "gulp::concat-blog", "gulp::concat-project"));
+gulp.task("gulp::js", gulp.series("gulp::compress-scripts", "gulp::concat-blog", "gulp::concat-project"));
 gulp.task("build::gulp::site", gulp.series("gulp::clean", "gulp::build", "gulp::sass", "gulp::css", "gulp::js", "gulp::assets"));
 gulp.task("serve::gulp-site", gulp.series("gulp::serve", "gulp::watch"));
 gulp.task("default::gulp", gulp.series("build::gulp::site", "serve::gulp-site"));
