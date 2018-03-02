@@ -1,5 +1,6 @@
 .project-item
 {
+    @extend .card;
     padding: 0.5rem;
     position: relative;
     @include from($laptop)

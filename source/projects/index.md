@@ -8,7 +8,7 @@ title: Projects
 <div class="projects">
     {% for project in sorted_projects reversed %}
     {% if project.publish == true %}
-    <div class="project-item card">
+    <div class="project-item">
         <div class="project-header">
             <h1 class="project-title">
                 <a href="{{site.baseurl}}{{project.url}}">{{project.title}}</a>

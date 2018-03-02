@@ -1,5 +1,6 @@
 .blog-item
 {
+    @extend .card;
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     $header-font-size: 1.5rem;

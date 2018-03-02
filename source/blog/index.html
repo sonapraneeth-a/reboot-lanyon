@@ -24,7 +24,7 @@ style: |
 <div class="posts" id="main-content">
 {% for post in paginator.posts %}
 {% if post.publish == true %}
-<div class="blog-item card" style="display: block;">
+<div class="blog-item" style="display: block;">
     <header class="blog-header">
     <h5 class="blog-title"><a href="{{site.baseurl}}{{post.url}}" lang="en">{{post.title}}</a></h5>
     <div class="blog-info">
