@@ -2,6 +2,18 @@
 {
     display: flex;
     flex-direction: row;
+    background-color: $navbar-background;
+    color: $navbar-foreground;
+    @if $flat == false
+    {
+        border-bottom-right-radius: $navbar-radius;
+        border-bottom-left-radius: $navbar-radius;
+    }
+    @include until($navbar-visible-screen)
+    {
+        background-color: $navbar-foreground;
+        color: $navbar-background;
+    }
 }
 
 .navbar-content
@@ -15,12 +27,12 @@
 {
     display: flex;
     margin: $navbar-margin 0;
-    padding: 0.2rem 1rem;
+    padding: $navbar-head-vertical-pad $navbar-head-horiz-pad;
     color: $navbar-font-color;
     /*display: inline-block;*/
     a
     {
-        font-size: 1.5rem;
+        font-size: $navbar-header-size;
         color: $navbar-font-color;
         text-decoration: none;
         &:hover
@@ -32,11 +44,11 @@
     {
         width: 100%;
         justify-content: center;
-        background-color: $background-color;
-        color: $foreground-color;
+        background-color: $navbar-foreground;
+        color: $navbar-background;
         a
         {
-            color: $foreground-color;
+            color: $navbar-background;
         }
     }
 }
@@ -65,12 +77,13 @@
     li a
     {
         text-decoration: none;
-        padding: 0.25rem 0.5rem;
+        padding: $navbar-item-vertical-pad $navbar-item-horiz-pad;
         display: block;
         color: $navbar-font-color;
+        border-bottom: 0.15rem solid $navbar-background;
         &:hover
         {
-            background-color: darken($foreground-color, 25%);
+            background-color: darken($navbar-background, 25%);
             border-bottom: 0.15rem solid $navbar-font-color;
         }
         &::before
@@ -84,7 +97,7 @@
     }
     .navbar-menu-active
     {
-        background-color: darken($foreground-color, 25%);
+        background-color: darken($navbar-background, 25%);
         border-bottom: 0.15rem solid $navbar-font-color;
     }
     @include until($navbar-visible-screen)
