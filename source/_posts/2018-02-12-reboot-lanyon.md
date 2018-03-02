@@ -77,7 +77,7 @@ int main(int argc, char **argv)
 ```bash
 $ sudo apt-get install vim-gnome
 ```
-
+{% gist a4a981d0e479446054ee38cad99f5383 %}
 
 ## $\LaTeX$
 
