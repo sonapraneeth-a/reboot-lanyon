@@ -1,28 +1,28 @@
-<aside class="content-header center">
+<aside class="center">
 <nav class="navbar" role="navigation">
-  <div class="navbar-content">
-  <h1 class="navbar-header"><a href="{{site.baseurl}}{{site.menu[0].url}}">{{site.title}}</a></h1>
-  <ul class="navbar-menu">
-  {% for menu in site.menu %}
-      <li>
-          <a href="{{site.baseurl}}{{menu.url}}" class="{{menu.class}}
-          {% if menu.url != '/' and page.url contains menu.url %}
-          navbar-menu-active
-          {% elsif page.url == menu.url %}
-          navbar-menu-active
-          {% endif %}">&nbsp;{{menu.title}}
-          </a>
-          <!--{% if menu.sublinks %}dropdown{% endif %}
-          {% if menu.sublinks %}
-          <ul class="dropdown-content">
-              {% for sublink in menu.sublinks %}
-              <li><a href="{{site.baseurl}}{{sublink.url}}">{{sublink.title}}</a></li>
-              {% endfor %}
-          </ul>
-          {% endif %}-->
-      </li>
-  {% endfor %}
-  </ul>
-  </div>
+    <div class="navbar-content">
+        <h1 class="navbar-header"><a href="{{site.baseurl}}{{site.menu[0].url}}">{{site.title}}</a></h1>
+        <ul class="navbar-menu">
+        {% for menu in site.menu %}
+            <li>
+                <a href="{{site.baseurl}}{{menu.url}}" class="{{menu.class}}
+                {% if menu.url != '/' and page.url contains menu.url %}
+                navbar-menu-active
+                {% elsif page.url == menu.url %}
+                navbar-menu-active
+                {% endif %}">&nbsp;{{menu.title}}
+                </a>
+                <!--{% if menu.sublinks %}dropdown{% endif %}
+                {% if menu.sublinks %}
+                <ul class="dropdown-content">
+                    {% for sublink in menu.sublinks %}
+                    <li><a href="{{site.baseurl}}{{sublink.url}}">{{sublink.title}}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}-->
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
 </nav>
 </aside>
