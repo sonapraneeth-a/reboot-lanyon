@@ -124,8 +124,8 @@
     padding: 0;
     li
     {
-        border-top: 0.05rem solid lighten($background-color, 10%);
-        border-right: 0.05rem solid lighten($foreground-color, 10%);
+        /*border-bottom: 0.05rem solid lighten($background-color, 10%);
+        border-right: 0.05rem solid $foreground-color;*/
     }
     li a
     {
@@ -135,27 +135,34 @@
         display: block;
         background-color: $foreground-color;
         color: $background-color;
+        /*border-left: 0.5rem solid $foreground-color;*/
+        border-bottom: 0.05rem solid darken($background-color, 30%);
+        border-right: 0.05rem solid $foreground-color;
         &:hover
         {
             background-color: darken($foreground-color, 25%);
             color: $background-color;
+            border-left: 0.5rem solid $background-color;
         }
     }
     .sidebar-active
     {
         background-color: darken($foreground-color, 25%);
         color: $background-color;
+        border-left: 0.5rem solid $background-color;
     }
     .sidebar-dropdown-content
     {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        /*border-top: 0.05rem solid lighten($background-color, 10%);
+        border-right: 0.05rem solid $foreground-color;*/
         li a
         {
             padding-left: 2.75rem;
             font-size: 0.8rem;
-      }
+        }
     }
 }
 
@@ -198,8 +205,8 @@
 .sidebar-item
 {
     padding: 0.5rem 0.75rem;
-    &:first-of-type
+    /*&:first-of-type
     {
         border-top: 0.05rem solid lighten($background-color, 10%);
-    }
+    }*/
 }
