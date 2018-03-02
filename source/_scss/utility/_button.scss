@@ -3,6 +3,7 @@
     background-color: $foreground-color;
     color: $background-color;
     font-weight: bold;
+    text-decoration: none;
     @if flat == false
     {
         border-radius: $button-radius;
@@ -13,6 +14,7 @@
     font-family: $normal-font;
     &:hover
     {
+        text-decoration: none;
         background-color: darken($foreground-color, 10%);
     }
 }
