@@ -32,7 +32,7 @@
 <script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/projects.js" defer></script>
 <script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/search-project.js" defer></script>
 {% endif %}
-<script>
+<script type="text/javascript">
 (function()
 {
     var toggle = document.querySelector('.sidebar-toggle');
@@ -57,9 +57,9 @@
 {% if site.environment == "production" %}
 {% include google-analytics.html %}
 {% endif %}
-<script>
-    window.onload = function()
-    {
+<script type="text/javascript">
+    /*window.onload = function()
+    {*/
         var data = 
         {
             "name"         : "{{site.author.name}}",
@@ -80,5 +80,5 @@
         console.log(script);
         console.log(document.getElementsByTagName('head')[0]);
         document.getElementsByTagName('head')[0].appendChild(script);
-    }
+    /*}*/
 </script>
