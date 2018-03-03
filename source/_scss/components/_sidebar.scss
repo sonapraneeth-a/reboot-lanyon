@@ -35,7 +35,8 @@
 .sidebar-toggle::before
 {
     @include menu-icon;
-    font-size: 1.2rem;
+    font-size: $navbar-header-size - 0.32;
+    color: $sidebar-background;
 }
 
 .sidebar-toggle::after
@@ -49,18 +50,15 @@
 .sidebar-toggle
 {
     position: fixed;
-    @include until($tablet)
+    @include until($sidebar-visible-screen)
     {
         position: absolute;
-    }
-    cursor: pointer;
-    color: $normal-font-color;
-    top: $hamburger-position-top;
-    left: $hamburger-position-left;
-    @include until($tablet)
-    {
         left: 1rem;
     }
+    cursor: pointer;
+    color: $sidebar-font-color;
+    top: $hamburger-position-top;
+    left: $hamburger-position-left;
 }
 .sidebar-checkbox
 {
@@ -129,27 +127,27 @@
     }
     li a
     {
-        font-size: 1rem;
+        font-size: $sidebar-font-size;
         text-decoration: none;
         padding: 0.5rem 0.75rem;
         display: block;
-        background-color: $foreground-color;
-        color: $background-color;
+        background-color: $sidebar-background;
+        color: $sidebar-foreground;
         /*border-left: 0.5rem solid $foreground-color;*/
-        border-bottom: 0.05rem solid darken($background-color, 30%);
-        border-right: 0.05rem solid $foreground-color;
+        border-bottom: 0.05rem solid darken($sidebar-foreground, 30%);
+        border-right: 0.05rem solid $sidebar-background;
         &:hover
         {
-            background-color: darken($foreground-color, 25%);
-            color: $background-color;
-            border-left: 0.5rem solid $background-color;
+            background-color: darken($sidebar-background, 25%);
+            color: $sidebar-foreground;
+            /*border-left: 0.5rem solid $background-color;*/
         }
     }
     .sidebar-active
     {
-        background-color: darken($foreground-color, 25%);
-        color: $background-color;
-        border-left: 0.5rem solid $background-color;
+        background-color: darken($sidebar-background, 25%);
+        color: $sidebar-foreground;
+        /*border-left: 0.5rem solid $background-color;*/
     }
     .sidebar-dropdown-content
     {
@@ -161,7 +159,7 @@
         li a
         {
             padding-left: 2.75rem;
-            font-size: 0.8rem;
+            font-size: $sidebar-font-size - 0.2;
         }
     }
 }

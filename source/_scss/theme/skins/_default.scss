@@ -11,6 +11,11 @@ $navbar-foreground     : $background-color;
 $navbar-background     : $foreground-color;
 $navbar-font-color     : $navbar-foreground;
 
+/* Sidebar colors */
+$sidebar-foreground     : $background-color;
+$sidebar-background     : $foreground-color;
+$sidebar-font-color     : $sidebar-foreground;
+
 /* Component colors */
 $chip-background       : lighten($foreground-color, 10%);
 $chip-foreground       : darken($background-color, 5%);
