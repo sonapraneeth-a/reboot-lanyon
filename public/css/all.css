@@ -1828,8 +1828,9 @@ body {
 
 @media screen and (min-width:55.8rem) {
   .toc-box {
+    margin: 2rem 0;
     float: right;
-    width: 25%;
+    width: 28%;
     position: sticky;
     top: 1rem;
     overflow: hidden;
@@ -1956,6 +1957,17 @@ body {
   margin-left: .25rem;
   display: inline-block;
   font-size: 1.6rem;
+}
+
+.related-post-date {
+  vertical-align: top;
+  text-align: left;
+  display: inline-block;
+}
+
+.related-post-title {
+  margin-left: .25rem;
+  display: inline-block;
 }
 
 .relatedPosts {
