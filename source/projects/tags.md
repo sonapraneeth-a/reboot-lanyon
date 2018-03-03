@@ -8,28 +8,45 @@ title: Projects - Tags
 {% assign rawtags = "" %}
 {% for project in site.projects %}
 {% if project.publish == true %}
-{% assign ttags = project.tags | join:'|' | append:'|' %}
+{% assign ttags = project.tags | join:',' | append:',' %}
 {% assign rawtags = rawtags | append:ttags %}
 {% endif %}
 {% endfor %}
-{% assign rawtags = rawtags | split:'|' | sort %}
+{% assign rawtags = rawtags | split:',' | sort %}
 
 {% assign tags = "" %}
-{% for tag in rawtags %}
-{% if tag != "" %}
-{% if tags == "" %}
-{% assign tags = tag | split:'|' %}
+{% assign tags_count = "" %}
+{% assign count = 0 %}
+{% if rawtags.size > 0 %}
+{% assign tag_content = rawtags[0] %}
+{% assign size = rawtags.size | minus: 1 %}
+{% assign tags = rawtags[0] %}
+{% for index in (1..size) %}
+{% if rawtags[index] == tag_content %}
+{% assign count = count | plus: 1 %}
+{% else %}
+{% if tags_count == "" %}
+{% assign tags_count = count | plus: 1 | downcase %}
+{% else %}
+{% assign tags_count = tags_count | join:',' | append:',' | append: count | downcase | split:',' %}
 {% endif %}
-{% unless tags contains tag %}
-{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-{% endunless %}
+{% assign count = 1 %}
+{% assign tag_content = rawtags[index] %}
+{% assign tags = tags | join:',' | append:',' | append:rawtags[index] | split:',' %}
 {% endif %}
 {% endfor %}
+{% if count != 0 %}
+{% assign tags_count = tags_count | join:',' | append:',' | append: count | downcase | split:',' %}
+{% endif %}
+{% endif %}
+
 
 <div style="display: inline;">
-{% for tag in tags %}
+{% assign size_tags = tags.size | minus: 1 %}
+{% for index in (0..size_tags) %}
 <a href="#{{ tag | slugify: 'pretty' }}" class="tag">
-<span class="tag-content">{{ tag }}</span>
+<span class="tag-content">{{ tags[index] }}</span>
+<span class="tag-count">{{ tags_count[index] }}</span>
 </a>
 {% endfor %}
 </div>
