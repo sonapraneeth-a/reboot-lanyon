@@ -2,7 +2,7 @@
 {% comment %}
 {% seo %}
 {% endcomment %}
-<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+<link rel="canonical" href="{{site.baseurl}}{{ page.url | replace: 'index.html', '' }}">
 <!-- Open Graph -->
 <meta property="og:locale" content="en_us" />
 <meta property="og:title" content="{{ page.title }} | {{ site.title }}" />

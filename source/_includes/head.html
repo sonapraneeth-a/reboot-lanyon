@@ -12,11 +12,8 @@
     <title>
         {{ page.title }} | {{ site.title }}
     </title>
-    <!-- External style sheets -->
-    {% include fonts.html %}
-    <!--<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css">-->
-    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/all.css">
     {% include favicon-top.html %}
+    {% include stylesheets.html %}
     {% feed_meta %}
     <link rel="manifest" type="application/manifest+json" href="{{site.baseurl}}/manifest.json">
     {% include scripts-top.html %}
