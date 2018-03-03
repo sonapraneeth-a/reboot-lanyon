@@ -13,16 +13,6 @@ layout: default
 </section>-->
 
 <section class="projects">
-    <h1>{{page.title}}</h1>
-    <span class="date"><span class="date-content"><b>Completed: </b>{{page.date | date: "%B %Y"}}</span></span><span>{{page.institution}}</span>
-    <div>
-        {% for tag in page.tags %}
-        <a class="tag" href="/projects/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content">{{tag}}</span></a>
-        {% endfor %}
-        {% for category in page.categories %}
-        <a class="category" href="/projects/categories/#{{category | slugify: 'pretty'}}"><span class="category-content">{{category}}</span></a>
-        {% endfor %}
-    </div>
     <article class="project-content">
         <!-- https://github.com/allejo/jekyll-toc -->
         {% if page.toc %}
@@ -38,6 +28,16 @@ layout: default
         </section>
         {% endif %}
         <section class="actual-content">
+            <h1>{{page.title}}</h1>
+            <span class="date"><span class="date-content"><b>Completed: </b>{{page.date | date: "%B %Y"}}</span></span><span>{{page.institution}}</span>
+            <div>
+                {% for tag in page.tags %}
+                <a class="tag" href="/projects/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content">{{tag}}</span></a>
+                {% endfor %}
+                {% for category in page.categories %}
+                <a class="category" href="/projects/categories/#{{category | slugify: 'pretty'}}"><span class="category-content">{{category}}</span></a>
+                {% endfor %}
+            </div>
             {{content}}
             {% include sharing.html %}
         </section>
