@@ -91,3 +91,26 @@
         }
     }
 }
+
+@mixin heading($base-font-size, $base-vertical-margin)
+{
+    @for $i from 1 through 6
+    {
+        @if $i == 1
+        {
+            h#{$i}
+            {
+                font-size: $base-font-size;
+                margin: $base-vertical-margin 0;
+            }
+        }
+        @else
+        {
+            h#{$i}
+            {
+                font-size: $base-font-size - (($i - 1)*0.1);
+                margin: $base-vertical-margin - (($i - 1)*0.1) 0;
+            }
+        }
+    }
+}

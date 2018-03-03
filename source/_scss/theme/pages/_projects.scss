@@ -17,6 +17,7 @@
         min-height: 10rem;
         margin-bottom: 0.5rem;
     }
+    @include heading($navbar-header-size, $navbar-header-size - 0.2);
 }
 
 .project-item a

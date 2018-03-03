@@ -1,9 +1,16 @@
+.page
+{
+    width: 100%;
+}
+
+
 .page-content
 {
     margin-bottom: 4rem;
+    @include heading($navbar-header-size, $navbar-header-size - 0.2);
 }
 
 .page-title
 {
-    font-size: $header-font-size;
+    font-size: $navbar-header-size;
 }

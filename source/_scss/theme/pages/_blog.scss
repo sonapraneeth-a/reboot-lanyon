@@ -4,7 +4,7 @@
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     $header-font-size: 1.5rem;
-    h1
+    /*h1
     {
         font-size: $header-font-size - (0.2*1);
         margin: $header-font-size -(0.4*2) 0;
@@ -24,16 +24,17 @@
         font-size: $header-font-size - (0.2*4);
         margin: $header-font-size -(0.4*5) 0;
     }
-    /*h5
+    h5
     {
         font-size: $header-font-size - (0.2*5);
         margin: $header-font-size -(0.4*6) 0;
-    }*/
+    }
     h6
     {
         font-size: $header-font-size - (0.2*6);
         margin: $header-font-size -(0.4*7) 0;
-    }
+    }*/
+    @include heading($navbar-header-size, $navbar-header-size - 0.2);
 }
 
 .blog-header
@@ -46,8 +47,12 @@
     /*margin-bottom: 0.4rem;
     margin-top: 0.25rem;*/
     color: $header-font-color;
-    font-size: 1.2rem;
+    /*font-size: 1.2rem;*/
     margin: 0.5rem 0;
+    a
+    {
+        text-decoration: none;
+    }
 }
 
 .blog-info

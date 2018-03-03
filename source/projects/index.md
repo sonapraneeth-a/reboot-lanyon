@@ -10,9 +10,9 @@ title: Projects
     {% if project.publish == true %}
     <div class="project-item">
         <div class="project-header">
-            <h1 class="project-title">
+            <h2 class="project-title">
                 <a href="{{site.baseurl}}{{project.url}}">{{project.title}}</a>
-            </h1>
+            </h2>
             {% if project.status == "Ongoing" %}
             <div class="ribbon status-ongoing">
             {% elsif project.status == "Completed" %}

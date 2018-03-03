@@ -26,7 +26,7 @@ style: |
 {% if post.publish == true %}
 <div class="blog-item" style="display: block;">
     <header class="blog-header">
-    <h5 class="blog-title"><a href="{{site.baseurl}}{{post.url}}" lang="en">{{post.title}}</a></h5>
+    <h2 class="blog-title"><a href="{{site.baseurl}}{{post.url}}" lang="en">{{post.title}}</a></h2>
     <div class="blog-info">
         <span class="date"><span class="date-content"><b>Published:</b> {{post.published | date: "%d %B %Y"}} </span></span>
         <!--<span class="date">Modified: {{post.last_modified_at | date: "%d %B %Y %R IST"}}</span>-->
