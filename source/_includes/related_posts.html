@@ -24,8 +24,8 @@
 {% endif %}
 <div>
     <!--<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a> - {{post.published | date: "%d %B %Y"}}</p>-->
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+    <span class="related-post-date">{{ post.date | date_to_string }}</span>
+    <a class="related-post-title" href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
     </a>
 </div>
