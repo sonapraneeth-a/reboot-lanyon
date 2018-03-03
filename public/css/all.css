@@ -814,6 +814,15 @@ pre {
 .navbar {
   display: flex;
   flex-direction: row;
+  background-color: #2262c9;
+  color: #f7f9fc;
+}
+
+@media screen and (max-width:55.8rem) {
+  .navbar {
+    background-color: #f7f9fc;
+    color: #2262c9;
+  }
 }
 
 .navbar-content {
@@ -830,7 +839,7 @@ pre {
 }
 
 .navbar-header a {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #f7f9fc;
   text-decoration: none;
 }
@@ -873,9 +882,10 @@ pre {
 
 .navbar-menu li a {
   text-decoration: none;
-  padding: .25rem .5rem;
+  padding: .3rem .5rem;
   display: block;
   color: #f7f9fc;
+  border-bottom: .15rem solid #2262c9;
 }
 
 .navbar-menu li a:hover {
@@ -1047,13 +1057,13 @@ input[type=submit]:hover {
 
 .sidebar {
   position: fixed;
-  width: 12rem;
+  width: 14rem;
   height: 100%;
   top: 0;
   bottom: 0;
   background-color: #2262c9;
   color: #f7f9fc;
-  left: -12rem;
+  left: -14rem;
   z-index: 1;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -1079,7 +1089,8 @@ input[type=submit]:hover {
 .sidebar-toggle::before {
   font-family: FontAwesome;
   content: "\f0c9";
-  font-size: 1.2rem;
+  font-size: 1.28rem;
+  color: #2262c9;
 }
 
 @media screen and (min-width:105.6rem) {
@@ -1092,7 +1103,7 @@ input[type=submit]:hover {
 .sidebar-toggle {
   position: fixed;
   cursor: pointer;
-  color: #000;
+  color: #f7f9fc;
   top: 1.4rem;
   left: 1.2rem;
 }
@@ -1100,11 +1111,6 @@ input[type=submit]:hover {
 @media screen and (max-width:55.8rem) {
   .sidebar-toggle {
     position: absolute;
-  }
-}
-
-@media screen and (max-width:55.8rem) {
-  .sidebar-toggle {
     left: 1rem;
   }
 }
@@ -1115,19 +1121,19 @@ input[type=submit]:hover {
 }
 
 #sidebar-checkbox:checked~.sidebar {
-  -webkit-transform: translateX(12rem);
-  -moz-transform: translateX(12rem);
-  -ms-transform: translateX(12rem);
-  -o-transform: translateX(12rem);
-  transform: translateX(12rem);
+  -webkit-transform: translateX(14rem);
+  -moz-transform: translateX(14rem);
+  -ms-transform: translateX(14rem);
+  -o-transform: translateX(14rem);
+  transform: translateX(14rem);
 }
 
 #sidebar-checkbox:checked~.sidebar-toggle {
-  -webkit-transform: translateX(12rem);
-  -moz-transform: translateX(12rem);
-  -ms-transform: translateX(12rem);
-  -o-transform: translateX(12rem);
-  transform: translateX(12rem);
+  -webkit-transform: translateX(14rem);
+  -moz-transform: translateX(14rem);
+  -ms-transform: translateX(14rem);
+  -o-transform: translateX(14rem);
+  transform: translateX(14rem);
 }
 
 #sidebar-checkbox:checked~.sidebar-toggle::before {
@@ -1143,11 +1149,11 @@ input[type=submit]:hover {
 }
 
 #sidebar-checkbox:checked~.content {
-  -webkit-transform: translateX(12rem);
-  -moz-transform: translateX(12rem);
-  -ms-transform: translateX(12rem);
-  -o-transform: translateX(12rem);
-  transform: translateX(12rem);
+  -webkit-transform: translateX(14rem);
+  -moz-transform: translateX(14rem);
+  -ms-transform: translateX(14rem);
+  -o-transform: translateX(14rem);
+  transform: translateX(14rem);
 }
 
 .content {
@@ -1181,13 +1187,11 @@ input[type=submit]:hover {
 .sidebar-menu li a:hover {
   background-color: #102d5c;
   color: #f7f9fc;
-  border-left: .5rem solid #f7f9fc;
 }
 
 .sidebar-menu .sidebar-active {
   background-color: #102d5c;
   color: #f7f9fc;
-  border-left: .5rem solid #f7f9fc;
 }
 
 .sidebar-menu .sidebar-dropdown-content {
@@ -1770,32 +1774,50 @@ body {
   width: 100%;
 }
 
-.page {
-  width: 100%;
-}
-
 .content {
   margin-bottom: 4rem;
 }
 
-.content-header {
-  background-color: #2262c9;
-  color: #f7f9fc;
-}
-
-@media screen and (max-width:55.8rem) {
-  .content-header {
-    background-color: #f7f9fc;
-    color: #2262c9;
-  }
+.page {
+  width: 100%;
 }
 
 .page-content {
   margin-bottom: 4rem;
 }
 
+.page-content h1 {
+  font-size: 1.6rem;
+  margin: 1.4rem 0;
+}
+
+.page-content h2 {
+  font-size: 1.5rem;
+  margin: 1.3rem 0;
+}
+
+.page-content h3 {
+  font-size: 1.4rem;
+  margin: 1.2rem 0;
+}
+
+.page-content h4 {
+  font-size: 1.3rem;
+  margin: 1.1rem 0;
+}
+
+.page-content h5 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.page-content h6 {
+  font-size: 1.1rem;
+  margin: .9rem 0;
+}
+
 .page-title {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width:55.8rem) {
@@ -1827,33 +1849,33 @@ body {
 }
 
 .actual-content h1 {
-  font-size: 1.8rem;
-  margin: 1.2rem 0;
+  font-size: 1.6rem;
+  margin: 1.4rem 0;
 }
 
 .actual-content h2 {
-  font-size: 1.6rem;
-  margin: .8rem 0;
+  font-size: 1.5rem;
+  margin: 1.3rem 0;
 }
 
 .actual-content h3 {
   font-size: 1.4rem;
-  margin: .4rem 0;
+  margin: 1.2rem 0;
 }
 
 .actual-content h4 {
-  font-size: 1.2rem;
-  margin: 0 0;
+  font-size: 1.3rem;
+  margin: 1.1rem 0;
 }
 
 .actual-content h5 {
-  font-size: 1rem;
-  margin: -.4rem 0;
+  font-size: 1.2rem;
+  margin: 1rem 0;
 }
 
 .actual-content h6 {
-  font-size: .8rem;
-  margin: -.8rem 0;
+  font-size: 1.1rem;
+  margin: .9rem 0;
 }
 
 .toc-menu {
@@ -1933,6 +1955,7 @@ body {
   text-align: left;
   margin-left: .25rem;
   display: inline-block;
+  font-size: 1.6rem;
 }
 
 .relatedPosts {
@@ -2018,6 +2041,36 @@ body {
   }
 }
 
+.project-item h1 {
+  font-size: 1.6rem;
+  margin: 1.4rem 0;
+}
+
+.project-item h2 {
+  font-size: 1.5rem;
+  margin: 1.3rem 0;
+}
+
+.project-item h3 {
+  font-size: 1.4rem;
+  margin: 1.2rem 0;
+}
+
+.project-item h4 {
+  font-size: 1.3rem;
+  margin: 1.1rem 0;
+}
+
+.project-item h5 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.project-item h6 {
+  font-size: 1.1rem;
+  margin: .9rem 0;
+}
+
 .project-item a {
   text-decoration: none;
 }
@@ -2059,28 +2112,33 @@ body {
 }
 
 .blog-item h1 {
-  font-size: 1.3rem;
-  margin: .7rem 0;
+  font-size: 1.6rem;
+  margin: 1.4rem 0;
 }
 
 .blog-item h2 {
-  font-size: 1.1rem;
-  margin: .3rem 0;
+  font-size: 1.5rem;
+  margin: 1.3rem 0;
 }
 
 .blog-item h3 {
-  font-size: .9rem;
-  margin: -.1rem 0;
+  font-size: 1.4rem;
+  margin: 1.2rem 0;
 }
 
 .blog-item h4 {
-  font-size: .7rem;
-  margin: -.5rem 0;
+  font-size: 1.3rem;
+  margin: 1.1rem 0;
+}
+
+.blog-item h5 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
 }
 
 .blog-item h6 {
-  font-size: .3rem;
-  margin: -1.3rem 0;
+  font-size: 1.1rem;
+  margin: .9rem 0;
 }
 
 .blog-header {
@@ -2089,8 +2147,11 @@ body {
 
 .blog-title {
   color: #2262c9;
-  font-size: 1.2rem;
   margin: .5rem 0;
+}
+
+.blog-title a {
+  text-decoration: none;
 }
 
 .blog-info {
