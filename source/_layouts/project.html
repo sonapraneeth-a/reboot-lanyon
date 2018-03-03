@@ -32,10 +32,10 @@ layout: default
             <span class="date"><span class="date-content"><b>Completed: </b>{{page.date | date: "%B %Y"}}</span></span><span>{{page.institution}}</span>
             <div>
                 {% for tag in page.tags %}
-                <a class="tag" href="/projects/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content">{{tag}}</span></a>
+                <a class="tag" href="{{site.baseurl}}/projects/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content">{{tag}}</span></a>
                 {% endfor %}
                 {% for category in page.categories %}
-                <a class="category" href="/projects/categories/#{{category | slugify: 'pretty'}}"><span class="category-content">{{category}}</span></a>
+                <a class="category" href="{{site.baseurl}}/projects/categories/#{{category | slugify: 'pretty'}}"><span class="category-content">{{category}}</span></a>
                 {% endfor %}
             </div>
             {{content}}
