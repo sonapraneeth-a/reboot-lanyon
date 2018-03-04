@@ -174,7 +174,10 @@
     {
         &::after
         {
-            @include down-icon;
+            /*@include down-icon;*/
+            font-family: FontAwesome;
+            content: " \e806";
+            white-space: pre;
         }
     }
     .navbar-dropdown-content
@@ -183,7 +186,8 @@
         display: none;
         list-style: none;
         padding: 0;
-        margin: 0 -0.25rem; 
+        margin: 0;
+        left: -0.3rem; 
         z-index: 100;
         li
         {
