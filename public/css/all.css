@@ -623,39 +623,6 @@ pre {
   content: "\f0e0";
 }
 
-.dropdown::after {
-  font-family: FontAwesome;
-  content: "\e806";
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1000;
-}
-
-.dropdown-content a {
-  color: #000;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown:hover+.dropdown-content {
-  display: block;
-  margin-top: 0;
-  margin-left: -3rem;
-}
-
-.dropdown:hover+.dropdown-content li {
-  width: 100%;
-}
-
-.dropdown:hover+.dropdown-content li a {
-  display: block;
-  text-align: left;
-}
-
 .ribbon {
   position: absolute;
   right: -.32rem;
@@ -876,8 +843,17 @@ pre {
   box-sizing: border-box;
   position: relative;
   min-width: 4rem;
-  margin: auto .25rem;
+  margin: auto 0;
+  border: .1rem solid #85a4d6;
   color: #f7f9fc;
+}
+
+.navbar-menu li:not(:last-child) {
+  border-right: none;
+}
+
+.navbar-menu li:hover {
+  background-color: #102d5c;
 }
 
 .navbar-menu li a {
@@ -885,33 +861,10 @@ pre {
   padding: .3rem .5rem;
   display: block;
   color: #f7f9fc;
-  border-bottom: .15rem solid #2262c9;
-}
-
-.navbar-menu li a:hover {
-  background-color: #102d5c;
-  border-bottom: .15rem solid #f7f9fc;
-}
-
-.navbar-menu li a::before {
-  -webkit-transition: width .3s;
-  -moz-transition: width .3s;
-  -ms-transition: width .3s;
-  -o-transition: width .3s;
-  transition: width .3s;
-}
-
-.navbar-menu li a::after {
-  -webkit-transition: width .3s;
-  -moz-transition: width .3s;
-  -ms-transition: width .3s;
-  -o-transition: width .3s;
-  transition: width .3s;
 }
 
 .navbar-menu .navbar-menu-active {
   background-color: #102d5c;
-  border-bottom: .15rem solid #f7f9fc;
 }
 
 @media screen and (max-width:55.8rem) {
@@ -948,8 +901,73 @@ pre {
   }
 }
 
-.blog.dropdown {
+.navbar-menu .categories::before {
+  font-family: FontAwesome;
+  content: "\e801";
+}
+
+.navbar-menu .tags::before {
+  font-family: FontAwesome;
+  content: "\e802";
+}
+
+.navbar-menu .archives::before {
+  font-family: FontAwesome;
+  content: "\f1c6";
+}
+
+.navbar-menu .search::before {
+  font-family: FontAwesome;
+  content: "\e809";
+}
+
+.navbar-dropdown {
   margin-right: 0;
+}
+
+.navbar-dropdown>a::after {
+  font-family: FontAwesome;
+  content: "\e806";
+}
+
+.navbar-dropdown .navbar-dropdown-content {
+  position: absolute;
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0 -.25rem;
+  z-index: 100;
+}
+
+.navbar-dropdown .navbar-dropdown-content li {
+  box-sizing: border-box;
+  position: relative;
+  min-width: 4rem;
+  margin: auto .25rem;
+  color: #f7f9fc;
+  background-color: #2262c9;
+  border: .1rem solid #85a4d6;
+}
+
+.navbar-dropdown .navbar-dropdown-content li:not(:last-child) {
+  border-bottom: none;
+}
+
+.navbar-dropdown .navbar-dropdown-content li a {
+  text-decoration: none;
+  padding: .3rem .5rem;
+  display: block;
+  color: #f7f9fc;
+  border-bottom: .15rem solid #2262c9;
+}
+
+.navbar-dropdown .navbar-dropdown-content li a:hover {
+  background-color: #102d5c;
+  border-bottom: .15rem solid #f7f9fc;
+}
+
+.navbar-dropdown:hover>.navbar-dropdown-content {
+  display: block;
 }
 
 ::-webkit-input-placeholder {
