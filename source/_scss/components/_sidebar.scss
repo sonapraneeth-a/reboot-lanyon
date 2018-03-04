@@ -13,7 +13,14 @@
     background-color: $foreground-color;
     color: $background-color;
     /*box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);*/
-    left: -$sidebar-width;
+    @if $sidebar-pos == left
+    {
+        left: -$sidebar-width;
+    }
+    @else
+    {
+        right: -$sidebar-width;
+    }
     z-index: 1;
     @include transition(all 0.3s ease-in-out);
     /*transition: left 0.5s ease-in-out;*/
@@ -53,12 +60,26 @@
     @include until($sidebar-visible-screen)
     {
         position: absolute;
-        left: 1rem;
+        @if $sidebar-pos == left
+        {
+            left: 1rem;
+        }
+        @else
+        {
+            right: 1rem;
+        }
     }
     cursor: pointer;
     color: $sidebar-font-color;
     top: $hamburger-position-top;
-    left: $hamburger-position-left;
+    @if $sidebar-pos == left
+    {
+        left: $hamburger-position-horiz;
+    }
+    @else
+    {
+        right: $hamburger-position-horiz;
+    }
 }
 .sidebar-checkbox
 {
@@ -84,11 +105,25 @@
 
 #sidebar-checkbox:checked ~ .sidebar
 {
-    @include transform(translateX($sidebar-width));
+    @if sidebar-pos == left
+    {
+        @include transform(translateX($sidebar-width));
+    }
+    @else 
+    {
+        @include transform(translateX(-$sidebar-width));
+    }
 }
 #sidebar-checkbox:checked ~ .sidebar-toggle
 {
-    @include transform(translateX($sidebar-width));
+    @if sidebar-pos == left
+    {
+        @include transform(translateX($sidebar-width));
+    }
+    @else 
+    {
+        @include transform(translateX(-$sidebar-width));
+    }
 }
 #sidebar-checkbox:checked ~ .sidebar-toggle::before
 {
@@ -104,7 +139,14 @@
 }
 #sidebar-checkbox:checked ~ .content
 {
-    @include transform(translateX($sidebar-width));
+    @if sidebar-pos == left
+    {
+        @include transform(translateX($sidebar-width));
+    }
+    @else 
+    {
+        @include transform(translateX(-$sidebar-width));
+    }
 }
 
 .content
