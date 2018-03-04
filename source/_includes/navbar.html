@@ -10,12 +10,12 @@
                         {% elsif page.url == menu.url %}
                         navbar-menu-active
                         {% endif %}">
-                <a href="{{site.baseurl}}{{menu.url}}" class="{{menu.class}}">&nbsp;&nbsp;{{menu.title}}
+                <a href="{{site.baseurl}}{{menu.url}}" class="{{menu.class}}">&nbsp;{{menu.title}}
                 </a>
                 {% if menu.sublinks %}
                 <ul class="navbar-dropdown-content">
                     {% for sublink in menu.sublinks %}
-                    <li><a href="{{site.baseurl}}{{sublink.url}}" class="{{sublink.class}}">&nbsp;&nbsp;{{sublink.title}}</a></li>
+                    <li><a href="{{site.baseurl}}{{sublink.url}}" class="{{sublink.class}}">&nbsp;{{sublink.title}}</a></li>
                     {% endfor %}
                 </ul>
                 {% endif %}
