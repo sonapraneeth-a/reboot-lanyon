@@ -1,3 +1,5 @@
+/* http://blog.teamtreehouse.com/create-simple-css-dropdown-menu */
+
 .navbar
 {
     display: flex;
@@ -71,34 +73,45 @@
         box-sizing: border-box;
         position: relative;
         min-width: 4rem;
-        margin: auto 0.25rem;
+        /*margin: auto 0.25rem;*/
+        margin: auto 0;
+        border: 0.1rem solid darken($navbar-foreground, 30%);
+        &:not(:last-child)
+        {
+            border-right: none;
+        }
+        @if $flat == false
+        {
+            &:first-child
+            {
+                border-top-left-radius: 0.05rem;
+                border-bottom-left-radius: 0.05rem;
+            }
+            &:last-child
+            {
+                border-top-right-radius: 0.05rem;
+                border-bottom-right-radius: 0.05rem;
+            }
+        }
         color: $navbar-font-color;
-    }
-    li a
-    {
-        text-decoration: none;
-        padding: $navbar-item-vertical-pad $navbar-item-horiz-pad;
-        display: block;
-        color: $navbar-font-color;
-        border-bottom: 0.15rem solid $navbar-background;
         &:hover
         {
             background-color: darken($navbar-background, 25%);
-            border-bottom: 0.15rem solid $navbar-font-color;
+            /*border-bottom: 0.15rem solid $navbar-font-color;*/
         }
-        &::before
+        a
         {
-            @include transition(width 0.3s);
-        }
-        &::after
-        {
-            @include transition(width 0.3s);
+            text-decoration: none;
+            padding: $navbar-item-vertical-pad $navbar-item-horiz-pad;
+            display: block;
+            color: $navbar-font-color;
+            /*border-bottom: 0.15rem solid $navbar-background;*/
         }
     }
     .navbar-menu-active
     {
         background-color: darken($navbar-background, 25%);
-        border-bottom: 0.15rem solid $navbar-font-color;
+        /*border-bottom: 0.15rem solid $navbar-font-color;*/
     }
     @include until($navbar-visible-screen)
     {
@@ -106,36 +119,102 @@
     }
 }
 
-.navbar-menu .home::before
+.navbar-menu
 {
-    @include from($navbar-visible-screen)
+    .home::before
     {
-        @include home-icon;
+        @include from($navbar-visible-screen)
+        {
+            @include home-icon;
+        }
     }
-}
-.navbar-menu .blog::before
-{
-    @include from($navbar-visible-screen)
+    .blog::before
     {
-        @include pencil-icon;
+        @include from($navbar-visible-screen)
+        {
+            @include pencil-icon;
+        }
     }
-}
-.navbar-menu .project::before
-{
-    @include from($navbar-visible-screen)
+    .project::before
     {
-        @include code-icon;
+        @include from($navbar-visible-screen)
+        {
+            @include code-icon;
+        }
     }
-}
-.navbar-menu .contact::before
-{
-    @include from($navbar-visible-screen)
+    .contact::before
     {
-        @include phone-icon;
+        @include from($navbar-visible-screen)
+        {
+            @include phone-icon;
+        }
+    }
+    .categories::before
+    {
+        @include folder-open-icon;
+    }
+    .tags::before
+    {
+        @include tag-icon;
+    }
+    .archives::before
+    {
+        @include zip-icon;
+    }
+    .search::before
+    {
+        @include search-icon;
     }
 }
 
-.blog.dropdown
+.navbar-dropdown
 {
     margin-right: 0;
+    > a
+    {
+        &::after
+        {
+            @include down-icon;
+        }
+    }
+    .navbar-dropdown-content
+    {
+        position: absolute;
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0 -0.25rem; 
+        z-index: 100;
+        li
+        {
+            box-sizing: border-box;
+            position: relative;
+            min-width: 4rem;
+            margin: auto 0.25rem;
+            color: $navbar-font-color;
+            background-color: $navbar-background;
+            border: 0.1rem solid darken($navbar-foreground, 30%);
+            &:not(:last-child)
+            {
+                border-bottom: none;
+            }
+        }
+        li a
+        {
+            text-decoration: none;
+            padding: $navbar-item-vertical-pad $navbar-item-horiz-pad;
+            display: block;
+            color: $navbar-font-color;
+            border-bottom: 0.15rem solid $navbar-background;
+            &:hover
+            {
+                background-color: darken($navbar-background, 25%);
+                border-bottom: 0.15rem solid $navbar-font-color;
+            }
+        }
+    }
+    &:hover > .navbar-dropdown-content
+    {
+        display: block;
+    }
 }
