@@ -35,7 +35,7 @@
 .sidebar-toggle::before
 {
     @include menu-icon;
-    font-size: $navbar-header-size - 0.32;
+    font-size: $hamburger-size;
     color: $sidebar-background;
 }
 
