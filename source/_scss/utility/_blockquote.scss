@@ -6,7 +6,9 @@
     border-radius: $chip-radius;
 }
 
-.info
+@include component(block);
+
+/*.info
 {
     &.block
     {
@@ -46,4 +48,4 @@
         border: 0.05rem solid darken($warning, 20%);
         border-left: 0.25rem solid darken($warning, 20%);
     }
-}
+}*/

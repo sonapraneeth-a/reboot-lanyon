@@ -114,3 +114,24 @@
         }
     }
 }
+
+$utility: (
+    info: $info,
+    danger: $danger,
+    warning: $warning
+);
+
+@mixin component($component)
+{
+    @each $name, $value in $utility
+    {
+        .#{$component}-#{$name}
+        {
+            @extend .#{$component};
+            background-color: lighten($value, 40%);
+            border: 0.05rem solid darken($value, 20%);
+            border-left: 0.25rem solid darken($value, 20%);
+            color: darken($value, 20%);
+        }
+    }
+}
