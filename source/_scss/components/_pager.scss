@@ -1,6 +1,10 @@
 .pager
 {
     display: flex;
+    @include until($minitablet)
+    {
+        flex-direction: column;
+    }
     width: 100%;
     a
     {
@@ -20,12 +24,12 @@
 {
     display: flex;
     flex-direction: row;
-    @include until($tablet)
-    {
-        flex-direction: column;
-    }
     justify-content: center;
     width: 50%;
+    @include until($minitablet)
+    {
+        width: 100%;
+    }
     /*border: 1px solid $foreground-dark-color;*/
     box-sizing: border-box;
     margin: 0.25rem 0;
