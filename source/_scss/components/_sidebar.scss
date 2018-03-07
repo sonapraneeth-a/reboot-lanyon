@@ -105,7 +105,7 @@
 
 #sidebar-checkbox:checked ~ .sidebar
 {
-    @if sidebar-pos == left
+    @if $sidebar-pos == left
     {
         @include transform(translateX($sidebar-width));
     }
@@ -116,7 +116,7 @@
 }
 #sidebar-checkbox:checked ~ .sidebar-toggle
 {
-    @if sidebar-pos == left
+    @if $sidebar-pos == left
     {
         @include transform(translateX($sidebar-width));
     }
@@ -139,7 +139,7 @@
 }
 #sidebar-checkbox:checked ~ .content
 {
-    @if sidebar-pos == left
+    @if $sidebar-pos == left
     {
         @include transform(translateX($sidebar-width));
     }
