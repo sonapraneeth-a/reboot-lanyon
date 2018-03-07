@@ -50,7 +50,7 @@ style: |
         {% if text.size > 500 %}
         {% assign text = text | truncatewords: 20 %}
         {% endif %}
-        {{ text | markdownify }} ... <a style="display: inline;" href="{{site.baseurl}}{{post.url}}" lang="en">Read More</a>
+        {{ text | markdownify }} ... <a style="display: inline;" href="{{site.baseurl}}{{post.url}}" lang="en">Continue Reading</a>
     </article>
 </div>
 {% endif %}
