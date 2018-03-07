@@ -1,7 +1,7 @@
 @font-face {
   font-family: fontawesome;
-  src: url("../font/fontawesome.eot?52503358");
-  src: url("../font/fontawesome.eot?52503358#iefix") format('embedded-opentype'),url("../font/fontawesome.woff2?52503358") format('woff2'),url("../font/fontawesome.woff?52503358") format('woff'),url("../font/fontawesome.ttf?52503358") format('truetype'),url("../font/fontawesome.svg?52503358#fontawesome") format('svg');
+  src: url("../font/fontawesome.eot?88308769");
+  src: url("../font/fontawesome.eot?88308769#iefix") format('embedded-opentype'),url("../font/fontawesome.woff2?88308769") format('woff2'),url("../font/fontawesome.woff?88308769") format('woff'),url("../font/fontawesome.ttf?88308769") format('truetype'),url("../font/fontawesome.svg?88308769#fontawesome") format('svg');
   font-weight: 400;
   font-style: normal;
 }
@@ -53,6 +53,10 @@
   content: '\e806';
 }
 
+.icon-right-big:before {
+  content: '\e807';
+}
+
 .icon-cancel:before {
   content: '\e808';
 }
@@ -75,6 +79,10 @@
 
 .icon-up-open:before {
   content: '\e80d';
+}
+
+.icon-left-big:before {
+  content: '\e80e';
 }
 
 .icon-twitter:before {
@@ -231,83 +239,71 @@
 }
 
 @font-face {
-  font-family: Merriweather;
+  font-family: 'PT Serif';
   font-style: normal;
   font-weight: 400;
-  src: local("Merriweather Regular"),local("Merriweather-Regular"),url("https://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-cSZMZ-Y.woff2") format("woff2");
+  src: local("PT Serif"),local("PTSerif-Regular"),url("https://fonts.gstatic.com/s/ptserif/v9/EJRVQgYoZZY2vCFuvAFbzr-tdg.woff2") format("woff2");
   unicode-range: U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
 }
 
 @font-face {
-  font-family: Merriweather;
+  font-family: 'PT Serif';
   font-style: normal;
   font-weight: 400;
-  src: local("Merriweather Regular"),local("Merriweather-Regular"),url("https://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-eCZMZ-Y.woff2") format("woff2");
+  src: local("PT Serif"),local("PTSerif-Regular"),url("https://fonts.gstatic.com/s/ptserif/v9/EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2") format("woff2");
   unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
 }
 
 @font-face {
-  font-family: Merriweather;
+  font-family: 'PT Serif';
   font-style: normal;
   font-weight: 400;
-  src: local("Merriweather Regular"),local("Merriweather-Regular"),url("https://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-cyZMZ-Y.woff2") format("woff2");
-  unicode-range: U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;
-}
-
-@font-face {
-  font-family: Merriweather;
-  font-style: normal;
-  font-weight: 400;
-  src: local("Merriweather Regular"),local("Merriweather-Regular"),url("https://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-ciZMZ-Y.woff2") format("woff2");
+  src: local("PT Serif"),local("PTSerif-Regular"),url("https://fonts.gstatic.com/s/ptserif/v9/EJRVQgYoZZY2vCFuvAFYzr-tdg.woff2") format("woff2");
   unicode-range: U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
 }
 
 @font-face {
-  font-family: Merriweather;
+  font-family: 'PT Serif';
   font-style: normal;
   font-weight: 400;
-  src: local("Merriweather Regular"),local("Merriweather-Regular"),url("https://fonts.gstatic.com/s/merriweather/v19/u-440qyriQwlOrhSvowK_l5-fCZM.woff2") format("woff2");
+  src: local("PT Serif"),local("PTSerif-Regular"),url("https://fonts.gstatic.com/s/ptserif/v9/EJRVQgYoZZY2vCFuvAFWzr8.woff2") format("woff2");
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
 @font-face {
-  font-family: Merriweather;
+  font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;
-  src: local("Merriweather Bold"),local("Merriweather-Bold"),url("https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZVcf6lvg.woff2") format("woff2");
+  src: local("PT Serif Bold"),local("PTSerif-Bold"),url("https://fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qfVyvHpA.woff2") format("woff2");
   unicode-range: U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
 }
 
 @font-face {
-  font-family: Merriweather;
+  font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;
-  src: local("Merriweather Bold"),local("Merriweather-Bold"),url("https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZXMf6lvg.woff2") format("woff2");
+  src: local("PT Serif Bold"),local("PTSerif-Bold"),url("https://fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qWVyvHpA.woff2") format("woff2");
   unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
 }
 
 @font-face {
-  font-family: Merriweather;
+  font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;
-  src: local("Merriweather Bold"),local("Merriweather-Bold"),url("https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZV8f6lvg.woff2") format("woff2");
-  unicode-range: U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;
-}
-
-@font-face {
-  font-family: Merriweather;
-  font-style: normal;
-  font-weight: 700;
-  src: local("Merriweather Bold"),local("Merriweather-Bold"),url("https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZVsf6lvg.woff2") format("woff2");
+  src: local("PT Serif Bold"),local("PTSerif-Bold"),url("https://fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qcVyvHpA.woff2") format("woff2");
   unicode-range: U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
 }
 
 @font-face {
-  font-family: Merriweather;
+  font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;
-  src: local("Merriweather Bold"),local("Merriweather-Bold"),url("https://fonts.gstatic.com/s/merriweather/v19/u-4n0qyriQwlOrhSvowK_l52xwNZWMf6.woff2") format("woff2");
+  src: local("PT Serif Bold"),local("PTSerif-Bold"),url("https://fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qSVys.woff2") format("woff2");
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+figure.highlight {
+  margin: 1rem 0;
 }
 
 pre {
@@ -794,14 +790,13 @@ pre {
 
 .navbar-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   width: 100%;
 }
 
 .navbar-header {
   display: flex;
-  margin: .5rem 0;
-  padding: .2rem 1rem;
+  margin: .5rem .5rem;
   color: #f7f9fc;
 }
 
@@ -830,11 +825,10 @@ pre {
 
 .navbar-menu {
   list-style-type: none;
-  margin: .5rem 0;
-  margin-right: 1rem;
+  margin: .5rem .5rem;
   display: flex;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 0;
   color: #f7f9fc;
 }
@@ -1490,6 +1484,12 @@ input[type=submit]:hover {
   width: 100%;
 }
 
+@media screen and (max-width:41.6rem) {
+  .pager {
+    flex-direction: column;
+  }
+}
+
 .pager a {
   text-decoration: none;
   padding: .5rem;
@@ -1505,28 +1505,39 @@ input[type=submit]:hover {
 
 .post-page {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   width: 50%;
   box-sizing: border-box;
   margin: .25rem 0;
 }
 
-.previous-post {
-  justify-content: left;
+@media screen and (max-width:41.6rem) {
+  .post-page {
+    width: 100%;
+  }
 }
 
-.previous-post::before {
-  content: "< ";
-  white-space: pre;
+.post-page p {
+  margin: 0;
+}
+
+.previous-post {
+  margin: auto;
+  text-align: left;
+}
+
+.previous-post-title {
+  text-align: left;
 }
 
 .next-post {
-  justify-content: right;
+  margin: auto;
+  text-align: right;
 }
 
-.next-post::after {
-  content: " >";
-  white-space: pre;
+.next-post-title {
+  text-align: right;
 }
 
 .time::before {
@@ -1607,40 +1618,35 @@ input[type=submit]:hover {
   background-color: #1b4d9d;
 }
 
-.block {
+.block,
+.block-danger,
+.block-info,
+.block-warning {
   margin: 1rem 0;
   padding: .5rem 2rem;
   box-sizing: border-box;
   border-radius: .1rem;
 }
 
-.info.block {
+.block-info {
   background-color: #e1f3fe;
   border: .05rem solid #066aa7;
   border-left: .25rem solid #066aa7;
+  color: #066aa7;
 }
 
-.info.panel {
-  background-color: #e1f3fe;
-  border: .05rem solid #066aa7;
-}
-
-.danger.block {
+.block-danger {
   background-color: #fae5e7;
   border: .05rem solid #931a26;
   border-left: .25rem solid #931a26;
+  color: #931a26;
 }
 
-.success.block {
-  background-color: #b1ecbf;
-  border: .05rem solid #155624;
-  border-left: .25rem solid #155624;
-}
-
-.warning.block {
+.block-warning {
   background-color: #fff4d1;
   border: .05rem solid #9e7700;
   border-left: .25rem solid #9e7700;
+  color: #9e7700;
 }
 
 .panel {
@@ -1742,7 +1748,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Merriweather,-apple-system,BlinkMacSystemFont,"Segoe UI SemiLight",Ubuntu,"Ubuntu Mono",Roboto,Oxygen,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-family: "PT Serif",-apple-system,BlinkMacSystemFont,"Segoe UI SemiLight",Ubuntu,"Ubuntu Mono",Roboto,Oxygen,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   color: #2262c9;
   font-weight: 700;
 }
@@ -1800,6 +1806,7 @@ body {
 
 .page {
   width: 100%;
+  margin: 0 .5rem;
 }
 
 .page-content {
@@ -1996,11 +2003,6 @@ body {
 
 .hidden {
   visibility: hidden;
-}
-
-.actual-content figure {
-  margin-left: .6rem;
-  margin-right: .6rem;
 }
 
 .icon {
