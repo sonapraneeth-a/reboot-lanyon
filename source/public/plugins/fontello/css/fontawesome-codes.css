@@ -6,12 +6,14 @@
 .icon-pencil:before { content: '\e804'; } /* '' */
 .icon-phone:before { content: '\e805'; } /* '' */
 .icon-down-dir:before { content: '\e806'; } /* '' */
+.icon-right-big:before { content: '\e807'; } /* '' */
 .icon-cancel:before { content: '\e808'; } /* '' */
 .icon-search:before { content: '\e809'; } /* '' */
 .icon-heart:before { content: '\e80a'; } /* '' */
 .icon-print:before { content: '\e80b'; } /* '' */
 .icon-clock:before { content: '\e80c'; } /* '' */
 .icon-up-open:before { content: '\e80d'; } /* '' */
+.icon-left-big:before { content: '\e80e'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-rss:before { content: '\f09e'; } /* '' */
