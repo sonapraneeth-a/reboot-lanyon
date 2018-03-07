@@ -19,20 +19,32 @@
 .post-page
 {
     display: flex;
+    flex-direction: row;
+    @include until($tablet)
+    {
+        flex-direction: column;
+    }
     justify-content: center;
     width: 50%;
     /*border: 1px solid $foreground-dark-color;*/
     box-sizing: border-box;
     margin: 0.25rem 0;
+    p 
+    {
+        margin: 0;
+    }
 }
 .previous-post
 {
-    justify-content: left;
+    margin: auto;
+    text-align: left;
+    /*justify-content: left;*/
+    /*text-align: center;
     &::before
     {
         content: "< ";
         white-space: pre;
-    }
+    }*/
     /*&::before
     {
         @include left-icon;
@@ -42,14 +54,21 @@
         content: " ";
     }*/
 }
+.previous-post-title
+{
+    text-align: left;
+}
 .next-post
 {
-    justify-content: right;
+    /*justify-content: right;*/
+    /*text-align: right;
     &::after
     {
         content: " >";
         white-space: pre;
-    }
+    }*/
+    margin: auto;
+    text-align: right;
     /*&::before
     {
         content: " ";
@@ -58,4 +77,8 @@
     {
         @include right-icon;
     }*/
+}
+.next-post-title
+{
+    text-align: right;
 }

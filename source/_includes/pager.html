@@ -1,14 +1,22 @@
 <div class="pager">
 {% if page.previous.url %}
-    <a class="post-page previous-post" href="{{ page.previous.url | relative_url }}">
-        {{ page.previous.title | markdownify | remove: '<p>' | remove: '</p>' }}<!--Previous-->
+    <a class="post-page" href="{{ page.previous.url | relative_url }}" style="padding-left: 0;">
+        <div style="width: 10%;" class="previous-post"><i class="icon-left-big"></i></div>
+        <div style="width: 90%;">
+            <p style="text-align: left;">Previous</p>
+            <p style="text-align: left;" class="previous-post-title">{{ page.previous.title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        </div>
     </a>
 {% else %}
     <a class="post-page previous-post hidden">Previous</a>
 {% endif %}
 {% if page.next.url %}
-    <a class="post-page next-post" href="{{ page.next.url | relative_url }}">
-        {{ page.next.title | markdownify | remove: '<p>' | remove: '</p>' }}<!--Next-->
+    <a class="post-page" href="{{ page.next.url | relative_url }}" style="padding-right: 0;">
+        <div style="width: 90%;">
+            <p style="text-align: right;">Next</p>
+            <p style="text-align: right;" class="next-post-title">{{ page.next.title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        </div>
+        <div class="next-post" style="width: 10%;"><i class="icon-right-big"></i></div>
     </a>
 {% else %}
     <a class="hidden post-page next-post">Next</a>
