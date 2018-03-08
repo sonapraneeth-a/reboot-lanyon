@@ -115,10 +115,12 @@
     }
 }
 
+/* https://webdesign.tutsplus.com/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184 */
 $utility: (
     info: $info,
     danger: $danger,
-    warning: $warning
+    warning: $warning,
+    success: $success
 );
 
 @mixin component($component)
