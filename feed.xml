@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us"><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://sonapraneeth-a.github.io/reboot-lanyon/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonapraneeth-a.github.io/reboot-lanyon/" rel="alternate" type="text/html" hreflang="en-us" /><updated>2018-03-08T01:18:04+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/</id><title type="html">Reboot lanyon</title><subtitle>Demo site for Reboot lanyon theme</subtitle><author><name>Sona Praneeth Akula</name></author><entry><title type="html">Pointers in C</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/03/05/cpp-pointers/" rel="alternate" type="text/html" title="Pointers in C" /><published>2018-03-05T00:00:00+05:30</published><updated>2018-03-08T01:17:57+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/03/05/cpp-pointers</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/03/05/cpp-pointers/">&lt;p&gt;A pointer is a variable which contains the address of a variable. &lt;!--more--&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us"><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="https://sonapraneeth-a.github.io/reboot-lanyon/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonapraneeth-a.github.io/reboot-lanyon/" rel="alternate" type="text/html" hreflang="en-us" /><updated>2018-03-08T18:39:37+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/</id><title type="html">Reboot lanyon</title><subtitle>Demo site for Reboot lanyon theme</subtitle><author><name>Sona Praneeth Akula</name></author><entry><title type="html">Pointers in C</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/03/05/cpp-pointers/" rel="alternate" type="text/html" title="Pointers in C" /><published>2018-03-05T00:00:00+05:30</published><updated>2018-03-08T18:39:26+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/03/05/cpp-pointers</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/03/05/cpp-pointers/">&lt;p&gt;A pointer is a variable which contains the address of a variable. &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
@@ -34,7 +34,7 @@ Address of x: 200&lt;/p&gt;
 Address of x: 200&lt;br /&gt;
   Value of p: 1&lt;br /&gt;
 Address of p: 200&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="Pointers" /><summary type="html">A pointer is a variable which contains the address of a variable.</summary></entry><entry><title type="html">Test - Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/" rel="alternate" type="text/html" title="Test - Launching my new jekyll theme on website" /><published>2018-02-24T00:00:00+05:30</published><updated>2018-03-08T01:17:57+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="Pointers" /><summary type="html">A pointer is a variable which contains the address of a variable.</summary></entry><entry><title type="html">Test - Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/" rel="alternate" type="text/html" title="Test - Launching my new jekyll theme on website" /><published>2018-02-24T00:00:00+05:30</published><updated>2018-03-08T18:39:26+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;The theme is open-sourced under MIT License.&lt;/p&gt;
 
@@ -175,7 +175,7 @@ First line&lt;/p&gt;
 
 &lt;h3 id=&quot;navbar&quot;&gt;Navbar&lt;/h3&gt;
 
-&lt;p&gt;For large screen devices, one can use the navigation bar present at the top of the screen for accessing various links. The navigation bar also highlights the current active page in the menu.&lt;/p&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Recently, I’ve been working on a jekyll theme which has the look and feel of the lanyon theme and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.</summary></entry><entry><title type="html">CSS Components in Reload Lanyon</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/" rel="alternate" type="text/html" title="CSS Components in Reload Lanyon" /><published>2018-02-23T00:00:00+05:30</published><updated>2018-03-08T01:17:57+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/">&lt;p&gt;In this blog, we present various css options available in this theme &lt;!--more--&gt;&lt;/p&gt;
+&lt;p&gt;For large screen devices, one can use the navigation bar present at the top of the screen for accessing various links. The navigation bar also highlights the current active page in the menu.&lt;/p&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Recently, I’ve been working on a jekyll theme which has the look and feel of the lanyon theme and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.</summary></entry><entry><title type="html">CSS Components in Reload Lanyon</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/" rel="alternate" type="text/html" title="CSS Components in Reload Lanyon" /><published>2018-02-23T00:00:00+05:30</published><updated>2018-03-08T18:39:26+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/">&lt;p&gt;In this blog, we present various css options available in this theme &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h2&gt;
 
@@ -242,22 +242,22 @@ First line&lt;/p&gt;
 
 &lt;h3 id=&quot;styled-blockquotes&quot;&gt;Styled blockquotes&lt;/h3&gt;
 
-&lt;blockquote class=&quot;block info&quot;&gt;
+&lt;blockquote class=&quot;block-info&quot;&gt;
   &lt;p&gt;&lt;strong&gt;Information block&lt;/strong&gt;&lt;br /&gt;
 First line&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;blockquote class=&quot;block danger&quot;&gt;
+&lt;blockquote class=&quot;block-danger&quot;&gt;
   &lt;p&gt;&lt;strong&gt;Danger block&lt;/strong&gt;&lt;br /&gt;
 First line&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;blockquote class=&quot;block success&quot;&gt;
+&lt;blockquote class=&quot;block-success&quot;&gt;
   &lt;p&gt;&lt;strong&gt;Success block&lt;/strong&gt;&lt;br /&gt;
 First line&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;blockquote class=&quot;block warning&quot;&gt;
+&lt;blockquote class=&quot;block-warning&quot;&gt;
   &lt;p&gt;&lt;strong&gt;Warning block&lt;/strong&gt;&lt;br /&gt;
 First line&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -283,7 +283,7 @@ First line&lt;/p&gt;
   &lt;p class=&quot;panel-header&quot;&gt;Heading&lt;/p&gt;
   &lt;p class=&quot;panel-content&quot;&gt;Content&lt;/p&gt;
   &lt;p class=&quot;panel-footer&quot;&gt;Footer&lt;/p&gt;
-&lt;/div&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">In this blog, we present various css options available in this theme</summary></entry><entry><title type="html">Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/" rel="alternate" type="text/html" title="Launching my new jekyll theme on website" /><published>2018-02-12T00:00:00+05:30</published><updated>2018-03-08T01:17:57+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">In this blog, we present various css options available in this theme</summary></entry><entry><title type="html">Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/" rel="alternate" type="text/html" title="Launching my new jekyll theme on website" /><published>2018-02-12T00:00:00+05:30</published><updated>2018-03-08T18:39:26+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;The theme is open-sourced under MIT License.&lt;/p&gt;
 
@@ -382,22 +382,22 @@ First line&lt;/p&gt;
 
 &lt;h3 id=&quot;several-styled-blockquotes&quot;&gt;Several styled blockquotes&lt;/h3&gt;
 
-&lt;blockquote class=&quot;block info&quot;&gt;
+&lt;blockquote class=&quot;block-info&quot;&gt;
   &lt;p&gt;&lt;strong&gt;Information block&lt;/strong&gt;&lt;br /&gt;
 First line&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;blockquote class=&quot;block danger&quot;&gt;
+&lt;blockquote class=&quot;block-danger&quot;&gt;
   &lt;p&gt;&lt;strong&gt;Danger block&lt;/strong&gt;&lt;br /&gt;
 First line&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;blockquote class=&quot;block success&quot;&gt;
+&lt;blockquote class=&quot;block-success&quot;&gt;
   &lt;p&gt;&lt;strong&gt;Success block&lt;/strong&gt;&lt;br /&gt;
 First line&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;blockquote class=&quot;block warning&quot;&gt;
+&lt;blockquote class=&quot;block-warning&quot;&gt;
   &lt;p&gt;&lt;strong&gt;Warning block&lt;/strong&gt;&lt;br /&gt;
 First line&lt;/p&gt;
 &lt;/blockquote&gt;
