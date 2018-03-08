@@ -12,3 +12,6 @@ gh-pages/
 trash/
 __pycache__/
 _drafts/
+
+*.exe
+*.out
