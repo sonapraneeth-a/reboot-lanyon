@@ -1,4 +1,5 @@
 /* https://codepen.io/brent_g/pen/qrOXWx */
+
 .toc-box
 {
     @include until($tablet)
@@ -7,12 +8,23 @@
     }
     @include from($tablet)
     {
-        margin: 2rem 0;
-        float: right;
+        /*margin: 2rem 0;*/
+        margin-top: 2rem;
+        @if $post-toc-position == left
+        {
+            float: left;
+            margin-right: 0.5rem;
+        }
+        @else
+        {
+            float: right;
+        }
         width: 28%;
+        position: -webkit-sticky;
         position: sticky;
         top: 1rem;
         overflow: hidden;
+        /*@include clearfix;*/
     }
 }
 .actual-content
@@ -23,7 +35,12 @@
     }
     @include from($tablet)
     {
-        width: 70%;
+        /*position: absolute;*/
+        @if $post-toc-position == left
+        {
+            float: left;
+        }
+        width: 71%;
     }
     /*h1
     {
