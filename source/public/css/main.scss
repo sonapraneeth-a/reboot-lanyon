@@ -6,6 +6,7 @@
 @import 'theme/skins/{{site.skin | default: 'default'}}';
 @import 'config/all';
 @import 'highlight/all';
+@import 'gist/all';
 @import 'components/all';
 @import 'utility/all';
 @import 'theme/all';
