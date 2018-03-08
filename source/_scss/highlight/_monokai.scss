@@ -1,9 +1,7 @@
-figure.highlight {margin: 1rem 0;}
 pre {background-color: #292828;}
-pre.lineno { color: white; }
-pre, code { font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; white-space: pre; } 
-.highlight .lineno { color: grey; padding: 0 1rem; border-right: 0.05rem solid grey; }
-.highlight .code { padding: 0 1rem; }
+pre.lineno { color: grey; }
+pre, code { color: white;} 
+.highlight .lineno { color: grey; border-right: 0.05rem solid grey; }
 .highlight .hll { background-color: #49483e }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
