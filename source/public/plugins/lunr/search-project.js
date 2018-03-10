@@ -1,6 +1,10 @@
+---
+layout: null
+---
 // var load = function () {return JSON.parse(posts)};
 
 // var post = load();
+
 var idx = lunr(function ()
 {
     this.field('title')
@@ -56,6 +60,7 @@ search_input.addEventListener('keyup', function()
         {
             let ref = answer[index].ref;
             let title = projects[answer[index].ref].title;
+            let baseurl = "{{site.baseurl}}";
             let url = projects[answer[index].ref].url;
             let date = projects[answer[index].ref].date;
             let date_string = new Date(date).toDateString();
@@ -66,7 +71,9 @@ search_input.addEventListener('keyup', function()
             console.log("Date: " + date);
             console.log("Excerpt: " + excerpt);*/
             result_text += "<div class=\"blog-item\">"
-            result_text += "<h2 class=\"blog-title\"><a href=\"{{site.baseurl}}" + url + "\">";
+            console.log("URL: "  + url);
+            console.log("Base URL: "  + baseurl);
+            result_text += "<h2 class=\"blog-title\"><a href=\"" + baseurl + url + "\">";
             result_text += title+"</a></h2>";
             /*result_text += "<p class=\"blog-date\">"+date+"</p>";*/
             result_text += "<article class=\"blog-excerpt\">"+brief+"</article>";

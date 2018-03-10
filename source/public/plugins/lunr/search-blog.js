@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 // var load = function () {return JSON.parse(posts)};
 
 // var post = load();
@@ -27,7 +31,7 @@ var idx = lunr(function ()
 
 let search_input = document.getElementById('blog-search');
 let result_output = document.getElementById('blog-results');
-let main_content = document.getElementById('main-content');
+/*let main_content = document.getElementById('main-content');*/
 let query = search_input.value.toLowerCase();
 let result_text = "";
 /*if(query == "")
@@ -57,6 +61,7 @@ search_input.addEventListener('keyup', function()
         {
             let ref = answer[index].ref;
             let title = posts[answer[index].ref].title;
+            let baseurl = "{{site.baseurl}}";
             let url = posts[answer[index].ref].url;
             let date = posts[answer[index].ref].date;
             let date_string = new Date(date).toDateString();
@@ -67,7 +72,9 @@ search_input.addEventListener('keyup', function()
             console.log("Date: " + date);
             console.log("Excerpt: " + excerpt);*/
             result_text += "<div class=\"blog-item\">"
-            result_text += "<h2 class=\"blog-title\"><a href=\"{{site.baseurl}}" + url + "\">";
+            result_text += "<h2 class=\"blog-title\"><a href=\"" + baseurl + url + "\">";
+            /*console.log("Baseurl: " + baseurl);
+            console.log("URL: " + url);*/
             result_text += title+"</a></h2>";
             /*result_text += "<p class=\"blog-date\">"+date+"</p>";*/
             result_text += "<article class=\"blog-excerpt\">"+excerpt+"</article>";
@@ -75,13 +82,13 @@ search_input.addEventListener('keyup', function()
             result_text += "</div>";
         }
         result_output.innerHTML = result_text;
-        if(answer.length > 0)
+        /*if(answer.length > 0)
         {
             main_content.style.display = "none";
         }
         else
         {
             main_content.style.display = "block";
-        }
+        }*/
     }
 );
