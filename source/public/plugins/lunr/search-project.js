@@ -66,7 +66,7 @@ search_input.addEventListener('keyup', function()
             console.log("Date: " + date);
             console.log("Excerpt: " + excerpt);*/
             result_text += "<div class=\"blog-item\">"
-            result_text += "<h2 class=\"blog-title\"><a href=\"" + url + "\">";
+            result_text += "<h2 class=\"blog-title\"><a href=\"{{site.baseurl}}" + url + "\">";
             result_text += title+"</a></h2>";
             /*result_text += "<p class=\"blog-date\">"+date+"</p>";*/
             result_text += "<article class=\"blog-excerpt\">"+brief+"</article>";
