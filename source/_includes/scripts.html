@@ -82,14 +82,16 @@
         document.getElementsByTagName('head')[0].appendChild(script);
     /*}*/
 </script>
+{% if page.layout == 'post' or page.layout == 'project' %}
 <script>
-        var toc_box = document.querySelector('.toc-box');
-        var origOffsetY = toc_box.offsetTop;
-        console.log(origOffsetY);
-        function onScroll(e) {
-          window.scrollY >= origOffsetY ? toc_box.classList.add('fixed') :
-          toc_box.classList.remove('fixed');
-        }
-        
-        document.addEventListener('scroll', onScroll);
-        </script>
+    var toc_box = document.querySelector('.toc-box');
+    var origOffsetY = toc_box.offsetTop;
+    console.log(origOffsetY);
+    function onScroll(e) {
+        window.scrollY >= origOffsetY ? toc_box.classList.add('fixed') :
+        toc_box.classList.remove('fixed');
+    }
+    
+    document.addEventListener('scroll', onScroll);
+</script>
+{% endif %}
