@@ -7,7 +7,7 @@ gem "jekyll-feed"
 gem "jekyll-last-modified-at"
 gem "tzinfo"
 gem "tzinfo-data"
-gem "mm-jekyll-prism"
+#gem "mm-jekyll-prism"
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem "jemoji"
 gem "jekyll-seo-tag"
