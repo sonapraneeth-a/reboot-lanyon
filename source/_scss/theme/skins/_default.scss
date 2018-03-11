@@ -17,16 +17,18 @@ $sidebar-background     : $foreground-color;
 $sidebar-font-color     : $sidebar-foreground;
 
 /* Component colors */
-$chip-background       : lighten($foreground-color, 10%);
-$chip-foreground       : darken($background-color, 5%);
-$tag-background        : lighten($foreground-color, 10%);
-$tag-foreground        : darken($background-color, 5%);
-$category-background   : lighten($foreground-color, 10%);
-$category-foreground   : darken($background-color, 5%);
-$date-background       : lighten($foreground-color, 10%);
-$date-foreground       : darken($background-color, 5%);
-$time-background       : lighten($foreground-color, 10%);
-$time-foreground       : darken($background-color, 5%);
+$chip-background        : lighten($foreground-color, 10%);
+$chip-foreground        : darken($background-color, 5%);
+$tag-background         : lighten($foreground-color, 10%);
+$tag-foreground         : darken($background-color, 5%);
+$category-background    : lighten($foreground-color, 10%);
+$category-foreground    : darken($background-color, 5%);
+$date-background        : lighten($foreground-color, 10%);
+$date-foreground        : darken($background-color, 5%);
+$time-background        : lighten($foreground-color, 10%);
+$time-foreground        : darken($background-color, 5%);
+$institution-background : lighten($foreground-color, 10%);
+$institution-foreground : darken($background-color, 5%);
 
 /* Social icon colors */
 $facebook-foreground   : $facebook-color;

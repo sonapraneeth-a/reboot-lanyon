@@ -26,7 +26,11 @@ title: Projects
         <div>
             <!--<span>{{project.guide}}</span>-->
             <span class="date"><span class="date-content">{{project.date | date: "%B %Y"}}</span></span>
-            <span>{{project.institution}}</span>
+            {% if project.institution %}
+            <span class="institution">
+                <span class="institution-content">{{project.institution}}</span>
+            </span>
+            {% endif %}
             <!--<span>{{project.course}}</span>-->
         </div>
         <div>
@@ -34,7 +38,7 @@ title: Projects
             <a class="tag" href="{{site.baseurl}}/projects/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content">{{tag}}</span></a>
             {% endfor %}
         </div>
-        <div>
+        <div class="excerpt">
         {{project.brief}}
         </div>
     </div>

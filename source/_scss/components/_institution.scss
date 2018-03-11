@@ -1,0 +1,20 @@
+.institution::before
+{
+    @include institution-icon;
+    padding: 0.05rem 0.2rem;
+}
+
+/*.institution
+{
+    @extend .chip;
+    background: $institution-background;
+    color: $institution-foreground;
+    .institution-content
+    {
+        padding: 0.05rem 0.2rem;
+        display: inline-block;
+        font-size: 0.9rem;
+    }
+}*/
+
+@include chip-component(institution, $institution-background, $institution-foreground);

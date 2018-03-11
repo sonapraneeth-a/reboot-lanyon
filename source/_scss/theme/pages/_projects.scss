@@ -16,7 +16,7 @@
         width: 49%;
         float: left;
         box-sizing: border-box;
-        min-height: 15rem;
+        min-height: 18rem;
         @include clearfix;
     }
     @include until($laptop)
@@ -61,4 +61,9 @@
 {
     background-color: $background-color;
     margin: -1.4rem 0 0 0;
+}
+
+.excerpt
+{
+    padding: 0.5rem 0;
 }
