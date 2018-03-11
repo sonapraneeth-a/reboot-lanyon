@@ -26,10 +26,10 @@ gulp.task("gulp::serve", (done) =>
     browser_sync.init
     ({
         // open: false,
-        port: 4000, // change port to match default Jekyll
+        port: 8000, // change port to match default Jekyll
         ui:
         {
-            port: 4001
+            port: 8001
         },
         server: paths.temp_site_dir,
         ghostMode: false, // do not mirror clicks, reloads, etc. (performance optimization)
@@ -44,8 +44,16 @@ gulp.task("gulp::serve", (done) =>
 gulp.task("gulp::watch", (done) => {
     // Watch site settings
     gulp.watch([paths.md_files_glob, paths.html_files_glob, paths.yml_files_glob], gulp.series("gulp::build", reload));
+    gulp.watch([paths.source_dir + "public/plugins/lunr/posts.js", paths.source_dir + "public/plugins/lunr/search-blog.js",
+                paths.source_dir + "public/plugins/lunr/projects.js", paths.source_dir + "public/plugins/lunr/search-project.js"], 
+                gulp.series("gulp::build", "gulp::js", reload));
     gulp.watch(paths.css_files_glob, gulp.series("gulp::css", reload));
-    gulp.watch(paths.js_files_glob, gulp.series("gulp::js", reload));
+    gulp.watch([paths.js_files_glob,
+                "!" + paths.source_dir + "public/plugins/lunr/posts.js", 
+                "!" + paths.source_dir + "public/plugins/lunr/search-blog.js",
+                "!" + paths.source_dir + "public/plugins/lunr/projects.js", 
+                "!" + paths.source_dir + "public/plugins/lunr/search-project.js"], 
+                gulp.series("gulp::js", reload));
     gulp.watch(paths.scss_files_glob, gulp.series("gulp::sass", "gulp::css", reload));
     gulp.watch(paths.image_files_glob, gulp.series("gulp::assets", reload));
     done();
