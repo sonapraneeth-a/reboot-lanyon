@@ -58,7 +58,7 @@ With the use of markdown, it is easy to generate the web-page content without wo
 
 This is a test code written in C++ highlighted using monokai theme using rouge highlighter.
 
-{% highlight cpp linenos hl_lines="5 7" %}
+{% highlight cpp linenos hl_lines="5 9" %}
 /* Multiline 
  * comment 
  */
@@ -93,19 +93,19 @@ Currently four utility classes are suported in theme: info, danger, success and 
 
 > **Information block**  
 > First line
-{: .block .info}
+{: .block-info}
 
 > **Danger block**  
 > First line
-{: .block .danger}
+{: .block-danger}
 
 > **Success block**  
 > First line
-{: .block .success}
+{: .block-success}
 
 > **Warning block**  
 > First line
-{: .block .warning}
+{: .block-warning}
 
 ### Several styled text
 
@@ -129,3 +129,39 @@ For convinience on mobile devices, there is a sidebar which can be toggled on/of
 ### Navbar
 
 For large screen devices, one can use the navigation bar present at the top of the screen for accessing various links. The navigation bar also highlights the current active page in the menu.
+
+## Carousel
+
+<div class="carousel-box">
+    <div class="carousel-buttons">
+        <button class="carousel-prev">
+            <span class="carousel-offscreen">Previous</span>
+        </button>
+        <button class="carousel-next">
+            <span class="carousel-offscreen">Next</span>
+        </button>
+    </div>
+    <ol class="carousel-content">
+        <li class="carousel-current"><!--<img src="http://lorempixel.com/200/200" alt="1">-->1</li>
+        <li><!--<img src="http://lorempixel.com/200/200" alt="2">-->2</li>
+        <li><!--<img src="http://lorempixel.com/200/200" alt="3">-->3</li>
+        <li><!--<img src="http://lorempixel.com/200/200" alt="4">-->4</li>
+    </ol>
+</div>
+
+<div class="carousel-box">
+    <div class="carousel-buttons">
+        <button class="carousel-prev">
+            <span class="carousel-offscreen">Previous</span>
+        </button>
+        <button class="carousel-next">
+            <span class="carousel-offscreen">Next</span>
+        </button>
+    </div>
+    <ol class="carousel-content">
+        <li class="carousel-current"><!--<img src="http://lorempixel.com/200/200" alt="1">-->5</li>
+        <li><!--<img src="http://lorempixel.com/200/200" alt="2">-->6</li>
+        <li><!--<img src="http://lorempixel.com/200/200" alt="3">-->7</li>
+        <li><!--<img src="http://lorempixel.com/200/200" alt="4">-->8</li>
+    </ol>
+</div>

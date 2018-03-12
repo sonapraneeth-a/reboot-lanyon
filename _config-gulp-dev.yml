@@ -44,6 +44,7 @@ plugins:
     - jekyll-typogrify
     - jekyll/figure
     - jekyll-gist
+    - pygments
 #    - html-proofer
 markdown: kramdown
 kramdown:
@@ -58,7 +59,7 @@ kramdown:
 # sass:
 #     style         : compressed
 #     sass_dir      : _scss
-highlighter       : rouge
+highlighter       : pygments
 timezone          : Asia/Kolkata
 encoding          : "utf-8"
 markdown_ext      : "markdown,mkdown,mkdn,mkd,md"
