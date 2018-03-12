@@ -26,6 +26,14 @@ gulp.task("build::gulp-site", (done) =>
     done();
 });
 
+gulp.task("build::netlify-site", (done) =>
+{
+    log("=== Generating public_html site ===");
+    log("=== Development website -- Netlify ===");
+    shell.exec("bundle exec jekyll build --config _config-netlify.yml --incremental");
+    done();
+});
+
 // "gulp gulp::build-sass --prod" -- Compiles the sass code to css (main.css)
 gulp.task("gulp::build-sass", () => {
     /*log("=== Compiling SASS ===");*/
