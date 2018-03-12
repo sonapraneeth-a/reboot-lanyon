@@ -160,3 +160,9 @@
   font-family: FontAwesome;
   content: "\f0d5";
 }
+
+@mixin institution-icon
+{
+  font-family: FontAwesome;
+  content: "\f19c";
+}
