@@ -3,7 +3,7 @@
     <a class="post-page" href="{{ page.previous.url | relative_url }}" style="padding-left: 0;">
         <div style="width: 12%;" class="previous-post"><i class="icon-left-big"></i></div>
         <div style="width: 88%;">
-            <p style="text-align: left;">Previous</p>
+            <p style="text-align: left; font-weight: bold;">Previous</p>
             <p style="text-align: left;" class="previous-post-title">{{ page.previous.title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
         </div>
     </a>
@@ -13,7 +13,7 @@
 {% if page.next.url %}
     <a class="post-page" href="{{ page.next.url | relative_url }}" style="padding-right: 0;">
         <div style="width: 88%;">
-            <p style="text-align: right;">Next</p>
+            <p style="text-align: right; font-weight: bold;">Next</p>
             <p style="text-align: right;" class="next-post-title">{{ page.next.title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
         </div>
         <div class="next-post" style="width: 12%;"><i class="icon-right-big"></i></div>
