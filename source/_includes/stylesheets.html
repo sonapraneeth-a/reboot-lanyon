@@ -9,6 +9,8 @@
 {% endif %}
 {% if site.environment == "development" %}
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css">
-<!--<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css">-->
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/fontello/css/fontawesome.css">
+{% endif %}
+{% if site.environment == "development" and site.highlighter == "prism"  %}
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css">
 {% endif %}
