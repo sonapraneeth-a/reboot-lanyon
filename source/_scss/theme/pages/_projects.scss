@@ -17,13 +17,13 @@
         float: left;
         box-sizing: border-box;
         min-height: 18rem;
-        @include clearfix;
     }
     @include until($laptop)
     {
         min-height: 10rem;
         margin-bottom: 0.5rem;
     }
+    @include clearfix;
     @include heading($navbar-header-size, $navbar-header-size - 0.2);
 }
 
