@@ -1,0 +1,95 @@
+/* https://codepo8.github.io/simple-carousel/carousel-images.html */
+.carousel-box
+{
+    font-family: helvetica,sans-serif;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+    margin: 1rem 0;
+    border: 1px solid $foreground-color;
+    box-shadow: 2px 2px 10px $foreground-color;
+    overflow: hidden;
+    button
+    {
+        /*border: none;*/
+        display: none;
+    }
+}
+
+.carousel-content
+{
+    margin: 0;
+    padding: 0;
+    li
+    {
+        font-size: 100px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+    }
+}
+
+.carousel-active
+{
+    height: 200px;
+    li
+    {
+        position: absolute;
+        /*top: 130px;*/
+        padding: 1rem 0;
+        opacity: 0;
+        transform: scale(0);
+        transition: 1s;
+        &.carousel-current
+        {
+            /*top: 30px;*/
+            opacity: 1;
+            transform: scale(1);
+            transition: 1s;
+        }
+    }
+    .carousel-buttons
+    {
+        padding: 5px 0;
+        background-color: $foreground-color;
+        text-align: center;
+        z-index: 10;
+        position: relative;
+    }
+    button
+    {
+        display: inline-block;
+    }
+}
+
+.carousel-offscreen
+{
+    position: absolute;
+    left: -2000px;
+}
+
+.carousel-prev
+{
+    &::after
+    {
+        @include double-left-icon;
+    }
+    left: 0;
+    border: 1px solid $background-color;
+    color: $background-color;
+    background-color: $foreground-color;
+}
+
+.carousel-next
+{
+    &::after
+    {
+        @include double-right-icon;
+    }
+    right: 0;
+    border: 1px solid $background-color;
+    color: $background-color;
+    background-color: $foreground-color;
+}
