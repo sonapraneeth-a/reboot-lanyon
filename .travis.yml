@@ -4,7 +4,8 @@ rvm:
 
 before_script:
     - npm install
-    - npm link gulp
+    - npm install gulp
+    - npm link gulp@4.0.0
     - gulp --version
     - chmod +x ./scripts/travis/test.sh
 #   - chmod +x ./scripts/travis/run.sh
