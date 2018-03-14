@@ -3,20 +3,20 @@ rvm:
 - 2.4.2
 
 before_script:
- - chmod +x ./scripts/travis/build.sh
- - chmod +x ./scripts/travis/run.sh
+    - chmod +x ./scripts/travis/test.sh
+#   - chmod +x ./scripts/travis/run.sh
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-script: ./scripts/travis/build.sh
+script: ./scripts/travis/test.sh
 
 # branch whitelist, only for GitHub Pages
 branches:
-  only:
-  - jekyll_theme
+    only:
+    - master
 
 env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+    global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 sudo: false # route your build to the container-based infrastructure for a faster build
