@@ -5,9 +5,9 @@ set -x
 # bundle exec htmlproofer ./public_html --disable-external
 bundle install
 npm --version
-npm install -g gulp
+npm install gulp
 gulp --version
-npm install -g
+npm install
 gulp --version
 npm link gulp
 gulp --version
