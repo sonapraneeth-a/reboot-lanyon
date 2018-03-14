@@ -13,7 +13,7 @@ baseurl     : "/reboot-lanyon"
 url         : https://sonapraneeth-a.github.io
 favicon     :
 lang        : en-us
-version     : v0.46.0-alpha # Please use semantic versioning (semver.org)
+version     : v0.47.0-alpha # Please use semantic versioning (semver.org)
 repository  : sonapraneeth-a.github.io/reboot-lanyon
 environment : "production"
 build       : "jekyll"
