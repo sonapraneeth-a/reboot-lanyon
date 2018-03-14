@@ -44,7 +44,7 @@ title: Projects - Categories
 <div style="display: inline;">
 {% assign size_categories = categories.size | minus: 1 %}
 {% for index in (0..size_categories) %}
-<a href="#{{ category | slugify: 'pretty' }}" class="category">
+<a href="#{{ categories[index] | slugify: 'pretty' }}" class="category">
 <span class="category-content">{{ categories[index] }}</span>
 <span class="category-count">{{ categories_count[index] }}</span>
 </a>

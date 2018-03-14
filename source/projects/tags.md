@@ -44,7 +44,7 @@ title: Projects - Tags
 <div style="display: inline;">
 {% assign size_tags = tags.size | minus: 1 %}
 {% for index in (0..size_tags) %}
-<a href="#{{ tag | slugify: 'pretty' }}" class="tag">
+<a href="#{{ tags[index] | slugify: 'pretty' }}" class="tag">
 <span class="tag-content">{{ tags[index] }}</span>
 <span class="tag-count">{{ tags_count[index] }}</span>
 </a>
