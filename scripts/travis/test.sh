@@ -9,5 +9,7 @@ npm install -g gulp
 gulp --version
 npm install -g
 gulp --version
+npm link gulp
+gulp --version
 gulp build::netlify::site --prod
 bundle exec htmlproofer ./.tmp/public_html --disable-external
