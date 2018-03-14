@@ -7,7 +7,7 @@ title       : Reboot lanyon
 description : "Demo site for Reboot lanyon theme"
 tagline     : "Learner"
 baseurl     : ""
-url         : https://reboot-lanyon.netlify.com/
+url         : https://reboot-lanyon.netlify.com
 favicon     :
 lang        : en-us
 version     : v0.47.0-alpha # Please use semantic versioning (semver.org)
