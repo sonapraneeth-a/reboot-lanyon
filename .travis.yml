@@ -3,7 +3,7 @@ rvm:
 - 2.4.2
 
 before_script:
-    - npm install gulp
+    - npm install
     - npm link gulp
     - gulp --version
     - chmod +x ./scripts/travis/test.sh
