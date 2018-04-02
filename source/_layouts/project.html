@@ -29,7 +29,12 @@ layout: default
         {% endif %}
         <section class="actual-content">
             <h1>{{page.title}}</h1>
-            <span class="date"><span class="date-content"><b>Completed: </b>{{page.date | date: "%B %Y"}}</span></span><span>{{page.institution}}</span>
+            <span class="date"><span class="date-content"><b>Completed: </b>{{page.date | date: "%B %Y"}}</span></span>
+            {% if page.institution %}
+            <span class="institution">
+                <span class="institution-content">{{page.institution}}</span>
+            </span>
+            {% endif %}
             <div>
                 {% for tag in page.tags %}
                 <a class="tag" href="{{site.baseurl}}/projects/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content">{{tag}}</span></a>
