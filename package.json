@@ -1,6 +1,6 @@
 {
     "name": "reboot-lanyon",
-    "version": "v0.46.0-alpha",
+    "version": "v1.0.1-beta.1",
     "description": "Gulp task runner for Reboot Lanyon Jekyll theme",
     "main": "gulpfile.js",
     "scripts":
@@ -13,7 +13,7 @@
         "url": "git+https://github.com/sonapraneeth-a/reboot-lanyon.git"
     },
     "author": "Sona Praneeth Akula",
-    "license": "MIT",
+    "license": "GPLv3",
     "bugs":
     {
         "url": "https://github.com/sonapraneeth-a/reboot-lanyon/issues"
