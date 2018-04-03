@@ -10,4 +10,9 @@
 .projects
 {
     /*margin: 0 $main-content-margin;*/
+    @include from($laptop)
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
