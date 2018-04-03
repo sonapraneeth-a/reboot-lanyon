@@ -2,9 +2,6 @@
 window.onscroll = function() {scrollFunction();}
 function scrollFunction()
 {
-    console.log(document.documentElement.scrollTop);
-    console.log(window.innerHeight);
-    console.log(document.documentElement.scrollHeight);
     if(document.documentElement.scrollTop + window.innerHeight >= document.documentElement.scrollHeight)
     { document.getElementById("scroll").style.display = "none"; }
     else if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
