@@ -10,7 +10,7 @@ baseurl     : ""
 url         : https://reboot-lanyon.netlify.com
 favicon     :
 lang        : en-us
-version     : v1.0.1-beta.1 # Please use semantic versioning (semver.org)
+version     : v1.0.2-beta.1 # Please use semantic versioning (semver.org)
 repository  : sonapraneeth-a.github.io/reboot-lanyon
 environment : "production"
 build       : "gulp"
