@@ -1,7 +1,7 @@
 @font-face {
   font-family: fontawesome;
-  src: url("../font/fontawesome.eot?88308769");
-  src: url("../font/fontawesome.eot?88308769#iefix") format('embedded-opentype'),url("../font/fontawesome.woff2?88308769") format('woff2'),url("../font/fontawesome.woff?88308769") format('woff'),url("../font/fontawesome.ttf?88308769") format('truetype'),url("../font/fontawesome.svg?88308769#fontawesome") format('svg');
+  src: url("../font/fontawesome.eot?71813661");
+  src: url("../font/fontawesome.eot?71813661#iefix") format('embedded-opentype'),url("../font/fontawesome.woff2?71813661") format('woff2'),url("../font/fontawesome.woff?71813661") format('woff'),url("../font/fontawesome.ttf?71813661") format('truetype'),url("../font/fontawesome.svg?71813661#fontawesome") format('svg');
   font-weight: 400;
   font-style: normal;
 }
@@ -139,6 +139,10 @@
 
 .icon-github:before {
   content: '\f113';
+}
+
+.icon-bank:before {
+  content: '\f19c';
 }
 
 .icon-file-archive:before {
@@ -853,14 +857,102 @@ body .gist .pl-iu {
   content: "\f0e0";
 }
 
+.carousel-box {
+  font-family: helvetica,sans-serif;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  margin: 1rem 0;
+  border: 1px solid #2262c9;
+  box-shadow: 2px 2px 10px #2262c9;
+  overflow: hidden;
+}
+
+.carousel-box button {
+  display: none;
+}
+
+.carousel-content {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-content li {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.carousel-active {
+  height: 200px;
+}
+
+.carousel-active li {
+  position: absolute;
+  padding: 1rem 0;
+  opacity: 0;
+  transform: scale(0);
+  transition: 1s;
+}
+
+.carousel-active li.carousel-current {
+  opacity: 1;
+  transform: scale(1);
+  transition: 1s;
+}
+
+.carousel-active .carousel-buttons {
+  padding: 5px 0;
+  background-color: #2262c9;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+.carousel-active button {
+  display: inline-block;
+}
+
+.carousel-offscreen {
+  position: absolute;
+  left: -2000px;
+}
+
+.carousel-prev {
+  left: 0;
+  border: 1px solid #f7f9fc;
+  color: #f7f9fc;
+  background-color: #2262c9;
+}
+
+.carousel-prev::after {
+  font-family: FontAwesome;
+  content: "\f100";
+}
+
+.carousel-next {
+  right: 0;
+  border: 1px solid #f7f9fc;
+  color: #f7f9fc;
+  background-color: #2262c9;
+}
+
+.carousel-next::after {
+  font-family: FontAwesome;
+  content: "\f101";
+}
+
 .ribbon {
   position: absolute;
   right: -.32rem;
   top: -.38rem;
   z-index: 1;
   overflow: hidden;
-  width: 20rem;
-  height: 20rem;
+  width: 7rem;
+  height: 7rem;
   text-align: right;
 }
 
@@ -933,6 +1025,7 @@ body .gist .pl-iu {
 .category,
 .chip,
 .date,
+.institution,
 .tag,
 .time {
   display: inline-block;
@@ -947,6 +1040,7 @@ body .gist .pl-iu {
 .category:hover,
 .chip:hover,
 .date:hover,
+.institution:hover,
 .tag:hover,
 .time:hover {
   text-decoration: none;
@@ -955,6 +1049,7 @@ body .gist .pl-iu {
 .category .chip-content,
 .chip .chip-content,
 .date .chip-content,
+.institution .chip-content,
 .tag .chip-content,
 .time .chip-content {
   padding: .05rem .2rem;
@@ -965,6 +1060,7 @@ body .gist .pl-iu {
 .category .chip-count,
 .chip .chip-count,
 .date .chip-count,
+.institution .chip-count,
 .tag .chip-count,
 .time .chip-count {
   padding: .05rem .2rem;
@@ -1279,11 +1375,11 @@ input[type=submit]:hover {
 
 .scroll {
   position: fixed;
-  bottom: 1.2rem;
+  bottom: 1.7rem;
   right: .6rem;
   display: none;
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
   font-size: 1rem;
   text-align: center;
   vertical-align: middle;
@@ -1352,7 +1448,7 @@ input[type=submit]:hover {
   position: fixed;
   cursor: pointer;
   color: #f7f9fc;
-  top: 1.1rem;
+  top: 1rem;
   left: 1.2rem;
 }
 
@@ -1606,7 +1702,40 @@ input[type=submit]:hover {
 
 .footer {
   margin-top: 5rem;
-  margin-bottom: 5rem;
+  position: fixed;
+  bottom: 0;
+  background: #2262c9;
+  color: #f7f9fc;
+  width: 100%;
+  font-size: .8rem;
+  z-index: 1000;
+}
+
+.footer p {
+  margin: .3rem auto;
+}
+
+.footer a {
+  text-decoration: underline;
+  color: #f7f9fc;
+}
+
+.footer span {
+  padding: 0 .1rem;
+}
+
+@media screen and (max-width:70.1rem) {
+  #last-modified {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (max-width:55.8rem) {
+  #powered-by {
+    visibility: hidden;
+    display: none;
+  }
 }
 
 .date::before {
@@ -1819,6 +1948,24 @@ input[type=submit]:hover {
 .card .card-content,
 .project-item .card-content {
   font-size: 1rem;
+}
+
+.institution::before {
+  font-family: FontAwesome;
+  content: "\f19c";
+  padding: .05rem .2rem;
+}
+
+.institution {
+  background-color: #3f7cde;
+  color: #e4ebf6;
+  border: .05rem solid #3f7cde;
+}
+
+.institution .institution-content {
+  padding: .05rem .2rem;
+  display: inline-block;
+  font-size: .9rem;
 }
 
 .info {
@@ -2048,7 +2195,6 @@ body {
 }
 
 .page {
-  width: 100%;
   margin: 0 .5rem;
 }
 
@@ -2253,8 +2399,11 @@ body {
   visibility: hidden;
 }
 
-.projects {
-  margin: 0 .5rem;
+@media screen and (min-width:70.1rem) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .icon {
@@ -2306,21 +2455,18 @@ body {
 
 @media screen and (min-width:70.1rem) {
   .project-item {
-    margin: .5rem .5rem .5rem 0;
     width: 49%;
     float: left;
     box-sizing: border-box;
-    min-height: 15rem;
+    min-height: 18rem;
   }
 
-  .project-item:after,
-  .project-item:before {
-    content: '';
-    display: table;
+  .project-item:nth-child(odd) {
+    margin: .5rem .5rem .5rem 0;
   }
 
-  .project-item:after {
-    clear: both;
+  .project-item:nth-child(even) {
+    margin: .5rem 0 .5rem .5rem;
   }
 }
 
@@ -2329,6 +2475,16 @@ body {
     min-height: 10rem;
     margin-bottom: .5rem;
   }
+}
+
+.project-item:after,
+.project-item:before {
+  content: '';
+  display: table;
+}
+
+.project-item:after {
+  clear: both;
 }
 
 .project-item h1 {
@@ -2396,9 +2552,23 @@ body {
   margin: -1.4rem 0 0 0;
 }
 
+.excerpt {
+  padding: .5rem 0;
+}
+
 .blog-item {
   margin-bottom: .5rem;
   padding: .5rem;
+}
+
+.blog-item:after,
+.blog-item:before {
+  content: '';
+  display: table;
+}
+
+.blog-item:after {
+  clear: both;
 }
 
 .blog-item h1 {
