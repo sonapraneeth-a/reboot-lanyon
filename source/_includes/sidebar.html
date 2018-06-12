@@ -4,7 +4,7 @@
     <ul class="sidebar-menu">
     {% for menu in site.menu %}
         <li>
-            <a href="{{site.baseurl}}{{menu.url}}" {% if url == menu.url %}sidebar-active{% endif %}"><i class="fa fa-{{menu.icon}}"></i>&nbsp;&nbsp;{{menu.title}}
+            <a href="{{site.baseurl}}{{menu.url}}" class="{% if url == menu.url %}sidebar-active{% endif %}"><i class="fa fa-{{menu.icon}}"></i>&nbsp;&nbsp;{{menu.title}}
             </a>
             {% if menu.sublinks %}
             <ul class="sidebar-dropdown-content">
