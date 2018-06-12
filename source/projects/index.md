@@ -26,17 +26,17 @@ icon: file-code
         </div>
         <div>
             <!--<span>{{project.guide}}</span>-->
-            <span class="date"><span class="date-content">{{project.date | date: "%B %Y"}}</span></span>
+            <span class="date"><span class="date-content"><i class="fa fa-calendar-alt"></i>&nbsp;{{project.date | date: "%B %Y"}}</span></span>
             {% if project.institution %}
             <span class="institution">
-                <span class="institution-content">{{project.institution}}</span>
+                <span class="institution-content"><i class="fa fa-university"></i>{{project.institution}}</span>
             </span>
             {% endif %}
             <!--<span>{{project.course}}</span>-->
         </div>
         <div>
             {% for tag in project.tags %}
-            <a class="tag" href="{{site.baseurl}}/projects/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content">{{tag}}</span></a>
+            <a class="tag" href="{{site.baseurl}}/projects/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content"><i class="fa fa-tag"></i>&nbsp;{{tag}}</span></a>
             {% endfor %}
         </div>
         <div class="excerpt">

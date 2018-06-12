@@ -29,14 +29,14 @@ style: |
     <header class="blog-header">
     <h2 class="blog-title"><a href="{{site.baseurl}}{{post.url}}" lang="en">{{post.title}}</a></h2>
     <div class="blog-info">
-        <span class="date"><span class="date-content"><b>Published:</b> {{post.published | date: "%d %B %Y"}} </span></span>
+        <span class="date"><span class="date-content"><i class="fa fa-calendar-alt"></i>&nbsp;<b>Published:</b> {{post.published | date: "%d %B %Y"}} </span></span>
         <!--<span class="date">Modified: {{post.last_modified_at | date: "%d %B %Y %R IST"}}</span>-->
         <!--<span>
             {% for tag in post.tags %}
             <a class="tag" href="/blog/tags/#{{tag | slugify: 'pretty'}}">{{tag}}</a>
             {% endfor %}
         </span>-->
-        <span class="time"><span class="time-content">{% assign words_per_minute = site.words_per_minute | default: 200 %}
+        <span class="time"><span class="time-content"><i class="fa fa-clock"></i>&nbsp;{% assign words_per_minute = site.words_per_minute | default: 200 %}
         {% assign words = post.content | strip_html | number_of_words %}
         {% if words < words_per_minute %}
         ~1&nbsp;min&nbsp;read

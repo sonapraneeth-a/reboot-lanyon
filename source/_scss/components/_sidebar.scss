@@ -44,6 +44,10 @@
     /*@include menu-icon;*/
     font-family: 'Font Awesome 5 Free';
     content: "\f0c9";
+    font-weight: 700;
+    /*content: "";
+    background-image: -webkit-linear-gradient(to bottom, #4e869e, #4e869e 20%, #fff 20%, #fff 40%, #4e869e 40%, #4e869e 60%, #fff 60%, #fff 80%, #4e869e 80%, #4e869e 100%);
+    background-image: linear-gradient(to bottom, #4e869e, #4e869e 20%, #fff 20%, #fff 40%, #4e869e 40%, #4e869e 60%, #fff 60%, #fff 80%, #4e869e 80%, #4e869e 100%);*/
     font-size: $hamburger-size;
     //color: $sidebar-background;
 }
@@ -72,6 +76,7 @@
         }
     }
     cursor: pointer;
+    display: block;
     color: $sidebar-background;
     top: $hamburger-position-top;
     @if $sidebar-pos == left

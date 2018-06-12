@@ -1,32 +1,56 @@
 .facebook::before
 {
-    @include facebook-icon;
+    /*@include facebook-icon;*/
+    font-family: "Font Awesome 5 Brands";
+    content: "\f39e";
+    font-weight: 400;
 }
 .gplus::before
 {
-    @include gplus-icon;
+    /*@include gplus-icon;*/
+    font-family: "Font Awesome 5 Brands";
+    content: "\f0d5";
+    font-weight: 400;
 }
 .twitter::before
 {
-    @include twitter-icon;
+    /*@include twitter-icon;*/
+    font-family: "Font Awesome 5 Brands";
+    content: "\f099";
+    font-weight: 400;
 }
 .linkedin::before
 {
-    @include linkedin-icon;
+    /*@include linkedin-icon;*/
+    font-family: "Font Awesome 5 Brands";
+    content: "\f0e1";
+    font-weight: 400;
 }
 .github::before
 {
-    @include github-icon;
+    /*@include github-icon;*/
+    font-family: "Font Awesome 5 Brands";
+    content: "\f09b";
+    font-weight: 400;
 }
 .rss::before
 {
-    @include rss-icon;
+    /*@include rss-icon;*/
+    font-family: "Font Awesome 5 Free";
+    content: "\f09e";
+    font-weight: 400;
 }
 .print::before
 {
-    @include print-icon;
+    /*@include print-icon;*/
+    font-family: "Font Awesome 5 Free";
+    content: "\f02f";
+    font-weight: 700;
 }
 .email::before
 {
-    @include mail-icon;
+    /*@include mail-icon;*/
+    font-family: "Font Awesome 5 Free";
+    content: "\f0e0";
+    font-weight: 400;
 }

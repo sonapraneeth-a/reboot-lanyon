@@ -1,6 +1,6 @@
 .category::before
 {
-    @include folder-open-icon;
+    /*@include folder-open-icon;*/
     padding: 0.05rem 0.2rem;
     color: $category-foreground;
 }
