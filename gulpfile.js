@@ -32,8 +32,9 @@ gulp.task("gulp::js", gulp.series("gulp::compress-scripts", "gulp::concat-blog",
 gulp.task("build::gulp::site", gulp.series("gulp::clean", "gulp::build", "gulp::sass", "gulp::css", "gulp::js", "gulp::assets"));
 gulp.task("build::netlify::site", gulp.series("gulp::clean", "gulp::netlify::build", "gulp::sass", "gulp::css", "gulp::js", "gulp::assets", "gulp::inline-source"));
 gulp.task("serve::gulp-site", gulp.series("gulp::serve", "gulp::watch"));
+gulp.task("serve::netlify-site", gulp.series("gulp::serve", "gulp::netlify::watch"));
 gulp.task("default::gulp", gulp.series("build::gulp::site", "serve::gulp-site"));
-gulp.task("default::netlify", gulp.series("build::netlify::site", "serve::gulp-site"));
+gulp.task("default::netlify", gulp.series("build::netlify::site", "serve::netlify-site"));
 
 // Default task (Either default::gulp or default::jekyll)
 /* gulp default : No compression/minification */

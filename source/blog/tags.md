@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog - Tags
+icon: pencil-alt
 ---
 
 <div style="display: inline;">

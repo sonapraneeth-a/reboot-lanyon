@@ -41,9 +41,11 @@
 
 .sidebar-toggle::before
 {
-    @include menu-icon;
+    /*@include menu-icon;*/
+    font-family: 'Font Awesome 5 Free';
+    content: "\f0c9";
     font-size: $hamburger-size;
-    color: $sidebar-background;
+    //color: $sidebar-background;
 }
 
 .sidebar-toggle::after
@@ -70,7 +72,7 @@
         }
     }
     cursor: pointer;
-    color: $sidebar-font-color;
+    color: $sidebar-background;
     top: $hamburger-position-top;
     @if $sidebar-pos == left
     {

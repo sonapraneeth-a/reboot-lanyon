@@ -57,4 +57,22 @@ gulp.task("gulp::watch", (done) => {
     gulp.watch(paths.scss_files_glob, gulp.series("gulp::sass", "gulp::css", reload));
     gulp.watch(paths.image_files_glob, gulp.series("gulp::assets", reload));
     done();
-})
+});
+
+gulp.task("gulp::netlify::watch", (done) => {
+    // Watch site settings
+    gulp.watch([paths.md_files_glob, paths.html_files_glob, paths.yml_files_glob], gulp.series("gulp::netlify::build", reload));
+    gulp.watch([paths.source_dir + "public/plugins/lunr/posts.js", paths.source_dir + "public/plugins/lunr/search-blog.js",
+                paths.source_dir + "public/plugins/lunr/projects.js", paths.source_dir + "public/plugins/lunr/search-project.js"], 
+                gulp.series("gulp::build", "gulp::js", reload));
+    gulp.watch(paths.css_files_glob, gulp.series("gulp::css", reload));
+    gulp.watch([paths.js_files_glob,
+                "!" + paths.source_dir + "public/plugins/lunr/posts.js", 
+                "!" + paths.source_dir + "public/plugins/lunr/search-blog.js",
+                "!" + paths.source_dir + "public/plugins/lunr/projects.js", 
+                "!" + paths.source_dir + "public/plugins/lunr/search-project.js"], 
+                gulp.series("gulp::js", reload));
+    gulp.watch(paths.scss_files_glob, gulp.series("gulp::sass", "gulp::css", reload));
+    gulp.watch(paths.image_files_glob, gulp.series("gulp::assets", reload));
+    done();
+});

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects - Categories
+icon: file-code
 ---
 
 <!-- https://codinfox.github.io/dev/2015/03/06/use-categories-and-categories-in-your-jekyll-based-github-pages/ -->

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog - Archives
+icon: pencil-alt
 ---
 
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}

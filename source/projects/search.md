@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects - Search
+icon: file-code
 ---
 
 <div class="search-content">

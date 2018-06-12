@@ -188,10 +188,10 @@
     {
         &::after
         {
-            /*@include down-icon;*/
-            font-family: FontAwesome;
-            content: " \e806";
-            white-space: pre;
+            /*@include down-icon;
+            font-family: "Font Awesome 5 Free";
+            content: "\F0D7";
+            white-space: pre;*/
         }
     }
     .navbar-dropdown-content
@@ -207,7 +207,7 @@
         {
             box-sizing: border-box;
             position: relative;
-            min-width: 4rem;
+            min-width: 8rem;
             margin: auto 0.25rem;
             color: $navbar-font-color;
             background-color: $navbar-background;

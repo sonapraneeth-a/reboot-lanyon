@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog - Categories
+icon: pencil-alt
 ---
 
 <div style="display: inline;">

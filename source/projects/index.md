@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects
+icon: file-code
 ---
 
 {% assign sorted_projects = site.projects | sort: "date" %}

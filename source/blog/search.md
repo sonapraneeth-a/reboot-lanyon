@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Blog - Search
+icon: pencil-alt
 ---
 
 <div class="search-content">

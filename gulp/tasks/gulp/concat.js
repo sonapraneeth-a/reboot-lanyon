@@ -37,7 +37,10 @@ gulp.task("gulp::concat-project", () =>
 gulp.task("gulp::concat-css", () =>
 {
     /*log("=== Concatenating CSS files ===");*/
-    return gulp.src([paths.temp_site_dir + "public/plugins/fontello/css/fontawesome.css", paths.temp_site_dir + "public/css/main.css"])
+    /*return gulp.src([paths.temp_site_dir + "public/plugins/fontello/css/fontawesome.css", paths.temp_site_dir + "public/css/main.css"])
+        .pipe(concatCss("all.css"))
+        .pipe(gulp.dest(paths.temp_site_dir + "public/css/"));*/
+    return gulp.src([paths.temp_site_dir + "public/css/main.css"])
         .pipe(concatCss("all.css"))
         .pipe(gulp.dest(paths.temp_site_dir + "public/css/"));
     /*done();*/

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Projects - Archives
+icon: file-code
 ---
 
 {% assign projectsByYear = site.projects | group_by_exp:"project", "project.date | date: '%Y'"  %}
