@@ -60,19 +60,19 @@ Currently four utility classes are suported in theme: info, danger, success and 
 
 > **Information block**  
 > First line
-{: .block .info}
+{: .block-info}
 
 > **Danger block**  
 > First line
-{: .block .danger}
+{: .block-danger}
 
 > **Success block**  
 > First line
-{: .block .success}
+{: .block-success}
 
 > **Warning block**  
 > First line
-{: .block .warning}
+{: .block-warning}
 
 ### Styled text
 

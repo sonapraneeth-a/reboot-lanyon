@@ -9,7 +9,7 @@ assets: /assets/blog/2018-02-12-new-jekyll-theme
 related: true
 comments: true
 sharing: true
-publish: true
+publish: false
 toc: true
 toc_label: "On this page"
 toc_icon: "table"  # corresponding Font Awesome icon name (without fa prefix)
@@ -58,12 +58,18 @@ With the use of markdown, it is easy to generate the web-page content without wo
 
 This is a test code written in C++ highlighted using monokai theme using rouge highlighter.
 
-{% highlight cpp linenos %}
+{% highlight cpp linenos hl_lines="5 9" %}
+/* Multiline 
+ * comment 
+ */
+
+// Single line comment
+
 #include <cstdio>
 
-int main()
+int main(int argc, char **argv)
 {
-    printf("Hello World\n");
+    printf("Hello World highlight\n");
     return 0;
 }
 {% endhighlight %}

@@ -4,10 +4,10 @@
 # https://www.chrisanthropic.com/blog/2016/creating-gem-based-themes-for-jekyll/
 Gem::Specification.new do |spec|
     spec.name                    = "reboot-lanyon"
-    spec.version                 = "v0.45.0-alpha"
+    spec.version                 = "v1.0.1-beta.1"
     spec.authors                 = ["Sona Praneeth Akula"]
   
-    spec.summary                 = %q{Simple theme}
+    spec.summary                 = %q{Jekyll theme following the style of lanyon. Much lighter and loads fast}
     spec.homepage                = "https://github.com/sonapraneeth-a/reboot-lanyon/"
     spec.license                 = "MIT"
   
