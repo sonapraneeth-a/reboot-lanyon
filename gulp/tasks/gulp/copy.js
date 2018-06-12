@@ -1,9 +1,11 @@
 "use strict";
-const gulp   = require("gulp");
-const argv   = require("yargs").argv;
-const size   = require("gulp-size");
-const log    = require("fancy-log");
-const rename = require("gulp-rename");
+const gulp      = require("gulp");
+const argv      = require("yargs").argv;
+const size      = require("gulp-size");
+const log       = require("fancy-log");
+const rename    = require("gulp-rename");
+const inlineCss = require('gulp-inline-css');
+const inlineSource = require('gulp-inline-source');
 
 // include paths file
 const paths = require("../../paths");
@@ -123,4 +125,44 @@ gulp.task("gulp::copy-images", () =>
         )
         .pipe(gulp.dest(paths.temp_site_dir + "public"))
     /*done();*/
+});
+
+gulp.task("gulp::inline-css", () =>
+{
+    /*log("=== Inlining css files into HTML files /*===");*/
+    return gulp.src([paths.temp_site_dir + "**/*.html", 
+                        "!"+paths.temp_site_dir+"public/plugins/fontello/demo.html"])
+        .pipe(
+            size
+            ({
+                title: "Copying:",
+                showFiles: true,
+                pretty: true
+            })
+        )
+        .pipe(inlineCss({
+                applyStyleTags: true,
+                applyLinkTags: true,
+                removeStyleTags: false,
+                removeLinkTags: false,
+                url: 'file://' + __dirname + '../../../../'+paths.temp_site_dir,
+                removeHtmlSelectors: false,
+                preserveMediaQueries: true,
+                applyWidthAttributes: true,
+                applyTableAttributes: true,
+            })
+        )
+        .pipe(gulp.dest([paths.temp_site_dir]));
+    /*done();*/
+});
+
+gulp.task("gulp::inline-source", function () {
+    var options = {
+        compress: true,
+        rootpath: __dirname + '../../../../'+paths.temp_site_dir,
+    };
+    return gulp.src([paths.temp_site_dir + "**/*.html", 
+                        "!"+paths.temp_site_dir+"public/plugins/fontello/demo.html"])
+        .pipe(inlineSource(options))
+        .pipe(gulp.dest([paths.temp_site_dir]));
 });

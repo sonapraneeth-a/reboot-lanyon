@@ -30,7 +30,7 @@ gulp.task("gulp::css", gulp.series("gulp::copy-css", "gulp::compress-css", "gulp
 gulp.task("gulp::assets", gulp.series("gulp::copy-assets", "gulp::copy-images", "gulp::compress-images"));
 gulp.task("gulp::js", gulp.series("gulp::compress-scripts", "gulp::concat-blog", "gulp::concat-project"));
 gulp.task("build::gulp::site", gulp.series("gulp::clean", "gulp::build", "gulp::sass", "gulp::css", "gulp::js", "gulp::assets"));
-gulp.task("build::netlify::site", gulp.series("gulp::clean", "gulp::netlify::build", "gulp::sass", "gulp::css", "gulp::js", "gulp::assets"));
+gulp.task("build::netlify::site", gulp.series("gulp::clean", "gulp::netlify::build", "gulp::sass", "gulp::css", "gulp::js", "gulp::assets", "gulp::inline-source"));
 gulp.task("serve::gulp-site", gulp.series("gulp::serve", "gulp::watch"));
 gulp.task("default::gulp", gulp.series("build::gulp::site", "serve::gulp-site"));
 gulp.task("default::netlify", gulp.series("build::netlify::site", "serve::gulp-site"));

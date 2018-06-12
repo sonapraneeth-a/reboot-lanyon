@@ -5,12 +5,12 @@
 <!--<link href="https://fonts.googleapis.com/css?family=Tenali+Ramakrishna|Ramabhadra&amp;subset=telugu" rel="stylesheet">-->
 <!-- External style sheets -->
 {% if site.environment == "production" and site.build == "gulp" %}
-<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/all.css">
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/all.css" inline>
 {% endif %}
 {% if site.environment == "development" %}
-<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css">
-<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/fontello/css/fontawesome.css">
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css" inline>
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/fontello/css/fontawesome.css" inline>
 {% endif %}
 {% if site.environment == "development" and site.highlighter == "prism"  %}
-<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css">
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css" inline>
 {% endif %}
