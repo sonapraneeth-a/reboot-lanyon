@@ -1,157 +1,3 @@
-@font-face {
-  font-family: fontawesome;
-  src: url("../font/fontawesome.eot?71813661");
-  src: url("../font/fontawesome.eot?71813661#iefix") format('embedded-opentype'),url("../font/fontawesome.woff2?71813661") format('woff2'),url("../font/fontawesome.woff?71813661") format('woff'),url("../font/fontawesome.ttf?71813661") format('truetype'),url("../font/fontawesome.svg?71813661#fontawesome") format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
-
-[class*=" icon-"]:before,
-[class^=icon-]:before {
-  font-family: fontawesome;
-  font-style: normal;
-  font-weight: 400;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  margin-left: .2em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-calendar:before {
-  content: '\e800';
-}
-
-.icon-folder-open:before {
-  content: '\e801';
-}
-
-.icon-tag:before {
-  content: '\e802';
-}
-
-.icon-home:before {
-  content: '\e803';
-}
-
-.icon-pencil:before {
-  content: '\e804';
-}
-
-.icon-phone:before {
-  content: '\e805';
-}
-
-.icon-down-dir:before {
-  content: '\e806';
-}
-
-.icon-right-big:before {
-  content: '\e807';
-}
-
-.icon-cancel:before {
-  content: '\e808';
-}
-
-.icon-search:before {
-  content: '\e809';
-}
-
-.icon-heart:before {
-  content: '\e80a';
-}
-
-.icon-print:before {
-  content: '\e80b';
-}
-
-.icon-clock:before {
-  content: '\e80c';
-}
-
-.icon-up-open:before {
-  content: '\e80d';
-}
-
-.icon-left-big:before {
-  content: '\e80e';
-}
-
-.icon-twitter:before {
-  content: '\f099';
-}
-
-.icon-facebook:before {
-  content: '\f09a';
-}
-
-.icon-rss:before {
-  content: '\f09e';
-}
-
-.icon-docs:before {
-  content: '\f0c5';
-}
-
-.icon-menu:before {
-  content: '\f0c9';
-}
-
-.icon-table:before {
-  content: '\f0ce';
-}
-
-.icon-gplus:before {
-  content: '\f0d5';
-}
-
-.icon-mail-alt:before {
-  content: '\f0e0';
-}
-
-.icon-linkedin:before {
-  content: '\f0e1';
-}
-
-.icon-angle-double-left:before {
-  content: '\f100';
-}
-
-.icon-angle-double-right:before {
-  content: '\f101';
-}
-
-.icon-angle-left:before {
-  content: '\f104';
-}
-
-.icon-angle-right:before {
-  content: '\f105';
-}
-
-.icon-github:before {
-  content: '\f113';
-}
-
-.icon-bank:before {
-  content: '\f19c';
-}
-
-.icon-file-archive:before {
-  content: '\f1c6';
-}
-
-.icon-file-code:before {
-  content: '\f1c9';
-}
 .center {
   margin: 0 auto;
 }
@@ -308,6 +154,390 @@
   font-weight: 700;
   src: local("PT Serif Bold"),local("PTSerif-Bold"),url("https://fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qSVys.woff2") format("woff2");
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/*!
+ * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+.fa,
+.fab,
+.fal,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: .75em;
+  vertical-align: -.0667em;
+}
+
+.fa-xs {
+  font-size: .75em;
+}
+
+.fa-sm {
+  font-size: .875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+
+.fa-ul>li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid .08em #eee;
+  border-radius: .1em;
+  padding: .2em .25em .15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fab.fa-pull-left,
+.fal.fa-pull-left,
+.far.fa-pull-left,
+.fas.fa-pull-left {
+  margin-right: .3em;
+}
+
+.fa.fa-pull-right,
+.fab.fa-pull-right,
+.fal.fa-pull-right,
+.far.fa-pull-right,
+.fas.fa-pull-right {
+  margin-left: .3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1,1);
+  transform: scale(-1,1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1,-1);
+  transform: scale(1,-1);
+}
+
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1,-1);
+  transform: scale(-1,-1);
+}
+
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-rotate-90 {
+  -webkit-filter: none;
+  filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.fa-calendar-alt:before {
+  content: "\f073";
+}
+
+.fa-home:before {
+  content: "\f015";
+}
+
+.fa-file-code:before {
+  content: "\f1c9";
+}
+
+.fa-pencil-alt:before {
+  content: "\f303";
+}
+
+.fa-mobile-alt:before {
+  content: "\f3cd";
+}
+
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+.fa-times:before {
+  content: "\f00d";
+}
+
+.fa-heart:before {
+  content: "\f004";
+}
+
+.fa-tag:before {
+  content: "\f02b";
+}
+
+.fa-folder-open:before {
+  content: "\f07c";
+}
+
+.fa-file-archive:before {
+  content: "\f1c6";
+}
+
+.fa-github:before {
+  content: "\f09b";
+}
+
+.fa-rss:before {
+  content: "\f09e";
+}
+
+.fa-linkedin-in:before {
+  content: "\f0e1";
+}
+
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-print:before {
+  content: "\f02f";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-google-plus-g:before {
+  content: "\f0d5";
+}
+
+.fa-university:before {
+  content: "\f19c";
+}
+
+.fa-facebook-f:before {
+  content: "\f39e";
+}
+
+.fa-search:before {
+  content: "\f002";
+}
+
+.fa-clock:before {
+  content: "\f017";
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.eot");
+  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.woff2") format("woff2"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.woff") format("woff"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.ttf") format("truetype"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.eot");
+  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.woff2") format("woff2"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.woff") format("woff"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.ttf") format("truetype"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.eot");
+  src: url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.woff2") format("woff2"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.woff") format("woff"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.ttf") format("truetype"),url("https://use.fontawesome.com/releases/v5.0.13/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0,0,0,0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 
 figure.highlight {
@@ -818,43 +1048,51 @@ body .gist .pl-iu {
 }
 
 .facebook::before {
-  font-family: FontAwesome;
-  content: "\f09a";
+  font-family: "Font Awesome 5 Brands";
+  content: "\f39e";
+  font-weight: 400;
 }
 
 .gplus::before {
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Brands";
   content: "\f0d5";
+  font-weight: 400;
 }
 
 .twitter::before {
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Brands";
   content: "\f099";
+  font-weight: 400;
 }
 
 .linkedin::before {
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Brands";
   content: "\f0e1";
+  font-weight: 400;
 }
 
 .github::before {
-  font-family: FontAwesome;
-  content: "\f113";
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09b";
+  font-weight: 400;
 }
 
 .rss::before {
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   content: "\f09e";
+  font-weight: 700;
 }
 
 .print::before {
-  font-family: FontAwesome;
-  content: "\e80b";
+  font-family: "Font Awesome 5 Free";
+  content: "\f02f";
+  font-weight: 700;
 }
 
 .email::before {
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
   content: "\f0e0";
+  font-weight: 400;
 }
 
 .carousel-box {
@@ -1069,8 +1307,6 @@ body .gist .pl-iu {
 }
 
 .tag::before {
-  font-family: FontAwesome;
-  content: "\e802";
   padding: .05rem .2rem;
   color: #e4ebf6;
 }
@@ -1249,12 +1485,6 @@ body .gist .pl-iu {
   margin-right: 0;
 }
 
-.navbar-dropdown>a::after {
-  font-family: FontAwesome;
-  content: " \e806";
-  white-space: pre;
-}
-
 .navbar-dropdown .navbar-dropdown-content {
   position: absolute;
   display: none;
@@ -1268,7 +1498,7 @@ body .gist .pl-iu {
 .navbar-dropdown .navbar-dropdown-content li {
   box-sizing: border-box;
   position: relative;
-  min-width: 4rem;
+  min-width: 8rem;
   margin: auto .25rem;
   color: #f7f9fc;
   background-color: #2262c9;
@@ -1431,10 +1661,10 @@ input[type=submit]:hover {
 }
 
 .sidebar-toggle::before {
-  font-family: FontAwesome;
+  font-family: 'Font Awesome 5 Free';
   content: "\f0c9";
+  font-weight: 700;
   font-size: 1.4rem;
-  color: #2262c9;
 }
 
 @media screen and (min-width:105.6rem) {
@@ -1447,7 +1677,8 @@ input[type=submit]:hover {
 .sidebar-toggle {
   position: fixed;
   cursor: pointer;
-  color: #f7f9fc;
+  display: block;
+  color: #2262c9;
   top: 1rem;
   left: 1.2rem;
 }
@@ -1594,8 +1825,6 @@ input[type=submit]:hover {
 }
 
 .category::before {
-  font-family: FontAwesome;
-  content: "\e801";
   padding: .05rem .2rem;
   color: #e4ebf6;
 }
@@ -1739,8 +1968,6 @@ input[type=submit]:hover {
 }
 
 .date::before {
-  font-family: FontAwesome;
-  content: "\e800";
   padding: .05rem .2rem;
 }
 
@@ -1905,8 +2132,6 @@ input[type=submit]:hover {
 }
 
 .time::before {
-  font-family: FontAwesome;
-  content: "\e80c";
   padding: .05rem .2rem;
 }
 
@@ -1948,12 +2173,6 @@ input[type=submit]:hover {
 .card .card-content,
 .project-item .card-content {
   font-size: 1rem;
-}
-
-.institution::before {
-  font-family: FontAwesome;
-  content: "\f19c";
-  padding: .05rem .2rem;
 }
 
 .institution {

@@ -1,0 +1,1 @@
+MathJax.Hub.Config({tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]],displayMath:[["$$","$$"],["\\[","\\]"]],processEscapes:!0},TeX:{equationNumbers:{autoNumber:"AMS"}}});
