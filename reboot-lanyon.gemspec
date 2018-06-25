@@ -4,7 +4,7 @@
 # https://www.chrisanthropic.com/blog/2016/creating-gem-based-themes-for-jekyll/
 Gem::Specification.new do |spec|
     spec.name                    = "reboot-lanyon"
-    spec.version                 = "v1.0.1-beta.1"
+    spec.version                 = "v1.0.5-beta"
     spec.authors                 = ["Sona Praneeth Akula"]
   
     spec.summary                 = %q{Jekyll theme following the style of lanyon. Much lighter and loads fast}
@@ -14,10 +14,10 @@ Gem::Specification.new do |spec|
     spec.metadata["plugin_type"] = "theme"
   
     spec.files                   = `git ls-files -z`.split("\x0").select do |f|
-      f.match(%r{^(assets|blog|projects|public|sources/_(data|includes|layouts|scss|posts|projects)/|(LICENSE|README|CHANGELOG)((\.(md|markdown|xml)|$)))}i)
+      f.match(%r{^(source/(assets|blog|projects|public)/|source/_(data|includes|layouts|scss|posts|projects)/|manifest.json|browserconfig.xml|.htaccess|favicon.ico|(LICENSE|README|CHANGELOG|index|404)((\.(md|markdown|xml|html)|$)))}i)
     end
   
-    spec.add_runtime_dependency "jekyll", "~> 3.7.3"
+    spec.add_runtime_dependency "jekyll", "~> 3.8.3"
     spec.add_runtime_dependency "jekyll-paginate-v2", "~> 1.9,4"
     spec.add_runtime_dependency "jekyll-sitemap", "~> 0.11.0"
     spec.add_runtime_dependency "jekyll-feed", "~> 0.9.3"
@@ -31,4 +31,5 @@ Gem::Specification.new do |spec|
     spec.add_runtime_dependency "jekyll-figure", "~> 0.0.2"
     spec.add_runtime_dependency "jekyll-gist", "~> 1.5.0"
     spec.add_development_dependency "bundler", "~> 1.16.0"
+    spec.add_development_dependency "html-proofer", "~> 3.9.1"
   end

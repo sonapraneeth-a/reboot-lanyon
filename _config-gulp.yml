@@ -10,7 +10,7 @@ baseurl     : "/reboot-lanyon"
 url         : https://sonapraneeth-a.github.io
 favicon     :
 lang        : en-us
-version     : v1.0.2-beta.1 # Please use semantic versioning (semver.org)
+version     : v1.0.5-beta # Please use semantic versioning (semver.org)
 repository  : sonapraneeth-a.github.io/reboot-lanyon
 environment : "production"
 build       : "gulp"
@@ -127,45 +127,45 @@ menu:
       class : 'home'
     - title : 'Projects'
       url   : '/projects/'
-      icon  : 'file-code-o'
+      icon  : 'file-code'
       class : 'project'
       sublinks:
         - title : 'Categories'
           url   : '/projects/categories/'
-          icon  : 'address-book'
+          icon  : 'folder-open'
           class : 'categories'
         - title : 'Search'
           url   : '/projects/search/'
-          icon  : 'mirror'
+          icon  : 'search'
           class : 'search'
         - title : 'Tags'
           url   : '/projects/tags/'
-          icon  : 'tags'
+          icon  : 'tag'
           class : 'tags'
         - title : 'Archives'
           url   : '/projects/archives/'
-          icon  : 'archive'
+          icon  : 'file-archive'
           class : 'archives'
     - title : 'Blog'
       url   : '/blog/'
-      icon  : 'pencil'
+      icon  : 'pencil-alt'
       class : 'blog'
       sublinks:
         - title : 'Categories'
           url   : '/blog/categories/'
-          icon  : 'address-book'
+          icon  : 'folder-open'
           class : 'categories'
         - title : 'Search'
           url   : '/blog/search/'
-          icon  : 'mirror'
+          icon  : 'search'
           class : 'search'
         - title : 'Tags'
           url   : '/blog/tags/'
-          icon  : 'tags'
+          icon  : 'tag'
           class : 'tags'
         - title : 'Archives'
           url   : '/blog/archives/'
-          icon  : 'archive'
+          icon  : 'file-archive'
           class : 'archives'
 
 google_analytics_token : 'UA-90733014-1' # leave blank if you don't want google analytics
