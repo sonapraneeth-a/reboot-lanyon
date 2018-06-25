@@ -1,6 +1,9 @@
 .scroll::before
 {
-    @include up-icon
+    /*@include up-icon*/
+    font-family: "Font Awesome 5 Free";
+    content: "\f139";
+    font-weight: 400;
 }
 /*#scroll
 {
