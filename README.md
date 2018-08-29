@@ -2,6 +2,11 @@
 
 This is a jekyll theme which has been built from ground up to resemble [lanyon theme](http://lanyon.getpoole.com/). Currently, it doesnot support all the features of lanyon theme (like sidebar positioning)
 
+## Development
+
+```bash
+```
+
 ## Download
 
 The source code of the project is available on Github. You can get the source code from [here](https://github.com/sonapraneeth-a/reboot-lanyon/tree/master).

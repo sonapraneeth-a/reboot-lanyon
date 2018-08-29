@@ -39,4 +39,4 @@ gulp.task("default::netlify", gulp.series("build::netlify::site", "serve::netlif
 // Default task (Either default::gulp or default::jekyll)
 /* gulp default : No compression/minification */
 /* gulp default --prod : Compression enabled */
-gulp.task("default", gulp.series("default::jekyll"));
+gulp.task("default", gulp.series("default::gulp"));

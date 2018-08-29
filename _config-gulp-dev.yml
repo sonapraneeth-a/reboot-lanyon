@@ -10,7 +10,7 @@ baseurl     : ""
 url         : https://sonapraneeth-a.github.io
 favicon     :
 lang        : en-us
-version     : v1.0.5-beta # Please use semantic versioning (semver.org)
+version     : 1.0.6 # Please use semantic versioning (semver.org)
 repository  : sonapraneeth-a.github.io/reboot-lanyon
 environment : "development"
 build       : "gulp"
