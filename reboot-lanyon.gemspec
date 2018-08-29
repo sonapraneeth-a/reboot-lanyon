@@ -4,7 +4,7 @@
 # https://www.chrisanthropic.com/blog/2016/creating-gem-based-themes-for-jekyll/
 Gem::Specification.new do |spec|
     spec.name                    = "reboot-lanyon"
-    spec.version                 = "1.0.5-beta"
+    spec.version                 = "1.0.6-beta"
     spec.authors                 = ["sonapraneeth-a"]
     spec.email                   = ["sonapraneeth.akula@gmail.com"]
   
@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
   
     spec.metadata["plugin_type"] = "theme"
   
-    spec.files                   = `git ls-files -z`.split("\x0").select do |f|
-      f.match(%r{^(assets|blog|projects|public)/|_(data|includes|layouts|scss|posts|projects)/|manifest.json|browserconfig.xml|.htaccess|favicon.ico|(LICENSE|README|CHANGELOG|index|404)((\.(md|markdown|xml|html)|$)))}i)
+    spec.files                   = `git ls-tree --name-only -r -z jekyll-gem`.split("\x0").select do |f|
+      f.match(%r{_includes|_layouts|_sass}i)
     end
   
     spec.add_runtime_dependency "jekyll", "~> 3.8", ">= 3.8.3"
