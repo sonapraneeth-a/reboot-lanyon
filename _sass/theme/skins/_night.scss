@@ -1,0 +1,22 @@
+/* Monokai inspiration */
+
+$foreground-color: $monokai-foreground;
+$foreground-dark-color: darken($foreground-color, 20%);
+$background-color: $monokai-background;
+$background-dark-color: darken($background-color, 20%);
+
+$header-font-color: $monokai-foreground;
+$normal-font-color: $monokai-foreground;
+
+$content-foreground: $background-color;
+$content-background: $foreground-color;
+$navbar-font-color: $content-foreground;
+$tag-background: lighten($background-color, 60%);
+$tag-foreground: darken($background-color, 30%);
+$category-background: lighten($background-color, 60%);
+$category-foreground: darken($background-color, 30%);
+$date-background: lighten($background-color, 60%);
+$date-foreground: darken($background-color, 30%);
+
+$header-font: 'PT Sans', 'PT Serif', -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Ubuntu Mono", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$normal-font: 'PT Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Ubuntu Mono", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", serif;

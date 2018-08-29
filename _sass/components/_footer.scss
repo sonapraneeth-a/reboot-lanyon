@@ -1,0 +1,43 @@
+.footer
+{
+    margin-top: 5rem;
+    position: fixed;
+    bottom: 0;
+    background: $foreground-color;
+    color: $background-color;
+    width: 100%;
+    font-size: 0.8rem;
+    z-index: 1000;
+    //margin-bottom: 5rem;
+    p 
+    {
+        margin: 0.3rem auto;
+    }
+    a 
+    {
+        text-decoration: underline;
+        color: $background-color;
+    }
+    span 
+    {
+        padding: 0 0.1rem;
+    }
+}
+
+#last-modified,
+{
+    @include until($laptop)
+    {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+#powered-by
+{
+    @include until($tablet)
+    {
+        visibility: hidden;
+        display: none;
+    }
+}

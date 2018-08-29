@@ -1,0 +1,146 @@
+<noscript>Your browser does not support JavaScript!</noscript>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" defer></script>-->
+{% if site.environment == "development" and site.highlighter == "prism" %}
+<script src="{{site.baseurl}}/public/plugins/prism/prism.js" defer></script>
+{% endif %}
+<!--<script src="{{site.baseurl}}/public/plugins/highlight/highlight.js" defer></script>-->
+{% assign url = page.url %}
+{% if url contains 'blog' or url contains 'projects' %}
+<script type="text/x-mathjax-config" defer>
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+            displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+            processEscapes: true
+        },
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML-full" defer></script>
+{% endif %}
+{% if url contains '/search' %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.6/lunr.min.js" defer></script>
+{% endif %}
+{% if url contains 'blog/search' and site.environment == "production" %}
+<script type="text/javascript" src="{{site.baseurl}}/public/js/blog.js" defer></script>
+{% endif %}
+{% if url contains 'blog/search' and site.environment == "development" %}
+<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/posts.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/search-blog.js" defer></script>
+{% endif %}
+{% if url contains 'projects/search' and site.environment == "production" %}
+<script type="text/javascript" src="{{site.baseurl}}/public/js/project.js" defer></script>
+{% endif %}
+{% if url contains 'projects/search' and site.environment == "development" %}
+<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/projects.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/plugins/lunr/search-project.js" defer></script>
+{% endif %}
+<script type="text/javascript">
+(function()
+{
+    var toggle = document.querySelector('.sidebar-toggle');
+    var sidebar = document.querySelector('#sidebar');
+    var checkbox = document.querySelector('#sidebar-checkbox');
+    document.addEventListener('click', function(e)
+    {
+        var target = e.target;
+        if (target === toggle)
+        {
+            checkbox.checked = !checkbox.checked;
+            e.preventDefault();
+        }
+        else if (checkbox.checked && !sidebar.contains(target))
+        {
+            /* click outside the sidebar when sidebar is open */
+            checkbox.checked = false;
+        }
+    }, false);
+})(document);
+</script>
+{% if site.environment == "production" %}
+{% include google-analytics.html %}
+{% endif %}
+<script type="text/javascript">
+    /*window.onload = function()
+    {*/
+        var data = 
+        {
+            "name"         : "{{site.author.name}}",
+            "author"       : {"@type":"Person","name":"{{site.author.name}}"},
+            "@type"        : "WebSite",
+            "url"          : "{{site.url}}{{site.baseurl}}{{page.url}}",
+            "headline"     : "Home",
+            "dateModified" : "",
+            "sameAs"       : ["{{site.author.contact.twitter}}", "{{site.author.contact.facebook}}" , "{{site.author.contact.linkedin}}", "{{site.author.contact.github}}"],
+            "@context"     : "http://schema.org"
+        }
+        var dateModified = document.lastModified;
+        console.log(dateModified);
+        data.dateModified = dateModified;
+        var script = document.createElement('script');
+        script.type = "application/ld+json";
+        script.innerHTML = JSON.stringify(data);
+        console.log(script);
+        console.log(document.getElementsByTagName('head')[0]);
+        document.getElementsByTagName('head')[0].appendChild(script);
+    /*}*/
+</script>
+{% if page.layout == 'post' or page.layout == 'project' %}
+<!--script>
+    var toc_box = document.querySelector('.toc-box');
+    var origOffsetY = toc_box.offsetTop;
+    console.log(origOffsetY);
+    function onScroll(e) {
+        window.scrollY >= origOffsetY ? toc_box.classList.add('fixed') :
+        toc_box.classList.remove('fixed');
+    }
+    
+    document.addEventListener('scroll', onScroll);
+</script>-->
+{% endif %}
+<!--<script>
+carousel = (function()
+{
+    var box = document.querySelector('.carousel-box');
+    var next = box.querySelector('.carousel-next');
+    var prev = box.querySelector('.carousel-prev');
+    var items = box.querySelectorAll('.carousel-content li');
+    var counter = 0;
+    var amount = items.length;
+    var current = items[0];
+    box.classList.add('carousel-active');
+    function navigate(direction)
+    {
+        current.classList.remove('carousel-current');
+        counter = counter + direction;
+        if (direction === -1 && counter < 0)
+        { 
+            counter = amount - 1; 
+        }
+        if (direction === 1 && !items[counter])
+        { 
+            counter = 0;
+        }
+        current = items[counter];
+        current.classList.add('carousel-current');
+    }
+    next.addEventListener('click', function(ev)
+    {
+        navigate(1);
+    });
+    prev.addEventListener('click', function(ev)
+    {
+        navigate(-1);
+    });
+    navigate(0);
+})();
+setInterval(function ()
+{
+    var numCarousels = document.getElementsByClassName("carousel-next").length;
+    for(var index = 0; index < numCarousels; index++)
+    {
+        document.getElementsByClassName("carousel-next")[index].click();
+    }
+}, 5000);
+</script>-->
+<!-- <div style="position: relative; float: right;"><span>C++</span><span>Text</span></div> -->

@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<!--<section class="projects">
+    <h1 class="project-title">{{page.title}}</h1>
+    <div class="project-info">
+        <span>{{project.date-published}}</span>
+    </div>
+    <article class="project-content">
+    {{content}}
+    </div>
+</section>-->
+
+<section class="projects">
+    <article class="project-content">
+        <!-- https://github.com/allejo/jekyll-toc -->
+        {% if page.toc %}
+        <section class="toc-box" itemprop="text">
+            <aside class="toc-menu">
+                <nav class="toc">
+                <header><h4 class="toc-header"><!--<i class="fa fa-{{ page.toc_icon | default: 'file-alt' }}"></i>-->&nbsp;{{ page.toc_label | default: "Table of Contents" }}</h4></header>
+                <div class="toc-content">
+                    {% include toc.html sanitize=true html=content h_min=2 h_max=4 class="toc__menu" %}
+                </div>
+                </nav>
+              </aside>
+        </section>
+        {% endif %}
+        <section class="actual-content">
+            <h1>{{page.title}}</h1>
+            <span class="date"><span class="date-content"><i class="fa fa-calendar-alt"></i>&nbsp;<b>Completed: </b>{{page.date | date: "%B %Y"}}</span></span>
+            {% if page.institution %}
+            <span class="institution">
+                <span class="institution-content"><i class="fa fa-university"></i>{{page.institution}}</span>
+            </span>
+            {% endif %}
+            <div>
+                {% for tag in page.tags %}
+                <a class="tag" href="{{site.baseurl}}/projects/tags/#{{tag | slugify: 'pretty'}}"><span class="tag-content"><i class="fa fa-tag"></i>&nbsp;{{tag}}</span></a>
+                {% endfor %}
+                {% for category in page.categories %}
+                <a class="category" href="{{site.baseurl}}/projects/categories/#{{category | slugify: 'pretty'}}"><span class="category-content"><i class="fa fa-folder-open"></i>&nbsp;{{category}}</span></a>
+                {% endfor %}
+            </div>
+            {{content}}
+            {% include sharing.html %}
+        </section>
+    </article>
+</section>

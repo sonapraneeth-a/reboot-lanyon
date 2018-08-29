@@ -1,0 +1,66 @@
+- title: SolutionCodes-dl
+  subtitle: Solution codes downloader
+  guide: Self
+  institution: 
+  date: 18 January, 2018
+  course: 
+  abstract: 
+  brief: Downloades solutions submitted by a user on various coding platforms
+  categories: ["Web scraping"]
+  published: true
+  permalink: /projects/solution-codes-dl/
+  project-link: solution-codes-dl/
+  source: https://github.com/sonapraneeth-a/SolutionCodesDownloader
+  banner_image: 
+  image-alt-text: Solution code downloader - Codechef, Leetcode, SPOJ
+  tags: ["Python", "Web scraping", "Beautiful soup", "Codechef"]
+  project-url: solution-downloader/
+  slides-url: 
+  report-url: 
+  github-link: https://github.com/sonapraneeth-a/SolutionCodesDownloader
+  status: Ongoing
+
+- title: Autonomous Imaging of Unknown Planar Structures using Quadcopters
+  subtitle: Drones
+  guide: Prof. Sharat Chandran
+  institution: 
+  date: July, 2017
+  course: M.Tech Project
+  abstract: Our goal in this work is to set up an autonomous flying machine to take orthographic pictures of large multiple planar surfaces. The multiplanar structure has the property that no single view-point with a limited field of view is sufficient to 'see' all the planar surfaces. This implies that we need multiple points, usually several, to 'walk' around these surfaces.
+  brief: In this project we use quadcopters for imaging unknown planar structures
+  categories: ["Quadcopters"]
+  published: true
+  permalink: /projects/mtp/
+  project-link: mtp/
+  source: https://github.com/vvanirudh/tum_ardrone_iitb/tree/phase02-fix
+  banner_image: 
+  image-alt-text: Quadcopter capturing details of a planar surface
+  tags: ["C++", "Quadcopters", "Computer Vision"]
+  project-url: mtp/
+  slides-url: 
+  report-url: 
+  github-link: https://github.com/vvanirudh/tum_ardrone_iitb/tree/phase02-fix
+  status: Ongoing
+
+- title: Object classification
+  subtitle: 
+  guide: Prof. Ganesh Ramakrishnan
+  institution: M.Tech, IIT Bombay
+  date: May 2017
+  course: CS 725
+  abstract: Our goal in this work is to develop machine learning algorithms to label an image with its class
+  brief: Classification of object in images for CIFAR 10 dataset
+  source: https://github.com/sonapraneeth-a/object-classification
+  categories: ["Deep learning"]
+  published: true
+  permalink: /projects/object-classification/
+  project-link: object-classification/
+  banner_image: 
+  image-alt-text: Object labels for CIFAR 10 dataset
+  tags: ["Python", "Tensorflow", "Deep learning"]
+  project-url: object-classification/
+  slides-url: 
+  report-url: 
+  github-link: https://github.com/sonapraneeth-a/object-classification
+  status: Completed
+

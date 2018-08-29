@@ -1,0 +1,127 @@
+- title: Solution codes downloader
+  banner_image: 
+  image-alt-text: Solution code downloader - SPOJ, Codechef
+  guide: 
+  date: January 2018
+  institution: 
+  course: 
+  tags: ["Python", "Web scraping", "Beautiful soup"]
+  project-link: solution-downloader/
+  slides-link: 
+  report-link: 
+  github-link: 
+  abstract: 
+  brief: The code developed 
+  status: Ongoing
+
+- title: Autonomous Imaging of Unknown Planar Structures using Quadcopters
+  banner-image: /downloads/autonomous-navigation/banner_image.PNG
+  image-alt-text: Quadcopter imaging a planar surface in front of it
+  guide: Prof. Sharat Chandran
+  date: June 2017
+  institution: IIT Bombay
+  course: M.Tech Project
+  tags: ["Computer Vision", "Quadcopters", "Mosaicing"]
+  project-link: autonomous-imaging-of-unknown-planar-structures-using-quadcopters/
+  slides-link:
+  report-link:
+  github-link: https://github.com/vvanirudh/tum_ardrone_iitb/phase02-fix
+  abstract: Our goal in this work is to set up an autonomous flying machine to take orthographic pictures of large multiple planar surfaces. The multiplanar structure has the property that no single view-point with a limited field of view is sufficient to 'see' all the planar surfaces. This implies that we need multiple points, usually several, to 'walk' around these surfaces.
+  brief: Our goal in this work is to set up a quadcopter to take orthographic pictures of large multiple planar surfaces autonomously. The multiplanar structure has the property that no single view-point with a limited field of view is sufficient to 'see' all the planar surfaces.
+  status: Completed
+
+- title: Object classification in CIFAR 10
+  banner-image: /downloads/object-classification/banner_image.png
+  image-alt-text: True and predicted labels of images from CIFAR 10 dataset
+  guide: Prof. Ganesh Ramakrishnan
+  date: May 2017
+  institution: IIT Bombay
+  course: CS 725
+  tags: ["Deep learning", "CNN", "Transfer learning", "SVM", "HOG"]
+  project-link: object-classification/
+  slides-link: https://docs.google.com/presentation/d/1I7mALYIkN6I8MmHZF2hxXUJ7fG1Y27PnSfmFRTTbY1Q/edit?usp=sharing
+  report-link:
+  github-link: https://github.com/sonapraneeth-a/object-classification
+  abstract: 
+  brief: We have implemented several object classification algorithms in tensorflow and sklearn. This project uses CIFAR 10 dataset for training the classifier. An accuracy of around 85-87% has been obtained on the best available algorithms of the time.
+  status: Completed
+
+- title: Detection of multiplanar regions
+  banner-image: /downloads/seminar/banner_image.png
+  image-alt-text: Planar surfaces identified by the algorithm marked in color
+  guide: Prof. Sharat Chandran
+  date: April 2016
+  institution: IIT Bombay
+  course: Seminar
+  tags: ["Camera Geometry", "Model detection", "Jlinkage"]
+  project-link: detection-of-multiplanar-regions/
+  report-link: 
+  slides-link: 
+  github-link: 
+  abstract: 
+  brief: 
+  status: Completed
+
+- title: Real-time object tracking in videos
+  banner-image: /downloads/object-tracking/banner_image.png
+  image-alt-text: Tracking of a small ball in a video
+  guide: Prof. Ajit Rajwade
+  date: April 2016
+  institution: IIT Bombay
+  course: CS 763
+  tag: ["Mean-shift", "Computer Vision"]
+  project-link: real-time-object-tracking/
+  report-link:
+  slides-link:
+  github-link: https://github.com/sonapraneeth-a/object-tracking
+  abstract: 
+  brief: In this project, we have implemented an algorithm which detect the motion of an object in a video in real time. The user is given an option to mark the object of interest in the video whose motion can be tracked in the subsequent frames of the video.
+  status: Completed
+
+- title: Software Lab
+  banner-image: https://via.placeholder.com/600x400/1ea4f7/fff.png&text=Project
+  image-alt-text: Project Image
+  guide: Prof. Rushikesh Joshi
+  date: November 2015
+  institution: IIT Bombay
+  course: CS 699
+  tags: ["Javascript", "HTML5", "CSS3"]
+  project-link: swlab/
+  report-link:
+  slides-link:
+  github-link:
+  abstract: 
+  brief: This project is a random collection of games developed for the web. All the games have been developed in Javascript with HTML5 and CSS3 as front-end.
+  status: Completed
+
+- title: Human action recognition in videos
+  banner-image: https://via.placeholder.com/600x400/1ea4f7/fff.png&text=Project
+  image-alt-text: Project Image
+  guide: Prof. Gaurav Harit
+  date: April 2015
+  institution: IIT Jodhpur
+  course: B.Tech Project
+  tags: ["SVM", "Kmeans", "Machine learning"]
+  project-link: human-action-recognition-in-videos/
+  report-link:
+  slides-link:
+  github-link:
+  abstract: 
+  brief: The goal of this project is to develop an algorithm which can identify human actions in grayscale videos. One should note that this project assumes a video to contain a single action. The system was successful in identifying six types of human actions.
+  status: Completed
+
+- title: AOAP application in linux
+  banner-image: https://via.placeholder.com/600x400/1ea4f7/fff.png&text=Project
+  image-alt-text: Project Image
+  guide: Vaisakh Nandakumar
+  date: July 2014
+  institution: AllGo Embedded Systems
+  course: Internship
+  tags: ["C++", "AOAP", "Android"]
+  project-link: aoap-mobile-usb-accessory/
+  report-link:
+  slides-link:
+  github-link:
+  abstract: 
+  brief: This project has been developed to use mobile devices as USB accessory to the computer using Android Open Accessory Protocol (AOAP). Once the mobile device has been connected to the computer as an accesory, it can be used to perform any task like transfer of images, playing music etc.,
+  status: Completed

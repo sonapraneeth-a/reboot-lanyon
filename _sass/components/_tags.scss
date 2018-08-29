@@ -1,0 +1,42 @@
+.tag::before
+{
+    //@include tag-icon;
+    padding: 0.05rem 0.2rem;
+    color: $tag-foreground;
+}
+
+.tag:hover::before
+{
+    color: $tag-background;
+}
+
+/*.tag
+{
+    @extend .chip;
+    background: $tag-background;
+    color: $tag-foreground;
+    border: 0.05rem solid $tag-background;
+    &:hover
+    {
+        text-decoration: none;
+        background: $tag-foreground;
+        color: $tag-background;
+        border: 0.05rem solid $tag-background;
+    }
+    .tag-content
+    {
+        padding: 0.05rem 0.2rem;
+        display: inline-block;
+        font-size: 0.9rem;
+    }
+    .tag-count
+    {
+        padding: 0.05rem 0.2rem;
+        font-size: 0.9rem;
+        padding: 0.05rem 0.2rem;
+        background-color: darken($chip-background, 10%);
+        color: lighten($chip-foreground, 10%);
+    }
+}*/
+
+@include chip-component(tag, $tag-background, $tag-foreground, $hover: true, $count: true);

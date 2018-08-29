@@ -1,0 +1,18 @@
+source "https://rubygems.org"
+
+gem "jekyll"
+gem "jekyll-paginate-v2"
+gem "jekyll-sitemap"
+gem "jekyll-feed"
+gem "jekyll-last-modified-at"
+gem "tzinfo"
+gem "tzinfo-data"
+# gem "mm-jekyll-prism"
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem "jemoji"
+gem "jekyll-seo-tag"
+gem "jekyll-typogrify"
+gem "jekyll-figure"
+gem "jekyll-gist"
+gem "pygments.rb"
+gem "html-proofer"

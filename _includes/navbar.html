@@ -1,0 +1,29 @@
+<aside class="center">
+<nav class="navbar" role="navigation">
+    <div class="navbar-content">
+        <h1 class="navbar-header"><a href="{{site.baseurl}}{{site.menu[0].url}}">{{site.title}}</a></h1>
+        <ul class="navbar-menu">
+        {% for menu in site.menu %}
+            <li class="{% if menu.sublinks %}navbar-dropdown{% endif %}
+                        {% if menu.url != '/' and page.url contains menu.url %}
+                        navbar-menu-active
+                        {% elsif page.url == menu.url %}
+                        navbar-menu-active
+                        {% endif %}">
+                <a href="{{site.baseurl}}{{menu.url}}">
+                    <i class="fa fa-{{menu.icon}}"></i>&nbsp;{{menu.title}}
+                    {% if menu.sublinks %}<i class="fa fa-caret-down"></i>{% endif %}
+                </a>
+                {% if menu.sublinks %}
+                <ul class="navbar-dropdown-content">
+                    {% for sublink in menu.sublinks %}
+                    <li><a href="{{site.baseurl}}{{sublink.url}}"><i class="fa fa-{{sublink.icon}}"></i>&nbsp;{{sublink.title}}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</nav>
+</aside>

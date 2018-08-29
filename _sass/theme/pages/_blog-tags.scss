@@ -1,0 +1,27 @@
+.tag-list
+{
+    list-style-type: none;
+    padding: 0;
+}
+.tag-date
+{
+    width: 15%;
+    @include until($desktop)
+    {
+        width: 35%;
+    }
+    vertical-align: top;
+    text-align: right;
+    display: inline-block;
+}
+.tag-title
+{
+    width: 80%;
+    @include until($desktop)
+    {
+        width: 60%;
+    }
+    text-align: left;
+    margin-left: 0.25rem;
+    display: inline-block;
+}

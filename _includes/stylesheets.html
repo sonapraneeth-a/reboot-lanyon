@@ -1,0 +1,20 @@
+<!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+<!--<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/fontello/css/fontawesome.css">-->
+<!--<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">-->
+<!--<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">-->
+<!--<link href="https://fonts.googleapis.com/css?family=Tenali+Ramakrishna|Ramabhadra&amp;subset=telugu" rel="stylesheet">-->
+<!-- External style sheets -->
+{% if site.environment == "production" and site.build == "gulp" %}
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/all.css" inline>
+{% endif %}
+{% if site.environment == "production" and site.build == "jekyll" %}
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css" inline>
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/fontello/css/fontawesome.css" inline>
+{% endif %}
+{% if site.environment == "development" %}
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css" inline>
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/fontello/css/fontawesome.css" inline>
+{% endif %}
+{% if site.environment == "development" and site.highlighter == "prism"  %}
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css" inline>
+{% endif %}

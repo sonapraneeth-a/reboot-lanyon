@@ -1,0 +1,19 @@
+$foreground-color:  hsl(203.1, 100%, 66.9%);//rgb(86, 190, 255);
+$foreground-dark-color: darken($foreground-color, 20%);
+$background-color:  hsl(0, 0%, 100%);//rgb(255, 255, 255);
+$background-dark-color: darken($background-color, 20%);
+$header-font-color: hsl(203.1, 100%, 66.9%);//rgb(86, 190, 255);
+$normal-font-color: rgb(0, 0, 0);
+
+$content-foreground: $background-color;
+$content-background: $foreground-color;
+$navbar-font-color: $content-foreground;
+$tag-background: lighten($foreground-color, 20%);
+$tag-foreground: darken($foreground-color, 30%);
+$category-background: lighten($foreground-color, 20%);
+$category-foreground: darken($foreground-color, 30%);
+$date-background: lighten($foreground-color, 20%);
+$date-foreground: darken($foreground-color, 30%);
+
+$header-font: 'PT Sans', 'PT Serif', -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Ubuntu Mono", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$normal-font: 'PT Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Ubuntu", "Ubuntu Mono", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", serif;

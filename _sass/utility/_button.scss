@@ -1,0 +1,20 @@
+.button
+{
+    background-color: $foreground-color;
+    color: $background-color;
+    font-weight: bold;
+    text-decoration: none;
+    @if flat == false
+    {
+        border-radius: $button-radius;
+    }
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-family: $normal-font;
+    &:hover
+    {
+        text-decoration: none;
+        background-color: darken($foreground-color, 10%);
+    }
+}

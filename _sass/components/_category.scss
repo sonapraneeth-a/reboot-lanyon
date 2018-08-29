@@ -1,0 +1,42 @@
+.category::before
+{
+    /*@include folder-open-icon;*/
+    padding: 0.05rem 0.2rem;
+    color: $category-foreground;
+}
+
+.category:hover::before
+{
+    color: $category-background;
+}
+
+/*.category
+{
+    @extend .chip;
+    background: $category-background;
+    color: $category-foreground;
+    border: 0.05rem solid $category-background;
+    &:hover
+    {
+        text-decoration: none;
+        background: $category-foreground;
+        color: $category-background;
+        border: 0.05rem solid $category-background;
+    }
+    .category-content
+    {
+        padding: 0.05rem 0.2rem;
+        display: inline-block;
+        font-size: 0.9rem;
+    }
+    .category-count
+    {
+        padding: 0.05rem 0.2rem;
+        font-size: 0.9rem;
+        padding: 0.05rem 0.2rem;
+        background-color: darken($chip-background, 10%);
+        color: lighten($chip-foreground, 10%);
+    }
+}*/
+
+@include chip-component(category, $category-background, $category-foreground, $hover: true, $count: true);

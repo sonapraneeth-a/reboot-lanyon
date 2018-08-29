@@ -1,0 +1,143 @@
+@mixin placeholder
+{
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin prefixer($property, $value, $prefixes)
+{
+  @each $prefix in $prefixes
+  {
+    @if $prefix == webkit
+    {
+        -webkit-#{$property}: $value;
+    }
+    @else if $prefix == moz
+    {
+        -moz-#{$property}: $value;
+    }
+    @else if $prefix == ms
+    {
+        -ms-#{$property}: $value;
+    }
+    @else if $prefix == o
+    {
+        -o-#{$property}: $value;
+    }
+    @else if $prefix == spec
+    {
+        #{$property}: $value;
+    }
+    @else
+    {
+      @warn "Unrecognized prefix: #{$prefix}";
+    }
+  }
+}
+
+@mixin transform($property: none)
+{
+    @include prefixer(transform, $property, webkit moz ms o spec);
+}
+
+@mixin transition($property: none)
+{
+    @include prefixer(transition, $property, webkit moz ms o spec);
+}
+
+@mixin clearfix
+{
+    &:before, &:after
+    {
+        content: '';
+        display: table;
+    }
+    &:after
+    {
+        clear: both;
+    }
+}
+
+@mixin chip-component($component, $background, $foreground, $hover: false, $count: false)
+{
+    .#{$component}
+    {
+        @extend .chip;
+        background-color: $background;
+        color: $foreground;
+        border: 0.05rem solid $background;
+        @if $hover == true
+        {
+            &:hover
+            {
+                text-decoration: none;
+                background-color: $foreground;
+                color: $background;
+                border: 0.05rem solid $background;
+            }
+        }
+        .#{$component}-content
+        {
+            padding: 0.05rem 0.2rem;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+        @if $count == true
+        {
+            .#{$component}-count
+            {
+                padding: 0.05rem 0.2rem;
+                font-size: 0.9rem;
+                border-left: 0.05rem solid darken($foreground, 10%);
+            }
+        }
+    }
+}
+
+@mixin heading($base-font-size, $base-vertical-margin)
+{
+    @for $i from 1 through 6
+    {
+        @if $i == 1
+        {
+            h#{$i}
+            {
+                font-size: $base-font-size;
+                margin: $base-vertical-margin 0;
+            }
+        }
+        @else
+        {
+            h#{$i}
+            {
+                font-size: $base-font-size - (($i - 1)*0.1);
+                margin: $base-vertical-margin - (($i - 1)*0.1) 0;
+            }
+        }
+    }
+}
+
+/* https://webdesign.tutsplus.com/tutorials/an-introduction-to-sass-maps-usage-and-examples--cms-22184 */
+$utility: (
+    info: $info,
+    danger: $danger,
+    warning: $warning,
+    success: $success
+);
+
+@mixin component($component)
+{
+    @each $name, $value in $utility
+    {
+        .#{$component}-#{$name}
+        {
+            @extend .#{$component};
+            background-color: lighten($value, 40%);
+            border: 0.05rem solid darken($value, 20%);
+            border-left: 0.25rem solid darken($value, 20%);
+            color: darken($value, 20%);
+        }
+    }
+}
