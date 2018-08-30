@@ -1,0 +1,13 @@
+.chip
+{
+    &.ongoing
+    {
+        background-color: $info;
+        color: $primary-foreground-color;
+    }
+    &.complete
+    {
+        background-color: $success;
+        color: $primary-foreground-color;
+    }
+}
