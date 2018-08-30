@@ -1,0 +1,33 @@
+# IDE folders
+.idea
+.vs
+
+# Node modules folder
+node_modules/
+
+# Gemfile and Jekyll
+.jekyll-metadata
+.sass-cache/
+Gemfile.lock
+
+# Output directories
+public_html*/
+.tmp/
+gh-pages/
+
+# Unecessary folders
+trash/
+old/
+*~
+
+# Python folders
+__pycache__/
+
+# Draft folderse
+_drafts/
+
+# Executable files
+*.exe
+*.out
+
+
