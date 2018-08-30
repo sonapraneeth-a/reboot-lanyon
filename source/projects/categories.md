@@ -42,32 +42,41 @@ icon: file-code
 {% endif %}
 
 
-<div style="display: inline;">
+<div style="display: inline-flex; flex-wrap: wrap;">
 {% assign size_categories = categories.size | minus: 1 %}
 {% for index in (0..size_categories) %}
-<a href="#{{ categories[index] | slugify: 'pretty' }}" class="category">
-<span class="category-content">{{ categories[index] }}</span>
-<span class="category-count">{{ categories_count[index] }}</span>
+<a href="#{{ categories[index] | slugify: 'pretty' }}" style="text-decoration: none;">
+<div class="chip">
+<span class="chip-content">
+<i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;{{ categories[index] }}</span>
+<span class="chip-count">{{ categories_count[index] }}</span>
+</div>
 </a>
 {% endfor %}
 </div>
 
+<ul style="list-style-type: none; padding-left: 0px;">
 {% for category in categories %}
-<h2 id="{{ category | slugify: 'pretty' }}">
-    <a href="#{{ category | slugify: 'pretty' }}" class="post-category">{{ category }}</a>
-</h2>
-<ul class="category-list">
-    {% for project in site.projects %}
-    {% if project.publish == true %}
-    {% if project.categories contains category %}
-    <li>
-        <span class="category-date">{{ project.date | date_to_string }}</span>
-        <a class="category-title" href="{{ site.baseurl }}{{ project.url }}">
-            {{ project.title }}
-        </a>
-    </li>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-</ul>
+<li>
+    <h2 id="{{ category | slugify: 'pretty' }}">{{ category }}</h2>
+    <ul style="list-style-type: none; padding-left: 1rem;">
+        {% for project in site.projects %}
+        {% if project.publish == true %}
+        {% if project.categories contains category %}
+        <li style="margin-bottom: 0.5rem;">
+            <div class="card">
+                <div class="card-content">
+                    <a href="{{ site.baseurl }}{{ project.url }}" style="text-decoration: none;">
+                        <span>{{ project.title }}</span>
+                    </a>
+                    <span style="float: right;">{{ project.date | date_to_string }}</span>
+                </div>
+            </div>
+        </li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+</li>
 {% endfor %}
+</ul>

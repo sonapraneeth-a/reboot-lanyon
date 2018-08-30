@@ -42,32 +42,41 @@ icon: file-code
 {% endif %}
 
 
-<div style="display: inline;">
+<div style="display: inline-flex; flex-wrap: wrap;">
 {% assign size_tags = tags.size | minus: 1 %}
 {% for index in (0..size_tags) %}
-<a href="#{{ tags[index] | slugify: 'pretty' }}" class="tag">
-<span class="tag-content">{{ tags[index] }}</span>
-<span class="tag-count">{{ tags_count[index] }}</span>
+<a href="#{{ tags[index] | slugify: 'pretty' }}" style="text-decoration: none;">
+<div class="chip">
+<span class="chip-content">
+<i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ tags[index] }}</span>
+<span class="chip-count">{{ tags_count[index] }}</span>
+</div>
 </a>
 {% endfor %}
 </div>
 
+<ul style="list-style-type: none; padding-left: 0px;">
 {% for tag in tags %}
-<h2 id="{{ tag | slugify: 'pretty' }}">
-    <a href="#{{ tag | slugify: 'pretty' }}" class="post-tag">{{ tag }}</a>
-</h2>
-<ul class="tag-list">
-    {% for project in site.projects %}
-    {% if project.publish == true %}
-    {% if project.tags contains tag %}
-    <li>
-        <span class="tag-date">{{ project.date | date_to_string }}</span>
-        <a class="tag-title" href="{{ site.baseurl }}{{ project.url }}">
-            {{ project.title }}
-        </a>
-    </li>
-    {% endif %}
-    {% endif %}
-    {% endfor %}
-</ul>
+<li>
+    <h2 id="{{ tag | slugify: 'pretty' }}">{{ tag }}</h2>
+    <ul style="list-style-type: none; padding-left: 1rem;">
+        {% for project in site.projects %}
+        {% if project.publish == true %}
+        {% if project.tags contains tag %}
+        <li style="margin-bottom: 0.5rem;">
+            <div class="card">
+                <div class="card-content">
+                    <a href="{{ site.baseurl }}{{ project.url }}" style="text-decoration: none;">
+                        <span>{{ project.title }}</span>
+                    </a>
+                    <span style="float: right;">{{ project.date | date_to_string }}</span>
+                </div>
+            </div>
+        </li>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+</li>
 {% endfor %}
+</ul>
