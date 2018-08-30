@@ -23,6 +23,7 @@
         font-size: $sidebar-hamburger-size;
         color: $navbar-foreground-color;
     }
+    @include transition(all 0.3s ease-in-out);
     &.off
     {
         @if $sidebar-pos == left
@@ -97,6 +98,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    @include transition(all 0.3s ease-in-out);
     &.off
     {
         @if $sidebar-pos == left
