@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us"><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="https://sonapraneeth-a.github.io/reboot-lanyon/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonapraneeth-a.github.io/reboot-lanyon/" rel="alternate" type="text/html" hreflang="en-us" /><updated>2018-06-25T22:36:57+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/</id><title type="html">Reboot lanyon</title><subtitle>Demo site for Reboot lanyon theme</subtitle><author><name>Sona Praneeth Akula</name></author><entry><title type="html">Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/" rel="alternate" type="text/html" title="Launching my new jekyll theme on website" /><published>2018-02-24T00:00:00+05:30</published><updated>2018-06-25T22:36:39+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us"><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="https://sonapraneeth-a.github.io/reboot-lanyon/feed.xml" rel="self" type="application/atom+xml" /><link href="https://sonapraneeth-a.github.io/reboot-lanyon/" rel="alternate" type="text/html" hreflang="en-us" /><updated>2018-08-30T10:37:52+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/</id><title type="html">Reboot lanyon</title><subtitle>Demo site for Reboot lanyon theme</subtitle><author><name>Sona Praneeth Akula</name></author><entry><title type="html">Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/" rel="alternate" type="text/html" title="Launching my new jekyll theme on website" /><published>2018-02-24T00:00:00+05:30</published><updated>2018-08-30T10:37:38+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/24/test-reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;The theme is open-sourced under MIT License.&lt;/p&gt;
 
@@ -82,9 +82,7 @@
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;vim-gnome
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/a4a981d0e479446054ee38cad99f5383.js&quot;&gt; &lt;/script&gt;
+&lt;p&gt;true&lt;script src=&quot;https://gist.github.com/a4a981d0e479446054ee38cad99f5383.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;latex&quot;&gt;$\LaTeX$&lt;/h2&gt;
 
@@ -179,7 +177,7 @@ First line&lt;/p&gt;
         &lt;li&gt;&lt;!--&lt;img src=&quot;http://lorempixel.com/200/200&quot; alt=&quot;3&quot;&gt;--&gt;7&lt;/li&gt;
         &lt;li&gt;&lt;!--&lt;img src=&quot;http://lorempixel.com/200/200&quot; alt=&quot;4&quot;&gt;--&gt;8&lt;/li&gt;
     &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Recently, I’ve been working on a jekyll theme which has the look and feel of the lanyon theme and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.</summary></entry><entry><title type="html">CSS Components in Reload Lanyon</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/" rel="alternate" type="text/html" title="CSS Components in Reload Lanyon" /><published>2018-02-23T00:00:00+05:30</published><updated>2018-06-25T22:36:39+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/">&lt;p&gt;In this blog, we present various css options available in this theme &lt;!--more--&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Recently, I’ve been working on a jekyll theme which has the look and feel of the lanyon theme and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.</summary></entry><entry><title type="html">CSS Components in Reload Lanyon</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/" rel="alternate" type="text/html" title="CSS Components in Reload Lanyon" /><published>2018-02-23T00:00:00+05:30</published><updated>2018-08-30T10:37:38+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/23/css-components/">&lt;p&gt;In this blog, we present various css options available in this theme &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h2&gt;
 
@@ -287,14 +285,15 @@ First line&lt;/p&gt;
   &lt;p class=&quot;panel-header&quot;&gt;Heading&lt;/p&gt;
   &lt;p class=&quot;panel-content&quot;&gt;Content&lt;/p&gt;
   &lt;p class=&quot;panel-footer&quot;&gt;Footer&lt;/p&gt;
-&lt;/div&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">In this blog, we present various css options available in this theme</summary></entry><entry><title type="html">Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/" rel="alternate" type="text/html" title="Launching my new jekyll theme on website" /><published>2018-02-12T00:00:00+05:30</published><updated>2018-06-25T22:36:39+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">In this blog, we present various css options available in this theme</summary></entry><entry><title type="html">Launching my new jekyll theme on website</title><link href="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/" rel="alternate" type="text/html" title="Launching my new jekyll theme on website" /><published>2018-02-12T00:00:00+05:30</published><updated>2018-08-30T10:37:38+05:30</updated><id>https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon</id><content type="html" xml:base="https://sonapraneeth-a.github.io/reboot-lanyon/blog/2018/02/12/reboot-lanyon/">&lt;p&gt;Recently, I’ve been working on a jekyll theme which has the look and feel of the &lt;a href=&quot;https://lanyon.getpoole.com&quot;&gt;lanyon theme&lt;/a&gt; and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;The theme is open-sourced under MIT License.&lt;/p&gt;
 
 &lt;h1 id=&quot;instructions-to-use&quot;&gt;Instructions to use&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Fork the repository from the following &lt;a href=&quot;https://github.com/sonapraneeth-a/jekyll_theme&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Fork the repository from the following &lt;a href=&quot;https://github.com/sonapraneeth-a/reboot-lanyon&quot;&gt;link&lt;/a&gt;
+&lt;img class=&quot;image-full-width&quot; src=&quot;/assets/blog/2018-02-12-reboot-lanyon/fork_reboot-lanyon.PNG&quot; /&gt;&lt;/li&gt;
   &lt;li&gt;Update the &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt; file present in the source folder&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -302,9 +301,10 @@ First line&lt;/p&gt;
 
 &lt;p&gt;Some of the main features available on this theme:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Formatting text in markdown&lt;/li&gt;
-  &lt;li&gt;Code highlighting using &lt;a href=&quot;http://prismjs.com/&quot;&gt;prism.js&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Input code from file&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Formatting text in markdown&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Input code from github gist&lt;/li&gt;
   &lt;li&gt;$\LaTeX$ integration&lt;/li&gt;
   &lt;li&gt;Adding figures&lt;/li&gt;
   &lt;li&gt;Utility classes like info, danger, success and warning&lt;/li&gt;
@@ -358,19 +358,17 @@ First line&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;vim-gnome
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/a4a981d0e479446054ee38cad99f5383.js&quot;&gt; &lt;/script&gt;
+&lt;p&gt;true&lt;script src=&quot;https://gist.github.com/a4a981d0e479446054ee38cad99f5383.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;latex&quot;&gt;$\LaTeX$&lt;/h2&gt;
 
-&lt;p&gt;LaTeX markup of Pythogoras theorem&lt;/p&gt;
+&lt;p&gt;LaTeX markup of Pythagoras theorem&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;a^2 + b^2 = c^2&lt;/script&gt;
 
 &lt;h2 id=&quot;utility-classes&quot;&gt;Utility Classes&lt;/h2&gt;
 
-&lt;p&gt;Currently four utility classes are suported in theme: info, danger, success and warning.&lt;/p&gt;
+&lt;p&gt;Currently four utility classes are supported in theme: info, danger, success and warning.&lt;/p&gt;
 
 &lt;h3 id=&quot;several-styled-blockquotes&quot;&gt;Several styled blockquotes&lt;/h3&gt;
 
@@ -419,40 +417,4 @@ First line&lt;/p&gt;
 
 &lt;h3 id=&quot;navbar&quot;&gt;Navbar&lt;/h3&gt;
 
-&lt;p&gt;For large screen devices, one can use the navigation bar present at the top of the screen for accessing various links. The navigation bar also highlights the current active page in the menu.&lt;/p&gt;
-
-&lt;h2 id=&quot;carousel&quot;&gt;Carousel&lt;/h2&gt;
-
-&lt;div class=&quot;carousel-box&quot;&gt;
-    &lt;div class=&quot;carousel-buttons&quot;&gt;
-        &lt;button class=&quot;carousel-prev&quot;&gt;
-            &lt;span class=&quot;carousel-offscreen&quot;&gt;Previous&lt;/span&gt;
-        &lt;/button&gt;
-        &lt;button class=&quot;carousel-next&quot;&gt;
-            &lt;span class=&quot;carousel-offscreen&quot;&gt;Next&lt;/span&gt;
-        &lt;/button&gt;
-    &lt;/div&gt;
-    &lt;ol class=&quot;carousel-content&quot;&gt;
-        &lt;li class=&quot;carousel-current&quot;&gt;&lt;!--&lt;img src=&quot;http://lorempixel.com/200/200&quot; alt=&quot;1&quot;&gt;--&gt;1&lt;/li&gt;
-        &lt;li&gt;&lt;!--&lt;img src=&quot;http://lorempixel.com/200/200&quot; alt=&quot;2&quot;&gt;--&gt;2&lt;/li&gt;
-        &lt;li&gt;&lt;!--&lt;img src=&quot;http://lorempixel.com/200/200&quot; alt=&quot;3&quot;&gt;--&gt;3&lt;/li&gt;
-        &lt;li&gt;&lt;!--&lt;img src=&quot;http://lorempixel.com/200/200&quot; alt=&quot;4&quot;&gt;--&gt;4&lt;/li&gt;
-    &lt;/ol&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;carousel-box&quot;&gt;
-    &lt;div class=&quot;carousel-buttons&quot;&gt;
-        &lt;button class=&quot;carousel-prev&quot;&gt;
-            &lt;span class=&quot;carousel-offscreen&quot;&gt;Previous&lt;/span&gt;
-        &lt;/button&gt;
-        &lt;button class=&quot;carousel-next&quot;&gt;
-            &lt;span class=&quot;carousel-offscreen&quot;&gt;Next&lt;/span&gt;
-        &lt;/button&gt;
-    &lt;/div&gt;
-    &lt;ol class=&quot;carousel-content&quot;&gt;
-        &lt;li class=&quot;carousel-current&quot;&gt;&lt;!--&lt;img src=&quot;http://lorempixel.com/200/200&quot; alt=&quot;1&quot;&gt;--&gt;5&lt;/li&gt;
-        &lt;li&gt;&lt;!--&lt;img src=&quot;http://lorempixel.com/200/200&quot; alt=&quot;2&quot;&gt;--&gt;6&lt;/li&gt;
-        &lt;li&gt;&lt;!--&lt;img src=&quot;http://lorempixel.com/200/200&quot; alt=&quot;3&quot;&gt;--&gt;7&lt;/li&gt;
-        &lt;li&gt;&lt;!--&lt;img src=&quot;http://lorempixel.com/200/200&quot; alt=&quot;4&quot;&gt;--&gt;8&lt;/li&gt;
-    &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Recently, I’ve been working on a jekyll theme which has the look and feel of the lanyon theme and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.</summary></entry></feed>
+&lt;p&gt;For large screen devices, one can use the navigation bar present at the top of the screen for accessing various links. The navigation bar also highlights the current active page in the menu.&lt;/p&gt;</content><author><name>Sona Praneeth Akula</name></author><category term="HTML5" /><category term="CSS3" /><summary type="html">Recently, I’ve been working on a jekyll theme which has the look and feel of the lanyon theme and is suitable for any screen type. Also, I wanted the theme to be easily maintainable for adding new features. This has resulted in this new jekyll theme. The core idealogy of this website’s theme has been derived from the lanyon theme.</summary></entry></feed>
