@@ -16,5 +16,12 @@
 
 @import "layout/page";
 @import "layout/container";
+@import "layout/grid";
+@import "layout/row";
+@import "layout/cols";
 @import "component/navbar";
 @import "component/sidebar";
+
+@import "component/card/card";
+@import "component/chip/chip";
+@import "component/chip/status";
