@@ -6,7 +6,14 @@ layout:
 <html lang={{site.lang}}>
 {% include head.html %}
 <body>
-{{content}}
-{% include foot.html %}
+{% include sidebar.html %}
+<div class="content" id="main-content">
+    {% include navbar.html %}
+    <main class="container">
+        {{content}}
+    </main>
+    {% include foot.html %}
+</div>
+{% include scripts-bottom.html %}
 </body>
 </html>

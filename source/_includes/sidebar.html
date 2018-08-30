@@ -1,0 +1,54 @@
+<div class="sidebar-content">
+  <label class="sidebar-toggle" id="sidebar-toggle" onclick="open_sidebar();">
+    <i class="fa fa-bars"></i>
+  </label>
+  {% assign url = page.url | remove: 'index.html' %}
+  <aside class="sidebar" id="sidebar" style="" role="navigation">
+    <div class="sidebar-item" style="text-align:right;">
+      <p class="sidebar-close" onclick="close_sidebar();">
+        <i class="fa fa-times"></i>
+      </p>
+    </div>
+    <ul class="sidebar-menu">
+      {% for menu in site.menu %}
+      <li class="{% if url == menu.url %}sidebar-active{% endif %}" style="width: 100%;">
+        <a href="{{site.baseurl}}{{menu.url}}">
+          <i class="fa fa-{{menu.icon}}"></i>&nbsp;&nbsp;{{menu.title}}
+          {% if menu.sublinks %}
+          <span style="float:right;" data-reactid="43">
+            <i class="fa fa-caret-down fa-fw" data-reactid="44"></i>
+          </span>
+          {% endif %}
+        </a>
+        {% if menu.sublinks %}
+        <ul class="sidebar-dropdown-menu">
+          {% for sublink in menu.sublinks %}
+          <li class="{% if url == sublink.url %}active{% endif %}">
+            <a href="{{site.baseurl}}{{sublink.url}}">
+              <i class="fa fa-{{sublink.icon}}"></i>&nbsp;&nbsp;{{sublink.title}}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="sidebar-item">
+      &copy;&nbsp;Sona Praneeth Akula
+      <span id="#last-modified-year"></span>
+      <script>
+        let date_year = new Date(document.lastModified);
+        let date_string_year = date_year.getFullYear();
+        let last_modified_year = document.getElementById("#last-modified-year");
+        last_modified_year.innerHTML = date_string_year;
+      </script>
+    </div>
+    <div class="sidebar-item">
+      Made in <i class="fa fa-heart"></i> with Jekyll
+    </div>
+    <div class="sidebar-item">
+      <b>Version:</b> {{site.version}}
+    </div>
+  </aside>
+</div>
