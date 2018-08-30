@@ -1,1 +1,19 @@
-
+<footer class="footer center" style="clear: both;">
+    <center>
+        <p>
+            <span id="copyright">
+                &copy;&nbsp;<a href="https://sonapraneeth-a.github.io/">{{site.author.name}}</a>
+            </span><span id="powered-by">Powered by <a href="https://sonapraneeth-a.github.io/reboot-lanyon/">Reboot lanyon</a> theme.
+            </span><span id="last-modified"></span>
+            <script>
+                let date = new Date(document.lastModified);
+                let date_string = date.toDateString() + " " + date.toLocaleTimeString();
+                let last_modified = document.getElementById("last-modified");
+                last_modified.innerHTML = "Last Modified: " + date_string;
+                let copyright = document.getElementById("copyright");
+                console.log(date.getFullYear());
+                copyright.innerHTML += date.getFullYear() + ". ";
+            </script>
+        </p>
+    </center>
+</footer>

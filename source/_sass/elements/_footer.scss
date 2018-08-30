@@ -1,0 +1,18 @@
+.footer
+{
+    z-index: $footer-zindex;
+    width: 100%;
+    background-color: $primary-background-color;
+    color: $primary-foreground-color;
+    bottom: 0;
+    position: relative;
+    p
+    {
+        margin: 0.2rem auto;
+    }
+    @include from($tablet)
+    {
+        position: fixed;
+        bottom: 0;
+    }
+}
