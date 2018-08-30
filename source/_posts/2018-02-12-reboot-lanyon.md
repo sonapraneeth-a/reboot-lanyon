@@ -5,7 +5,7 @@ categories: ['Website']
 tags: ['HTML5', 'CSS3']
 excerpt_separator: <!--more-->
 published: 12 February, 2018 15:23 IST
-assets: /assets/blog/2018-02-12-new-jekyll-theme
+assets: /assets/blog/2018-02-12-reboot-lanyon
 related: true
 comments: true
 sharing: true
@@ -21,15 +21,19 @@ The theme is open-sourced under MIT License.
 
 # Instructions to use
 
-- Fork the repository from the following [link](https://github.com/sonapraneeth-a/jekyll_theme)
+- Fork the repository from the following [link](https://github.com/sonapraneeth-a/reboot-lanyon)
+<img class="image-full-width" src="/assets/blog/2018-02-12-reboot-lanyon/fork_reboot-lanyon.PNG"/>
 - Update the ```_config.yml``` file present in the source folder
 
 # Features
 
 Some of the main features available on this theme:
 - Formatting text in markdown
+{% comment %}
 - Code highlighting using [prism.js](http://prismjs.com/)
 - Input code from file
+{% endcomment %}
+- Input code from github gist
 - $\LaTeX$ integration
 - Adding figures
 - Utility classes like info, danger, success and warning
@@ -75,13 +79,13 @@ $ sudo apt-get install vim-gnome
 
 ## $\LaTeX$
 
-LaTeX markup of Pythogoras theorem
+LaTeX markup of Pythagoras theorem
 
 $$ a^2 + b^2 = c^2 $$
 
 ## Utility Classes
 
-Currently four utility classes are suported in theme: info, danger, success and warning.
+Currently four utility classes are supported in theme: info, danger, success and warning.
 
 ### Several styled blockquotes
 
@@ -124,6 +128,7 @@ For convinience on mobile devices, there is a sidebar which can be toggled on/of
 
 For large screen devices, one can use the navigation bar present at the top of the screen for accessing various links. The navigation bar also highlights the current active page in the menu.
 
+{% comment %}
 ## Carousel
 
 <div class="carousel-box">
@@ -159,3 +164,4 @@ For large screen devices, one can use the navigation bar present at the top of t
         <li><!--<img src="http://lorempixel.com/200/200" alt="4">-->8</li>
     </ol>
 </div>
+{% endcomment %}
