@@ -132,6 +132,10 @@
     {
         display: none;
     }
+    .navbar-menu-item
+    {
+        border: 0.05rem solid $navbar-foreground-color;
+    }
 }
 
 /* https://tympanus.net/Tutorials/CustomDropDownListStyling/index3.html */
