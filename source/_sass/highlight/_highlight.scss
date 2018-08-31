@@ -1,0 +1,41 @@
+figure.highlight
+{
+    margin: 1rem 0;
+}
+pre.highlight
+{
+    padding: 0.5rem 1rem;
+}
+pre, code
+{
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    white-space: pre;
+}
+.code
+{
+    pre span
+    {
+        font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        white-space: pre;
+    }
+}
+.highlight
+{
+    code span
+    {
+        font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        white-space: pre;
+    }
+}
+.highlight .lineno
+{
+    padding: 0 1rem;
+}
+.highlight .code
+{
+    padding: 0 1rem;
+}
+.highlighter-rouge
+{
+    color: black
+}
