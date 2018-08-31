@@ -8,7 +8,7 @@
     </div>
   </a>
   {% else %}
-  <a class="post-page previous-post hidden">Previous</a>
+  <span class="post-page hidden"></span>
   {% endif %}
   {% if page.next.url %}
   <a class="post-page" href="{{ page.next.url | relative_url }}" style="padding-right: 0;">
@@ -19,6 +19,6 @@
     <div class="next-post" style="width: 12%;"><i class="fa fa-arrow-right"></i></div>
   </a>
   {% else %}
-  <a class="hidden post-page next-post">Next</a>
+  <span class="hidden post-page"></span>
   {% endif %}
 </div>
