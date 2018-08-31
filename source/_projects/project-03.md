@@ -17,6 +17,6 @@ tags: ["Tag 02", "Tag 03"]
 slides-url: 
 report-url: 
 github-link: 
-status: Ongoing
+status: Completed
 publish: true
 ---
