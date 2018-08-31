@@ -1,3 +1,17 @@
+{% assign url = page.url %}
+{% if url contains 'blog' or url contains 'projects' %}
+<script type="text/x-mathjax-config" defer>
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+            displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+            processEscapes: true
+        },
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML-full" defer></script>
+{% endif %}
 <script>
   var toggle_sidebar = () => {
 
@@ -12,7 +26,9 @@
     let sidebar_toggle = document.getElementById("sidebar-toggle");
     sidebar_toggle.classList.remove("on");
     sidebar_toggle.classList.add("off");
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    let footer = document.getElementById("footer");
+    footer.classList.add("hidden");
   };
   var close_sidebar = () => {
     let sidebar = document.getElementById("sidebar");
@@ -24,6 +40,26 @@
     let sidebar_toggle = document.getElementById("sidebar-toggle");
     sidebar_toggle.classList.remove("off");
     sidebar_toggle.classList.add("on");
-    document.body.style.backgroundColor = "white";
+    // document.body.style.backgroundColor = "white";
+    let footer = document.getElementById("footer");
+    footer.classList.remove("hidden");
+
   };
 </script>
+{% if url contains '/search' %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.2/lunr.min.js" defer></script>
+{% endif %}
+{% if url contains 'blog/search' and site.environment == "production" %}
+<script type="text/javascript" src="{{site.baseurl}}/public/js/blog.js" defer></script>
+{% endif %}
+{% if url contains 'blog/search' and site.environment == "development" %}
+<script type="text/javascript" src="{{site.baseurl}}/public/js/posts.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/js/search-blog.js" defer></script>
+{% endif %}
+{% if url contains 'projects/search' and site.environment == "production" %}
+<script type="text/javascript" src="{{site.baseurl}}/public/js/project.js" defer></script>
+{% endif %}
+{% if url contains 'projects/search' and site.environment == "development" %}
+<script type="text/javascript" src="{{site.baseurl}}/public/js/projects.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/js/search-project.js" defer></script>
+{% endif %}
