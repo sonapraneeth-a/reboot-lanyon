@@ -75,11 +75,17 @@ layout: default
       <div class="col-dp-9">
         <div class="blog-body">
           {{content}}
+          {% include pager.html %}
+          {% include related_posts.html %}
+          {% include comments/comments.html %}
         </div>
       </div>
       {% else %}
       <div class="blog-body">
         {{content}}
+        {% include pager.html %}
+        {% include related_posts.html %}
+        {% include comments/comments.html %}
       </div>
       {% endif %}
     </div>
