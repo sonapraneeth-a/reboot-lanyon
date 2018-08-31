@@ -4,8 +4,10 @@
 <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">-->
 <!--<link href="https://fonts.googleapis.com/css?family=Tenali+Ramakrishna|Ramabhadra&amp;subset=telugu" rel="stylesheet">-->
 <!-- External style sheets -->
-{% if site.environment == "production" and site.build == "gulp" %}
+{% if site.environment == "production" and site.build == "gulp" and site.baseurl == "" %}
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/all.css" inline>
+{% elsif site.environment == "production" and site.build == "gulp" and site.baseurl != "" %}
+<link rel="stylesheet" type="text/css" href="/public/css/all.css" inline>
 {% endif %}
 {% if site.environment == "development" %}
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css" inline>

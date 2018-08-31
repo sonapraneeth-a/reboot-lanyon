@@ -157,12 +157,15 @@ gulp.task("gulp::inline-css", () =>
 });
 
 gulp.task("gulp::inline-source", function () {
-    var options = {
-        compress: true,
-        rootpath: __dirname + '../../../../'+paths.temp_site_dir,
-    };
-    return gulp.src([paths.temp_site_dir + "**/*.html", 
-                        "!"+paths.temp_site_dir+"public/plugins/fontello/demo.html"])
-        .pipe(inlineSource(options))
-        .pipe(gulp.dest([paths.temp_site_dir]));
+    if(argv.prod)
+    {
+        var options = {
+            compress: true,
+            rootpath: __dirname + '../../../../'+paths.temp_site_dir,
+        };
+        return gulp.src([paths.temp_site_dir + "**/*.html", 
+                            "!"+paths.temp_site_dir+"public/plugins/fontello/demo.html"])
+            .pipe(inlineSource(options))
+            .pipe(gulp.dest([paths.temp_site_dir]));
+    }
 });
