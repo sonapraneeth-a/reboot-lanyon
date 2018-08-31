@@ -11,8 +11,8 @@ comments: true
 sharing: true
 publish: true
 toc: true
-toc_label: "On this page"
-toc_icon: "table"  # corresponding Font Awesome icon name (without fa prefix)
+toc_label: On this page
+toc_icon: table  # corresponding Font Awesome icon name (without fa prefix)
 ---
 
 In this blog, we present various css options available in this theme <!--more-->
