@@ -2,4 +2,86 @@
 layout: default
 ---
 
-{{content}}
+
+<div class="main-content">
+  <header>
+    <h1 class="blog-title">{{page.title}}</h1>
+    <div class="chip">
+    <span class="chip-content">
+        <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+        &nbsp;{{page.published | date: "%d %B %Y %R IST"}}
+    </span>
+    </div>
+    <div class="chip">
+    <span class="chip-content">
+        <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+        &nbsp;{{page.last_modified_at | date: "%d %B %Y %R IST"}}
+    </span>
+    </div>
+    <span>
+      {% for tag in page.tags %}
+      <a class="tag" href="{{site.baseurl}}/blog/tags/#{{tag | slugify: 'pretty'}}">
+        <span class="chip">
+          <span class="chip-content"><i class="fa fa-tag"></i>&nbsp;{{tag}}</span>
+        </span>
+      </a>
+      {% endfor %}
+    </span>
+    <span>
+      {% for category in page.categories %}
+      <a class="tag" href="{{site.baseurl}}/blog/categories/#{{category | slugify: 'pretty'}}">
+        <span class="chip">
+          <span class="chip-content"><i class="fa fa-folder-open"></i>&nbsp;{{category}}</span>
+        </span>
+      </a>
+      {% endfor %}
+    </span>
+    <span class="chip">
+      <span class="chip-content">
+        <i class="fa fa-clock"></i>&nbsp;
+        {% assign words_per_minute = site.words_per_minute | default: 200 %}
+        {% assign words = page.content | strip_html | number_of_words %}
+        {% if words < words_per_minute %}
+        ~1&nbsp;min&nbsp;read
+        {% else %}
+        {{ words | divided_by:words_per_minute }}&nbsp;min&nbsp;read
+        {% endif %}
+      </span>
+    </span>
+    <hr>
+  </header>
+  <section>
+    <div class="row">
+      {% if page.toc == true %}
+      <div class="col-dp-3 blog-toc-sticky">
+        <div class="blog-toc">
+          <h4 class="blog-toc-title">
+            {% if page.toc_icon %}
+            <i class="fa fa-{{page.toc_icon}}"></i>
+            {% else %}
+            <i class="fa fa-table"></i>
+            {% endif %}
+            {% if page.toc_label != "" %}
+            {{page.toc_label}}
+            {% else %}
+            Table of contents
+            {% endif %}
+          </h4>
+          <div class="blog-toc-contents">
+            {% include toc.html sanitize=true html=content h_min=1 h_max=4 class="toc__menu" %}
+          </div>
+        </div>
+      </div>
+      <div class="col-dp-9">
+        <div class="blog-body">
+          {{content}}
+        </div>
+      </div>
+      {% else %}
+      <div class="blog-body">
+        {{content}}
+      </div>
+      {% endif %}
+    </div>
+  </section>
+</div>
