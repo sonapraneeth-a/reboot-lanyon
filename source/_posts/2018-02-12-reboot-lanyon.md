@@ -40,13 +40,13 @@ Some of the main features available on this theme:
 - Menus
     - Sidebar
     - Navigation bar
-- FontAwesome icons for navigation menu items
+- FontAwesome 5 icons for navigation menu and sidebar menu items
 - Blog posts
     - Sticky table of contents for the blog posts
     - Estimated time to read the post as well last modified date for the post
     - Sharing modules (facebook, gplus, twitter, linkedin etc.,) for all posts
-    - Search box for searching through posts based on key works
-    - Option for scrolling long posts
+    - Search box for searching through posts based on key words
+    - Option for scrolling to the top for long posts
 - Google Analytics for tracking
 
 
@@ -75,11 +75,13 @@ int main()
 ```bash
 $ sudo apt-get install vim-gnome
 ```
+{% comment %}
 {% gist a4a981d0e479446054ee38cad99f5383 %}
+{% endcomment %}
 
 ## $\LaTeX$
 
-LaTeX markup of Pythagoras theorem
+$LaTeX$ markup of Pythagoras theorem
 
 $$ a^2 + b^2 = c^2 $$
 
@@ -87,25 +89,25 @@ $$ a^2 + b^2 = c^2 $$
 
 Currently four utility classes are supported in theme: info, danger, success and warning.
 
-### Several styled blockquotes
+### Styled blockquotes
 
 > **Information block**  
 > First line
-{: .block-info}
+{: .blockquote .info}
 
 > **Danger block**  
 > First line
-{: .block-danger}
+{: .blockquote .danger}
 
 > **Success block**  
 > First line
-{: .block-success}
+{: .blockquote .success}
 
 > **Warning block**  
 > First line
-{: .block-warning}
+{: .blockquote .warning}
 
-### Several styled text
+### Styled text
 
 - Information text
 {: .info}
@@ -115,6 +117,45 @@ Currently four utility classes are supported in theme: info, danger, success and
 {: .success}
 - Warning text
 {: .warning}
+
+### Styled admonitions
+
+<div class="admonition info">
+    <div class="admonition-title">
+    Information
+    </div>
+    <div class="admonition-content">
+    A lot of information in this admonition
+    </div>
+</div>
+
+<div class="admonition danger">
+    <div class="admonition-title">
+    Information
+    </div>
+    <div class="admonition-content">
+    A lot of information in this admonition
+    </div>
+</div>
+
+<div class="admonition success">
+    <div class="admonition-title">
+    Information
+    </div>
+    <div class="admonition-content">
+    A lot of information in this admonition
+    </div>
+</div>
+
+<div class="admonition warning">
+    <div class="admonition-title">
+    Information
+    </div>
+    <div class="admonition-content">
+    A lot of information in this admonition
+    </div>
+</div>
+
 
 ## Menu
 
