@@ -15,4 +15,8 @@
         position: fixed;
         bottom: 0;
     }
+    &.hidden
+    {
+        visibility: hidden;
+    }
 }
