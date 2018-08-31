@@ -15,6 +15,10 @@ repository  : sonapraneeth-a.github.io/reboot-lanyon
 environment : "development"
 build       : "jekyll"
 
+# Site config
+flat        : true
+skin        : base-01
+
 # SEO
 logo:
 social:
