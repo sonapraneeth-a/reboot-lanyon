@@ -6,24 +6,30 @@ icon: pencil-alt
 
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
 {% for year in postsByYear %}
-<h3 class="archive-year">{{year.name}}</h3>
+<h2 class="archive-year">{{year.name}}</h2>
 {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%b'"  %}
 {% for month in postsByMonth %}
 <div>
-<h4 class="archive-month">{{month.name}}</h4>
-<ul class="archive-list">
+<h3 class="archive-month">{{month.name}}</h3>
+<ul class="archive-list" style="list-style-type: none;">
     {% for post in month.items %}
-    <li>
-        <span class="archive-date">{{ post.date | date_to_string }}</span>
-        <a href="{{site.baseurl}}{{ post.url }}" class="archive-title">
-            {{ post.title }}
-        </a>
+    <li style="margin-bottom: 0.5rem;">
+        <div class="card">
+            <div class="card-content">
+                <a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration: none;">
+                    <span>{{ post.title }}</span>
+                </a>
+                <span style="float: right;">{{ post.date | date_to_string }}</span>
+            </div>
+        </div>
     </li>
     {% endfor %}
 </ul>
 </div>
 {% endfor %}
 {% endfor %}
+
+
 <!--{% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'"  %}
 {% for yearMonth in postsByYearMonth %}
 {{yearMonth}}

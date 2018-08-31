@@ -6,19 +6,23 @@ icon: file-code
 
 {% assign projectsByYear = site.projects | group_by_exp:"project", "project.date | date: '%Y'"  %}
 {% for year in projectsByYear reversed %}
-<h3 class="archive-year">{{year.name}}</h3>
+<h2 class="archive-year">{{year.name}}</h2>
 {% assign projectsByMonth = year.items | group_by_exp:"project", "project.date | date: '%b'"  %}
 {% for month in projectsByMonth %}
 <div>
-<h4 class="archive-month">{{month.name}}</h4>
-<ul class="archive-list">
+<h3 class="archive-month">{{month.name}}</h3>
+<ul class="archive-list" style="list-style-type: none;">
     {% for project in month.items %}
     {% if project.publish == true %}
-    <li>
-        <span class="archive-date">{{ project.date | date_to_string }}</span>
-        <a href="{{site.baseurl}}{{ project.url }}" class="archive-title">
-            {{ project.title }}
-        </a>
+    <li style="margin-bottom: 0.5rem;">
+        <div class="card">
+            <div class="card-content">
+                <a href="{{ site.baseurl }}{{ project.url }}" style="text-decoration: none;">
+                    <span>{{ project.title }}</span>
+                </a>
+                <span style="float: right;">{{ project.date | date_to_string }}</span>
+            </div>
+        </div>
     </li>
     {% endif %}
     {% endfor %}
