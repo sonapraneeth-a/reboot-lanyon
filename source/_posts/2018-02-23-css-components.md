@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS Components in Reload Lanyon
+title: CSS Components in Reboot Lanyon
 categories: ['Website']
 tags: ['HTML5', 'CSS3']
 excerpt_separator: <!--more-->
@@ -46,10 +46,12 @@ In this blog, we present various css options available in this theme <!--more-->
 ### Card
 
 <div class="card">
-    <p class="card-title">Title</p>
-    <p class="card-content">
-    Content
-    </p>
+    <div class="card-content">
+        <div class="card-title">Title</div>
+        <div class="card-details">
+        Content
+        </div>
+    </div>
 </div>
 
 ## Utility Classes
@@ -60,19 +62,19 @@ Currently four utility classes are suported in theme: info, danger, success and 
 
 > **Information block**  
 > First line
-{: .block-info}
+{: .blockquote .info}
 
 > **Danger block**  
 > First line
-{: .block-danger}
+{: .blockquote .danger}
 
 > **Success block**  
 > First line
-{: .block-success}
+{: .blockquote .success}
 
 > **Warning block**  
 > First line
-{: .block-warning}
+{: .blockquote .warning}
 
 ### Styled text
 
