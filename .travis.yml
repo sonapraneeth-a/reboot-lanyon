@@ -3,6 +3,7 @@ rvm:
 - 2.5.1
 
 before_script:
+    - npm config set strict-ssl false
     - npm install
     - npm install gulp
     - npm link gulp@4.0.0
