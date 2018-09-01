@@ -6,6 +6,13 @@
   <title>
       {{ page.title }} | {{ site.title }}
   </title>
+  {% if site.plugins contains 'jekyll-seo-tag' %}
+  {% comment %}
+  Add metadata for search engines and social networks if jekyll-seo-tag plugin is enabled
+  {% endcomment %}
+  {% include head-seo.html %}
+  {% endif %}
+  {% feed_meta %}
   {% include stylesheets.html %}
   <link rel="manifest" type="application/manifest+json" href="{{site.baseurl}}/manifest.json">
 </head>
