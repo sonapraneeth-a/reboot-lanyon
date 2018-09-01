@@ -52,17 +52,18 @@ plugins:
 #    - html-proofer
 markdown: kramdown
 kramdown:
-    auto_ids      : true
-    entity_output : as_char
-    toc_levels    : 1..4
-    smart_quotes  : lsquo,rsquo,ldquo,rdquo
-    input         : GFM
-    hard_wrap     : false
-    footnote_nr   : 1
-    show_warnings : true
-# sass:
-#     style         : compressed
-#     sass_dir      : _scss
+    auto_ids           : true
+    entity_output      : as_char
+    toc_levels         : 1..4
+    smart_quotes       : lsquo,rsquo,ldquo,rdquo
+    input              : GFM
+    hard_wrap          : false
+    footnote_nr        : 1
+    show_warnings      : true
+    syntax_highlighter : rouge
+sass:
+    style         : compressed
+    sass_dir      : _sass
 highlighter       : rouge
 timezone          : Asia/Kolkata
 encoding          : "utf-8"
