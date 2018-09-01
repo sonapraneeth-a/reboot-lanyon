@@ -1,19 +1,19 @@
 .info
 {
-  color: $info;
+  color: darken($info, 20%);
 }
 
 .warning
 {
-  color: $warning;
+  color: darken($warning, 20%);
 }
 
 .success
 {
-  color: $success;
+  color: darken($success, 20%);
 }
 
 .danger
 {
-  color: $danger;
+  color: darken($danger, 20%);
 }
