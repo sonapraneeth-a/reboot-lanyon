@@ -17,10 +17,10 @@
         box-shadow: 0 5px 5px 0 rgba(0,0,0,0.14), 0 3px 8px 0 rgba(0,0,0,0.12), 0 5px 3px -4px rgba(0,0,0,0.2);
     }
     width: 100%;
-    height: 100%;
+    //height: 100%;
     @include clearfix;
 
-    .card-image > img
+    .card-image
     {
         width: 100%;
         @if $flat == true 
@@ -48,18 +48,19 @@
     .card-content
     {
         //height: 100%;
+        position: relative;
         padding: 1rem;
     }
 
     .card-details
     {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
         margin-top: 1rem;
     }
 
     .card-footer
     {
-        position: absolute;
+        position: relative;
         width: 100%;
         padding: 2%;
         border-top: 0.1rem solid rgba(160,160,160,0.2);
