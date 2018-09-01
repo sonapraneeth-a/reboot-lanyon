@@ -49,7 +49,7 @@ plugins:
 - jekyll/figure
 - jekyll-gist
 - pygments
-#    - html-proofer
+- html-proofer
 markdown: kramdown
 kramdown:
     auto_ids           : true
