@@ -47,9 +47,9 @@ layout: default
   <section>
     <div class="row">
       {% if page.toc == true %}
-      <div class="col-dp-3 blog-toc-sticky">
+      <div class="col-dp-3 col-tb-4 col-mb-12 is-blog-toc-sticky">
         <div class="blog-toc">
-          <h4 class="blog-toc-title">
+          <h3 class="blog-toc-title">
             {% if page.toc_icon %}
             <i class="fa fa-{{page.toc_icon}}"></i>&nbsp;&nbsp;
             {% else %}
@@ -60,13 +60,13 @@ layout: default
             {% else %}
             Table of contents
             {% endif %}
-          </h4>
+          </h3>
           <div class="blog-toc-contents">
             {% include toc.html sanitize=true html=content h_min=1 h_max=4 class="toc__menu" %}
           </div>
         </div>
       </div>
-      <div class="col-dp-9">
+      <div class="col-dp-9 col-tb-8 col-mb-12">
         <div class="blog-body">
           {{content}}
         </div>
