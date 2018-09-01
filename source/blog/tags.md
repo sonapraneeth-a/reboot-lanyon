@@ -4,31 +4,42 @@ title: Blog - Tags
 icon: pencil-alt
 ---
 
-<div style="display: inline;">
+<div style="display: inline-flex; flex-wrap: wrap;">
     {% for tag in site.tags %}
     {% assign count = 0 %}
     {% for post in tag[1] %}
     {% assign count = count | plus: 1 %}
     {% endfor %}
-    <a href="#{{ tag[0] | slugify: 'pretty' }}" class="tag">
-        <span class="tag-content">{{ tag[0] }}</span>
-        <span class="tag-count">{{ count }}</span>
+    <a href="#{{ tag[0] | slugify: 'pretty' }}" style="text-decoration: none;">
+        <div class="chip">
+            <span class="chip-content">
+            <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ tag[0] }}</span>
+            <span class="chip-count">{{ count }}</span>
+        </div>
     </a>
     {% endfor %}
 </div>
 
+<ul style="list-style-type: none; padding-left: 0px;">
 {% for tag in site.tags %}
-<h2 id="{{ tag[0] | slugify: 'pretty' }}">
-    <a href="#{{ tag[0] | slugify: 'pretty' }}" class="post-tag">{{ tag[0] }}</a>
-</h2>
-<ul class="tag-list">
-    {% for post in tag[1] %}
-    <li>
-        <span class="tag-date">{{ post.date | date_to_string }}</span>
-        <a class="tag-title" href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-        </a>
-    </li>
-    {% endfor %}
-</ul>
+<li>
+    <h2 id="{{ tag[0] | slugify: 'pretty' }}">{{ tag[0] }}</h2>
+    <ul style="list-style-type: none; padding-left: 1rem;">
+        {% for post in tag[1] %}
+        {% if post.publish == true %}
+        <li style="margin-bottom: 0.5rem;">
+            <div class="card">
+                <div class="card-content">
+                    <a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration: none;">
+                        <span>{{ post.title }}</span>
+                    </a>
+                    <span style="float: right;">{{ post.date | date_to_string }}</span>
+                </div>
+            </div>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</li>
 {% endfor %}
+</ul>

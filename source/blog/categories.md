@@ -4,31 +4,42 @@ title: Blog - Categories
 icon: pencil-alt
 ---
 
-<div style="display: inline;">
+<div style="display: inline-flex; flex-wrap: wrap;">
     {% for category in site.categories %}
     {% assign count = 0 %}
     {% for post in category[1] %}
     {% assign count = count | plus: 1 %}
     {% endfor %}
-    <a href="#{{ category[0] | slugify: 'pretty' }}" class="category">
-        <span class="category-content">{{ category[0] }}</span>
-        <span class="category-count">{{ count }}</span>
+    <a href="#{{ category[0] | slugify: 'pretty' }}" style="text-decoration: none;">
+        <div class="chip">
+            <span class="chip-content">
+            <i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;{{ category[0] }}</span>
+            <span class="chip-count">{{ count }}</span>
+        </div>
     </a>
     {% endfor %}
 </div>
 
+<ul style="list-style-type: none; padding-left: 0px;">
 {% for category in site.categories %}
-<h2 id="{{ category[0] | slugify: 'pretty' }}">
-    <a href="#{{ category[0] | slugify: 'pretty' }}" class="post-category">{{ category[0] }}</a>
-</h2>
-<ul class="category-list">
-    {% for post in category[1] %}
-    <li>
-        <span class="category-date">{{ post.date | date_to_string }}</span>
-        <a class="category-title" href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-        </a>
-    </li>
-    {% endfor %}
-</ul>
+<li>
+    <h2 id="{{ category[0] | slugify: 'pretty' }}">{{ category[0] }}</h2>
+    <ul style="list-style-type: none; padding-left: 1rem;">
+        {% for post in category[1] %}
+        {% if post.publish == true %}
+        <li style="margin-bottom: 0.5rem;">
+            <div class="card">
+                <div class="card-content">
+                    <a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration: none;">
+                        <span>{{ post.title }}</span>
+                    </a>
+                    <span style="float: right;">{{ post.date | date_to_string }}</span>
+                </div>
+            </div>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</li>
 {% endfor %}
+</ul>
