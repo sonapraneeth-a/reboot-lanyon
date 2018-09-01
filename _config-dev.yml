@@ -38,18 +38,19 @@ data_dir     : _data
 includes_dir : _includes
 posts_dir    : _posts
 plugins:
-- jekyll-paginate-v2
-- jekyll-sitemap
-- jekyll-feed
-- jekyll-last-modified-at
-#    - mm-jekyll-prism
-- jemoji
-- jekyll-seo-tag
-- jekyll-typogrify
-- jekyll/figure
-- jekyll-gist
-- pygments
-- html-proofer
+    - jekyll-paginate-v2
+    - jekyll-sitemap
+    - jekyll-feed
+    - jekyll-last-modified-at
+    - mm-jekyll-prism
+    - jemoji
+    - jekyll-seo-tag
+    - jekyll-typogrify
+    - jekyll/figure
+    - jekyll-gist
+    - pygments
+    - jekyll-tidy
+    - html-proofer
 markdown: kramdown
 kramdown:
     auto_ids           : true
@@ -136,43 +137,43 @@ menu:
   icon  : 'file-code'
   class : 'project'
   sublinks:
-  - title : 'Categories'
-    url   : '/projects/categories/'
-    icon  : 'folder-open'
-    class : 'categories'
-  - title : 'Search'
-    url   : '/projects/search/'
-    icon  : 'search'
-    class : 'search'
-  - title : 'Tags'
-    url   : '/projects/tags/'
-    icon  : 'tag'
-    class : 'tags'
-  - title : 'Archives'
-    url   : '/projects/archives/'
-    icon  : 'file-archive'
-    class : 'archives'
+      - title : 'Categories'
+        url   : '/projects/categories/'
+        icon  : 'folder-open'
+        class : 'categories'
+      - title : 'Search'
+        url   : '/projects/search/'
+        icon  : 'search'
+        class : 'search'
+      - title : 'Tags'
+        url   : '/projects/tags/'
+        icon  : 'tag'
+        class : 'tags'
+      - title : 'Archives'
+        url   : '/projects/archives/'
+        icon  : 'file-archive'
+        class : 'archives'
 - title : 'Blog'
   url   : '/blog/'
   icon  : 'pencil-alt'
   class : 'blog'
   sublinks:
-  - title : 'Categories'
-    url   : '/blog/categories/'
-    icon  : 'folder-open'
-    class : 'categories'
-  - title : 'Search'
-    url   : '/blog/search/'
-    icon  : 'search'
-    class : 'search'
-  - title : 'Tags'
-    url   : '/blog/tags/'
-    icon  : 'tag'
-    class : 'tags'
-  - title : 'Archives'
-    url   : '/blog/archives/'
-    icon  : 'file-archive'
-    class : 'archives'
+      - title : 'Categories'
+        url   : '/blog/categories/'
+        icon  : 'folder-open'
+        class : 'categories'
+      - title : 'Search'
+        url   : '/blog/search/'
+        icon  : 'search'
+        class : 'search'
+      - title : 'Tags'
+        url   : '/blog/tags/'
+        icon  : 'tag'
+        class : 'tags'
+      - title : 'Archives'
+        url   : '/blog/archives/'
+        icon  : 'file-archive'
+        class : 'archives'
 
 google_analytics_token : 'UA-90733014-1' # leave blank if you don't want google analytics
 disqus_short_name      : 'sonapraneethakula' # leave blank if you don't want disqus
@@ -188,19 +189,24 @@ webmaster_verifications:
 
 # Exclude these files from your production _site
 exclude:
-- LICENSE
-- README.md
-- Gemfile
-- Gemfile.lock
+    - LICENSE
+    - README.md
+    - Gemfile
+    - Gemfile.lock
 include:
-- .htaccess
+    - .htaccess
 
-compress_html:
-    clippings  : []
-    comments   : ["<!-- ", " -->"]
-    endings    : []
-    ignore:
-        envs: []
-    blanklines : true
-    profile    : false
-    startings  : []
+jekyll_tidy:
+    exclude: [""]
+    ignore_env:
+    compress_html: false
+
+#compress_html:
+#    clippings  : []
+#    comments   : [""]
+#    endings    : []
+#    ignore:
+#        envs: [local]
+#    blanklines : true
+#    profile    : false
+#    startings  : []
