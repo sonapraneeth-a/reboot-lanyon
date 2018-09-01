@@ -6,8 +6,11 @@
 $flat : {{site.flat}};
 /* Fonts */
 @import "fonts/google/pt-sans.scss";
+@import "fonts/google/eb-garamond.scss";
 @import "fonts/icons/fontawesome-5.scss";
 @import "fonts/icons/zavoloklom-material-req.scss";
+
+@import "property/padding";
 
 @import "base/colors";
 @import "base/fonts";
@@ -18,7 +21,7 @@ $flat : {{site.flat}};
 @import "config/generic";
 @import "elements/footer";
 
-@import "layout/page";
+@import "page-layout/page";
 @import "layout/container";
 @import "layout/grid";
 @import "layout/row";
@@ -33,9 +36,10 @@ $flat : {{site.flat}};
 
 @import "component/search";
 @import "elements/input";
+@import "elements/table";
 
 @import "component/share";
-@import "layout/post";
+@import "page-layout/post";
 @import "component/pager";
 
 @import "highlight/all";
