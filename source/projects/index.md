@@ -11,6 +11,7 @@ icon: file-code
     {% if project.publish == true %}
     <div class="grid-item">
         <div class="card">
+            <!--<img class="card-image" src="{{site.baseurl}}/assets/blog/default_banner_image.jpg" alt="Blog image" title="">-->
             <div class="card-content">
                 <div class="row">
                     <div class="col-dp-9">
