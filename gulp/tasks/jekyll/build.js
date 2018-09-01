@@ -14,12 +14,12 @@ gulp.task("build::jekyll-site", (done) =>
     if(argv.prod)
     {
         log("=== Production website ===");
-        shell.exec("jekyll build --config _config.yml");
+        shell.exec("jekyll build --config _config-prod.yml");
     }
     else
     {
         log("=== Development website ===");
-        shell.exec("jekyll serve --config _config-dev.yml --incremental --port 8000");
+        shell.exec("jekyll serve --config _config-dev.yml --incremental --port 8000"); // --livereload
     }
     done();
 });
