@@ -54,6 +54,20 @@ In this blog, we present various css options available in this theme <!--more-->
     </div>
 </div>
 
+### Panel
+
+{::options parse_block_html="true" /}
+<div class="panel">
+Heading
+{: .panel-header}
+Content
+{: .panel-content}
+Footer
+{: .panel-footer}
+</div>
+{::options parse_block_html="false" /}
+
+
 ## Utility Classes
 
 Currently four utility classes are suported in theme: info, danger, success and warning.
@@ -87,15 +101,40 @@ Currently four utility classes are suported in theme: info, danger, success and 
 - Warning text
 {: .warning}
 
-### Panel
+### Styled admonitions
 
-{::options parse_block_html="true" /}
-<div class="panel">
-Heading
-{: .panel-header}
-Content
-{: .panel-content}
-Footer
-{: .panel-footer}
+<div class="admonition info">
+    <div class="admonition-title">
+    Information
+    </div>
+    <div class="admonition-content">
+    A lot of information in this admonition
+    </div>
 </div>
-{::options parse_block_html="false" /}
+
+<div class="admonition danger">
+    <div class="admonition-title">
+    Information
+    </div>
+    <div class="admonition-content">
+    A lot of information in this admonition
+    </div>
+</div>
+
+<div class="admonition success">
+    <div class="admonition-title">
+    Information
+    </div>
+    <div class="admonition-content">
+    A lot of information in this admonition
+    </div>
+</div>
+
+<div class="admonition warning">
+    <div class="admonition-title">
+    Information
+    </div>
+    <div class="admonition-content">
+    A lot of information in this admonition
+    </div>
+</div>

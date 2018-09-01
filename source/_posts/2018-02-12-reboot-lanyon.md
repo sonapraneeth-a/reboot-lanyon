@@ -28,13 +28,13 @@ The theme is open-sourced under MIT License.
 # Features
 
 Some of the main features available on this theme:
-- Formatting text in markdown
+- Formatting text in markdown[^1]
 {% comment %}
 - Code highlighting using [prism.js](http://prismjs.com/)
 - Input code from file
 {% endcomment %}
 - Input code from github gist
-- $\LaTeX$ integration
+- $\LaTeX$ integration[^latex]
 - Adding figures
 - Utility classes like info, danger, success and warning
 - Menus
@@ -62,7 +62,7 @@ With the use of markdown, it is easy to generate the web-page content without wo
 
 This is a test code written in C++ highlighted using monokai theme using rouge highlighter.
 
-{% highlight cpp linenos %}
+{% highlight cpp linenos hl_lines=3 %}
 #include <cstdio>
 
 int main()
@@ -75,13 +75,15 @@ int main()
 ```bash
 $ sudo apt-get install vim-gnome
 ```
+
+<p><script src="https://gist.github.com/sonapraneeth-a/a4a981d0e479446054ee38cad99f5383.js"></script></p>
 {% comment %}
 {% gist a4a981d0e479446054ee38cad99f5383 %}
 {% endcomment %}
 
 ## $\LaTeX$
 
-$LaTeX$ markup of Pythagoras theorem
+$\LaTeX$ markup of Pythagoras theorem
 
 $$ a^2 + b^2 = c^2 $$
 
@@ -169,6 +171,19 @@ For convinience on mobile devices, there is a sidebar which can be toggled on/of
 
 For large screen devices, one can use the navigation bar present at the top of the screen for accessing various links. The navigation bar also highlights the current active page in the menu.
 
+
+##### Footnotes
+
+[^1]: Markdown is a subset of HTML Markup
+[^latex]: [MathJax Docs](http://docs.mathjax.org/en/latest/mathjax.html)
+
+{% comment %}
+##### Footnotes
+
+* footnotes will be placed here. This line is necessary
+{:footnotes}
+{% endcomment %}
+
 {% comment %}
 ## Carousel
 
@@ -206,3 +221,4 @@ For large screen devices, one can use the navigation bar present at the top of t
     </ol>
 </div>
 {% endcomment %}
+
