@@ -1,0 +1,60 @@
+div.code-toolbar > .toolbar
+{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    opacity: 1;
+    transition: none;
+}
+
+div.code-toolbar > .toolbar a, div.code-toolbar > .toolbar button, div.code-toolbar > .toolbar span {
+    background-color: black;
+    color: white;
+    font-size: .8em;
+    padding: 0 .5em;
+    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+    border-radius: 0;
+    border: 1px solid white;
+}
+
+.toolbar-item
+{
+    margin-right: 0.5rem;
+}
+
+div.code-toolbar > .toolbar a:hover,
+div.code-toolbar > .toolbar a:focus,
+div.code-toolbar > .toolbar button:hover,
+div.code-toolbar > .toolbar button:focus,
+div.code-toolbar > .toolbar span:hover,
+div.code-toolbar > .toolbar span:focus
+{
+    color: white;
+    /* text-decoration: none; */
+}
+
+div.code-toolbar {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.line-highlight
+{
+    background: hsla(23, 19%, 52%, 0.2);
+}
+
+pre[class*="language-"] {
+    @if $flat == true
+    {
+        border-radius: 0;
+    }
+}
+
+:not(pre) > code[class*="language-"] {
+    padding: 0.1rem 0.2rem;
+}
+
+code span
+{
+    font-family: $coding-font;
+}
