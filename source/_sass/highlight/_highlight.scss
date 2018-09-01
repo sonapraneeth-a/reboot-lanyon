@@ -10,6 +10,7 @@ pre, code
 {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     white-space: pre;
+    overflow-x: auto;
 }
 .code
 {
@@ -38,4 +39,59 @@ pre, code
 .highlighter-rouge
 {
     color: black
+}
+
+/* Block code, highlight */
+figure.highlight, div.highlight {
+    position: relative;
+    pre {
+        /* Reference: https://github.com/m-cat/bytedude.com/blob/master/_sass/minutia/_syntax-highlighting.scss */
+        /*&:before
+        {
+            content: "Copy";
+            position: absolute;
+            right: 34px; // 15 + 19
+            font-size: 11px;
+            top: -10px;
+            padding: 0.1rem;
+
+            border: 1px solid gray;
+            border-radius: 0.1rem;
+
+            min-width: 40px;
+            text-align: center;
+
+            color: white;
+            background-color: black;
+        }*/
+        code {
+            counter-reset: code;
+            display: block;
+            line-height: 1.5;
+            /* Display language name */
+            &[data-lang]:before {
+                content: attr(data-lang);
+                position: absolute;
+                right: 80px; // 15 + 19
+                font-size: 11px;
+                top: -10px;
+                padding: 0.1rem;
+
+                border: 1px solid gray;
+                border-radius: 0.1rem;
+
+                min-width: 40px;
+                text-align: center;
+
+                color: white;
+                background-color: black;
+
+            }
+
+        }
+    }
+}
+.language-*
+{
+    margin: 1rem 0;
 }
