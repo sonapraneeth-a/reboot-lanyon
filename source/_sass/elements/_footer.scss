@@ -19,4 +19,9 @@
     {
         visibility: hidden;
     }
+    a
+    {
+        color: $primary-foreground-color;
+        font-weight: bold;
+    }
 }
