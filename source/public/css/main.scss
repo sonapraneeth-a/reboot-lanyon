@@ -42,10 +42,14 @@ $flat : {{site.flat}};
 @import "page-layout/post";
 @import "component/pager";
 
-@import "highlight/all";
+/*@import "highlight/all";*/
 @import "elements/img";
 
 @import "elements/blockquote";
 @import "elements/text";
 
 @import "component/admonition";
+
+@import "prism/config";
+@import "highlight/gist/gist-config";
+@import "highlight/gist/gist-style-okaidia";
