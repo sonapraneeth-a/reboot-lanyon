@@ -1,0 +1,31 @@
+<script type="text/javascript">
+  window.onscroll = function() {scrollFunction();}
+  let marginY = 0;
+  let speed = 20;
+  let scroller = null;
+  function scrollFunction()
+  {
+    if(document.documentElement.scrollTop + window.innerHeight >= document.documentElement.scrollHeight)
+    { document.getElementById("scroll").style.display = "none"; }
+    else if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+    { document.getElementById("scroll").style.display = "table-cell"; }
+    else
+    { document.getElementById("scroll").style.display = "none"; }
+  }
+  // Reference: https://www.youtube.com/watch?v=FAa6w4xlcGQ
+  function scrollToTop()
+  {
+    //document.body.scrollTop = 0;
+    //document.documentElement.scrollTop = 0;
+    marginY = window.pageYOffset;
+    marginY = marginY - speed;
+    scroller = setTimeout(function(){
+      scrollToTop();
+    }, 1);
+    if(marginY <= 0)
+    {
+      clearTimeout(scroller);
+    }
+    window.scroll(0, marginY);
+  }
+</script>
