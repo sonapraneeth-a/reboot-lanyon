@@ -12,7 +12,7 @@ const tasks       = require_dir("./gulp/tasks", {recurse: true});
 const paths = require("./gulp/paths");
 
 // Jekyll tasks
-gulp.task("default::jekyll", gulp.series("build::jekyll-site"));
+gulp.task("default::jekyll", gulp.series("clean::public_html", "build::jekyll-site"));
 
 // Default task (Either default::jekyll)
 /* gulp default : No compression/minification */
