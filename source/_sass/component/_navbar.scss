@@ -152,6 +152,10 @@
         background-color: darken($navbar-background-color, 10%);
         width: 8rem;
         margin: 0;
+        &:hover
+        {
+            background-color: $navbar-background-color;
+        }
     }
     &::before
     {
