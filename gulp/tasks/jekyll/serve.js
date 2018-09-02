@@ -23,3 +23,20 @@ gulp.task("serve::jekyll-site", (done) =>
     }
     done();
 });
+
+// "gulp serve::local::jekyll-site --prod" -- Builds and serves the website live
+gulp.task("serve::local::jekyll-site", (done) =>
+{
+    log("=== Serving public_html site for Jekyll ===");
+    if(argv.prod)
+    {
+        log("=== Production Jekyll website ===");
+        shell.exec("jekyll serve --config _config-prod.yml");
+    }
+    else
+    {
+        log("=== Development Jekyll website ===");
+        shell.exec("jekyll serve --config _config-local-dev.yml --incremental --port 8000"); // --livereload
+    }
+    done();
+});
