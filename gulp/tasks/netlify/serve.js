@@ -8,7 +8,7 @@ const log        = require("fancy-log");
 const paths = require("../../paths");
 
 // "gulp serve::netlify-site --prod" -- Builds and serves the website live
-gulp.task("serve::jekyll-site", (done) =>
+gulp.task("serve::netlify-site", (done) =>
 {
     log("=== Serving public_html site for Netlify ===");
     if(argv.prod)
