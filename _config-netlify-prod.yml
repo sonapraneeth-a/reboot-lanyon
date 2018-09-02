@@ -109,7 +109,7 @@ incremental : true
 collections:
     pages:
         output: true
-        permalink: /:slug
+        permalink: /:slug/
     posts:
         output: true
         permalink: /blog/:year/:month/:day/:title/
@@ -224,14 +224,22 @@ jekyll_tidy:
 defaults:
     # _posts
     - scope:
-          path: ""
+          path: "_posts"
           type: posts
       values:
-          layout: single
-          author_profile: true
-          read_time: true
+          layout: post
           share: true
           related: true
+          comments: true
+    # _projects
+    - scope:
+          path: "_projects"
+          type: projects
+      values:
+          layout: project
+          share: true
+          related: true
+          comments: true
     # _algorithms
 #    - scope:
 #          path: "_algorithms"
