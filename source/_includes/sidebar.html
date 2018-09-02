@@ -1,12 +1,12 @@
 <div class="sidebar-content">
-  <label class="sidebar-toggle" id="sidebar-toggle" onclick="toggle_sidebar();">
-    <i class="fa fa-bars"></i>
+  <label class="sidebar-toggle" ><!--onclick="toggle_sidebar();">-->
+    <i class="fa fa-bars" id="sidebar-toggle"></i>
   </label>
   {% assign url = page.url | remove: 'index.html' %}
   <aside class="sidebar" id="sidebar" style="" role="navigation">
     <div class="sidebar-item" style="text-align:right;">
-      <p class="sidebar-close" onclick="toggle_sidebar();">
-        <i class="fa fa-times"></i>
+      <p class="sidebar-close" ><!--onclick="toggle_sidebar();">-->
+        <i class="fa fa-times" id="sidebar-close" ></i>
       </p>
     </div>
     <ul class="sidebar-menu">

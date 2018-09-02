@@ -24,7 +24,7 @@
     let footer = document.getElementById("footer");
     footer.classList.toggle("hidden");
   };
-  var open_sidebar = () => {
+  /*var open_sidebar = () => {
     let sidebar = document.getElementById("sidebar");
     sidebar.classList.remove("off");
     sidebar.classList.add("on");
@@ -51,8 +51,31 @@
     // document.body.style.backgroundColor = "white";
     let footer = document.getElementById("footer");
     footer.classList.remove("hidden");
+  };*/
+</script>
+<script>
+  (function(document) {
+    var sidebar_toggle = document.querySelector("#sidebar-toggle");
+    var sidebar_close = document.querySelector("#sidebar-close");
+    var sidebar = document.querySelector("#sidebar");
 
-  };
+    document.addEventListener("click", function(e) {
+      var target = e.target;
+      console.log(target);
+      console.log(sidebar_toggle);
+      console.log(sidebar_close);
+      console.log(sidebar);
+      if (target === sidebar_toggle || target === sidebar_close) {
+        console.log("Hit 1");
+        toggle_sidebar();
+        e.preventDefault();
+      } else if (!sidebar.contains(target)) {
+        /* click outside the sidebar when sidebar is open */
+        console.log("Hit 2");
+        toggle_sidebar();
+      }
+    }, false);
+  })(document);
 </script>
 {% if url contains '/search' %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.2/lunr.min.js" defer></script>
