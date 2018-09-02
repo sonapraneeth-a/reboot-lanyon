@@ -1,0 +1,15 @@
+<ul style="list-style-type: none; padding-left: 1rem;">
+  {% assign documents = include.collection_type | sort: 'order' %}
+  {% for document in documents %}
+  <li style="margin-bottom: 0.5rem;">
+    <div class="card">
+      <div class="card-content">
+        <a href="{{site.baseurl}}{{document.url}}" style="text-decoration: none;">
+          {{document.title}}
+        </a>
+        <span style="float: right;">{{document.date | date_to_string}}</span>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
