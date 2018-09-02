@@ -32,11 +32,12 @@ twitter:
     username: sonapraneeth_a
 
 # Site settings
-plugins_dir  : _plugins
-layouts_dir  : _layouts
-data_dir     : _data
-includes_dir : _includes
-posts_dir    : _posts
+collections_dir : collections
+plugins_dir     : _plugins
+layouts_dir     : _layouts
+data_dir        : _data
+includes_dir    : _includes
+posts_dir       : _posts
 plugins:
     - jekyll-paginate-v2
     - jekyll-sitemap
@@ -104,7 +105,11 @@ future      : false
 show_drafts : false
 
 collections:
+    posts:
+        output: true
     projects:
+        output: true
+    algorithms:
         output: true
 
 # Author info
