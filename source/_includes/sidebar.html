@@ -1,11 +1,11 @@
 <div class="sidebar-content">
-  <label class="sidebar-toggle" id="sidebar-toggle" onclick="open_sidebar();">
+  <label class="sidebar-toggle" id="sidebar-toggle" onclick="toggle_sidebar();">
     <i class="fa fa-bars"></i>
   </label>
   {% assign url = page.url | remove: 'index.html' %}
   <aside class="sidebar" id="sidebar" style="" role="navigation">
     <div class="sidebar-item" style="text-align:right;">
-      <p class="sidebar-close" onclick="close_sidebar();">
+      <p class="sidebar-close" onclick="toggle_sidebar();">
         <i class="fa fa-times"></i>
       </p>
     </div>
@@ -15,7 +15,7 @@
         <a href="{{site.baseurl}}{{menu.url}}">
           <i class="fa fa-{{menu.icon}}"></i>&nbsp;&nbsp;{{menu.title}}
           {% if menu.sublinks %}
-          <span style="float:right;" data-reactid="43">
+          <span class="sidebar-dropdown-icon" onclick>
             <i class="fa fa-caret-down fa-fw" data-reactid="44"></i>
           </span>
           {% endif %}
@@ -45,7 +45,7 @@
       </script>
     </div>
     <div class="sidebar-item">
-      Made in <i class="fa fa-heart"></i> with Jekyll
+      Made in <i class="fa fa-heart" style="color: red;"></i> with <a href="https://jekyllrb.com/">Jekyll</a>
     </div>
     <div class="sidebar-item">
       <b>Version:</b> {{site.version}}
