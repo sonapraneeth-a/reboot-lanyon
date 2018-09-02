@@ -7,19 +7,19 @@ const log        = require("fancy-log");
 // include paths file
 const paths = require("../../paths");
 
-// "gulp build::jekyll-site --prod" -- Compiles the source code to html files
-gulp.task("build::jekyll-site", (done) =>
+// "gulp serve::jekyll-site --prod" -- Builds and serves the website live
+gulp.task("serve::jekyll-site", (done) =>
 {
-    log("=== Generating public_html site for Jekyll ===");
+    log("=== Serving public_html site for Jekyll ===");
     if(argv.prod)
     {
         log("=== Production Jekyll website ===");
-        shell.exec("jekyll build --config _config-prod.yml");
+        shell.exec("jekyll serve --config _config-prod.yml");
     }
     else
     {
         log("=== Development Jekyll website ===");
-        shell.exec("jekyll build --config _config-dev.yml"); // --livereload
+        shell.exec("jekyll serve --config _config-dev.yml --incremental --port 8000"); // --livereload
     }
     done();
 });
