@@ -107,7 +107,7 @@ incremental : true
 
 
 collections:
-    pages:
+    index-pages:
         output: true
         permalink: /:slug
     posts:
@@ -118,6 +118,11 @@ collections:
         permalink: /:collection/:path/
     algorithms:
         output: true
+        label: Algorithms
+        permalink: /:collection/:path/
+    ml:
+        output: true
+        label: Machine Learning
         permalink: /:collection/:path/
 
 # Author info
@@ -196,6 +201,10 @@ menu:
             url: "/algorithms/"
             icon: "file-code"
             class: "algorithms"
+          - title: "Machine learning"
+            url: "/ml/"
+            icon: "chart-line"
+            class: "ml"
 
 
 google_analytics_token : "UA-90733014-1" # leave blank if you don"t want google analytics
@@ -237,29 +246,65 @@ defaults:
           path: ""
           type: posts
       values:
-          layout: single
+          layout: post
+          excerpt_separator: <!--more-->
           author_profile: true
           read_time: true
-          share: true
+          sharing: true
+          publish: false
           related: true
+          comments: true
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
     # _algorithms
     - scope:
           path: "_algorithms"
           type: algorithms
       values:
           layout: collection
+          excerpt_separator: <!--more-->
           author_profile: true
-          share: true
-          publish: true
-          comments: true
+          read_time: true
+          sharing: true
+          publish: false
           related: true
+          comments: true
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
+    # _ml
+    - scope:
+          path: "_ml"
+          type: ml
+      values:
+          layout: collection
+          excerpt_separator: <!--more-->
+          author_profile: true
+          read_time: true
+          sharing: true
+          publish: false
+          related: true
+          comments: true
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
     # _pages
     - scope:
-          path: "_pages"
+          path: "_index-pages"
           type: pages
       values:
           layout: default
+          excerpt_separator: <!--more-->
           author_profile: true
+          read_time: true
+          sharing: true
+          publish: false
+          related: true
+          comments: true
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
 
 #compress_html:
 #    clippings  : []
