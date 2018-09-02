@@ -4,10 +4,12 @@
     <h1 class="navbar-header"><a href="{{site.baseurl}}{{site.menu[0].url}}">{{site.title}}</a></h1>
     <ul class="navbar-menu">
     {% for menu in site.menu %}
+      {% assign url_size = menu.url | size | minus: 1 %}
+      {% assign menu_url = menu.url | slice: 0, url_size %}
       <li class="{% if menu.sublinks %}navbar-dropdown{% endif %}
                   {% if menu.url != '/' and page.url contains menu.url %}
                   active
-                  {% elsif page.url == menu.url %}
+                  {% elsif page.url == menu.url or page.url == menu_url %}
                   active
                   {% endif %} navbar-menu-item">
         <span style="display:inline-block;">
