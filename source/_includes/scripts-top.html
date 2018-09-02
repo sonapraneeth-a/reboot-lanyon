@@ -29,3 +29,29 @@
     window.scroll(0, marginY);
   }
 </script>
+<script>
+  window.onload = function() {
+    console.log("Progress");
+    // Reference: https://www.youtube.com/watch?v=SQwhzWslBSU
+    // Reference: https://unpkg.com/nprogress@0.2.0/nprogress.js
+    // Reference: https://codepen.io/ahsanrathore/post/accurate-page-progress-bar
+    let perfData = window.performance.timing; // The PerformanceTiming interface represents timing-related performance information for the given page.
+    let EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart);
+    let time = parseInt((EstimatedTime / 1000) % 60) * 100;
+    let el = document.getElementById("current-progress");
+    let width = 1;
+    let id = setInterval(frame, 60);
+
+    function frame() {
+      if (width >= 100) {
+        clearInterval(10);
+        let progress_bar = document.getElementById("progress-bar");
+        progress_bar && progress_bar.parentNode && progress_bar.parentNode.removeChild(progress_bar);
+      }
+      else {
+        width++;
+        el.style.width = width + "%";
+      }
+    }
+  }
+</script>

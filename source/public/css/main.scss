@@ -7,6 +7,7 @@ $flat : {{site.flat}};
 /* Fonts */
 @import "fonts/google/pt-sans.scss";
 @import "fonts/google/eb-garamond.scss";
+/*@import "fonts/google/roboto.scss";*/
 @import "fonts/icons/fontawesome-5.scss";
 @import "fonts/icons/zavoloklom-material-req.scss";
 
@@ -55,3 +56,4 @@ $flat : {{site.flat}};
 @import "highlight/gist/gist-style-okaidia";
 
 @import "component/scroll";
+@import "component/progress-bar";
