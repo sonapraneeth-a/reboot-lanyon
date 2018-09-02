@@ -9,13 +9,13 @@ layout: default
     <div class="chip">
     <span class="chip-content">
         <i class="fa fa-calendar-alt" aria-hidden="true"></i>
-        &nbsp;{{page.published | date: "%d %B %Y %R IST"}}
+        <b>Published:</b>&nbsp;{{page.published | date: "%d %B %Y %R IST"}}
     </span>
     </div>
     <div class="chip">
     <span class="chip-content">
         <i class="fa fa-calendar-alt" aria-hidden="true"></i>
-        &nbsp;{{page.last_modified_at | date: "%d %B %Y %R IST"}}
+        <b>Modified:</b>&nbsp;{{page.last_modified_at | date: "%d %B %Y %R IST"}}
     </span>
     </div>
     <span>
@@ -53,7 +53,7 @@ layout: default
   <section>
     <div class="row">
       {% if page.toc == true %}
-      <div class="col-dp-3 col-tb-4 col-mb-12 blog-toc-sticky">
+      <div class="col-dp-3 col-tb-4 col-mb-12 blog-toc-sticky" style="padding-left: 0;">
         <div class="blog-toc">
           <h3 class="blog-toc-title">
             {% if page.toc_icon %}
@@ -70,13 +70,11 @@ layout: default
           <div class="blog-toc-contents">
             {% include toc.html sanitize=true html=content h_min=1 h_max=4 id="toc-menu" class="toc__menu" %}
           </div>
-          {% comment %}
           {% include sharing.html %}
-          {% endcomment %}
         </div>
       </div>
       <div class="col-dp-9 col-tb-8 col-mb-12">
-        <div class="blog-body" style="font-family: 'EB Garamond'">
+        <div class="blog-body" style="font-family: 'Roboto'">
           {{content}}
           {% include pager.html %}
           {% include related_posts.html %}
