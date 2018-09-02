@@ -12,9 +12,12 @@ const tasks       = require_dir("./gulp/tasks", {recurse: true});
 const paths = require("./gulp/paths");
 
 // Jekyll tasks
-gulp.task("default::jekyll", gulp.series("clean::public_html", "build::jekyll-site"));
+gulp.task("default::jekyll", gulp.series("clean::public_html", "serve::jekyll-site"));
 
-// Default task (Either default::jekyll)
+// Netlify tasks
+gulp.task("default::netlify", gulp.series("clean::public_html", "build::netlify-site"));
+
+// Default task (Either default::jekyll or default::netlify)
 /* gulp default : No compression/minification */
 /* gulp default --prod : Compression enabled */
 gulp.task("default", gulp.series("default::jekyll"));
