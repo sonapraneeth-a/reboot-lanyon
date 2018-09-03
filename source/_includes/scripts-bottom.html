@@ -12,7 +12,7 @@
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML-full" defer></script>
 {% endif %}
-{% if site.sidebar == "push" %}
+{% if site.sidebar.display == "push" %}
 <script>
   var toggle_sidebar = () => {
     //console.log("toggle sidebar caleed");
@@ -79,7 +79,7 @@
   };
 </script>
 {% endcomment %}
-{% if site.sidebar == "push" %}
+{% if site.sidebar.display == "push" %}
 <script>
   (function(document) {
     var sidebar_toggle = document.querySelector("#sidebar-toggle");
