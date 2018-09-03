@@ -51,7 +51,11 @@ pre[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"] {
-    padding: 0.1rem 0.2rem;
+    padding: 0.1rem 0.3rem;
+    @if $flat == true
+    {
+        border-radius: 0;
+    }
 }
 
 code span
