@@ -37,11 +37,13 @@
     display: flex;
     margin: $navbar-header-vert-margin 0;
     color: $navbar-foreground-color;
+    font-weight: 500;
     a
     {
         font-size: $navbar-header-size;
         color: $navbar-foreground-color;
         text-decoration: none;
+        vertical-align: -webkit-baseline-middle;
         &:hover
         {
             text-decoration: none;
