@@ -9,13 +9,13 @@ layout: default
     <div class="chip">
     <span class="chip-content">
         <i class="fa fa-calendar-alt" aria-hidden="true"></i>
-        <b>Published:</b>&nbsp;{{page.published | date: "%d %B %Y %R IST"}}
+        <b>Published:</b>&nbsp;{{page.published | date: "%d %B %Y %R %Z"}}
     </span>
     </div>
     <div class="chip">
     <span class="chip-content">
         <i class="fa fa-calendar-alt" aria-hidden="true"></i>
-        <b>Modified:</b>&nbsp;{{page.last_modified_at | date: "%d %B %Y %R IST"}}
+        <b>Modified:</b>&nbsp;{{page.last_modified_at | date: "%d %B %Y %R %Z"}}
     </span>
     </div>
     <span>
