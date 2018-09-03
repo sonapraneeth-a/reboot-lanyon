@@ -20,7 +20,7 @@ flat        : true
 skin        : base-01
 sidebar:
     display  : push # push, overlay
-    position : left
+    position : left # Currently set it from _base-01.scss
 
 # SEO
 logo:
