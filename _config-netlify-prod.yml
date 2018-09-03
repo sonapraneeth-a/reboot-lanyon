@@ -12,12 +12,15 @@ favicon     :
 lang        : en-us
 version     : 2.0.0-alpha.1 # Please use semantic versioning (semver.org)
 repository  : sonapraneeth-a.github.io/reboot-lanyon
-environment : "development"
+environment : "production"
 build       : "jekyll"
 
 # Site config
 flat        : true
 skin        : base-01
+sidebar:
+    display  : push # push, overlay
+    position : left # Currently set it from _base-01.scss
 
 # SEO
 logo:
@@ -78,15 +81,15 @@ post:
     comments_plugin : disqus
 words_per_minute    : 180
 
-permalink           : '/blog/:year/:month/:day/:title/'
+permalink           : "/blog/:year/:month/:day/:title/"
 
 pagination:
     enabled      : true
-    collection   : 'posts'
+    collection   : "posts"
     per_page     : 5
-    title        : ':title | Page :num of :max'
-    permalink    : '/:num/'
-    sort_field   : 'date'
+    title        : ":title | Page :num of :max"
+    permalink    : "/:num/"
+    sort_field   : "date"
     sort_reverse : true
     trail:
         before : 1
@@ -98,8 +101,8 @@ autopages:
 
 # Old Jekyl paginate plugin
 # paginate: 5
-# paginate_path: '/blog/:num'
-# permalink: '/blog/:year/:month/:day/:title/'
+# paginate_path: "/blog/:num"
+# permalink: "/blog/:year/:month/:day/:title/"
 
 future      : true
 show_drafts : true
@@ -107,7 +110,7 @@ incremental : true
 
 
 collections:
-    pages:
+    index-pages:
         output: true
         permalink: /:slug/
     posts:
@@ -141,55 +144,57 @@ author:
 
 # Navigation Menu
 menu:
-    - title : 'Home'
-      url   : '/'
-      icon  : 'home'
-      class : 'home'
-    - title : 'Projects'
-      url   : '/projects/'
-      icon  : 'file-code'
-      class : 'project'
+    - title : "Home"
+      url   : "/"
+      icon  : "home"
+      class : "home"
+    - title : "Projects"
+      url   : "/projects/"
+      icon  : "file-code"
+      class : "project"
       sublinks:
-          - title : 'Categories'
-            url   : '/projects/categories/'
-            icon  : 'folder-open'
-            class : 'categories'
-          - title : 'Search'
-            url   : '/projects/search/'
-            icon  : 'search'
-            class : 'search'
-          - title : 'Tags'
-            url   : '/projects/tags/'
-            icon  : 'tag'
-            class : 'tags'
-          - title : 'Archives'
-            url   : '/projects/archives/'
-            icon  : 'file-archive'
-            class : 'archives'
-    - title : 'Blog'
-      url   : '/blog/'
-      icon  : 'pencil-alt'
-      class : 'blog'
+          - title : "Categories"
+            url   : "/projects/categories/"
+            icon  : "folder-open"
+            class : "categories"
+          - title : "Search"
+            url   : "/projects/search/"
+            icon  : "search"
+            class : "search"
+          - title : "Tags"
+            url   : "/projects/tags/"
+            icon  : "tag"
+            class : "tags"
+          - title : "Archives"
+            url   : "/projects/archives/"
+            icon  : "file-archive"
+            class : "archives"
+    - title : "Blog"
+      url   : "/blog/"
+      icon  : "pencil-alt"
+      class : "blog"
       sublinks:
-          - title : 'Categories'
-            url   : '/blog/categories/'
-            icon  : 'folder-open'
-            class : 'categories'
-          - title : 'Search'
-            url   : '/blog/search/'
-            icon  : 'search'
-            class : 'search'
-          - title : 'Tags'
-            url   : '/blog/tags/'
-            icon  : 'tag'
-            class : 'tags'
-          - title : 'Archives'
-            url   : '/blog/archives/'
-            icon  : 'file-archive'
-            class : 'archives'
+          - title : "Categories"
+            url   : "/blog/categories/"
+            icon  : "folder-open"
+            class : "categories"
+          - title : "Search"
+            url   : "/blog/search/"
+            icon  : "search"
+            class : "search"
+          - title : "Tags"
+            url   : "/blog/tags/"
+            icon  : "tag"
+            class : "tags"
+          - title : "Archives"
+            url   : "/blog/archives/"
+            icon  : "file-archive"
+            class : "archives"
 
-google_analytics_token : 'UA-90733014-1' # leave blank if you don't want google analytics
-disqus_short_name      : 'sonapraneethakula' # leave blank if you don't want disqus
+
+
+google_analytics_token : "UA-90733014-1" # leave blank if you don't want google analytics
+disqus_short_name      : "sonapraneethakula" # leave blank if you don't want disqus
 staticman:
     branch             : "reboot-lanyon"
 
@@ -224,11 +229,15 @@ jekyll_tidy:
 defaults:
     # _posts
     - scope:
-          path: "_posts"
+          path: ""
           type: posts
       values:
           layout: post
-          share: true
+          excerpt_separator: <!--more-->
+          author_profile: true
+          read_time: true
+          sharing: true
+          publish: false
           related: true
           comments: true
     # _projects
@@ -237,7 +246,11 @@ defaults:
           type: projects
       values:
           layout: project
-          share: true
+          excerpt_separator: <!--more-->
+          author_profile: true
+          read_time: true
+          sharing: true
+          publish: false
           related: true
           comments: true
     # _algorithms
@@ -251,13 +264,22 @@ defaults:
 #          publish: true
 #          comments: true
 #          related: true
-    # _pages
+    # _index-pages
     - scope:
-          path: "_pages"
+          path: "_index-pages"
           type: pages
       values:
           layout: default
+          excerpt_separator: <!--more-->
           author_profile: true
+          read_time: true
+          sharing: true
+          publish: false
+          related: true
+          comments: true
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
 
 #compress_html:
 #    clippings  : []

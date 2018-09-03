@@ -210,8 +210,8 @@ menu:
             class: "ml"
 
 
-google_analytics_token : "UA-90733014-1" # leave blank if you don"t want google analytics
-disqus_short_name      : "sonapraneethakula" # leave blank if you don"t want disqus
+google_analytics_token : "UA-90733014-1" # leave blank if you don't want google analytics
+disqus_short_name      : "sonapraneethakula" # leave blank if you don't want disqus
 staticman:
     branch             : "reboot-lanyon"
 
