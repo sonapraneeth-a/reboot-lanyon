@@ -1,11 +1,19 @@
 <div class="sidebar-content">
-  <label class="sidebar-toggle" ><!--onclick="toggle_sidebar();">-->
+  {% if site.sidebar == "push" %}
+  <label class="sidebar-toggle">
+  {% else %}
+  <label class="sidebar-toggle"><!-- onclick="toggle_sidebar();">-->
+  {% endif %}
     <i class="fa fa-bars" id="sidebar-toggle"></i>
   </label>
   {% assign url = page.url | remove: 'index.html' %}
   <aside class="sidebar" id="sidebar" style="" role="navigation">
     <div class="sidebar-item" style="text-align:right;">
-      <p class="sidebar-close" ><!--onclick="toggle_sidebar();">-->
+      {% if site.sidebar == "push" %}
+      <p class="sidebar-close">
+      {% else %}
+      <p class="sidebar-close"><!-- onclick="toggle_sidebar();">-->
+      {% endif %}
         <i class="fa fa-times" id="sidebar-close" ></i>
       </p>
     </div>

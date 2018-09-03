@@ -18,6 +18,7 @@ build       : "jekyll"
 # Site config
 flat        : true
 skin        : base-01
+sidebar     : push # push, overlay
 
 # SEO
 logo:
