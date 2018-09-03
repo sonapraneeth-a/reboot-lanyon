@@ -29,6 +29,7 @@
     window.scroll(0, marginY);
   }
 </script>
+{% if site.progress_bar.show == true %}
 <script>
   window.onload = function() {
     console.log("Progress");
@@ -55,3 +56,4 @@
     }
   }
 </script>
+{% endif %}
