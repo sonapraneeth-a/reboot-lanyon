@@ -3,7 +3,8 @@
 
 @charset "utf-8";
 
-$flat : {{site.flat}};
+$flat        : {{site.flat}};
+$sidebar-pos : {{site.sidebar.position}};
 /* Fonts */
 @import "fonts/google/pt-sans.scss";
 @import "fonts/google/eb-garamond.scss";
@@ -59,3 +60,5 @@ $flat : {{site.flat}};
 @import "component/scroll";
 @import "component/progress-bar";
 @import "component/paginator";
+
+
