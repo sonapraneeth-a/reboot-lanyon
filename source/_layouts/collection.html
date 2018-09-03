@@ -5,8 +5,6 @@ layout: default
 <div class="main-content">
   <header>
     <h1 class="blog-title">{{page.title}}</h1>
-    Layout collection
-    {{site.algorithms}}
     <div class="chip">
     <span class="chip-content">
         <i class="fa fa-calendar-alt" aria-hidden="true"></i>
@@ -70,11 +68,13 @@ layout: default
       <div class="col-dp-9 col-tb-8 col-mb-12">
         <div class="blog-body">
           {{content}}
+          {% include pager-collection.html %}
         </div>
       </div>
       {% else %}
       <div class="blog-body">
         {{content}}
+        {% include pager-collection.html %}
       </div>
       {% endif %}
     </div>

@@ -4,7 +4,7 @@
     <div style="width: 12%;" class="previous-post"><i class="fa fa-arrow-left"></i></div>
     <div style="width: 88%;">
       <p style="text-align: left; font-weight: bold;">Previous</p>
-      <p style="text-align: left;" class="previous-post-title">{{ page.previous.title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      <p style="text-align: left;" class="previous-post-title">{{ page.previous.title | markdownify | remove: "<p>" | remove: "</p>" }}</p>
     </div>
   </a>
   {% else %}
@@ -14,7 +14,7 @@
   <a class="post-page" href="{{ page.next.url | relative_url }}" style="padding-right: 0;">
     <div style="width: 88%;">
       <p style="text-align: right; font-weight: bold;">Next</p>
-      <p style="text-align: right;" class="next-post-title">{{ page.next.title | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      <p style="text-align: right;" class="next-post-title">{{ page.next.title | markdownify | remove: "<p>" | remove: "</p>" }}</p>
     </div>
     <div class="next-post" style="width: 12%;"><i class="fa fa-arrow-right"></i></div>
   </a>
@@ -22,3 +22,10 @@
   <span class="hidden post-page"></span>
   {% endif %}
 </div>
+
+<script>
+  document.body.onkeyup = function(e){
+    if (e.keyCode == "37") { window.location = "{{page.previous.url}}"; }
+    if (e.keyCode == "39") { window.location = "{{page.next.url}}"; }
+  };
+</script>

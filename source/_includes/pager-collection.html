@@ -1,0 +1,51 @@
+{% capture the_collection %}{{page.collection}}{% endcapture %}
+{% if page.collection %}
+{% assign  document = site[the_collection] | sort: "order" %}
+{% endif %}
+{% for links in document  %}
+{% if links.title == page.title %}
+{% unless forloop.first %}
+{% assign prev_collection_url = prev.url %}
+{% assign prev_collection_title = prev.title %}
+{% endunless %}
+{% unless forloop.last %}
+{% assign next = document[forloop.index] %}
+{% assign next_collection_url = next.url %}
+{% assign next_collection_title = next.title %}
+{% endunless %}
+{% endif %}
+{% assign prev = links %}
+{% endfor %}
+<!-- Reference: https://gist.github.com/budparr/3e637e575471401d01ec -->
+<script>
+  document.body.onkeyup = function(e){
+    if (e.keyCode == "37") { window.location = "{{prev_collection_url}}"; }
+    if (e.keyCode == "39") { window.location = "{{next_collection_url}}"; }
+  };
+</script>
+
+<div class="pager">
+  {% if prev_collection_url %}
+  <a class="post-page" href="{{ prev_collection_url | relative_url }}" style="padding-left: 0;">
+    <div style="width: 12%;" class="previous-post"><i class="fa fa-arrow-left"></i></div>
+    <div style="width: 88%;">
+      <p style="text-align: left; font-weight: bold;">Previous</p>
+      <p style="text-align: left;" class="previous-post-title">{{ prev_collection_title | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+    </div>
+  </a>
+  {% else %}
+  <span class="post-page hidden"></span>
+  {% endif %}
+  {% if next_collection_url %}
+  <a class="post-page" href="{{ next_collection_url | relative_url }}" style="padding-right: 0;">
+    <div style="width: 88%;">
+      <p style="text-align: right; font-weight: bold;">Next</p>
+      <p style="text-align: right;" class="next-post-title">{{ next_collection_title | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+    </div>
+    <div class="next-post" style="width: 12%;"><i class="fa fa-arrow-right"></i></div>
+  </a>
+  {% else %}
+  <span class="hidden post-page"></span>
+  {% endif %}
+</div>
+
