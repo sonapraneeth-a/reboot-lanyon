@@ -123,9 +123,14 @@ collections:
     projects:
         output: true
         permalink: /:collection/:path/
-#    algorithms:
-#        output: true
-#        permalink: /:collection/:path/
+    seasons:
+        output: true
+        label: Seasons
+        permalink: /:collection/:path/
+    planets:
+        output: true
+        label: Planets
+        permalink: /:collection/:path/
 
 # Author info
 author:
@@ -194,7 +199,19 @@ menu:
             url   : "/blog/archives/"
             icon  : "file-archive"
             class : "archives"
-
+    - title: "Collections"
+      url: "/collections/"
+      icon: "suitcase"
+      class: "collections"
+      sublinks:
+          - title: "Seasons"
+            url: "/seasons/"
+            icon: "cloud"
+            class: "algorithms"
+          - title: "Planets"
+            url: "/planets/"
+            icon: "circle"
+            class: "ml"
 
 
 google_analytics_token : "UA-90733014-1" # leave blank if you don't want google analytics
@@ -244,12 +261,15 @@ defaults:
           publish: false
           related: true
           comments: true
-    # _projects
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
+    # _seasons
     - scope:
-          path: "_projects"
-          type: projects
+          path: "_seasons"
+          type: seasons
       values:
-          layout: project
+          layout: collection
           excerpt_separator: <!--more-->
           author_profile: true
           read_time: true
@@ -257,17 +277,25 @@ defaults:
           publish: false
           related: true
           comments: true
-    # _algorithms
-#    - scope:
-#          path: "_algorithms"
-#          type: algorithms
-#      values:
-#          layout: collection
-#          author_profile: true
-#          share: true
-#          publish: true
-#          comments: true
-#          related: true
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
+    # _planets
+    - scope:
+          path: "_planets"
+          type: planets
+      values:
+          layout: collection
+          excerpt_separator: <!--more-->
+          author_profile: true
+          read_time: true
+          sharing: true
+          publish: false
+          related: true
+          comments: true
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
     # _index-pages
     - scope:
           path: "_index-pages"

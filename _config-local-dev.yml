@@ -21,6 +21,10 @@ skin        : base-01
 sidebar:
     display  : push # push, overlay
     position : left # Currently set it from _base-01.scss
+progress_bar:
+    color    : red
+    progress : aqua
+    show     : true
 
 # SEO
 logo:
@@ -112,20 +116,20 @@ incremental : true
 collections:
     index-pages:
         output: true
-        permalink: /:slug
+        permalink: /:slug/
     posts:
         output: true
         permalink: /blog/:year/:month/:day/:title/
     projects:
         output: true
         permalink: /:collection/:path/
-    algorithms:
+    seasons:
         output: true
-        label: Algorithms
+        label: Seasons
         permalink: /:collection/:path/
-    ml:
+    planets:
         output: true
-        label: Machine Learning
+        label: Planets
         permalink: /:collection/:path/
 
 # Author info
@@ -200,13 +204,13 @@ menu:
       icon: "suitcase"
       class: "collections"
       sublinks:
-          - title: "Algorithms"
-            url: "/algorithms/"
-            icon: "file-code"
+          - title: "Seasons"
+            url: "/seasons/"
+            icon: "cloud"
             class: "algorithms"
-          - title: "Machine learning"
-            url: "/ml/"
-            icon: "chart-line"
+          - title: "Planets"
+            url: "/planets/"
+            icon: "circle"
             class: "ml"
 
 
@@ -260,10 +264,10 @@ defaults:
           toc: true
           toc_label: Table of Contents
           toc_icon: table
-    # _algorithms
+    # _seasons
     - scope:
-          path: "_algorithms"
-          type: algorithms
+          path: "_seasons"
+          type: seasons
       values:
           layout: collection
           excerpt_separator: <!--more-->
@@ -276,10 +280,10 @@ defaults:
           toc: true
           toc_label: Table of Contents
           toc_icon: table
-    # _ml
+    # _planets
     - scope:
-          path: "_ml"
-          type: ml
+          path: "_planets"
+          type: planets
       values:
           layout: collection
           excerpt_separator: <!--more-->
@@ -292,7 +296,7 @@ defaults:
           toc: true
           toc_label: Table of Contents
           toc_icon: table
-    # _pages
+    # _index-pages
     - scope:
           path: "_index-pages"
           type: pages
