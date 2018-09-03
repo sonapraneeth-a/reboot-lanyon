@@ -21,6 +21,10 @@ skin        : base-01
 sidebar:
     display  : push # push, overlay
     position : left # Currently set it from _base-01.scss
+progress_bar:
+    color    : red
+    progress : aqua
+    show     : false
 
 # SEO
 logo:
