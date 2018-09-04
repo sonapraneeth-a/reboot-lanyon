@@ -1,6 +1,7 @@
 <ul style="list-style-type: none; padding-left: 1rem;">
   {% assign documents = include.collection_type | sort: 'order' %}
   {% for document in documents %}
+  {% if document.publish == true %}
   <li style="margin-bottom: 0.5rem;">
     <div class="card">
       <div class="card-content">
@@ -11,5 +12,6 @@
       </div>
     </div>
   </li>
+  {% endif %}
   {% endfor %}
 </ul>
