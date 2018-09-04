@@ -4,67 +4,50 @@ title: Collections
 icon: suitcase
 ---
 
+
+{% capture written_label %}'None'{% endcapture %}
+{% assign collections = site.collections | sort: 'label' %}
+
 <div class="page">
-    <div style="display: inline-flex; flex-wrap: wrap;">
-    {% assign collections = site.collections | sort: 'label' %}
+  <div style="display: inline-flex; flex-wrap: wrap;">
     {% for collection in collections %}
-        {% if collection.label != "index-pages" and collection.label != "posts" and collection.label != "projects" %}
+    {% unless collection.output == false or collection.label == "posts" or
+    collection.label == "index-pages" or collection.label == "projects" %}
         <a href="#{{ collection.label | slugify: 'pretty' }}" style="text-decoration: none;">
         <div class="chip">
             <span class="chip-content">
             <i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp;{{collection.label | capitalize}}</span>
-            {% assign count = 0 %}
-            {% for document in site.documents %}
-            {% if document.collection == collection.label %}
-            {% assign count = count | plus: 1 %}
-            {% endif %} 
-            {% endfor %}       
-            <span class="chip-count">{{ count }}</span>
+            <span class="chip-count">{{ collection.docs | size }}</span>
         </div>
         </a>
-        {% endif %}
+    {% endunless %}
     {% endfor %}
-    </div>
-    
-    <ul style="list-style-type: none; padding-left: 0px;">
-    {% assign collections = site.collections | sort: 'label' %}
+  </div>
+
+  <ul style="list-style-type: none; padding-left: 0px;">
     {% for collection in collections %}
-    {% if collection.label != "index-pages" and collection.label != "posts" and collection.label != "projects" %}
+    {% unless collection.output == false or collection.label == "posts" or
+    collection.label == "index-pages" or collection.label == "projects" %}
+    {% capture label %}{{ collection.label }}{% endcapture %}
     <li>
-    <h2 id="{{ collection.label | slugify: 'pretty' }}">{{collection.label | capitalize}}</h2>
-    <ul style="list-style-type: none; padding-left: 1rem;">
-        {% assign documents = site.documents | sort: 'order' %}
-        {% for document in documents %}
-        {% if document.collection == collection.label %}
+      <h2 id="{{ label | slugify: "pretty" }}">{{label | capitalize}}</h2>
+      <ul style="list-style-type: none; padding-left: 1rem;">
+      {% assign documents = collection.docs | sort: 'order' %}
+      {% for post in documents %}
         <li style="margin-bottom: 0.5rem;">
-            <div class="card">
-                <div class="card-content">
-                    <a href="{{site.baseurl}}{{document.url}}" style="text-decoration: none;">
-                        {{document.title}}
-                    </a>
-                    <span style="float: right;">{{document.date | date_to_string}}</span>
-                </div>
+          <div class="card">
+            <div class="card-content">
+              <a href="{{site.baseurl}}{{post.url}}" style="text-decoration: none;">
+                {{post.title}}
+              </a>
+              <span style="float: right;">{{post.date | date_to_string}}</span>
             </div>
+          </div>
         </li>
-        {% endif %}
-        {% endfor %}
-    </ul>
+      {% endfor %}
+      </ul>
     </li>
-    {% endif %}
+    {% endunless %}
     {% endfor %}
     </ul>
 </div>
-
-
-{% comment %}
-    {{site.collections}}
-    {{site.posts}}
-    {{site.pages}}
-    {% for page in site.documents %}
-    {{page.title}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    {{page.url}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    {{page.collection}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    {{page.date}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-    {% endfor %}
-{% endcomment %}
-    
