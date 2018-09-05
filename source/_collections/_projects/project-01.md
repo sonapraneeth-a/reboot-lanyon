@@ -9,7 +9,6 @@ course:
 abstract: 
 brief: Brief description of project 01
 categories: ["Cat 01"]
-published: true
 source: 
 banner_image: 
 image-alt-text: 
