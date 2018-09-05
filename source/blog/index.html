@@ -22,9 +22,9 @@ style: |
     <input type="text" id="search-blog" class="search-input" placeholder="Enter your search term here ..." />
     <div id="results-blog" class="results"></div>
 </div>-->
+{% assign posts = paginator.posts | where:"publish","true" %}
 <div class="posts" id="post-content">
-{% for post in paginator.posts %}
-{% if post.publish == true %}
+{% for post in posts %}
 <div class="blog-card">
   <!--<img class="blog-card-image" src="{{site.baseurl}}/assets/blog/default_banner_image.jpg" alt="Blog image" title="">-->
   <div class="blog-card-info" style="width: 100%">
@@ -90,7 +90,6 @@ style: |
     </div>
   </div>
 </div>
-{% endif %}
 {% endfor %}
 </div>
 {% include pagination.html %}

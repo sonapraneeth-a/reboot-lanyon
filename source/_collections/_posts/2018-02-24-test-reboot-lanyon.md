@@ -10,6 +10,7 @@ related: true
 comments: true
 sharing: true
 publish: false
+hidden: true
 toc: true
 toc_label: On this page
 toc_icon: table  # corresponding Font Awesome icon name (without fa prefix)
