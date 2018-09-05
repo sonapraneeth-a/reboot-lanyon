@@ -10,19 +10,19 @@
     font-size: 0.95rem;
     box-sizing: border-box;
     display: inline-block;
-    border: 0.05rem solid $primary-foreground-color-dark;
+    border: 0.05rem solid $primary-foreground-color;
     background-color: $primary-background-color;
     color: $primary-foreground-color-dark;
     &:hover
     {
       display: inline-block;
-      background-color: $primary-foreground-color-dark;
+      background-color: $primary-foreground-color;
       color: $primary-background-color;
     }
     a
     {
       padding: 0.25rem 0.45rem;
-      color: $primary-foreground-color-dark;
+      color: $primary-foreground-color;
       text-decoration: none;
       display: inline-block;
       &:hover
