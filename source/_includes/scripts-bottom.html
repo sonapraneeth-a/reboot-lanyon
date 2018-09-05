@@ -169,3 +169,27 @@
 {% if site.environment == "production" %}
 {% include google-analytics.html %}
 {% endif %}
+{% if page.toc == true %}
+<script>
+  var toggle_toc = () => {
+    console.log("Toggling TOC");
+    let show_hide_toc = document.getElementById("show-hide-toc");
+    let blog_toc = document.getElementById("blog-toc");
+    let blog_body = document.getElementById("blog-body");
+    console.log(show_hide_toc);
+    console.log(blog_toc);
+    console.log(blog_body);
+    blog_toc.classList.toggle("zero-width");
+    blog_toc.classList.toggle("visibility-hidden");
+    blog_toc.classList.toggle("no-padding");
+    blog_body.classList.toggle("full-width");
+    blog_body.classList.toggle("no-padding");
+    if (blog_toc.classList.contains("zero-width") === false) {
+      show_hide_toc.innerText = "Hide TOC";
+    }
+    else {
+      show_hide_toc.innerText = "Show TOC";
+    }
+  }
+</script>
+{% endif %}

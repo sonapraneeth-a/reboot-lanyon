@@ -51,9 +51,12 @@ layout: default
     <hr>
   </header>
   <section>
+    {% if page.toc == true %}
+    <div id="show-hide-toc" onclick="toggle_toc();" class="show-hide-toc">Hide TOC</div>
+    {% endif %}
     <div class="row">
       {% if page.toc == true %}
-      <div class="col-dp-3 col-tb-4 col-mb-12 blog-toc-sticky" style="padding-left: 0;">
+      <div class="col-dp-3 col-tb-4 col-mb-12 blog-toc-sticky" style="padding-left: 0;" id="blog-toc">
         <div class="blog-toc">
           <h3 class="blog-toc-title">
             {% if page.toc_icon %}
@@ -73,7 +76,7 @@ layout: default
           {% include sharing.html %}
         </div>
       </div>
-      <div class="col-dp-9 col-tb-8 col-mb-12">
+      <div class="col-dp-9 col-tb-8 col-mb-12" id="blog-body">
         <div class="blog-body" style="font-family: 'Roboto'">
           {{content}}
           {% include pager.html %}
