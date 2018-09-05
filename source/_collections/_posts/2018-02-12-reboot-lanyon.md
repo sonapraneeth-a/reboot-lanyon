@@ -35,8 +35,9 @@ Some of the main features available on this theme:
     - Inline code highlighting of code would require HTML
 - $\LaTeX$ integration using MathJaX[^latex]
 - Adding figures with captions
-- Utility classes like <span class="info">info</span>, <span class="danger">danger</span>, 
-  <span class="success">success</span> and <span class="warning">warning</span>
+- Utility classes like <span class="default">default</span>, <span class="info">info</span>, 
+  <span class="danger">danger</span>, <span class="success">success</span> and 
+  <span class="warning">warning</span>
    - Several components are designed for the above utilities like admonition, blockquotes
 - Menus
     - Sidebar
@@ -127,10 +128,15 @@ $$
 
 ## Utility Classes
 
-Currently four utility classes are supported in theme: <span class="info">info</span>, 
-<span class="danger">danger</span>, <span class="success">success</span> and <span class="warning">warning</span>
+Currently four utility classes are supported in theme: <span class="default">default</span>, 
+<span class="info">info</span>, <span class="danger">danger</span>, <span class="success">success</span> 
+and <span class="warning">warning</span>
 
 ### Styled blockquotes
+
+> **Default block**  
+> First line
+{: .blockquote .default}
 
 > **Information block**  
 > First line
@@ -150,6 +156,8 @@ Currently four utility classes are supported in theme: <span class="info">info</
 
 ### Styled text
 
+- Default text
+{: .default}
 - Information text
 {: .info}
 - Danger text
@@ -160,6 +168,15 @@ Currently four utility classes are supported in theme: <span class="info">info</
 {: .warning}
 
 ### Styled admonitions
+
+<div class="admonition default">
+    <div class="admonition-title">
+    Default
+    </div>
+    <div class="admonition-content">
+    A lot of information in this admonition
+    </div>
+</div>
 
 <div class="admonition info">
     <div class="admonition-title">

@@ -69,6 +69,21 @@
       }
     }
   }
+    &.default
+    {
+        border-left: 0.4rem solid darken($default, 20%);
+        > .admonition-title
+        {
+            &::before
+            {
+                position: relative;
+                left: -0.5rem;
+                font-family: "Font Awesome 5 Free";
+                content: "\f304";
+                color: darken($default, 20%);
+            }
+        }
+    }
 }
 
 .admonition-title
@@ -94,6 +109,10 @@
   {
     background-color: lighten($warning, 35%);
   }
+    .default &
+    {
+        background-color: lighten($default, 35%);
+    }
 }
 
 .admonition-content

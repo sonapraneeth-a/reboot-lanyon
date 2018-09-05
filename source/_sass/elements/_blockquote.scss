@@ -32,4 +32,11 @@
     border-left: 0.25rem solid darken($warning, 20%);
       color: darken($warning, 20%);
   }
+    &.default
+    {
+        background-color: lighten($default, 40%);
+        //border: 0.05rem solid $default;
+        border-left: 0.25rem solid darken($default, 20%);
+        color: darken($default, 20%);
+    }
 }
