@@ -24,7 +24,7 @@ sidebar:
 progress_bar:
     color    : red
     progress : aqua
-    show     : true
+    show     : false
 
 # SEO
 logo:
@@ -87,21 +87,32 @@ words_per_minute    : 180
 
 permalink           : "/blog/:year/:month/:day/:title/"
 
+#autopages:
+#    enabled: true
+#    tags:
+#        enabled: false
+#    categories:
+#        enabled: false
+#    collections:
+#        enabled: true
+#        layouts:
+#            - "autopage_collection.html"
+#        title: ":coll" # :coll is replaced by the collection name
+#        permalink: "/:coll/"
+#        slugify:
+#            mode: "pretty"
+#            cased: true
+
 pagination:
     enabled      : true
-    collection   : "posts"
-    per_page     : 5
+    per_page     : 2
     title        : ":title | Page :num of :max"
     permalink    : "/:num/"
     sort_field   : "date"
     sort_reverse : true
     trail:
-        before : 1
+        before : 2
         after  : 2
-
-
-autopages:
-    enabled: false
 
 # Old Jekyl paginate plugin
 # paginate: 5
@@ -214,8 +225,8 @@ menu:
             class: "ml"
 
 
-google_analytics_token : "UA-90733014-1" # leave blank if you don't want google analytics
-disqus_short_name      : "sonapraneethakula" # leave blank if you don't want disqus
+google_analytics_token : "UA-90733014-1" # leave blank if you don"t want google analytics
+disqus_short_name      : "sonapraneethakula" # leave blank if you don"t want disqus
 staticman:
     branch             : "reboot-lanyon"
 
