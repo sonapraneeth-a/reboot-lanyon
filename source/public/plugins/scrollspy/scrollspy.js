@@ -89,8 +89,8 @@ class VanillaScrollspy {
                 this.lastActiveLink = currLink;
             } else if(this.lastActiveLink !== null && this.lastActiveLink.content === currLink.content)
             {
-                console.log("lastActiveLink");
-                console.log(this.lastActiveLink);
+                /*console.log("lastActiveLink");
+                console.log(this.lastActiveLink);*/
                 this.lastActiveLink.classList.add('active');
             }
             else {
