@@ -1,4 +1,5 @@
 /* Reference: https://github.com/ederssouza/vanillajs-scrollspy/ */
+/* Slightly modified for my usage */
 
 const fncAnimation = (callback) => {
     window.setTimeout(callback, 1000 / 60);
@@ -13,10 +14,13 @@ window.requestAnimFrame = (() =>
 )();
 
 class VanillaScrollspy {
-    constructor(menu, speed = 2000, easing = 'easeOutSine') {
+    constructor(menu, content, speed = 2000, easing = 'easeOutSine') {
         this.menu = menu;
+        this.content = content;
         this.speed = speed;
         this.easing = easing;
+        this.lastActiveLink = null;
+
     }
     scrollToY(targetY = 0) {
         const scrollTargetY = targetY;
@@ -61,17 +65,35 @@ class VanillaScrollspy {
         let refElement;
         const links = this.menu.querySelectorAll('a[href^="#"]');
         const scrollPos = window.scrollY || document.documentElement.scrollTop;
-
         for (i = 0; i < links.length; i += 1) {
             currLink = links[i];
-            refElement = document.querySelector(currLink.getAttribute('href'));
-
+            refElement = this.content.querySelector(currLink.getAttribute('href'));
+            console.log(this.lastActiveLink);
+            if(this.lastActiveLink !== null) {
+                /*console.log(this.lastActiveLink.content === currLink.content);
+                console.log(this.lastActiveLink.content == currLink.content);*/
+            }
             if (
                 refElement.offsetTop <= scrollPos &&
                 (refElement.offsetTop + refElement.clientHeight) > scrollPos
             ) {
+                /*console.log(currLink);
+                console.log(refElement);
+                console.log(refElement.offsetTop);
+                console.log(refElement.clientHeight);
+                console.log(scrollPos);*/
                 currLink.classList.add('active');
-            } else {
+                if(this.lastActiveLink !== null) {
+                    this.lastActiveLink.classList.remove('active');
+                }
+                this.lastActiveLink = currLink;
+            } else if(this.lastActiveLink !== null && this.lastActiveLink.content === currLink.content)
+            {
+                console.log("lastActiveLink");
+                console.log(this.lastActiveLink);
+                this.lastActiveLink.classList.add('active');
+            }
+            else {
                 currLink.classList.remove('active');
             }
         }

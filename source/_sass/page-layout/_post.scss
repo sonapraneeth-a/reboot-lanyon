@@ -80,7 +80,7 @@
         padding: 0.25rem 0 0.25rem 0.6rem;
         border-bottom: 0.05rem solid #bbc8c8;
     }
-    li.active a
+    li a.active
     {
         color: $primary-foreground-color;
         background-color: $primary-background-color;
@@ -95,7 +95,7 @@
         text-decoration: none;
         padding: 0.25rem 0 0.25rem 1.75rem;
     }
-    li li.active a
+    li li a.active
     {
         color: $primary-foreground-color;
         background-color: $primary-background-color;
@@ -109,7 +109,7 @@
         text-decoration: none;
         padding: 0.25rem 0 0.25rem 2.5rem;
     }
-    li li li.active a
+    li li li a.active
     {
         color: $primary-foreground-color;
         background-color: $primary-background-color;
