@@ -68,7 +68,7 @@ class VanillaScrollspy {
         for (i = 0; i < links.length; i += 1) {
             currLink = links[i];
             refElement = this.content.querySelector(currLink.getAttribute('href'));
-            console.log(this.lastActiveLink);
+            /*console.log(this.lastActiveLink);*/
             if(this.lastActiveLink !== null) {
                 /*console.log(this.lastActiveLink.content === currLink.content);
                 console.log(this.lastActiveLink.content == currLink.content);*/
