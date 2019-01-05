@@ -47,7 +47,7 @@ plugins:
     - jemoji
     - jekyll-seo-tag
     - jekyll-typogrify
-    - jekyll/figure
+    - jekyll-figure
     - jekyll-gist
     - pygments
     - jekyll-tidy
