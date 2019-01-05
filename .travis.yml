@@ -19,7 +19,7 @@ script: ./scripts/travis/jekyll/test.sh
 branches:
     only:
     - master
-    - v2
+    - master-v2
 
 env:
     global:
