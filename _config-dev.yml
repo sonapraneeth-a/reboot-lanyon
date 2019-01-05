@@ -51,7 +51,7 @@ plugins:
     - jekyll-gist
     - pygments
     - jekyll-tidy
-    - html-proofer
+    #- html-proofer
 markdown: kramdown
 kramdown:
     auto_ids           : true
