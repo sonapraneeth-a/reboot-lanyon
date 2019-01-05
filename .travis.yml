@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.5.1
+- 2.6.0
 
 before_script:
     #- npm config set strict-ssl false
