@@ -38,13 +38,13 @@ plugins:
     - jekyll-sitemap
     - jekyll-feed
     - jekyll-last-modified-at
-#    - mm-jekyll-prism
+    - mm-jekyll-prism
     - jemoji
     - jekyll-seo-tag
     - jekyll-typogrify
     - jekyll-figure
     - jekyll-gist
-    - html-proofer
+    #- html-proofer
 markdown: kramdown
 kramdown:
     auto_ids      : true
@@ -62,6 +62,8 @@ highlighter       : rouge
 timezone          : Asia/Kolkata
 encoding          : "utf-8"
 markdown_ext      : "markdown,mkdown,mkdn,mkd,md"
+sidebar:
+    position: "left"
 
 post:
     related         : true
