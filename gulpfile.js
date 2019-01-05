@@ -22,6 +22,11 @@ gulp.task("default::local::jekyll", gulp.series("default::serve::local::jekyll")
 gulp.task("default::build::netlify", gulp.series("clean::public_html", "build::netlify-site"));
 gulp.task("default::serve::netlify", gulp.series("clean::public_html", "serve::netlify-site"));
 
+// Gulp tasks for better output increasing page speed
+gulp.task("default::build::gulp", gulp.series("clean::tmp", "build::netlify-site"));
+gulp.task("default::serve::gulp", gulp.series("clean::tmp", "build::netlify-site"));
+gulp.task("default::gulp", gulp.series("default::build::gulp", "default::serve::gulp"));
+
 // Default task (Either default::jekyll or default::netlify)
 /* gulp default : No compression/minification */
 /* gulp default --prod : Compression enabled */
