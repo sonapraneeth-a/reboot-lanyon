@@ -32,7 +32,7 @@ twitter:
     username: sonapraneeth_a
 
 # Site settings
-collections_dir : collections
+collections_dir : _collections
 plugins_dir     : _plugins
 layouts_dir     : _layouts
 data_dir        : _data
@@ -101,16 +101,21 @@ autopages:
 # paginate_path: '/blog/:num'
 # permalink: '/blog/:year/:month/:day/:title/'
 
-future      : false
-show_drafts : false
+future      : true
+show_drafts : true
+incremental : true
+
 
 collections:
+    pages:
+        output: true
+        permalink: /:slug
     posts:
         output: true
+        permalink: /blog/:year/:month/:day/:title/
     projects:
         output: true
-    algorithms:
-        output: true
+        permalink: /:collection/:path/
 
 # Author info
 author:
@@ -133,52 +138,52 @@ author:
 
 # Navigation Menu
 menu:
-- title : 'Home'
-  url   : '/'
-  icon  : 'home'
-  class : 'home'
-- title : 'Projects'
-  url   : '/projects/'
-  icon  : 'file-code'
-  class : 'project'
-  sublinks:
-      - title : 'Categories'
-        url   : '/projects/categories/'
-        icon  : 'folder-open'
-        class : 'categories'
-      - title : 'Search'
-        url   : '/projects/search/'
-        icon  : 'search'
-        class : 'search'
-      - title : 'Tags'
-        url   : '/projects/tags/'
-        icon  : 'tag'
-        class : 'tags'
-      - title : 'Archives'
-        url   : '/projects/archives/'
-        icon  : 'file-archive'
-        class : 'archives'
-- title : 'Blog'
-  url   : '/blog/'
-  icon  : 'pencil-alt'
-  class : 'blog'
-  sublinks:
-      - title : 'Categories'
-        url   : '/blog/categories/'
-        icon  : 'folder-open'
-        class : 'categories'
-      - title : 'Search'
-        url   : '/blog/search/'
-        icon  : 'search'
-        class : 'search'
-      - title : 'Tags'
-        url   : '/blog/tags/'
-        icon  : 'tag'
-        class : 'tags'
-      - title : 'Archives'
-        url   : '/blog/archives/'
-        icon  : 'file-archive'
-        class : 'archives'
+    - title : 'Home'
+      url   : '/'
+      icon  : 'home'
+      class : 'home'
+    - title : 'Projects'
+      url   : '/projects/'
+      icon  : 'file-code'
+      class : 'project'
+      sublinks:
+          - title : 'Categories'
+            url   : '/projects/categories/'
+            icon  : 'folder-open'
+            class : 'categories'
+          - title : 'Search'
+            url   : '/projects/search/'
+            icon  : 'search'
+            class : 'search'
+          - title : 'Tags'
+            url   : '/projects/tags/'
+            icon  : 'tag'
+            class : 'tags'
+          - title : 'Archives'
+            url   : '/projects/archives/'
+            icon  : 'file-archive'
+            class : 'archives'
+    - title : 'Blog'
+      url   : '/blog/'
+      icon  : 'pencil-alt'
+      class : 'blog'
+      sublinks:
+          - title : 'Categories'
+            url   : '/blog/categories/'
+            icon  : 'folder-open'
+            class : 'categories'
+          - title : 'Search'
+            url   : '/blog/search/'
+            icon  : 'search'
+            class : 'search'
+          - title : 'Tags'
+            url   : '/blog/tags/'
+            icon  : 'tag'
+            class : 'tags'
+          - title : 'Archives'
+            url   : '/blog/archives/'
+            icon  : 'file-archive'
+            class : 'archives'
 
 google_analytics_token : 'UA-90733014-1' # leave blank if you don't want google analytics
 disqus_short_name      : 'sonapraneethakula' # leave blank if you don't want disqus
@@ -196,15 +201,52 @@ webmaster_verifications:
 exclude:
     - LICENSE
     - README.md
+    - TODO.md
+    - REFERENCES.md
     - Gemfile
     - Gemfile.lock
+    - package.json
+    - package-lock.json
 include:
     - .htaccess
+    - _collections
 
 jekyll_tidy:
     exclude: [""]
     ignore_env:
     compress_html: false
+
+
+# Defaults
+defaults:
+    # _posts
+    - scope:
+          path: ""
+          type: posts
+      values:
+          layout: single
+          author_profile: true
+          read_time: true
+          share: true
+          related: true
+    # _algorithms
+    - scope:
+          path: "_algorithms"
+          type: algorithms
+      values:
+          layout: collection
+          author_profile: true
+          share: true
+          publish: true
+          comments: true
+          related: true
+    # _pages
+    - scope:
+          path: "_pages"
+          type: pages
+      values:
+          layout: default
+          author_profile: true
 
 #compress_html:
 #    clippings  : []
