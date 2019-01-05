@@ -15,6 +15,7 @@ $sidebar-pos : {{site.sidebar.position}};
 
 @import "property/padding";
 
+@import "base/color-palette";
 @import "base/colors";
 @import "base/fonts";
 @import "base/mixins/all";
