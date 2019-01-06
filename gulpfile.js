@@ -20,11 +20,19 @@ gulp.task("jekyll", gulp.series("jekyll::serve"));
 // Netlify tasks
 gulp.task("netlify::build", gulp.series("jekyll::clean", "build::netlify-site"));
 gulp.task("netlify::serve", gulp.series("jekyll::clean", "serve::netlify-site"));
+gulp.task("netlify", gulp.series("netlify::serve"));
 
 // Gulp tasks for better output increasing page speed
-gulp.task("build::gulp", gulp.series("clean::tmp", "build::netlify-site"));
-gulp.task("serve::gulp", gulp.series("clean::tmp", "build::netlify-site"));
-gulp.task("gulp", gulp.series("build::gulp", "serve::gulp"));
+gulp.task("gulp::clean", gulp.series("clean::tmp"));
+gulp.task("gulp::sass", gulp.series("gulp::copy-sass", "gulp::copy-main-sass", "gulp::build-sass"));
+gulp.task("gulp::css", gulp.series("gulp::copy-css", "gulp::concat-css", "gulp::compress-css"));
+gulp.task("gulp::js", gulp.series("gulp::compress-scripts"));
+gulp.task("gulp::assets", gulp.series("gulp::copy-assets", "gulp::copy-images", "gulp::compress-images"));
+gulp.task("gulp::build-gulp-config", gulp.series("copy::source", "build::gulp-site", "gulp::move-html", "gulp::compress-html"));
+gulp.task("gulp::build-gulp-optimized-site", gulp.series("gulp::clean", "gulp::build-gulp-config", "gulp::sass", "gulp::css", 
+        "gulp::js", "gulp::assets", "gulp::inline-source"));
+//gulp.task("gulp::serve", gulp.series("build::netlify-site"));
+gulp.task("gulp", gulp.series("gulp::build-gulp-optimized-site", "gulp::serve"));
 
 // Default task (Either jekyll or netlify)
 /* gulp default : No compression/minification */

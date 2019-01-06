@@ -33,3 +33,30 @@ gulp.task("gulp::compress-html", () =>
         .pipe(when(argv.prod, gulp.dest(paths.temp_site_dir)))
     /*done();*/
 });
+
+gulp.task("gulp::compress-css", () =>
+{
+    /*log("=== Minifying CSS files ===");*/
+    return gulp.src([paths.temp_site_dir + "public" + paths.css_pattern])
+        .pipe(when(argv.prod, size({title: 'Original CSS', pretty: true, showFiles: true, showTotal: true})))
+        .pipe(when(argv.prod, cleanCSS({debug: true, rebase: false}, (details) => {
+            console.log(`  Original ${details.name}: ${details.stats.originalSize} B`);
+            console.log(`Compressed ${details.name}: ${details.stats.minifiedSize} B`);
+          })))
+        .pipe(when(argv.prod, gulp.dest(paths.temp_site_dir + "public")))
+        .pipe(when(argv.prod, size({title: 'Compressed CSS', pretty: true, showFiles: true, showTotal: true})))
+    /*done();*/
+});
+
+gulp.task("gulp::compress-scripts", () =>
+{
+    /*log("=== Minifying Javascript files ===");*/
+    return gulp.src([paths.temp_site_dir + "public" + paths.js_pattern])
+        /*.pipe(using({prefix:'Using file', path:'relative', color:'white', filesize:true}))*/
+        .pipe(when(argv.prod, size({title: 'Original JS', pretty: true, showFiles: true, showTotal: true})))
+        .pipe(when(argv.prod, strip()))
+        .pipe(when(argv.prod, uglify()))
+        .pipe(when(argv.prod, gulp.dest(paths.temp_site_dir + "public")))
+        .pipe(when(argv.prod, size({title: 'Compressed JS', pretty: true, showFiles: true, showTotal: true})))
+    /*done();*/
+});
