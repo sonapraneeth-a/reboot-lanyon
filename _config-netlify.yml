@@ -44,7 +44,7 @@ plugins:
     - jekyll-typogrify
     - jekyll-figure
     - jekyll-gist
-    - html-proofer
+    #- html-proofer
 markdown: kramdown
 kramdown:
     auto_ids      : true
