@@ -18,8 +18,8 @@ gulp.task("jekyll::serve", gulp.series("jekyll::clean", "serve::jekyll-site"));
 gulp.task("jekyll", gulp.series("jekyll::serve"));
 
 // Netlify tasks
-gulp.task("build::netlify", gulp.series("clean::public_html", "build::netlify-site"));
-gulp.task("serve::netlify", gulp.series("clean::public_html", "serve::netlify-site"));
+gulp.task("netlify::build", gulp.series("jekyll::clean", "build::netlify-site"));
+gulp.task("netlify::serve", gulp.series("jekyll::clean", "serve::netlify-site"));
 
 // Gulp tasks for better output increasing page speed
 gulp.task("build::gulp", gulp.series("clean::tmp", "build::netlify-site"));
