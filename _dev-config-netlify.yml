@@ -18,6 +18,13 @@ build       : "jekyll"
 # Site config
 flat        : true
 skin        : base-01
+sidebar:
+    display  : push # push, overlay
+    position : left # Currently set it from _base-01.scss
+progress_bar:
+    color    : red
+    progress : aqua
+    show     : false
 
 # SEO
 logo:
@@ -70,8 +77,6 @@ highlighter       : rouge
 timezone          : Asia/Kolkata
 encoding          : "utf-8"
 markdown_ext      : "markdown,mkdown,mkdn,mkd,md"
-sidebar:
-    position: "left"
 
 post:
     related         : true
@@ -80,18 +85,34 @@ post:
     comments_plugin : disqus
 words_per_minute    : 180
 
-permalink           : '/blog/:year/:month/:day/:title/'
+permalink           : "/blog/:year/:month/:day/:title/"
+
+#autopages:
+#    enabled: true
+#    tags:
+#        enabled: false
+#    categories:
+#        enabled: false
+#    collections:
+#        enabled: true
+#        layouts:
+#            - "autopage_collection.html"
+#        title: ":coll" # :coll is replaced by the collection name
+#        permalink: "/:coll/"
+#        slugify:
+#            mode: "pretty"
+#            cased: true
 
 pagination:
     enabled      : true
-    collection   : 'posts'
-    per_page     : 5
-    title        : ':title | Page :num of :max'
-    permalink    : '/:num/'
-    sort_field   : 'date'
+    collection   : "posts"
+    per_page     : 2
+    title        : ":title | Page :num of :max"
+    permalink    : "/:num/"
+    sort_field   : "date"
     sort_reverse : true
     trail:
-        before : 1
+        before : 2
         after  : 2
 
 
@@ -100,8 +121,8 @@ autopages:
 
 # Old Jekyl paginate plugin
 # paginate: 5
-# paginate_path: '/blog/:num'
-# permalink: '/blog/:year/:month/:day/:title/'
+# paginate_path: "/blog/:num"
+# permalink: "/blog/:year/:month/:day/:title/"
 
 future      : true
 show_drafts : true
@@ -109,18 +130,23 @@ incremental : true
 
 
 collections:
-    pages:
+    index-pages:
         output: true
-        permalink: /:slug
+        permalink: /:slug/
     posts:
         output: true
         permalink: /blog/:year/:month/:day/:title/
     projects:
         output: true
         permalink: /:collection/:path/
-#    algorithms:
-#        output: true
-#        permalink: /:collection/:path/
+    seasons:
+        output: true
+        label: Seasons
+        permalink: /:collection/:path/
+    planets:
+        output: true
+        label: Planets
+        permalink: /:collection/:path/
 
 # Author info
 author:
@@ -143,55 +169,69 @@ author:
 
 # Navigation Menu
 menu:
-    - title : 'Home'
-      url   : '/'
-      icon  : 'home'
-      class : 'home'
-    - title : 'Projects'
-      url   : '/projects/'
-      icon  : 'file-code'
-      class : 'project'
+    - title : "Home"
+      url   : "/"
+      icon  : "home"
+      class : "home"
+    - title : "Projects"
+      url   : "/projects/"
+      icon  : "file-code"
+      class : "project"
       sublinks:
-          - title : 'Categories'
-            url   : '/projects/categories/'
-            icon  : 'folder-open'
-            class : 'categories'
-          - title : 'Search'
-            url   : '/projects/search/'
-            icon  : 'search'
-            class : 'search'
-          - title : 'Tags'
-            url   : '/projects/tags/'
-            icon  : 'tag'
-            class : 'tags'
-          - title : 'Archives'
-            url   : '/projects/archives/'
-            icon  : 'file-archive'
-            class : 'archives'
-    - title : 'Blog'
-      url   : '/blog/'
-      icon  : 'pencil-alt'
-      class : 'blog'
+          - title : "Categories"
+            url   : "/projects/categories/"
+            icon  : "folder-open"
+            class : "categories"
+          - title : "Search"
+            url   : "/projects/search/"
+            icon  : "search"
+            class : "search"
+          - title : "Tags"
+            url   : "/projects/tags/"
+            icon  : "tag"
+            class : "tags"
+          - title : "Archives"
+            url   : "/projects/archives/"
+            icon  : "file-archive"
+            class : "archives"
+    - title : "Blog"
+      url   : "/blog/"
+      icon  : "pencil-alt"
+      class : "blog"
       sublinks:
-          - title : 'Categories'
-            url   : '/blog/categories/'
-            icon  : 'folder-open'
-            class : 'categories'
-          - title : 'Search'
-            url   : '/blog/search/'
-            icon  : 'search'
-            class : 'search'
-          - title : 'Tags'
-            url   : '/blog/tags/'
-            icon  : 'tag'
-            class : 'tags'
-          - title : 'Archives'
-            url   : '/blog/archives/'
-            icon  : 'file-archive'
-            class : 'archives'
+          - title : "Categories"
+            url   : "/blog/categories/"
+            icon  : "folder-open"
+            class : "categories"
+          - title : "Search"
+            url   : "/blog/search/"
+            icon  : "search"
+            class : "search"
+          - title : "Tags"
+            url   : "/blog/tags/"
+            icon  : "tag"
+            class : "tags"
+          - title : "Archives"
+            url   : "/blog/archives/"
+            icon  : "file-archive"
+            class : "archives"
+    - title: "Collections"
+      url: "/collections/"
+      icon: "suitcase"
+      class: "collections"
+      sublinks:
+          - title: "Seasons"
+            url: "/seasons/"
+            icon: "cloud"
+            class: "algorithms"
+          - title: "Planets"
+            url: "/planets/"
+            icon: "circle"
+            class: "ml"
 
-google_analytics_token : 'UA-90733014-1' # leave blank if you don't want google analytics
-disqus_short_name      : 'sonapraneethakula' # leave blank if you don't want disqus
+
+google_analytics_token : "UA-90733014-1" # leave blank if you don't want google analytics
+disqus_short_name      : "sonapraneethakula" # leave blank if you don't want disqus
 staticman:
     branch             : "reboot-lanyon"
 
@@ -204,54 +244,90 @@ webmaster_verifications:
 
 # Exclude these files from your production _site
 exclude:
-- LICENSE
-- README.md
-- TODO.md
-- REFERENCES.md
-- Gemfile
-- Gemfile.lock
-- package.json
-- package-lock.json
+    - LICENSE
+    - README.md
+    - TODO.md
+    - REFERENCES.md
+    - Gemfile
+    - Gemfile.lock
+    - package.json
+    - package-lock.json
 include:
-- .htaccess
-- _collections
+    - .htaccess
+    - _collections
 
 jekyll_tidy:
     exclude: [""]
     ignore_env:
-    compress_html: true
+    compress_html: false
 
 
 # Defaults
 defaults:
-# _posts
-- scope:
-      path: ""
-      type: posts
-  values:
-      layout: single
-      author_profile: true
-      read_time: true
-      share: true
-      related: true
-# _algorithms
-#    - scope:
-#          path: "_algorithms"
-#          type: algorithms
-#      values:
-#          layout: collection
-#          author_profile: true
-#          share: true
-#          publish: true
-#          comments: true
-#          related: true
-# _pages
-- scope:
-      path: "_pages"
-      type: pages
-  values:
-      layout: default
-      author_profile: true
+    # _posts
+    - scope:
+          path: ""
+          type: posts
+      values:
+          layout: post
+          excerpt_separator: <!--more-->
+          author_profile: true
+          read_time: true
+          sharing: true
+          publish: false
+          related: true
+          comments: true
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
+    # _seasons
+    - scope:
+          path: "_seasons"
+          type: seasons
+      values:
+          layout: collection
+          excerpt_separator: <!--more-->
+          author_profile: true
+          read_time: true
+          sharing: true
+          publish: false
+          related: true
+          comments: true
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
+    # _planets
+    - scope:
+          path: "_planets"
+          type: planets
+      values:
+          layout: collection
+          excerpt_separator: <!--more-->
+          author_profile: true
+          read_time: true
+          sharing: true
+          publish: false
+          related: true
+          comments: true
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
+    # _index-pages
+    - scope:
+          path: "_index-pages"
+          type: pages
+      values:
+          layout: default
+          excerpt_separator: <!--more-->
+          author_profile: true
+          read_time: true
+          sharing: true
+          publish: false
+          related: true
+          comments: true
+          toc: true
+          toc_label: Table of Contents
+          toc_icon: table
 
 #compress_html:
 #    clippings  : []

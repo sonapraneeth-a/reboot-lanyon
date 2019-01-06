@@ -77,8 +77,6 @@ highlighter       : rouge
 timezone          : Asia/Kolkata
 encoding          : "utf-8"
 markdown_ext      : "markdown,mkdown,mkdn,mkd,md"
-sidebar:
-    position: "left"
 
 post:
     related         : true
@@ -107,6 +105,7 @@ permalink           : "/blog/:year/:month/:day/:title/"
 
 pagination:
     enabled      : true
+    collection   : "posts"
     per_page     : 2
     title        : ":title | Page :num of :max"
     permalink    : "/:num/"
@@ -115,6 +114,10 @@ pagination:
     trail:
         before : 2
         after  : 2
+
+
+autopages:
+    enabled: false
 
 # Old Jekyl paginate plugin
 # paginate: 5
@@ -169,52 +172,66 @@ menu:
     - title : "Home"
       url   : "/"
       icon  : "home"
+      class : "home"
     - title : "Projects"
       url   : "/projects/"
       icon  : "file-code"
+      class : "project"
       sublinks:
           - title : "Categories"
             url   : "/projects/categories/"
             icon  : "folder-open"
+            class : "categories"
           - title : "Search"
             url   : "/projects/search/"
             icon  : "search"
+            class : "search"
           - title : "Tags"
             url   : "/projects/tags/"
             icon  : "tag"
+            class : "tags"
           - title : "Archives"
             url   : "/projects/archives/"
             icon  : "file-archive"
+            class : "archives"
     - title : "Blog"
       url   : "/blog/"
       icon  : "pencil-alt"
+      class : "blog"
       sublinks:
           - title : "Categories"
             url   : "/blog/categories/"
             icon  : "folder-open"
+            class : "categories"
           - title : "Search"
             url   : "/blog/search/"
             icon  : "search"
+            class : "search"
           - title : "Tags"
             url   : "/blog/tags/"
             icon  : "tag"
+            class : "tags"
           - title : "Archives"
             url   : "/blog/archives/"
             icon  : "file-archive"
+            class : "archives"
     - title: "Collections"
       url: "/collections/"
       icon: "suitcase"
+      class: "collections"
       sublinks:
           - title: "Seasons"
             url: "/seasons/"
             icon: "cloud"
+            class: "algorithms"
           - title: "Planets"
             url: "/planets/"
             icon: "circle"
+            class: "ml"
 
 
-google_analytics_token : "UA-90733014-1" # leave blank if you don"t want google analytics
-disqus_short_name      : "sonapraneethakula" # leave blank if you don"t want disqus
+google_analytics_token : "UA-90733014-1" # leave blank if you don't want google analytics
+disqus_short_name      : "sonapraneethakula" # leave blank if you don't want disqus
 staticman:
     branch             : "reboot-lanyon"
 

@@ -77,8 +77,6 @@ highlighter       : rouge
 timezone          : Asia/Kolkata
 encoding          : "utf-8"
 markdown_ext      : "markdown,mkdown,mkdn,mkd,md"
-sidebar:
-    position: "left"
 
 post:
     related         : true
@@ -89,6 +87,22 @@ words_per_minute    : 180
 
 permalink           : "/blog/:year/:month/:day/:title/"
 
+#autopages:
+#    enabled: true
+#    tags:
+#        enabled: false
+#    categories:
+#        enabled: false
+#    collections:
+#        enabled: true
+#        layouts:
+#            - "autopage_collection.html"
+#        title: ":coll" # :coll is replaced by the collection name
+#        permalink: "/:coll/"
+#        slugify:
+#            mode: "pretty"
+#            cased: true
+
 pagination:
     enabled      : true
     collection   : "posts"
@@ -98,7 +112,7 @@ pagination:
     sort_field   : "date"
     sort_reverse : true
     trail:
-        before : 1
+        before : 2
         after  : 2
 
 

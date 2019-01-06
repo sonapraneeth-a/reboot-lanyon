@@ -18,6 +18,13 @@ build       : "jekyll"
 # Site config
 flat        : true
 skin        : base-01
+sidebar:
+    display  : push # push, overlay
+    position : left # Currently set it from _base-01.scss
+progress_bar:
+    color    : red
+    progress : aqua
+    show     : false
 
 # SEO
 logo:
@@ -70,8 +77,6 @@ highlighter       : rouge
 timezone          : Asia/Kolkata
 encoding          : "utf-8"
 markdown_ext      : "markdown,mkdown,mkdn,mkd,md"
-sidebar:
-    position: "left"
 
 post:
     related         : true
@@ -80,7 +85,7 @@ post:
     comments_plugin : disqus
 words_per_minute    : 180
 
-permalink           : '/blog/:year/:month/:day/:title/'
+permalink           : "/blog/:year/:month/:day/:title/"
 
 pagination:
     enabled      : true
@@ -91,17 +96,16 @@ pagination:
     sort_field   : 'date'
     sort_reverse : true
     trail:
-        before : 1
+        before : 2
         after  : 2
 
-
 autopages:
-    enabled: false
+    enabled: true
 
 # Old Jekyl paginate plugin
 # paginate: 5
-# paginate_path: '/blog/:num'
-# permalink: '/blog/:year/:month/:day/:title/'
+# paginate_path: "/blog/:num"
+# permalink: "/blog/:year/:month/:day/:title/"
 
 future      : true
 show_drafts : true
@@ -140,55 +144,44 @@ author:
 
 # Navigation Menu
 menu:
-    - title : 'Home'
-      url   : '/'
-      icon  : 'home'
-      class : 'home'
-    - title : 'Projects'
-      url   : '/projects/'
-      icon  : 'file-code'
-      class : 'project'
+    - title : "Home"
+      url   : "/"
+      icon  : "home"
+    - title : "Projects"
+      url   : "/projects/"
+      icon  : "file-code"
       sublinks:
-          - title : 'Categories'
-            url   : '/projects/categories/'
-            icon  : 'folder-open'
-            class : 'categories'
-          - title : 'Search'
-            url   : '/projects/search/'
-            icon  : 'search'
-            class : 'search'
-          - title : 'Tags'
-            url   : '/projects/tags/'
-            icon  : 'tag'
-            class : 'tags'
-          - title : 'Archives'
-            url   : '/projects/archives/'
-            icon  : 'file-archive'
-            class : 'archives'
-    - title : 'Blog'
-      url   : '/blog/'
-      icon  : 'pencil-alt'
-      class : 'blog'
+          - title : "Categories"
+            url   : "/projects/categories/"
+            icon  : "folder-open"
+          - title : "Search"
+            url   : "/projects/search/"
+            icon  : "search"
+          - title : "Tags"
+            url   : "/projects/tags/"
+            icon  : "tag"
+          - title : "Archives"
+            url   : "/projects/archives/"
+            icon  : "file-archive"
+    - title : "Blog"
+      url   : "/blog/"
+      icon  : "pencil-alt"
       sublinks:
-          - title : 'Categories'
-            url   : '/blog/categories/'
-            icon  : 'folder-open'
-            class : 'categories'
-          - title : 'Search'
-            url   : '/blog/search/'
-            icon  : 'search'
-            class : 'search'
-          - title : 'Tags'
-            url   : '/blog/tags/'
-            icon  : 'tag'
-            class : 'tags'
-          - title : 'Archives'
-            url   : '/blog/archives/'
-            icon  : 'file-archive'
-            class : 'archives'
+          - title : "Categories"
+            url   : "/blog/categories/"
+            icon  : "folder-open"
+          - title : "Search"
+            url   : "/blog/search/"
+            icon  : "search"
+          - title : "Tags"
+            url   : "/blog/tags/"
+            icon  : "tag"
+          - title : "Archives"
+            url   : "/blog/archives/"
+            icon  : "file-archive"
 
-google_analytics_token : 'UA-90733014-1' # leave blank if you don't want google analytics
-disqus_short_name      : 'sonapraneethakula' # leave blank if you don't want disqus
+google_analytics_token : "UA-90733014-1" # leave blank if you don't want google analytics
+disqus_short_name      : "sonapraneethakula" # leave blank if you don't want disqus
 staticman:
     branch             : "reboot-lanyon"
 
