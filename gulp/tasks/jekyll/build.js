@@ -18,8 +18,16 @@ gulp.task("build::jekyll-site", (done) =>
     }
     else
     {
-        log("=== Development Jekyll website ===");
-        shell.exec("jekyll build --config _dev-config.yml"); // --livereload
+        if(argv.local)
+        {
+            log("=== Development Jekyll website ===");
+            shell.exec("jekyll build --config _dev-config-local.yml");
+        }
+        else 
+        {
+            log("=== Development Jekyll website ===");
+            shell.exec("jekyll build --config _dev-config.yml");
+        }
     }
     done();
 });

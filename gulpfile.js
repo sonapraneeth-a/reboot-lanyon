@@ -12,11 +12,10 @@ const tasks       = require_dir("./gulp/tasks", {recurse: true});
 const paths = require("./gulp/paths");
 
 // Jekyll tasks
-gulp.task("serve::jekyll", gulp.series("clean::public_html", "serve::jekyll-site"));
-gulp.task("serve::local::jekyll", gulp.series("clean::public_html", "serve::local::jekyll-site"));
-gulp.task("build::jekyll", gulp.series("clean::public_html", "build::jekyll-site"));
-gulp.task("jekyll", gulp.series("serve::jekyll"));
-gulp.task("local::jekyll", gulp.series("serve::local::jekyll"));
+gulp.task("jekyll::clean", gulp.series("clean::sass-cache", "clean::public_html"));
+gulp.task("jekyll::build", gulp.series("jekyll::clean", "build::jekyll-site"));
+gulp.task("jekyll::serve", gulp.series("jekyll::clean", "serve::jekyll-site"));
+gulp.task("jekyll", gulp.series("jekyll::serve"));
 
 // Netlify tasks
 gulp.task("build::netlify", gulp.series("clean::public_html", "build::netlify-site"));
@@ -30,4 +29,5 @@ gulp.task("gulp", gulp.series("build::gulp", "serve::gulp"));
 // Default task (Either jekyll or netlify)
 /* gulp default : No compression/minification */
 /* gulp default --prod : Compression enabled */
-gulp.task("default", gulp.series("local::jekyll"));
+/* gulp default --local : using local config (_dev-config-local.yml) yml */
+gulp.task("default", gulp.series("jekyll"));

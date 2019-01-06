@@ -14,7 +14,7 @@ gulp.task("serve::netlify-site", (done) =>
     if(argv.prod)
     {
         log("=== Production Netlify website ===");
-        shell.exec("jekyll serve --config _prod-config-netlify.yml");
+        shell.exec("jekyll serve --config _prod-config-netlify.yml --incremental --port 8000");  // --livereload
     }
     else
     {
