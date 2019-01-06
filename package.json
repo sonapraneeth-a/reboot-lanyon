@@ -47,6 +47,7 @@
     },
     "dependencies": {
         "gulp-inline-css": "^3.3.1",
-        "gulp-inline-source": "^4.0.0"
+        "gulp-inline-source": "^4.0.0",
+        "node-sass": "^4.11.0"
     }
 }
