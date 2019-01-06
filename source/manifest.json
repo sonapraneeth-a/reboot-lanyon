@@ -1,8 +1,11 @@
+---
+---
+
 {
     "name": "Reboot lanyon",
     "short_name": "Reboot lanyon",
     "description": "Webpage of reboot lanyon theme",
-    "start_url": {{site.baseurl}},
+    "start_url": "{{ site.baseurl }}",
     "theme_color": "#0297ed",
     "background_color": "#ffffff",
     "display": "fullscreen",
