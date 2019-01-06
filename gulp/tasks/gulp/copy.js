@@ -6,6 +6,7 @@ const log       = require("fancy-log");
 const rename    = require("gulp-rename");
 const inlineCss = require('gulp-inline-css');
 const inlineSource = require('gulp-inline-source');
+const when         = require("gulp-if");
 
 // include paths file
 const paths = require("../../paths");
@@ -157,15 +158,12 @@ gulp.task("gulp::inline-css", () =>
 });
 
 gulp.task("gulp::inline-source", function () {
-    if(argv.prod)
-    {
-        var options = {
-            compress: true,
-            rootpath: __dirname + '../../../../'+paths.temp_site_dir,
-        };
-        return gulp.src([paths.temp_site_dir + "**/*.html", 
-                            "!"+paths.temp_site_dir+"public/plugins/fontello/demo.html"])
-            .pipe(inlineSource(options))
-            .pipe(gulp.dest([paths.temp_site_dir]));
-    }
+    var options = {
+        compress: true,
+        rootpath: __dirname + "../../../../"+paths.temp_site_dir,
+    };
+    return gulp.src([paths.temp_site_dir + "**/*.html", 
+                        "!"+paths.temp_site_dir+"public/plugins/fontello/demo.html"])
+                .pipe(when(argv.prod, inlineSource(options)))
+                .pipe(gulp.dest([paths.temp_site_dir]));
 });
