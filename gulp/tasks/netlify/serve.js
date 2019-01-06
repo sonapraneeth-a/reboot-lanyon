@@ -14,12 +14,12 @@ gulp.task("serve::netlify-site", (done) =>
     if(argv.prod)
     {
         log("=== Production Netlify website ===");
-        shell.exec("jekyll serve --config _config-netlify-prod.yml");
+        shell.exec("jekyll serve --config _prod-config-netlify.yml");
     }
     else
     {
         log("=== Development Netlify website ===");
-        shell.exec("jekyll serve --config _config-netlify-dev.yml --incremental --port 8000"); // --livereload
+        shell.exec("jekyll serve --config _dev-config-netlify.yml --incremental --port 8000"); // --livereload
     }
     done();
 });

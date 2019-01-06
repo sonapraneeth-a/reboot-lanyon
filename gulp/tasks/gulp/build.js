@@ -16,12 +16,12 @@ gulp.task("build::gulp-site", (done) =>
     if(argv.prod)
     {
         log("=== Production website ===");
-        shell.exec("bundle exec jekyll build --config _config-gulp-prod.yml --incremental");
+        shell.exec("bundle exec jekyll build --config _prod-config-gulp.yml --incremental");
     }
     else
     {
         log("=== Development website ===");
-        shell.exec("bundle exec jekyll build --config _config-gulp-dev.yml --incremental");
+        shell.exec("bundle exec jekyll build --config _dev-config-gulp.yml --incremental");
     }
     done();
 });

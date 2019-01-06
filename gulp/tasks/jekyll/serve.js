@@ -14,12 +14,12 @@ gulp.task("serve::jekyll-site", (done) =>
     if(argv.prod)
     {
         log("=== Production Jekyll website ===");
-        shell.exec("jekyll serve --config _config-prod.yml");
+        shell.exec("jekyll serve --config _prod-config.yml");
     }
     else
     {
         log("=== Development Jekyll website ===");
-        shell.exec("jekyll serve --config _config-dev.yml --incremental --port 8000"); // --livereload
+        shell.exec("jekyll serve --config _dev-config.yml --incremental --port 8000"); // --livereload
     }
     done();
 });
@@ -31,12 +31,12 @@ gulp.task("serve::local::jekyll-site", (done) =>
     if(argv.prod)
     {
         log("=== Production Jekyll website ===");
-        shell.exec("jekyll serve --config _config-prod.yml");
+        shell.exec("jekyll serve --config _prod-config.yml");
     }
     else
     {
         log("=== Development Jekyll website ===");
-        shell.exec("jekyll serve --config _config-local-dev.yml --incremental --port 8000"); // --livereload
+        shell.exec("jekyll serve --config _dev-config-local.yml --incremental --port 8000"); // --livereload
     }
     done();
 });
