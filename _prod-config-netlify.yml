@@ -1,2 +1,5 @@
 url         : https://reboot-lanyon.netlify.com
 environment : "production"
+
+pagination:
+    per_page     : 5
