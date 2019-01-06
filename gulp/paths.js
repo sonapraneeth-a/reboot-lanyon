@@ -8,7 +8,7 @@ paths.assets_folder   = "assets";
 paths.sass_cache_folder = ".sass-cache";
 paths.current_folder = ".";
 paths.temp_folder = ".tmp";
-paths.sass_folder = "_scss";
+paths.sass_folder = "_sass";
 
 // Directory locations.
 paths.temp_dir            = paths.temp_folder + "/";
