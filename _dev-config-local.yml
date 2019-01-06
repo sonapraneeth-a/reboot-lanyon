@@ -31,10 +31,10 @@ logo:
 social:
     name: Sona Praneeth Akula
     links:
-    - https://twitter.com/sonapraneeth_a
-    - https://www.facebook.com/sonapraneeth.akula/
-    - https://www.linkedin.com/in/sona-praneeth-akula
-    - https://github.com/sonapraneeth-a
+        - https://twitter.com/sonapraneeth_a
+        - https://www.facebook.com/sonapraneeth.akula/
+        - https://www.linkedin.com/in/sona-praneeth-akula
+        - https://github.com/sonapraneeth-a
 twitter:
     username: sonapraneeth_a
 
@@ -115,7 +115,6 @@ pagination:
         before : 2
         after  : 2
 
-
 autopages:
     enabled: false
 
@@ -127,7 +126,6 @@ autopages:
 future      : true
 show_drafts : true
 incremental : true
-
 
 collections:
     index-pages:
@@ -228,7 +226,6 @@ menu:
             url: "/planets/"
             icon: "circle"
             class: "ml"
-
 
 google_analytics_token : "UA-90733014-1" # leave blank if you don't want google analytics
 disqus_short_name      : "sonapraneethakula" # leave blank if you don't want disqus
