@@ -14,7 +14,7 @@ gulp.task("build::jekyll-site", (done) =>
     if(argv.prod)
     {
         log("=== Production Jekyll website ===");
-        shell.exec("jekyll build --config _prod-config.yml");
+        shell.exec("jekyll build --config _dev-config-local.yml,_prod-config.yml");
     }
     else
     {
