@@ -15,13 +15,12 @@ $sidebar-pos : {{site.sidebar.position}};
 
 @import "property/padding";
 
+@import "base/color-palette";
 @import "base/colors";
 @import "base/fonts";
 @import "base/mixins/all";
 @import "base/screens";
-/** Begin Skin **/
-@import "skin/base-01";
-/** End Skin **/
+@import "skin/{{ site.skin | default: 'base-01' }}";
 @import "base/root";
 @import "config/generic";
 @import "elements/footer";
