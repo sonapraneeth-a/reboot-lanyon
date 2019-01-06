@@ -14,12 +14,6 @@ const size          = require('gulp-size');
 // include paths file
 const paths = require("../../paths");
 
-function reload(done)
-{
-    browser_sync.reload();
-    done();
-}
-
 gulp.task("gulp::serve", (done) =>
 {
     devip();
