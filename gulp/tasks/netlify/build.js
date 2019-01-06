@@ -14,12 +14,12 @@ gulp.task("build::netlify-site", (done) =>
     if(argv.prod)
     {
         log("=== Production Netlify website ===");
-        shell.exec("jekyll build --config _prod-config-netlify.yml");
+        shell.exec("jekyll build --config _dev-config-local.yml,_prod-config-netlify.yml");
     }
     else
     {
         log("=== Development Netlify website ===");
-        shell.exec("jekyll build --config _dev-config-netlify.yml"); // --livereload
+        shell.exec("jekyll build --config _dev-config-local.yml, _dev-config-netlify.yml"); // --livereload
     }
     done();
 });
