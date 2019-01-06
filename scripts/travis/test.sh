@@ -5,5 +5,6 @@ set -x
 # bundle exec htmlproofer ./public_html --disable-external
 bundle install
 npm --version
+gem install html-proofer
 gulp build::netlify::site --prod
 htmlproofer ./.tmp/public_html --disable-external
