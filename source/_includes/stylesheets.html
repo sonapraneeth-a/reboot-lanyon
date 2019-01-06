@@ -1,8 +1,11 @@
-{% if site.environment == "development" %}
+{% if site.environment == "development" and site.build == "jekyll" %}
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css" inline>
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css" inline>
 {% endif %}
-{% if site.environment == "production" %}
+{% if site.environment == "production" and site.build == "jekyll" %}
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css" inline>
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css" inline>
+{% endif %}
+{% if site.build == "gulp" %}
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/all.css" inline>
 {% endif %}
