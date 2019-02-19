@@ -19,7 +19,7 @@ gulp.task("build::netlify-site", (done) =>
     else
     {
         log("=== Development Netlify website ===");
-        shell.exec("jekyll build --config _dev-config-local.yml, _dev-config-netlify.yml"); // --livereload
+        shell.exec("bundle exec jekyll build --config _dev-config-local.yml,_dev-config-netlify.yml --incremental"); // --livereload
     }
     done();
 });

@@ -51,7 +51,7 @@ gulp.task("gulp::compress-css", () =>
 gulp.task("gulp::compress-scripts", () =>
 {
     /*log("=== Minifying Javascript files ===");*/
-    return gulp.src([paths.temp_site_dir + "public" + paths.js_pattern])
+    return gulp.src([paths.temp_site_dir + "public" + paths.js_pattern, "!" + paths.temp_site_dir + "public/js/lunr/*.js"])
         /*.pipe(using({prefix:'Using file', path:'relative', color:'white', filesize:true}))*/
         .pipe(when(argv.prod, size({title: 'Original JS', pretty: true, showFiles: true, showTotal: true})))
         .pipe(when(argv.prod, strip()))

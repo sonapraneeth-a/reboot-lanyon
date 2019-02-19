@@ -42,5 +42,5 @@ gulp.task("default::jekyll--gh-pages", gulp.series("jekyll--gh-pages"));
 gulp.task("default::jekyll--netlify", gulp.series("jekyll--netlify"));
 gulp.task("default::gulp--gh-pages", gulp.series("gulp--gh-pages"));
 gulp.task("default::gulp--netlify", gulp.series("gulp--gh-pages"));
-gulp.task("default", gulp.series("default::jekyll--netlify"));
-//gulp.task("default", gulp.series("default::gulp--gh-pages"));
+//gulp.task("default", gulp.series("default::jekyll--netlify"));
+gulp.task("default", gulp.series("default::gulp--gh-pages"));
