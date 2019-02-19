@@ -1,7 +1,6 @@
 # Todo
 
-- [ ] Move gulp-ruby-sass to gulp-sass
-- [ ] Update manifest icon URLs
+- [ ] Use terser / gulp-terset instead of uglify-es / gulp-uglifyes
 - [ ] Add schema LD JSON 
 - [ ] Add progress bar to indicate web page loading
 - [ ] Test staticman commenting
@@ -10,6 +9,8 @@
 - [ ] Check if it is possible to change label for collections
 - [ ] Make the sass utilities (.info, .success, ...) as a mixin
 - [ ] Adjust related posts and comments based on site variables and defaults
+- [x] Move gulp-ruby-sass to gulp-sass
+- [x] Update manifest icon URLs
 - [x] Add scroll to top button
 - [x] Add a copy button for all code samples
 - [x] Update colors for utilities info, danger, warning, success
