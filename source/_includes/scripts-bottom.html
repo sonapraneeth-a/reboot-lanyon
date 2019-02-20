@@ -149,18 +149,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.2/lunr.min.js" defer></script>
 {% endif %}
 {% if url contains 'blog/search' and site.environment == "production" %}
-<script type="text/javascript" src="{{site.baseurl}}/public/js/blog.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/blog.js" defer></script>
 {% endif %}
 {% if url contains 'blog/search' and site.environment == "development" %}
-<script type="text/javascript" src="{{site.baseurl}}/public/js/posts.js" defer></script>
-<script type="text/javascript" src="{{site.baseurl}}/public/js/search-blog.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/posts.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/search-blogs.js" defer></script>
 {% endif %}
 {% if url contains 'projects/search' and site.environment == "production" %}
-<script type="text/javascript" src="{{site.baseurl}}/public/js/project.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/project.js" defer></script>
 {% endif %}
 {% if url contains 'projects/search' and site.environment == "development" %}
-<script type="text/javascript" src="{{site.baseurl}}/public/js/projects.js" defer></script>
-<script type="text/javascript" src="{{site.baseurl}}/public/js/search-project.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/projects.js" defer></script>
+<script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/search-project.js" defer></script>
 {% endif %}
 {% if page.content contains "code" %}
 <script type="text/javascript" src="{{site.baseurl}}/public/plugins/prism/prism.min.js" defer></script>
