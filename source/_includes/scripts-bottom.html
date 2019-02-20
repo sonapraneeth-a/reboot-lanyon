@@ -148,17 +148,15 @@
 {% if url contains '/search' %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.2/lunr.min.js" defer></script>
 {% endif %}
-{% if url contains 'blog/search' and site.environment == "production" %}
+{% if url contains 'blog/search' and site.environment == "production" and site.build == "gulp" %}
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/blog.js" defer></script>
-{% endif %}
-{% if url contains 'blog/search' and site.environment == "development" %}
+{% else %}
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/posts.js" defer></script>
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/search-blogs.js" defer></script>
 {% endif %}
-{% if url contains 'projects/search' and site.environment == "production" %}
+{% if url contains 'projects/search' and site.environment == "production" and site.build == "gulp" %}
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/project.js" defer></script>
-{% endif %}
-{% if url contains 'projects/search' and site.environment == "development" %}
+{% else %}
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/projects.js" defer></script>
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/search-projects.js" defer></script>
 {% endif %}
