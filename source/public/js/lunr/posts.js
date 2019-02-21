@@ -1,5 +1,4 @@
 ---
-layout: null
 ---
 /* Posts variable Javascript */
 // Test comment

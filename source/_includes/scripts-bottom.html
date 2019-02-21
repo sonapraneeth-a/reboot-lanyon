@@ -148,6 +148,11 @@
 {% if url contains '/search' %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.2/lunr.min.js" defer></script>
 {% endif %}
+<script>
+  console.log(url);
+  console.log(site.environment);
+  console.log(site.build);
+</script>
 {% if url contains 'blog/search' and site.environment == "production" and site.build == "gulp" %}
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/blog.js" defer></script>
 {% else %}

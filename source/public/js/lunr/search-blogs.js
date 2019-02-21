@@ -1,5 +1,4 @@
 ---
-layout: null
 ---
 
 // var load = function () {return JSON.parse(posts)};
@@ -29,33 +28,33 @@ var idx = lunr(function ()
     }
 });
 
-let search_input = document.getElementById('blog-search');
-let result_output = document.getElementById('blog-results');
+let blog_query_input = document.getElementById('blog-search');
+let blog_result_output = document.getElementById('blog-results');
 /*let main_content = document.getElementById('main-content');*/
-let query = search_input.value.toLowerCase();
-let result_text = ``;
-/*if(query == ``)
+let blog_query = blog_query_input.value.toLowerCase();
+let blog_result_text = ``;
+/*if(blog_query == ``)
 {
-    result_text = `<p>No results found for the "` + query + `"</p>`;
+    blog_result_text = `<p>No results found for the "` + blog_query + `"</p>`;
 }*/
-result_output.innerHTML = result_text;
-search_input.addEventListener('keyup', function()
+blog_result_output.innerHTML = blog_result_text;
+blog_query_input.addEventListener('keyup', function()
     {
-        let query = search_input.value.toLowerCase();
-        let answer = idx.search(query);
-        result_output.innerHTML = ``;
-        let result_text= ``;
+        let blog_query = blog_query_input.value.toLowerCase();
+        let answer = idx.search(blog_query);
+        blog_result_output.innerHTML = ``;
+        let blog_result_text= ``;
         if(answer.length == 0)
         {
-            result_text = `<p>No results found for the "` + query + `"</p>`;
+            blog_result_text = `<p>No results found for the "` + blog_query + `"</p>`;
         }
-        else if(query == ``)
+        else if(blog_query == ``)
         {
-            result_text = ``;
+            blog_result_text = ``;
         }
         else
         {
-            result_text = `<p>` + answer.length + ` Result(s) found</p>`;
+            blog_result_text = `<p>` + answer.length + ` Result(s) found</p>`;
         }
         for (index = 0; index < answer.length; index++)
         {
@@ -71,17 +70,17 @@ search_input.addEventListener('keyup', function()
             console.log(`URL: ` + url);
             console.log(`Date: ` + date);
             console.log(`Excerpt: ` + excerpt);*/
-            result_text += `<div class="blog-item">`
-            result_text += `<h2 class="blog-title"><a href="` + baseurl + url + `">`;
+            blog_result_text += `<div class="blog-item">`
+            blog_result_text += `<h2 class="blog-title"><a href="` + baseurl + url + `">`;
             /*console.log(`Baseurl: ` + baseurl);
             console.log(`URL: ` + url);*/
-            result_text += title+`</a></h2>`;
-            /*result_text += `<p class="blog-date">`+date+`</p>`;*/
-            result_text += `<article class="blog-excerpt">`+excerpt+`</article>`;
-            result_text += `</div>`;
-            result_text += `</div>`;
+            blog_result_text += title+`</a></h2>`;
+            /*blog_result_text += `<p class="blog-date">`+date+`</p>`;*/
+            blog_result_text += `<article class="blog-excerpt">`+excerpt+`</article>`;
+            blog_result_text += `</div>`;
+            blog_result_text += `</div>`;
         }
-        result_output.innerHTML = result_text;
+        blog_result_output.innerHTML = blog_result_text;
         /*if(answer.length > 0)
         {
             main_content.style.display = `none`;
