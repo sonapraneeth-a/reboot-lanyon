@@ -150,13 +150,13 @@
 {% endif %}
 {% if url contains 'blog/search' and site.environment == "production" and site.build == "gulp" %}
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/blog.js" defer></script>
-{% else %}
+{% elsif url contains 'blog/search' %}
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/posts.js" defer></script>
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/search-blogs.js" defer></script>
 {% endif %}
 {% if url contains 'projects/search' and site.environment == "production" and site.build == "gulp" %}
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/project.js" defer></script>
-{% else %}
+{% elsif url contains 'projects/search' %}
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/projects.js" defer></script>
 <script type="text/javascript" src="{{site.baseurl}}/public/js/lunr/search-projects.js" defer></script>
 {% endif %}

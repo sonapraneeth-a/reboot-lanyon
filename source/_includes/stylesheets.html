@@ -1,8 +1,8 @@
-{% if site.environment == "development" and site.build == "jekyll" %}
+{% if site.environment == "development" and site.build == "jekyll" or site.build == "netlify" %}
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css" inline>
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css" inline>
 {% endif %}
-{% if site.environment == "production" and site.build == "jekyll" %}
+{% if site.environment == "production" and site.build == "jekyll" or site.build == "netlify"  %}
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/plugins/prism/prism.css" inline>
 <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/public/css/main.css" inline>
 {% endif %}
