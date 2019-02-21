@@ -1,5 +1,4 @@
 ---
-layout: null
 ---
 
 var projects = [{% for project in site.projects %}{% if project.publish == true %}

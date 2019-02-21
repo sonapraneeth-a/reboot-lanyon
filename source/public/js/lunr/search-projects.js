@@ -1,5 +1,4 @@
 ---
-layout: null
 ---
 // var load = function () {return JSON.parse(posts)};
 
@@ -29,32 +28,32 @@ var idx = lunr(function ()
     }
 });
 
-let search_input = document.getElementById('project-search');
-let result_output = document.getElementById('project-results');
-let query = search_input.value.toLowerCase();
-let result_text = ``;
-/*if(query == ``)
+let project_query_input = document.getElementById('project-search');
+let project_result_output = document.getElementById('project-results');
+let project_query = project_query_input.value.toLowerCase();
+let project_result_text = ``;
+/*if(project_query == ``)
 {
-    result_text = `<p>No results found for the "` + query + `"</p>`;
+    project_result_text = `<p>No results found for the "` + project_query + `"</p>`;
 }*/
-result_output.innerHTML = result_text;
-search_input.addEventListener('keyup', function()
+project_result_output.innerHTML = project_result_text;
+project_query_input.addEventListener('keyup', function()
     {
-        let query = search_input.value.toLowerCase();
-        let answer = idx.search(query);
-        result_output.innerHTML = ``;
-        let result_text= ``;
+        let project_query = project_query_input.value.toLowerCase();
+        let answer = idx.search(project_query);
+        project_result_output.innerHTML = ``;
+        let project_result_text= ``;
         if(answer.length == 0)
         {
-            result_text = `<p>No results found for the "` + query + `"</p>`;
+            project_result_text = `<p>No results found for the "` + project_query + `"</p>`;
         }
-        else if(query == ``)
+        else if(project_query == ``)
         {
-            result_text = ``;
+            project_result_text = ``;
         }
         else
         {
-            result_text = `<p>` + answer.length + ` Result(s) found</p>`;
+            project_result_text = `<p>` + answer.length + ` Result(s) found</p>`;
         }
         for (index = 0; index < answer.length; index++)
         {
@@ -70,16 +69,16 @@ search_input.addEventListener('keyup', function()
             console.log(`URL: ` + url);
             console.log(`Date: ` + date);
             console.log(`Excerpt: ` + excerpt);*/
-            result_text += `<div class="blog-item">`
+            project_result_text += `<div class="blog-item">`
             console.log(`URL: `  + url);
             console.log(`Base URL: `  + baseurl);
-            result_text += `<h2 class="blog-title"><a href="` + baseurl + url + `">`;
-            result_text += title+`</a></h2>`;
-            /*result_text += `<p class="blog-date">`+date+`</p>`;*/
-            result_text += `<article class="blog-excerpt">`+brief+`</article>`;
-            result_text += `</div>`;
-            result_text += `</div>`;
+            project_result_text += `<h2 class="blog-title"><a href="` + baseurl + url + `">`;
+            project_result_text += title+`</a></h2>`;
+            /*project_result_text += `<p class="blog-date">`+date+`</p>`;*/
+            project_result_text += `<article class="blog-excerpt">`+brief+`</article>`;
+            project_result_text += `</div>`;
+            project_result_text += `</div>`;
         }
-        result_output.innerHTML = result_text;
+        project_result_output.innerHTML = project_result_text;
     }
 );
