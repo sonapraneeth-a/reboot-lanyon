@@ -31,12 +31,12 @@ var idx = lunr(function ()
 let blog_query_input = document.getElementById('blog-search');
 let blog_result_output = document.getElementById('blog-results');
 /*let main_content = document.getElementById('main-content');*/
-let blog_query = blog_query_input.value.toLowerCase();
 let blog_result_text = ``;
 /*if(blog_query == ``)
 {
     blog_result_text = `<p>No results found for the "` + blog_query + `"</p>`;
 }*/
+if (blog_query_input !== null && blog_result_output !== null) {
 blog_result_output.innerHTML = blog_result_text;
 blog_query_input.addEventListener('keyup', function()
     {
@@ -90,4 +90,4 @@ blog_query_input.addEventListener('keyup', function()
             main_content.style.display = `block`;
         }*/
     }
-);
+);}

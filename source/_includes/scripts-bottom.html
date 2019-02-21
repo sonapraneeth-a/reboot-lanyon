@@ -99,6 +99,9 @@
   //console.log("Calling scrollspy");
   const toc_menu = document.querySelector('#toc-menu');
   const blog_body = document.querySelector('#blog-body');
-  const scrollspy = new VanillaScrollspy(toc_menu, blog_body);
-  scrollspy.init();
+  if (toc_menu !== null && blog_body !== null)
+  {
+    const scrollspy = new VanillaScrollspy(toc_menu, blog_body);
+    scrollspy.init();
+  }
 </script>

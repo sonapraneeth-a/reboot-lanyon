@@ -30,12 +30,12 @@ var idx = lunr(function ()
 
 let project_query_input = document.getElementById('project-search');
 let project_result_output = document.getElementById('project-results');
-let project_query = project_query_input.value.toLowerCase();
 let project_result_text = ``;
 /*if(project_query == ``)
 {
     project_result_text = `<p>No results found for the "` + project_query + `"</p>`;
 }*/
+if (project_query_input !== null && project_result_output !== null) {
 project_result_output.innerHTML = project_result_text;
 project_query_input.addEventListener('keyup', function()
     {
@@ -81,4 +81,4 @@ project_query_input.addEventListener('keyup', function()
         }
         project_result_output.innerHTML = project_result_text;
     }
-);
+);}
