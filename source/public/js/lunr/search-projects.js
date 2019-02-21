@@ -70,8 +70,8 @@ project_query_input.addEventListener('keyup', function()
             console.log(`Date: ` + date);
             console.log(`Excerpt: ` + excerpt);*/
             project_result_text += `<div class="blog-item">`
-            console.log(`URL: `  + url);
-            console.log(`Base URL: `  + baseurl);
+            /*console.log(`URL: `  + url);
+            console.log(`Base URL: `  + baseurl);*/
             project_result_text += `<h2 class="blog-title"><a href="` + baseurl + url + `">`;
             project_result_text += title+`</a></h2>`;
             /*project_result_text += `<p class="blog-date">`+date+`</p>`;*/

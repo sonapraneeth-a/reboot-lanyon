@@ -46,13 +46,13 @@
 <script>
   var toggle_toc = () =>
   {
-    console.log("Toggling TOC");
+    //console.log("Toggling TOC");
     let show_hide_toc = document.getElementById("show-hide-toc");
     let blog_toc = document.getElementById("blog-toc");
     let blog_body = document.getElementById("blog-body");
-    console.log(show_hide_toc);
+    /*console.log(show_hide_toc);
     console.log(blog_toc);
-    console.log(blog_body);
+    console.log(blog_body);*/
     blog_toc.classList.toggle("zero-width");
     blog_toc.classList.toggle("visibility-hidden");
     blog_toc.classList.toggle("no-padding");
@@ -84,19 +84,19 @@
     "@context"     : "http://schema.org"
   }
   var dateModified = document.lastModified;
-  console.log(dateModified);
+  //console.log(dateModified);
   data.dateModified = dateModified;
   var script = document.createElement('script');
   script.type = "application/ld+json";
   script.innerHTML = JSON.stringify(data);
-  console.log(script);
-  console.log(document.getElementsByTagName('head')[0]);
+  /*console.log(script);
+  console.log(document.getElementsByTagName('head')[0]);*/
   document.getElementsByTagName('head')[0].appendChild(script);
   /*}*/
 </script>
 <script type="text/javascript" src="{{site.baseurl}}/public/plugins/scrollspy/scrollspy.js"></script>
 <script>
-  console.log("Calling scrollspy");
+  //console.log("Calling scrollspy");
   const toc_menu = document.querySelector('#toc-menu');
   const blog_body = document.querySelector('#blog-body');
   const scrollspy = new VanillaScrollspy(toc_menu, blog_body);
