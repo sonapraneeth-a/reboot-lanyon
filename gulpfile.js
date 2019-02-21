@@ -26,7 +26,7 @@ gulp.task("jekyll--netlify", gulp.series("netlify::serve"));
 gulp.task("gulp::clean", gulp.series("clean::tmp"));
 gulp.task("gulp::sass", gulp.series("gulp::copy-sass", "gulp::copy-main-sass", "gulp::build-sass"));
 gulp.task("gulp::css", gulp.series("gulp::copy-css", "gulp::concat-css", "gulp::compress-css"));
-gulp.task("gulp::js", gulp.series("gulp::compress-scripts"));
+gulp.task("gulp::js", gulp.series("gulp::compress-scripts", "gulp::concat-blog", "gulp::concat-project"));
 gulp.task("gulp::assets", gulp.series("gulp::copy-assets", "gulp::copy-images", "gulp::compress-images"));
 gulp.task("gulp::build-gh-pages-config", gulp.series("copy::source", "build::gulp-site", "gulp::move-html", "gulp::compress-html"));
 gulp.task("gulp::build-gh-pages-optimized-site", gulp.series("gulp::clean", "gulp::build-gh-pages-config", "gulp::sass", "gulp::css", 
