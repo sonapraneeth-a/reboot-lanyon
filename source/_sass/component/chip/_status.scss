@@ -2,9 +2,9 @@
 {
     &.ongoing
     {
-        background-color: $info;
-        color: $primary-foreground-color;
-        border: 0.05rem solid $info;
+        background-color: $warning;
+        color: $primary;
+        border: 0.05rem solid $warning;
     }
     &.complete
     {
