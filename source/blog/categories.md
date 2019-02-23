@@ -10,7 +10,7 @@ icon: pencil-alt
     {% for post in category[1] %}
     {% assign count = count | plus: 1 %}
     {% endfor %}
-    <a href="#{{ category[0] | slugify: 'pretty' }}" style="text-decoration: none;">
+    <a href="#{{ category[0] | slugify: 'pretty' }}" class="category">
         <div class="chip">
             <span class="chip-content">
             <i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;{{ category[0] }}</span>

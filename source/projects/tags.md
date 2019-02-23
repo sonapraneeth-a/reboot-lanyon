@@ -45,7 +45,7 @@ icon: file-code
 <div style="display: inline-flex; flex-wrap: wrap;">
 {% assign size_tags = tags.size | minus: 1 %}
 {% for index in (0..size_tags) %}
-<a href="#{{ tags[index] | slugify: 'pretty' }}" style="text-decoration: none;">
+<a href="#{{ tags[index] | slugify: 'pretty' }}" class="tag">
 <div class="chip">
 <span class="chip-content">
 <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ tags[index] }}</span>

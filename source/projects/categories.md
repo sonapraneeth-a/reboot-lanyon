@@ -45,7 +45,7 @@ icon: file-code
 <div style="display: inline-flex; flex-wrap: wrap;">
 {% assign size_categories = categories.size | minus: 1 %}
 {% for index in (0..size_categories) %}
-<a href="#{{ categories[index] | slugify: 'pretty' }}" style="text-decoration: none;">
+<a href="#{{ categories[index] | slugify: 'pretty' }}" class="category">
 <div class="chip">
 <span class="chip-content">
 <i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;{{ categories[index] }}</span>

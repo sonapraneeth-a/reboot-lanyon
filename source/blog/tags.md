@@ -10,7 +10,7 @@ icon: pencil-alt
     {% for post in tag[1] %}
     {% assign count = count | plus: 1 %}
     {% endfor %}
-    <a href="#{{ tag[0] | slugify: 'pretty' }}" style="text-decoration: none;">
+    <a href="#{{ tag[0] | slugify: 'pretty' }}" class="tag">
         <div class="chip">
             <span class="chip-content">
             <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;{{ tag[0] }}</span>
