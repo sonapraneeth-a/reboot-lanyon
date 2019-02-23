@@ -3,7 +3,7 @@
 
 {
     "name": "Reboot lanyon",
-    "short_name": "Reboot lanyon",
+    "short_name": "Reboot L.",
     "description": "Webpage of reboot lanyon theme",
     "start_url": "{{ site.baseurl }}",
     "theme_color": "#0297ed",
