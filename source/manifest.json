@@ -6,7 +6,7 @@
     "short_name": "Reboot L.",
     "description": "Webpage of reboot lanyon theme",
     "start_url": "{{ site.baseurl }}",
-    "theme_color": "#0297ed",
+    "theme_color": "#2647c0",
     "background_color": "#ffffff",
     "display": "fullscreen",
     "orientation": "portrait",
