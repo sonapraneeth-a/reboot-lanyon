@@ -4,17 +4,18 @@
 $primary-background-color          : hsl(227, 67%, 45%);// hsl(202, 98%, 37%);
 $primary-background-color-light    : lighten($primary-background-color, 10%);
 $primary-background-color-dark     : darken($primary-background-color, 10%);
-/* "On" colors */
+/* "On" text colors for primary background color */
 $primary-foreground-color          : hsl(0, 0%, 98%);
 $primary-foreground-color-light    : lighten($primary-foreground-color, 10%);
 $primary-foreground-color-dark     : darken($primary-foreground-color, 10%);
-/* Secondary Color */
+/* "On" text colors for secondary background color */
 $secondary-foreground-color        : hsl(206, 99%, 31%);
 $secondary-foreground-color-light  : lighten($secondary-foreground-color, 10%);
-$secondary-foreground-color-dark   : darken($secondary-foreground-color, 10%);;
+$secondary-foreground-color-dark   : darken($secondary-foreground-color, 10%);
+/* Secondary Color */
 $secondary-background-color        : hsl(0, 0%, 98%);
-$secondary-background-color-light  : lighten($secondary-background-color, 10%);;
-$secondary-background-color-dark   : darken($secondary-background-color, 10%);;
+$secondary-background-color-light  : lighten($secondary-background-color, 10%);
+$secondary-background-color-dark   : darken($secondary-background-color, 10%);
 /* Surface Color */
 $surface-color                     : hsl(0, 0%, 98%);
 /* Background Color */
