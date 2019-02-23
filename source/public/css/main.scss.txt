@@ -16,7 +16,6 @@ $sidebar-pos : {{site.sidebar.position}};
 
 @import "property/padding";
 
-@import "base/color-palette";
 @import "base/colors";
 @import "base/fonts";
 @import "base/mixins/all";
@@ -34,7 +33,10 @@ $sidebar-pos : {{site.sidebar.position}};
 @import "component/navbar";
 @import "component/sidebar";
 
+@import "component/link";
+
 @import "component/card/card";
+@import "component/card/project";
 @import "component/card/blog";
 @import "component/chip/chip";
 @import "component/chip/status";

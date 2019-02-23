@@ -66,6 +66,10 @@
         padding: 2%;
         border-top: 0.1rem solid rgba(160,160,160,0.2);
         bottom: 0;
+        a
+        {
+            border-bottom: none;
+        }
     }
 }
 
