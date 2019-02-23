@@ -1,7 +1,7 @@
 /* Reference URL: https://material.io/design/color/the-color-system.html#color-theme-creation */
 /* Color palette */
 /* Primary Color */
-$primary-background-color          : hsl(227,67%,45%);// hsl(202, 98%, 37%);
+$primary-background-color          : hsl(227, 67%, 45%);// hsl(202, 98%, 37%);
 $primary-background-color-light    : lighten($primary-background-color, 10%);
 $primary-background-color-dark     : darken($primary-background-color, 10%);
 /* "On" colors */
@@ -24,13 +24,13 @@ $dark-text-color                   : hsl(0, 0%, 98%);
 /* Light text color */
 $primary-text-color                : black;
 /* Links Colors */
-$link-text-color                   : hsl(225, 84%, 68%);//hsl(207, 97%, 65%);
+$link-text-color                   : hsl(240, 88%, 50%);//hsl(207, 97%, 65%);
 
 /* Navbar configuration */
 $navbar-visible-screen     : $minitablet;
 $navbar-radius             : 1rem;
-$navbar-foreground-color   : $primary-foreground-color-light;
-$navbar-background-color   : $primary-background-color-light;
+$navbar-foreground-color   : $primary-foreground-color;
+$navbar-background-color   : $primary-background-color;
 $navbar-content-flow       : "forward";
 $navbar-header-size        : 1.8rem;
 $navbar-header-vert-margin : 0.5rem;
@@ -46,5 +46,9 @@ $sidebar-item-padding      : 0.9rem 1.5rem;
 $sidebar-toggle-vert-pos   : $navbar-header-vert-margin + 0.3rem;
 
 /* Pager configuration */
-$pager-foreground-color   : $primary-foreground-color-light;
-$pager-background-color   : $primary-background-color-light;
+$pager-foreground-color   : $primary-foreground-color;
+$pager-background-color   : $primary-background-color;
+
+/* Footer configuration */
+$footer-foreground-color  : $primary-foreground-color;
+$footer-background-color  : $primary-background-color;

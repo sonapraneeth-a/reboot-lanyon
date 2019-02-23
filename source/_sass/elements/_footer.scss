@@ -2,8 +2,8 @@
 {
     z-index: $footer-zindex;
     width: 100%;
-    background-color: $primary-background-color;
-    color: $primary-foreground-color;
+    background-color: $footer-background-color;
+    color: $footer-foreground-color;
     bottom: 0;
     position: fixed;
     p
@@ -39,7 +39,7 @@
     }
     a
     {
-        color: $primary-foreground-color;
+        color: $footer-foreground-color;
         font-weight: bold;
     }
 }
