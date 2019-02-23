@@ -49,7 +49,7 @@ gulp.task("gulp::build-sass", () => {
     {
         return gulp.src(paths.temp_src_dir + "_sass/main.scss")
                 .pipe(sourcemaps.init())
-                .pipe(sass().on('error', sass.logError))
+                .pipe(sass.sync({sourceComments: true, sourceMap: true}).on('error', sass.logError))
                 .pipe(sourcemaps.write())
                 .pipe(gulp.dest(paths.temp_site_dir + "public/css"));
     }
