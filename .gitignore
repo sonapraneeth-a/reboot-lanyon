@@ -30,4 +30,9 @@ _drafts/
 *.exe
 *.out
 
+# Image icons
+icons-old
 
+# Google downloaded fonts
+regular*.woff2
+bold*.woff2

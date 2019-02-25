@@ -6,8 +6,8 @@
 $flat        : {{site.flat}};
 $sidebar-pos : {{site.sidebar.position}};
 /* Fonts */
-@import "fonts/google/pt-sans.scss";
-@import "fonts/google/pt-serif.scss";
+@import "fonts/google/local_pt-sans.scss";
+@import "fonts/google/local_pt-serif.scss";
 /* Icon fonts */
 @import "fonts/icons/fontawesome-5-req.scss";
 @import "fonts/icons/zavoloklom-material-req.scss";
