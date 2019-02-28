@@ -1,6 +1,6 @@
 <!-- https://blog.webjeda.com/jekyll-related-posts/ -->
 {% if page.related == true %}
-<div class="relatedPosts">
+<div class="related-posts">
   {% assign printHead = 0 %}
   {% assign maxRelated = 4 %}
   {% assign minCommonTags =  1 %}
@@ -22,7 +22,7 @@
   <h3>Related Posts</h3>
   {% assign printHead = 1 %}
   {% endif %}
-  <div>
+  <div class="related-post">
     <!--<p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}{{ commonTags }}</a> - {{post.published | date: "%d %B %Y"}}</p>-->
     <span class="related-post-date">{{ post.date | date_to_string }}</span>
     <a class="related-post-title" href="{{ site.baseurl }}{{ post.url }}">

@@ -174,7 +174,15 @@
     }
 }
 
-.relatedPosts
+.related-posts
 {
     padding: 2rem 0;
+    .related-post
+    {
+        padding: 0.5rem 0;
+    }
+    .related-post-title
+    {
+        margin-left: 1rem;
+    }
 }
