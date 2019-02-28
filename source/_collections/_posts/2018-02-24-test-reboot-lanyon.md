@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 published: 12 February, 2018 15:23 IST
 assets: /assets/blog/2018-02-12-new-jekyll-theme
 related: true
-comments: true
+comments: false
 sharing: true
 publish: false
 hidden: true

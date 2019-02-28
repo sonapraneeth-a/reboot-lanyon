@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 published: 23 February, 2018 10:23 IST
 assets: /assets/blog/2018-02-23-css-components
 related: true
-comments: true
+comments: false
 sharing: true
 publish: true
 toc: true
