@@ -12,7 +12,7 @@ icon: suitcase
   {% for collection in collections %}
   {% unless collection.output == false or collection.label == "posts" or
   collection.label == "index-pages" or collection.label == "projects" %}
-      <a href="#{{ collection.label | slugify: 'pretty' }}" style="text-decoration: none;">
+      <a href="#{{ collection.label | slugify: 'pretty' }}" class="collection">
       <div class="chip">
           <span class="chip-content">
           <i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp;{{collection.label | capitalize}}</span>
