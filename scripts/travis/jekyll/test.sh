@@ -6,5 +6,5 @@ set -x
 bundle install
 npm --version
 gem install html-proofer
-jekyll build --config _dev-config.yml
+jekyll build --config _dev-config-local.yml
 htmlproofer ./public_html --disable-external
