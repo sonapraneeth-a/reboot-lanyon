@@ -5,4 +5,4 @@ set -x
 # bundle exec htmlproofer ./public_html --disable-external
 rm -rf ./.tmp/public_html
 gulp netlify::build --prod
-bundle exec htmlproofer ./.tmp/public_html --disable-external
+htmlproofer ./.tmp/public_html --disable-external
