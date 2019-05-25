@@ -3,6 +3,6 @@ set -x
 
 # bundle exec jekyll build --config _config.yml
 # bundle exec htmlproofer ./public_html --disable-external
-rm -rf ./.tmp/public_html
+rm -rf ./public_html
 gulp netlify::build --prod
-htmlproofer ./.tmp/public_html --disable-external
+htmlproofer ./public_html --disable-external
