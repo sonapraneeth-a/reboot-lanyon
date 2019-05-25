@@ -1,28 +1,27 @@
 language: ruby
 rvm:
-- 2.6.3
+    - 2.6.3
 
 before_script:
     #- npm config set strict-ssl false
-    - npm install
-    - npm install gulp
-    - npm link gulp@4.0.0
-    - gulp --version
+    - chmod +x ./scripts/travis/setup.sh
+    - chmod +x ./scripts/travis/test.sh
     - chmod +x ./scripts/travis/jekyll/test.sh
-#   - chmod +x ./scripts/travis/run.sh
+    - chmod +x ./scripts/travis/netlify/test.sh
+    - ./scripts/travis/setup.sh
 
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
-script: ./scripts/travis/jekyll/test.sh
+script: ./scripts/travis/test.sh
 
 # branch whitelist, only for GitHub Pages
 branches:
     only:
-    - master
-    - master-v2
+        - master
+        - master-v2
 
 env:
     global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+        - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 sudo: false # route your build to the container-based infrastructure for a faster build
