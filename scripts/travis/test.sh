@@ -1,6 +1,6 @@
 #!/bin/bash
 set -x
 
-./jekyll/test.sh
+./scripts/travis/jekyll/test.sh
 
-./netlify/test.sh
+./scripts/travis/netlify/test.sh
