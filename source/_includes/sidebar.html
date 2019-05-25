@@ -10,19 +10,20 @@
       </p>
     </div>
     <ul class="sidebar-menu">
-      {% for menu in site.menu %}
-      <li class="{% if url == menu.url %}sidebar-active{% endif %}" style="width: 100%;">
-        <a href="{{site.baseurl}}{{menu.url}}">
-          <i class="fa fa-{{menu.icon}}"></i>&nbsp;&nbsp;{{menu.title}}
-          {% if menu.sublinks %}
+      {% assign menu = site.data.menu %}
+      {% for menuItem in menu %}
+      <li class="{% if url == menuItem.url %}sidebar-active{% endif %}" style="width: 100%;">
+        <a href="{{site.baseurl}}{{menuItem.url}}">
+          <i class="fa fa-{{menuItem.icon}}"></i>&nbsp;&nbsp;{{menuItem.title}}
+          {% if menuItem.sublinks %}
           <span class="sidebar-dropdown-icon" onclick>
             <i class="fa fa-caret-down fa-fw" data-reactid="44"></i>
           </span>
           {% endif %}
         </a>
-        {% if menu.sublinks %}
+        {% if menuItem.sublinks %}
         <ul class="sidebar-dropdown-menu">
-          {% for sublink in menu.sublinks %}
+          {% for sublink in menuItem.sublinks %}
           <li class="{% if url == sublink.url %}active{% endif %}">
             <a href="{{site.baseurl}}{{sublink.url}}">
               <i class="fa fa-{{sublink.icon}}"></i>&nbsp;&nbsp;{{sublink.title}}
