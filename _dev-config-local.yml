@@ -136,7 +136,7 @@ collections:
         permalink: /blog/:year/:month/:day/:title/
     projects:
         output: true
-        permalink: /collections/:collection/:path/
+        permalink: /:collection/:path/
     seasons:
         output: true
         label: Seasons
