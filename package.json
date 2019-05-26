@@ -8,7 +8,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sonapraneeth-a/reboot-lanyon.git"
+        "url": "git+https://github.com/sonapraneeth-a/reboot-lanyon.git",
+        "branch": "master-v2"
     },
     "author": "Sona Praneeth Akula",
     "license": "MIT",
