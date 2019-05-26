@@ -72,17 +72,35 @@ pagination:
                 </div>
             </div>
             <div class="card-footer">
-                <div class="row">
-                    <div class="col-dp-6 align-center">
-                        <a href="{{site.baseurl}}{{project.url}}" style="text-decoration: none;">
-                        <span><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;Details</span>
+                <div style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap;">
+                    {% if project.url && project.url != "" %}
+                    <div style="width: 120px; text-align: center; padding: 0.1rem;">
+                        <a href="{{site.baseurl}}{{project.url}}" style="text-decoration: none; text-align: right;">
+                        <span><i class="fa fa-info-circle" style="width: 20px;" aria-hidden="true"></i>&nbsp;Details</span>
                         </a>
                     </div>
-                    <div class="col-dp-6 align-center">
-                        <a href="{{site.baseurl}}{{project.github-link}}" style="text-decoration: none;">
-                        <span><i class="fa fa-code" aria-hidden="true"></i>&nbsp;Source</span>
+                    {% endif %}
+                    {% if project.github-url && project.github-url != "" %}
+                    <div style="width: 120px; text-align: center; padding: 0.1rem;">
+                        <a href="{{project.github-url}}" style="text-decoration: none; text-align: right;">
+                        <span><i class="fa fa-code" style="width: 20px;" aria-hidden="true"></i>&nbsp;Source</span>
                         </a>
                     </div>
+                    {% endif %}
+                    {% if project.report-url && project.report-url != "" %}
+                    <div style="width: 120px; text-align: center; padding: 0.1rem;">
+                        <a href="{{project.report-url}}" style="text-decoration: none;">
+                        <span><i class="fa fa-file-alt" style="width: 20px; text-align: right;" aria-hidden="true"></i>&nbsp;Report</span>
+                        </a>
+                    </div>
+                    {% endif %}
+                    {% if project.slides-url && project.slides-url != "" %}
+                    <div style="width: 120px; text-align: center; padding: 0.1rem;">
+                        <a href="{{project.slides-url}}" style="text-decoration: none;">
+                        <span><i class="fa fa-file-powerpoint" style="width: 20px; text-align: right;" aria-hidden="true"></i>&nbsp;Presentation</span>
+                        </a>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
