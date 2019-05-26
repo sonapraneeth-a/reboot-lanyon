@@ -2,7 +2,7 @@
 layout: autopage_collection
 title: Planets
 icon: cloud
-permalink: /planets/
+permalink: /collections/planets/
 pagination: 
   enabled: true
   collection: planets

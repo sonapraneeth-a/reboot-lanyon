@@ -50,10 +50,10 @@
   class: "collections"
   sublinks:
       - title: "Seasons"
-        url: "/seasons/"
+        url: "/collections/seasons/"
         icon: "cloud"
         class: "algorithms"
       - title: "Planets"
-        url: "/planets/"
+        url: "/collections/planets/"
         icon: "circle"
         class: "ml"

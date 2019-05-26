@@ -2,7 +2,7 @@
 layout: autopage_collection
 title: Seasons
 icon: cloud
-permalink: /seasons/
+permalink: /collections/seasons/
 pagination: 
   enabled: true
   collection: seasons

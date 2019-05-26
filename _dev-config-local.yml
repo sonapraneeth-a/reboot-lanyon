@@ -136,15 +136,15 @@ collections:
         permalink: /blog/:year/:month/:day/:title/
     projects:
         output: true
-        permalink: /:collection/:path/
+        permalink: /collections/:collection/:path/
     seasons:
         output: true
         label: Seasons
-        permalink: /:collection/:path/
+        permalink: /collections/:collection/:path/
     planets:
         output: true
         label: Planets
-        permalink: /:collection/:path/
+        permalink: /collections/:collection/:path/
 
 # Author info
 author:
