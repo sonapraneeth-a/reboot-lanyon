@@ -13,9 +13,9 @@ source:
 banner_image: 
 image-alt-text: 
 tags: ["Tag 01", "Tag 03"]
-slides-url: test
-report-url: test
-github-url: https://github.com/donnemartin/interactive-coding-challenges
+slides-url: 
+report-url: 
+github-url: https://github.com/sonapraneeth-a/reboot-lanyon
 status: Completed
 publish: true
 toc: true
