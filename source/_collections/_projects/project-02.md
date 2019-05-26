@@ -13,9 +13,9 @@ source:
 banner_image: 
 image-alt-text: 
 tags: ["Tag 01", "Tag 03"]
-slides-url: 
-report-url: 
-github-link: 
+slides-url: test
+report-url: test
+github-url: https://github.com/donnemartin/interactive-coding-challenges
 status: Completed
 publish: true
 toc: true

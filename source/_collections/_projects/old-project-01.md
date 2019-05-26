@@ -15,7 +15,7 @@ image-alt-text:
 tags: [Tag 01, Tag 03]
 slides-url: 
 report-url: 
-github-link: 
+github-url: 
 status: Completed
 publish: false
 toc: true
