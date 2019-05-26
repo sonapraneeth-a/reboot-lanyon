@@ -28,7 +28,7 @@
   {% if prev_collection_url %}
   <a class="post-page" href="{{ prev_collection_url | relative_url }}" style="padding-left: 0;">
     <div style="width: 12%;" class="previous-post"><i class="fa fa-arrow-left"></i></div>
-    <div style="width: 88%;">
+    <div style="width: 88%; padding-left: 0.5rem;">
       <p style="text-align: left; font-weight: bold;">Previous</p>
       <p style="text-align: left;" class="previous-post-title">{{ prev_collection_title | markdownify | remove: "<p>" | remove: "</p>" }}</p>
     </div>
@@ -38,7 +38,7 @@
   {% endif %}
   {% if next_collection_url %}
   <a class="post-page" href="{{ next_collection_url | relative_url }}" style="padding-right: 0;">
-    <div style="width: 88%;">
+    <div style="width: 88%;  padding-right: 0.5rem;">
       <p style="text-align: right; font-weight: bold;">Next</p>
       <p style="text-align: right;" class="next-post-title">{{ next_collection_title | markdownify | remove: "<p>" | remove: "</p>" }}</p>
     </div>

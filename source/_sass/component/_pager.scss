@@ -43,6 +43,8 @@
 {
     margin: auto;
     text-align: left;
+    display: flex;
+    justify-content: center;
     /*justify-content: left;*/
     /*text-align: center;
     &::before
@@ -74,6 +76,8 @@
     }*/
     margin: auto;
     text-align: right;
+    display: flex;
+    justify-content: center;
     /*&::before
     {
         content: " ";
