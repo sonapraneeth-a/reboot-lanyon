@@ -73,28 +73,28 @@ pagination:
             </div>
             <div class="card-footer">
                 <div style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap;">
-                    {% if project.url && project.url != "" %}
+                    {% if project.url and project.url != "" %}
                     <div style="width: 120px; text-align: center; padding: 0.1rem;">
                         <a href="{{site.baseurl}}{{project.url}}" style="text-decoration: none; text-align: right;">
                         <span><i class="fa fa-info-circle" style="width: 20px;" aria-hidden="true"></i>&nbsp;Details</span>
                         </a>
                     </div>
                     {% endif %}
-                    {% if project.github-url && project.github-url != "" %}
+                    {% if project.github-url and project.github-url != "" %}
                     <div style="width: 120px; text-align: center; padding: 0.1rem;">
                         <a href="{{project.github-url}}" style="text-decoration: none; text-align: right;">
                         <span><i class="fa fa-code" style="width: 20px;" aria-hidden="true"></i>&nbsp;Source</span>
                         </a>
                     </div>
                     {% endif %}
-                    {% if project.report-url && project.report-url != "" %}
+                    {% if project.report-url and project.report-url != "" %}
                     <div style="width: 120px; text-align: center; padding: 0.1rem;">
                         <a href="{{project.report-url}}" style="text-decoration: none;">
                         <span><i class="fa fa-file-alt" style="width: 20px; text-align: right;" aria-hidden="true"></i>&nbsp;Report</span>
                         </a>
                     </div>
                     {% endif %}
-                    {% if project.slides-url && project.slides-url != "" %}
+                    {% if project.slides-url and project.slides-url != "" %}
                     <div style="width: 120px; text-align: center; padding: 0.1rem;">
                         <a href="{{project.slides-url}}" style="text-decoration: none;">
                         <span><i class="fa fa-file-powerpoint" style="width: 20px; text-align: right;" aria-hidden="true"></i>&nbsp;Presentation</span>
