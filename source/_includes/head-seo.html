@@ -12,8 +12,8 @@
 <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape }}" />
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@{{site.author.usernames.twitter}}" />
-<meta name="twitter:creator" content="@{{site.author.name}}" />
+<meta name="twitter:site" content="@{{site.data.author.usernames.twitter}}" />
+<meta name="twitter:creator" content="@{{site.data.author.name}}" />
 <!-- Site Verification -->
 <meta name="google-site-verification" content="{{site.webmaster_verifications.google}}" />
 <!-- Structured Data -->
@@ -21,12 +21,12 @@
 {
     "@context"     : "http://schema.org",
     "@type"        : "WebSite",
-    "name"         : "{{site.author.name}}",
-    "author"       : {"@type":"Person","name":"{{site.author.name}}"},
+    "name"         : "{{site.data.author.name}}",
+    "author"       : {"@type":"Person","name":"{{site.data.author.name}}"},
     "url"          : "{{site.baseurl}}{{page.url}}",
     "headline"     : "{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}",
     "dateModified" : "{{last_modified_at}}",
-    "sameAs"       : ["{{site.author.contact.twitter}}", "{{site.author.contact.facebook}}" , "{{site.author.contact.linkedin}}", "{{site.author.contact.github}}"],
+    "sameAs"       : ["{{site.data.author.contact.twitter}}", "{{site.data.author.contact.facebook}}" , "{{site.data.author.contact.linkedin}}", "{{site.data.author.contact.github}}"],
 }
 </script>
 <!-- Meta Tags -->

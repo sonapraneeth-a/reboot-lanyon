@@ -146,24 +146,6 @@ collections:
         label: Planets
         permalink: /collections/:collection/:path/
 
-# Author info
-author:
-    name: Sona Praneeth Akula
-    description:
-    gravatar: 250c61d0435096d44102ab5fcd590d9c # md5 hash of your email address
-    contact:
-        linkedin : https://www.linkedin.com/in/sona-praneeth-akula
-        github   : https://github.com/sonapraneeth-a
-        facebook : https://www.facebook.com/sonapraneeth.akula
-        twitter  : https://twitter.com/sonapraneeth_a
-        email    : mailto:praneethakulasona@gmail.com
-    usernames:
-        linkedin : sona-praneeth-akula
-        github   : sonapraneeth-a
-        facebook : akula.sonapraneeth
-        twitter  : sonapraneeth_a
-        email    : praneethakulasona@gmail.com
-
 google_analytics_token : "UA-90733014-1" # leave blank if you don't want google analytics
 disqus_short_name      : "sonapraneethakula" # leave blank if you don't want disqus
 staticman:

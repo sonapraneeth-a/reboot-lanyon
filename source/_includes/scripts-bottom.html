@@ -74,13 +74,13 @@
   {*/
   var data =
   {
-    "name"         : "{{site.author.name}}",
-    "author"       : {"@type":"Person","name":"{{site.author.name}}"},
+    "name"         : "{{site.data.author.name}}",
+    "author"       : {"@type":"Person","name":"{{site.data.author.name}}"},
     "@type"        : "WebSite",
     "url"          : "{{site.url}}{{site.baseurl}}{{page.url}}",
     "headline"     : "Home",
     "dateModified" : "",
-    "sameAs"       : ["{{site.author.contact.twitter}}", "{{site.author.contact.facebook}}" , "{{site.author.contact.linkedin}}", "{{site.author.contact.github}}"],
+    "sameAs"       : ["{{site.data.author.contact.twitter}}", "{{site.data.author.contact.facebook}}" , "{{site.data.author.contact.linkedin}}", "{{site.data.author.contact.github}}"],
     "@context"     : "http://schema.org"
   }
   var dateModified = document.lastModified;
