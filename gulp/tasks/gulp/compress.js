@@ -5,7 +5,7 @@ const htmlmin    = require("gulp-htmlmin");
 const size       = require("gulp-size");
 const when       = require("gulp-if");
 const log        = require("fancy-log");
-const uglify     = require("gulp-uglifyes");
+const terser     = require("gulp-terser");
 const strip      = require("gulp-strip-comments");
 const cleanCSS   = require("gulp-clean-css");
 
@@ -55,7 +55,7 @@ gulp.task("gulp::compress-scripts", () =>
         /*.pipe(using({prefix:'Using file', path:'relative', color:'white', filesize:true}))*/
         .pipe(when(argv.prod, size({title: 'Original JS', pretty: true, showFiles: true, showTotal: true})))
         .pipe(when(argv.prod, strip()))
-        .pipe(when(argv.prod, uglify()))
+        .pipe(when(argv.prod, terser()))
         .pipe(when(argv.prod, gulp.dest(paths.temp_site_dir + "public")))
         .pipe(when(argv.prod, size({title: 'Compressed JS', pretty: true, showFiles: true, showTotal: true})))
     /*done();*/
