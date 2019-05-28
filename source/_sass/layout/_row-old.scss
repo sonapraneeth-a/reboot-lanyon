@@ -1,8 +1,8 @@
 .row
 {
-  @if $flex == true
+  @if flex == true
   {
     @include display-flex;
-    flex-wrap: wrap;
   }
+  @include clearfix;
 }

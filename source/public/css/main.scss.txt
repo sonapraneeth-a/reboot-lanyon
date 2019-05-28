@@ -27,7 +27,7 @@ $sidebar-pos : {{site.sidebar.position}};
 @import "layout/container";
 @import "layout/grid";
 @import "layout/row";
-@import "layout/cols";
+@import "layout/cols/cols";
 @import "component/navbar";
 @import "component/sidebar";
 

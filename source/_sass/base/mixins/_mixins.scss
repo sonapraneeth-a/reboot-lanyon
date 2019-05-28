@@ -121,3 +121,40 @@ $utility: (
       }
   }
 }
+
+@mixin cols($screen, $widths)
+{
+  @for $i from 1 through length($widths) 
+  {
+    @if $screen != ''
+    {
+      .col-#{$screen}-#{$i}
+      {
+        @if $flex == true
+        {
+            @include grid-col-width(calc(#{nth($widths, $i)} * 100%));
+        }
+        @else
+        {
+            width: calc(#{nth($widths, $i)} * 100%);
+        }
+        padding: 0 0.5rem;
+      }
+    }
+    @else
+    {
+      .col-#{$i}
+      {
+        @if $flex == true
+        {
+            @include grid-col-width(calc(#{nth($widths, $i)} * 100%));
+        }
+        @else
+        {
+            width: calc(#{nth($widths, $i)} * 100%);
+        }
+        padding: 0 0.5rem;
+      }
+    }
+  }
+}

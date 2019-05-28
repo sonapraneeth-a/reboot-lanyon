@@ -114,3 +114,22 @@ $utility: (
     top: $top-margin;
   }
 }
+
+@mixin cols($screen, $widths)
+{
+  @for $i from 1 through length($widths) 
+  {
+    .col-#{$screen}-#{$i}
+    {
+      @if $flex == true
+      {
+          @include grid-col-width(calc(nth($widths, $i) * 100%));
+      }
+      @else
+      {
+          width: calc(nth($widths, $i) * 100%);
+      }
+      @include grid-spec;
+    }
+  }
+}

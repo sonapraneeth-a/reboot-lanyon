@@ -1,0 +1,20 @@
+/*.col-mb-12
+{
+    @include until($minitablet)
+    {
+        @if $flex == true
+        {
+            @include grid-col-width(calc(12 / 12 * 100%));
+        }
+        @else
+        {
+            width: calc(12 / 12 * 100%);
+        }
+        @include grid-spec;
+    }
+}*/
+
+@include mobile
+{
+    @include cols('mb', (1/12, 2/12, 3/12, 4/12, 5/12, 6/12, 7/12, 8/12, 9/12, 10/12, 11/12, 12/12));
+}

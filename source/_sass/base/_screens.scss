@@ -9,7 +9,8 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin mobile
 {
-    @media screen and (max-width: #{$mobile})
+    @media screen and (max-width: #{$mobile}) and 
+            (max-width: #{$minitablet})
     {
         @content;
     }
@@ -44,8 +45,8 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin desktop
 {
-    @media screen and (min: #{$desktop}) and
-            (max: #{$fullhd - 0.0001})
+    @media screen and (min-width: #{$desktop}) and
+            (max-width: #{$fullhd - 0.0001})
     {
         @content;
     }
@@ -53,7 +54,16 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin fullhd
 {
-    @media screen and (min-width: #{$fullhd})
+    @media screen and (min-width: #{$fullhd}) and
+    (max-width: #{$ultrahd - 0.0001})
+    {
+        @content;
+    }
+}
+
+@mixin ultrahd
+{
+    @media screen and (min-width: #{$ultrahd}) 
     {
         @content;
     }
