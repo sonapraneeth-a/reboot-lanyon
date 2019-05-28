@@ -53,12 +53,12 @@
     /*console.log(show_hide_toc);
     console.log(blog_toc);
     console.log(blog_body);*/
-    blog_toc.classList.toggle("zero-width");
+    // blog_toc.classList.toggle("zero-width");
     blog_toc.classList.toggle("visibility-hidden");
     blog_toc.classList.toggle("no-padding");
-    blog_body.classList.toggle("full-width");
+    blog_body.classList.toggle("expand-flex");
     blog_body.classList.toggle("no-padding");
-    if (blog_toc.classList.contains("zero-width") === false)
+    if (blog_toc.classList.contains("visibility-hidden") === false)
     {
       show_hide_toc.innerText = "Hide TOC";
     }
