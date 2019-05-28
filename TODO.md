@@ -1,14 +1,34 @@
 # Todo
 
-- [ ] Use terser / gulp-terset instead of uglify-es / gulp-uglifyes
-- [ ] Add schema LD JSON 
 - [ ] Add progress bar to indicate web page loading
 - [ ] Test staticman commenting
-- [ ] Scrollspy for blog posts
 - [ ] Update Gist syntax highlighter CSS
 - [ ] Check if it is possible to change label for collections
 - [ ] Make the sass utilities (.info, .success, ...) as a mixin
 - [ ] Adjust related posts and comments based on site variables and defaults
+- [ ] Fix Color matching
+- [ ] Fix project status alignment in card in mobile view
+- [ ] Complete grid system row, col with CSS flex for all various breakpoints
+- [ ] Update carefully when upgrading jekyll to 4.x
+- [ ] See if you can add PWA to website
+- [ ] Create a new icon for the website
+- [ ] Release a gem for the theme
+- [ ] Make gulp tasks efficient
+- [ ] Update css for printing
+- [ ] Test various theme config attributes 
+  - [ ] Flat
+  - [ ] Flex
+  - [ ] Color scheme
+- [?] Remove all ```console.log``` statements
+- [?] Add schema LD JSON 
+- [?] Scrollspy for blog posts
+- [x] Fix pa11y issues in /blog/2018/06/12/old-reboot-lanyon/
+- [x] Fix Google fonts - Using google style sheet as it working much faster with font-display swap
+- [x] Rename #sidebar as it is conflicting with a heading in blog post
+- [x] Use terser / gulp-terset instead of uglify-es / gulp-uglifyes
+- [x] Move authors information from config yml to data author yml
+- [x] Fix Show/Hide TOC button functioning
+- [x] Check font-display block for font-awesome
 - [x] Move gulp-ruby-sass to gulp-sass
 - [x] Update manifest icon URLs
 - [x] Add scroll to top button
