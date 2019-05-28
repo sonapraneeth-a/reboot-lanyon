@@ -16,12 +16,12 @@ pagination:
             <!--<img class="card-image" src="{{site.baseurl}}/assets/blog/default_banner_image.jpg" alt="Blog image" title="">-->
             <div class="card-content">
                 <div class="row">
-                    <div class="col-dp-8">
+                    <div class="col-8">
                         <h2 class="project-title">
                             <a href="{{site.baseurl}}{{project.url}}">{{project.title}}</a>
                         </h2>
                     </div>
-                    <div class="col-dp-4">
+                    <div class="col-4">
                         <h2 style="text-align: right;">
                         {% if project.status == "Ongoing" %}
                         <div class="chip ongoing">
