@@ -1,10 +1,10 @@
 var toggle_sidebar = () => {
     //console.log("toggle sidebar caleed");
-    let sidebar = document.getElementById("sidebar");
+    let sidebar = document.getElementById("theme-sidebar");
     sidebar.classList.toggle("on");
     // let main_content = document.getElementById("main-content");
     // main_content.classList.toggle("off");
-    // let sidebar_toggle = document.getElementById("sidebar-toggle").parentNode;
+    // let sidebar_toggle = document.getElementById("theme-sidebar-toggle").parentNode;
     // /*console.log("Sidebar toggle");
     // console.log(sidebar_toggle);*/
     // sidebar_toggle.classList.toggle("off");
@@ -13,10 +13,10 @@ var toggle_sidebar = () => {
     // footer.classList.toggle("hidden");
 };
 (function(document) {
-    var sidebar_toggle = document.querySelector("#sidebar-toggle");
+    var sidebar_toggle = document.querySelector("#theme-sidebar-toggle");
     var sidebar_id = document.getElementById("sidebar");
-    var sidebar_close = document.querySelector("#sidebar-close");
-    var sidebar = document.querySelector("#sidebar");
+    var sidebar_close = document.querySelector("#theme-sidebar-close");
+    var sidebar = document.querySelector("#theme-sidebar");
 
     document.addEventListener("click", function(e) {
         var target = e.target;

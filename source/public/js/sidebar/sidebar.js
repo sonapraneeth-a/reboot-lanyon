@@ -1,8 +1,8 @@
 (function()
 {
     var toggle = document.querySelector('.sidebar-toggle');
-    var sidebar = document.querySelector('#sidebar');
-    var checkbox = document.querySelector('#sidebar-checkbox');
+    var sidebar = document.querySelector('#theme-sidebar');
+    var checkbox = document.querySelector('#theme-sidebar-checkbox');
     document.addEventListener('click', function(e)
     {
         var target = e.target;
