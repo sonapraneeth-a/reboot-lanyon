@@ -336,7 +336,10 @@ readers do not read off random characters that represent icons */
 
 .fa-file-pdf:before {
   content: "\f1c1"; }
- 
+
+.fa-file-archive:before {
+  content: "\f1c6"; }
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
