@@ -20,7 +20,3 @@ The source code of the project is available on Github. You can get the source co
 Please refer to [link]({{site.baseurl}}/blog/2018/02/12/reboot-lanyon/) for instructions on how to use and features available in the current theme.
 
 Thanks!
-
-{% comment %}
-https://brandcolors.net/
-{% endcomment %}
