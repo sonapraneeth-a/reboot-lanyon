@@ -7,3 +7,36 @@
 {
     margin-top: 0;
 }
+
+.align-center
+{
+    text-align: center;
+}
+
+.downloads
+{
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    background: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0;
+    border: 1px solid #e0e0e0;
+    a
+    {
+        padding: 0.5rem 1rem;
+        display: block;
+        border-bottom: none;
+        text-decoration: none;
+        color: #676767;
+    }
+    li
+    {
+        border-right: 0.1rem solid #e0e0e0;
+        &:last-child
+        {
+            border-right: 0;
+        }
+    }
+}

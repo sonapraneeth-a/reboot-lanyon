@@ -3,68 +3,58 @@
 
 @charset "utf-8";
 
+/** Begin Config options/settings **/
 $flat        : {{site.flat}};
 $sidebar-pos : {{site.sidebar.position}};
-/* Fonts */
+@import "config/generic";
+/** End Config options/settings **/
+
+/** Begin Text Fonts **/
 /*@import "fonts/google/local_pt-sans.scss";
 @import "fonts/google/local_pt-serif.scss";*/
-/* Icon fonts */
-@import "fonts/icons/fontawesome-5-req.scss";
-@import "fonts/icons/zavoloklom-material-req.scss";
+/** End Text Fonts **/
 
-@import "property/padding";
+/** Begin Icon fonts **/
+@import "fonts/req.scss";
+/** End Icon fonts **/
 
-@import "base/colors";
-@import "base/fonts";
-@import "base/mixins/all";
-@import "base/screens";
+/** Begin Base **/
+@import "base/all";
+/** End Base **/
+
 /** Begin Skin **/
 @import "skin/{{ site.skin | default: 'base-01' }}";
 /** End Skin **/
+
 @import "base/root";
-@import "config/generic";
-@import "elements/footer";
 
-@import "page-layout/page";
-@import "layout/container";
-@import "layout/grid";
-@import "layout/row";
-@import "layout/cols/cols";
-@import "component/navbar";
-@import "component/sidebar";
+/** Begin layout **/
+@import "layout/all";
+/** End layout **/
 
-@import "component/link";
+/** Begin components **/
+@import "component/all";
+/** End components **/
 
-@import "component/card/card";
-@import "component/card/project";
-@import "component/card/blog";
-@import "component/chip/chip";
-@import "component/chip/status";
+/** Begin page layouts **/
+@import "page-layout/all";
+/** End page layouts **/
 
-@import "component/search";
-@import "elements/input";
-@import "elements/table";
+/** Begin pages **/
+@import "page/all";
+/** End pages **/
 
-@import "component/share";
-@import "page-layout/post";
-@import "component/pager";
-
+/** Begin Prism highlighting **/
 /*@import "highlight/all";*/
-@import "elements/img";
-
-@import "elements/blockquote";
-@import "elements/text";
-
-@import "component/admonition";
-
 @import "prism/config";
 @import "highlight/gist/gist-config";
 @import "highlight/gist/gist-style-okaidia";
+/** End Prism highlighting **/
 
-@import "component/scroll";
-@import "component/progress-bar";
-@import "component/paginator";
+/** Begin HTML elements **/
+@import "elements/all";
+/** End HTML elements **/
 
-@import "property/visibility";
-@import "property/width";
-
+/** Begin CSS property **/
+@import "property/all";
+/** End CSS property **/
