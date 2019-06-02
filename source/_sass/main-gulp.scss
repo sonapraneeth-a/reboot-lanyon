@@ -24,6 +24,7 @@ $sidebar-pos : {{site.sidebar.position}};
 
 /** Begin Skin **/
 @import "skin/{{ site.skin | default: 'base-01' }}";
+@import "skin/theme--{{ site.skin | default: 'base-01' }}";
 /** End Skin **/
 
 @import "base/root";

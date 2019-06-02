@@ -1,0 +1,59 @@
+/* Reference URL: https://material.io/design/color/the-color-system.html#color-theme-creation */
+/* Color palette */
+html[data-theme="base-01"]
+{
+    /* Primary Color */
+    --primary-background-color          : #{$primary-background-color};
+    --primary-background-color-light    : #{$primary-background-color-light};
+    --primary-background-color-dark     : #{$primary-background-color-dark};
+    /* "On" text colors for primary background color */
+    --primary-foreground-color          : #{$primary-foreground-color};
+    --primary-foreground-color-light    : #{$primary-foreground-color-light};
+    --primary-foreground-color-dark     : #{$primary-foreground-color-dark};
+    /* "On" text colors for secondary background color */
+    --secondary-foreground-color        : #{$secondary-foreground-color};
+    --secondary-foreground-color-light  : #{$secondary-foreground-color-light};
+    --secondary-foreground-color-dark   : #{$secondary-foreground-color-dark};
+    /* Secondary Color */
+    --secondary-background-color        : #{$secondary-background-color};
+    --secondary-background-color-light  : #{$secondary-background-color-light};
+    --secondary-background-color-dark   : #{$secondary-background-color-dark};
+    /* Surface Color */
+    --surface-color                     : #{$surface-color};
+    /* Background Color */
+    --background-color                  : #{$background-color};
+    /* Dark text color */
+    --dark-text-color                   : #{$dark-text-color};
+    /* Light text color */
+    --primary-text-color                : #{$primary-text-color};
+    /* Links Colors */
+    --link-text-color                   : #{$link-text-color};
+
+    /* Navbar configuration */
+    --navbar-visible-screen     : #{$navbar-visible-screen};
+    --navbar-radius             : #{$navbar-radius};
+    --navbar-foreground-color   : #{$navbar-foreground-color};
+    --navbar-background-color   : #{$navbar-background-color};
+    --navbar-content-flow       : #{$navbar-content-flow};
+    --navbar-header-size        : #{$navbar-header-size};
+    --navbar-header-vert-margin : #{$navbar-header-vert-margin};
+
+    /* Sidebar configuration */
+    --sidebar-font-size         : #{$sidebar-font-size};
+    --sidebar-hamburger-size    : #{$sidebar-hamburger-size};
+    --sidebar-width             : #{$sidebar-width};
+    --sidebar-visible-screen    : #{$sidebar-visible-screen};
+    --sidebar-foreground-color  : #{$sidebar-foreground-color};
+    --sidebar-background-color  : #{$sidebar-background-color};
+    --sidebar-item-padding      : #{$sidebar-item-padding};
+    --sidebar-toggle-vert-pos   : #{$sidebar-toggle-vert-pos};
+
+    /* Pager configuration */
+    --pager-foreground-color   : #{$pager-foreground-color};
+    --pager-background-color   : #{$pager-background-color};
+
+    /* Footer configuration */
+    --footer-foreground-color  : #{$footer-foreground-color};
+    --footer-background-color  : #{$footer-background-color};
+
+}
