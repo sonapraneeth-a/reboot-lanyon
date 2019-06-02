@@ -26,66 +26,66 @@
     &.facebook
     {
         color: $facebook-color;
-        background-color: $background-color;
+        background-color: var(--background-color);
         border: 0.05rem solid $facebook-color;
         &:hover
         {
-            color: $background-color;
+            color: var(--background-color);
             background-color: $facebook-color;
         }
     }
     &.gplus
     {
         color: $gplus-color;
-        background-color: $background-color;
+        background-color: var(--background-color);
         border: 0.05rem solid $gplus-color;
         &:hover
         {
-            color: $background-color;
+            color: var(--background-color);
             background-color: $gplus-color;
         }
     }
     &.twitter
     {
         color: $twitter-color;
-        background-color: $background-color;
+        background-color: var(--background-color);
         border: 0.05rem solid $twitter-color;
         &:hover
         {
-            color: $background-color;
+            color: var(--background-color);
             background-color: $twitter-color;
         }
     }
     &.linkedin
     {
         color: $linkedin-color;
-        background-color: $background-color;
+        background-color: var(--background-color);
         border: 0.05rem solid $linkedin-color;
         &:hover
         {
-            color: $background-color;
+            color: var(--background-color);
             background-color: $linkedin-color;
         }
     }
     &.email
     {
         color: $email-color;
-        background-color: $background-color;
+        background-color: var(--background-color);
         border: 0.05rem solid $email-color;
         &:hover
         {
-            color: $background-color;
+            color: var(--background-color);
             background-color: $email-color;
         }
     }
     &.print
     {
         color: $print-color;
-        background-color: $background-color;
+        background-color: var(--background-color);
         border: 0.05rem solid $print-color;
         &:hover
         {
-            color: $background-color;
+            color: var(--background-color);
             background-color: $print-color;
         }
     }

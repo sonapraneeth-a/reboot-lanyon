@@ -4,7 +4,7 @@
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    caption 
+    caption
     {
         text-align: left;
         padding-bottom: 1rem;
@@ -13,35 +13,35 @@
     > tbody,
     > tfoot
     {
-        > tr 
+        > tr
         {
             &:nth-child(even)
             {
-                background-color: darken($primary-background-color, 5%);
+                // background-color: darken(var(--primary-background-color), 5%);
                 &:hover
                 {
-                    background-color: darken($primary-background-color, 10%);
+                    // background-color: darken(var(--primary-background-color), 10%);
                 }
             }
             &:hover
             {
-                background-color: darken($primary-background-color, 5%);
+                // background-color: darken(var(--primary-background-color), 5%);
             }
-            > th, 
-            > td 
+            > th,
+            > td
             {
                 padding: 0.5rem;
-                border-bottom: 0.05rem solid $primary-foreground-color;
+                border-bottom: 0.05rem solid var(--primary-foreground-color);
             }
         }
     }
-    > thead > tr 
+    > thead > tr
     {
-        background-color: $primary-foreground-color;
-        color: $primary-background-color;
+        background-color: var(--primary-foreground-color);
+        color: var(--primary-background-color);
         &:hover
         {
-            background-color: darken($primary-foreground-color, 20%);
+            // background-color: darken(var(--primary-foreground-color), 20%);
         }
         > th
         {

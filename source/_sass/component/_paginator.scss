@@ -12,26 +12,26 @@
     font-size: 0.95rem;
     box-sizing: border-box;
     display: inline-block;
-    border: 0.05rem solid $primary-foreground-color;
-    background-color: $primary-background-color;
-    color: $primary-foreground-color-dark;
+    border: 0.05rem solid var(--primary-foreground-color);
+    background-color: var(--primary-background-color);
+    color: var(--primary-foreground-color-dark);
     &:hover
     {
       display: inline-block;
-      background-color: $primary-foreground-color;
-      color: $primary-background-color;
+      background-color: var(--primary-foreground-color);
+      color: var(--primary-background-color);
     }
     a
     {
       padding: 0.25rem 0.45rem;
-      color: $primary-foreground-color;
+      color: var(--primary-foreground-color);
       text-decoration: none;
       border-bottom: none;
       display: inline-block;
       &:hover
       {
         display: inline-block;
-        color: $primary-background-color;
+        color: var(--primary-background-color);
       }
     }
   }

@@ -12,8 +12,8 @@
   border: 0.05rem solid #bbc8c8;
   margin: 0;
   padding: 1rem;
-  background-color: $primary-background-color;
-  color: $primary-foreground-color;
+  background-color: var(--primary-background-color);
+  color: var(--primary-foreground-color);
 }
 
 .blog-toc-contents
@@ -22,12 +22,12 @@
   {
     display: block;
   }
-  ul 
+  ul
   {
     list-style-type: none;
     margin: 0.5rem;
     padding: 0;
-    p 
+    p
     {
       margin: 0;
     }
@@ -35,11 +35,11 @@
   li
   {
     padding: 0.3rem;
-    ul 
+    ul
     {
       margin: 0 1rem;
     }
-    a 
+    a
     {
       text-decoration: none;
       //border-bottom: 0.01rem solid black;
@@ -69,8 +69,8 @@
     }
     li a.active
     {
-      color: $primary-foreground-color;
-      background-color: $primary-background-color;
+      color: var(--primary-foreground-color);
+      background-color: var(--primary-background-color);
       font-size: 1.05rem;
       text-decoration: none;
       padding: 0.25rem 0 0.25rem 0.6rem;
@@ -84,8 +84,8 @@
     }
     li li a.active
     {
-      color: $primary-foreground-color;
-      background-color: $primary-background-color;
+      color: var(--primary-foreground-color);
+      background-color: var(--primary-background-color);
       font-size: 0.95rem;
       text-decoration: none;
       padding: 0.25rem 0 0.25rem 1.75rem;
@@ -98,8 +98,8 @@
     }
     li li li a.active
     {
-      color: $primary-foreground-color;
-      background-color: $primary-background-color;
+      color: var(--primary-foreground-color);
+      background-color: var(--primary-background-color);
       font-size: 0.85rem;
       text-decoration: none;
       padding: 0.25rem 0 0.25rem 2.5rem;
@@ -113,9 +113,9 @@
 
 .blog-body
 {
-  li 
+  li
   {
-    p 
+    p
     {
       margin: 0;
     }

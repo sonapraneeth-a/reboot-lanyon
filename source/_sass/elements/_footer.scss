@@ -2,8 +2,8 @@
 {
     z-index: $footer-zindex;
     width: 100%;
-    background-color: $footer-background-color;
-    color: $footer-foreground-color;
+    background-color: var(--footer-background-color);
+    color: var(--footer-foreground-color);
     padding: 0.2rem;
     bottom: 0;
     position: fixed;
@@ -40,7 +40,7 @@
     }
     a
     {
-        color: $footer-foreground-color;
+        color: var(--footer-foreground-color);
         font-weight: bold;
     }
     &.center {

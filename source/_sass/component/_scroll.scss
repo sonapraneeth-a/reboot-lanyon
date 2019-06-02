@@ -19,7 +19,7 @@
         border-radius: 10px;
     }
     cursor: pointer;
-    color: $background-color;
+    color: var(--background-color);
     background-color: $foreground-color;
 }*/
 /* http://anacidre.com/creating-circle-text-using-html-css/ */
@@ -39,8 +39,8 @@
         border-radius: 50%;
     }
     cursor: pointer;
-    color: $primary-foreground-color;
-    background-color: $primary-background-color;
+    color: var(--primary-foreground-color);
+    background-color: var(--primary-background-color);
     text-decoration: none;
     padding: 0.75rem;
     z-index: 1000;

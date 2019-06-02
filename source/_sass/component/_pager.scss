@@ -10,13 +10,13 @@
     {
         text-decoration: none;
         padding: 0.5rem;
-        background-color: $primary-foreground-color;
-        color: $primary-background-color;
+        background-color: var(--primary-foreground-color);
+        color: var(--primary-background-color);
         &:hover
         {
             text-decoration: none;
-            background-color: $primary-background-color;
-            color: $primary-foreground-color;
+            background-color: var(--primary-background-color);
+            color: var(--primary-foreground-color);
         }
     }
 }

@@ -1,12 +1,12 @@
 .show-hide-toc
 {
     cursor: pointer;
-    color: $primary-background-color;
-    background-color: $primary-foreground-color;
+    color: var(--primary-background-color);
+    background-color: var(--primary-foreground-color);
     &:hover
     {
-        color: $primary-foreground-color;
-        background-color: $primary-background-color;
+        color: var(--primary-foreground-color);
+        background-color: var(--primary-background-color);
     }
     display: inline-block;
     padding: 0.5rem;
@@ -27,8 +27,8 @@
     border: 0.05rem solid #bbc8c8;
     margin: 0;
     padding: 1rem;
-    background-color: $primary-background-color;
-    color: $primary-foreground-color;
+    background-color: var(--primary-background-color);
+    color: var(--primary-foreground-color);
 }
 
 .blog-toc-contents
@@ -82,8 +82,8 @@
     }
     li a.active
     {
-        color: $primary-foreground-color;
-        background-color: $primary-background-color;
+        color: var(--primary-foreground-color);
+        background-color: var(--primary-background-color);
         font-size: 1.05rem;
         text-decoration: none;
         padding: 0.25rem 0 0.25rem 0.6rem;
@@ -97,8 +97,8 @@
     }
     li li a.active
     {
-        color: $primary-foreground-color;
-        background-color: $primary-background-color;
+        color: var(--primary-foreground-color);
+        background-color: var(--primary-background-color);
         font-size: 0.95rem;
         text-decoration: none;
         padding: 0.25rem 0 0.25rem 1.75rem;
@@ -111,8 +111,8 @@
     }
     li li li a.active
     {
-        color: $primary-foreground-color;
-        background-color: $primary-background-color;
+        color: var(--primary-foreground-color);
+        background-color: var(--primary-background-color);
         font-size: 0.85rem;
         text-decoration: none;
         padding: 0.25rem 0 0.25rem 2.5rem;
