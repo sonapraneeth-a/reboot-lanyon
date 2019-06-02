@@ -56,7 +56,7 @@ layout: default
     {% endif %}
     <div class="row">
       {% if page.toc == true %}
-      <div class="col-dp-3 col-tb-4 col-mb-12 blog-toc-sticky" style="padding-left: 0;" id="blog-toc">
+      <div class="col-dp-3 col-tb-4 col-mtb-4 col-lp-4 col-mb-12 blog-toc-sticky" style="padding-left: 0;" id="blog-toc">
         <div class="blog-toc">
           <h3 class="blog-toc-title">
             {% if page.toc_icon %}
@@ -76,7 +76,7 @@ layout: default
           {% include sharing.html %}
         </div>
       </div>
-      <div class="col-dp-9 col-tb-8 col-mb-12" id="blog-body">
+      <div class="col-dp-9 col-tb-8 col-mtb-8 col-lp-8 col-mb-12" id="blog-body">
         <div class="blog-body">
           {{content}}
           {% include pager.html %}
