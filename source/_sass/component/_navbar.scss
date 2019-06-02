@@ -1,13 +1,10 @@
-/* Color used on hover/active in navbarUpdated */
-$navbar-highlight-color: darken($navbar-background-color, 30%);
-
 .navbar
 {
     display: flex;
     flex-direction: row;
-    background-color: $navbar-background-color;
-    color: $navbar-foreground-color;
-    border-bottom: 0.1rem solid $navbar-foreground-color;
+    background-color: var(--navbar-background-color);
+    color: var(--navbar-text-color);
+    border-bottom: 0.1rem solid var(--navbar-text-color);
     position: fixed;
     width: 100%;
     z-index: $navbar-zindex;
@@ -38,13 +35,13 @@ $navbar-highlight-color: darken($navbar-background-color, 30%);
 .navbar-header
 {
     display: flex;
-    margin: $navbar-header-vert-margin 0;
-    color: $navbar-foreground-color;
+    margin: var(--navbar-header-vert-margin) 0;
+    color: var(--navbar-text-color);
     font-weight: 500;
     a
     {
-        font-size: $navbar-header-size;
-        color: $navbar-foreground-color;
+        font-size: var(--navbar-header-size);
+        color: var(--navbar-text-color);
         text-decoration: none;
         vertical-align: -webkit-baseline-middle;
         &:hover
@@ -56,11 +53,11 @@ $navbar-highlight-color: darken($navbar-background-color, 30%);
     {
         width: 100%;
         justify-content: center;
-        background-color: $navbar-background-color;
-        color: $navbar-foreground-color;
+        background-color: var(--navbar-background-color);
+        color: var(--navbar-text-color);
         a
         {
-            color: $navbar-foreground-color;
+            color: var(--navbar-text-color);
         }
     }
 }
@@ -69,7 +66,7 @@ $navbar-highlight-color: darken($navbar-background-color, 30%);
 {
     font-size: 1rem;
     list-style-type: none;
-    margin: $navbar-header-vert-margin 0;
+    margin: var(--navbar-header-vert-margin) 0;
     display: flex;
     flex: 1;
     @if $navbar-content-flow == reverse
@@ -81,7 +78,7 @@ $navbar-highlight-color: darken($navbar-background-color, 30%);
         justify-content: flex-end;
     }
     padding: 0;
-    color: $navbar-foreground-color;
+    color: var(--navbar-text-color);
     li
     {
         display: inline-block;
@@ -89,7 +86,7 @@ $navbar-highlight-color: darken($navbar-background-color, 30%);
         position: relative;
         min-width: 4rem;
         margin: auto 0;
-        // border: 0.1rem solid $navbar-highlight-color;
+        border: 0.1rem solid var(--navbar-menu-item-highlight-color);
         &:not(:last-child)
         {
             border-right: none;
@@ -98,19 +95,19 @@ $navbar-highlight-color: darken($navbar-background-color, 30%);
         {
             &:first-child
             {
-                border-top-left-radius: 0.05rem;
-                border-bottom-left-radius: 0.05rem;
+                border-top-left-radius: var(--navbar-menu-corner-radius);
+                border-bottom-left-radius: var(--navbar-menu-corner-radius);
             }
             &:last-child
             {
-                border-top-right-radius: 0.05rem;
-                border-bottom-right-radius: 0.05rem;
+                border-top-right-radius: var(--navbar-menu-corner-radius);
+                border-bottom-right-radius: var(--navbar-menu-corner-radius);
             }
         }
-        color: $navbar-foreground-color;
+        color: var(--navbar-text-color);
         &:hover
         {
-            background-color: $navbar-highlight-color;
+            background-color: var(--navbar-menu-item-highlight-color);
             .navbar-dropdown-menu
             {
                 display: flex;
@@ -122,17 +119,17 @@ $navbar-highlight-color: darken($navbar-background-color, 30%);
             border-bottom: none;
             padding: 0.5rem;
             display: block;
-            color: $navbar-foreground-color;
+            color: var(--navbar-text-color);
         }
         .dropdown-icon
         {
-            border-left: 0.01rem solid $navbar-foreground-color;
+            border-left: 0.01rem solid var(--navbar-text-color);
             display: inline-block;
         }
     }
     .active
     {
-        background-color: darken($navbar-background-color, 30%);
+        background-color: var(--navbar-menu-item-highlight-color);
     }
     @include until($navbar-visible-screen)
     {
@@ -140,7 +137,7 @@ $navbar-highlight-color: darken($navbar-background-color, 30%);
     }
     .navbar-menu-item
     {
-        border: 0.05rem solid $navbar-foreground-color;
+        border: 0.05rem solid var(--navbar-text-color);
     }
 }
 
@@ -155,12 +152,12 @@ $navbar-highlight-color: darken($navbar-background-color, 30%);
     padding-top: 0.5rem;
     li
     {
-        background-color: $navbar-highlight-color;
+        background-color: var(--navbar-menu-item-highlight-color);
         width: 8rem;
         margin: 0;
         &:hover
         {
-            background-color: $navbar-background-color;
+            background-color: var(--navbar-background-color);
         }
     }
     &::before
@@ -174,7 +171,7 @@ $navbar-highlight-color: darken($navbar-background-color, 30%);
         top: 0;
         border-width: 0 8px 8px 8px;
         border-style: solid;
-        border-color: $navbar-highlight-color transparent;
+        border-color: var(--navbar-menu-item-highlight-color) transparent;
     }
 }
 

@@ -30,23 +30,20 @@ html[data-theme="base-01"]
     --link-text-color                   : #{$link-text-color};
 
     /* Navbar configuration */
-    --navbar-visible-screen     : #{$navbar-visible-screen};
-    --navbar-radius             : #{$navbar-radius};
-    --navbar-foreground-color   : #{$navbar-foreground-color};
-    --navbar-background-color   : #{$navbar-background-color};
-    --navbar-content-flow       : #{$navbar-content-flow};
-    --navbar-header-size        : #{$navbar-header-size};
-    --navbar-header-vert-margin : #{$navbar-header-vert-margin};
+    --navbar-menu-corner-radius        : #{$navbar-menu-corner-radius};
+    --navbar-header-size               : #{$navbar-header-size};
+    --navbar-header-vert-margin        : #{$navbar-header-vert-margin};
+    --navbar-text-color                : #{$navbar-text-color};
+    --navbar-background-color          : #{$navbar-background-color};
+    --navbar-menu-item-highlight-color : #{$navbar-menu-item-highlight-color};
 
     /* Sidebar configuration */
-    --sidebar-font-size         : #{$sidebar-font-size};
-    --sidebar-hamburger-size    : #{$sidebar-hamburger-size};
-    --sidebar-width             : #{$sidebar-width};
-    --sidebar-visible-screen    : #{$sidebar-visible-screen};
-    --sidebar-foreground-color  : #{$sidebar-foreground-color};
-    --sidebar-background-color  : #{$sidebar-background-color};
-    --sidebar-item-padding      : #{$sidebar-item-padding};
-    --sidebar-toggle-vert-pos   : #{$sidebar-toggle-vert-pos};
+    --sidebar-hamburger-size            : #{$sidebar-hamburger-size};
+    --sidebar-text-color                : #{$sidebar-text-color};
+    --sidebar-background-color          : #{$sidebar-background-color};
+    --sidebar-menu-item-highlight-color : #{$sidebar-menu-item-highlight-color};
+    --sidebar-item-padding              : #{$sidebar-item-padding};
+    --sidebar-toggle-vert-pos           : #{$sidebar-toggle-vert-pos};
 
     /* Pager configuration */
     --pager-foreground-color   : #{$pager-foreground-color};

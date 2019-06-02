@@ -28,24 +28,32 @@ $primary-text-color                : black;
 $link-text-color                   : hsl(240, 88%, 50%);//hsl(207, 97%, 65%);
 
 /* Navbar configuration */
-$navbar-visible-screen     : $minitablet;
-$navbar-radius             : 1rem;
-$navbar-foreground-color   : $primary-foreground-color;
-$navbar-background-color   : $primary-background-color;
-/* Navbar configuration */
-$navbar-content-flow       : "forward";
-$navbar-header-size        : 1.8rem;
-$navbar-header-vert-margin : 0.5rem;
+// Corner radius of navbar menu
+$navbar-menu-corner-radius        : 0.05rem;
+// Font size of Navbar header
+$navbar-header-size               : 1.8rem;
+// Margin for Navbar header
+$navbar-header-vert-margin        : 0.5rem;
+// Text color of Navbar items
+$navbar-text-color                : $primary-foreground-color;
+// Background color of Navbar
+$navbar-background-color          : $primary-background-color;
+// Color used on hover/active in navbar menu item
+$navbar-menu-item-highlight-color : darken($navbar-background-color, 30%);
 
 /* Sidebar configuration */
-$sidebar-font-size         : 1.05rem;
-$sidebar-hamburger-size    : 1.2rem;
-$sidebar-width             : 18rem;
-$sidebar-visible-screen    : $tablet;
-$sidebar-foreground-color  : $primary-foreground-color;
-$sidebar-background-color  : $primary-background-color;
-$sidebar-item-padding      : 0.9rem 1.5rem;
-$sidebar-toggle-vert-pos   : $navbar-header-vert-margin + 0.5rem;
+// Size of Sidebar toggle menu
+$sidebar-hamburger-size            : 1.2rem;
+// Text color of sidebar items
+$sidebar-text-color                : $primary-foreground-color;
+// Background color of Sidebar
+$sidebar-background-color          : $primary-background-color;
+// Color used on hover/active in sidebar menu item
+$sidebar-menu-item-highlight-color : darken($sidebar-background-color, 30%);
+// Padding for Sidebar items
+$sidebar-item-padding              : 0.9rem 1.5rem;
+// Vertical positioning of Sidebar toggle icon
+$sidebar-toggle-vert-pos           : $navbar-header-vert-margin + 0.5rem;
 
 /* Pager configuration */
 $pager-foreground-color   : $primary-foreground-color;

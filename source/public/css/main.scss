@@ -3,11 +3,10 @@
 
 @charset "utf-8";
 
-/** Begin Config options/settings **/
+/** Begin Config options/settings from _config.yml **/
 $flat        : {{site.flat}};
 $sidebar-pos : {{site.sidebar.position}};
-@import "config/generic";
-/** End Config options/settings **/
+/** End Config options/settings from _config.yml **/
 
 /** Begin Text Fonts **/
 /*@import "fonts/google/local_pt-sans.scss";
@@ -21,6 +20,10 @@ $sidebar-pos : {{site.sidebar.position}};
 /** Begin Base **/
 @import "base/all";
 /** End Base **/
+
+/** Begin Config options/settings from _generic.scss **/
+@import "config/generic";
+/** End Config options/settings from _generic.scss **/
 
 /** Begin Skin **/
 @import "skin/{{ site.skin | default: 'base-01' }}";
