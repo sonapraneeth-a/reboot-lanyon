@@ -54,10 +54,12 @@
     @if $sidebar-pos == left
     {
         left: -$sidebar-width;
+        border-right: 0.1rem solid var(--sidebar-foreground-color);
     }
     @else
     {
         right: -$sidebar-width;
+        border-left: 0.1rem solid var(--sidebar-text-color);
     }
     z-index: $sidebar-zindex;
     overflow-y: auto;
