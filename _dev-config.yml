@@ -17,7 +17,7 @@ build       : "jekyll"
 
 # Site config
 flat        : true
-skin        : base-01
+skin        : light
 sidebar:
     display  : push # push, overlay
     position : left # Currently set it from _base-01.scss
