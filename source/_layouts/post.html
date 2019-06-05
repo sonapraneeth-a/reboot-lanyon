@@ -64,7 +64,7 @@ layout: default
             {% else %}
             <i class="fa fa-table"></i>&nbsp;&nbsp;
             {% endif %}
-            {% if page.toc_label != "" %}
+            {% if page.toc_label and page.toc_label != "" %}
             {{page.toc_label}}
             {% else %}
             Table of contents
