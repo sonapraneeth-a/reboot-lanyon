@@ -105,4 +105,61 @@
     scrollspy.init();
   }
 </script>
-
+<script>
+  /* Reference :https://www.youtube.com/watch?v=ZKXv_ZHQ654&list=LL9XiVWJHGJeIB6WD3UUXAsQ&index=3&t=0s  */
+  console.log(`Theme in localStorage: ${localStorage.getItem("theme")}`);
+  console.log(`Theme in HTML data: ${document.documentElement.getAttribute("data-theme")}`);
+  var checkbox = document.querySelector("input[name=theme-switch]");
+  console.log(`Is checked: ${checkbox.checked}`);
+  if (localStorage.getItem("theme") === null) {
+    localStorage.setItem("theme", document.documentElement.getAttribute("data-theme"));
+    localStorage.setItem("checked", (localStorage.getItem("theme") === "light"));
+  } else {
+    document.documentElement.setAttribute("data-theme", localStorage.getItem("theme"));
+  }
+  checkbox.checked = (localStorage.getItem("theme") === "light");
+  checkbox.addEventListener( 'change', function() {
+    if(this.checked) {
+      // Checkbox is checked..
+      theme_transition();
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+    } else {
+      // Checkbox is not checked..
+      theme_transition();
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    }
+    localStorage.setItem("checked", this.checked);
+  });
+  let theme_transition = () => {
+    document.documentElement.classList.add('transition');
+    window.setTimeout(() => {
+        document.documentElement.classList.remove('transition')
+      }, 1000
+    );
+  }
+</script>
+{% comment %}
+<script>
+var change_theme = () => {
+  console.log(`Change theme called`);
+  var checkbox = document.querySelector("input[name=theme-switch]");
+  console.log(`Checkbox: ${checkbox}`);
+  console.log(`Is checked: ${checkbox.checked}`);
+  document.documentElement.classList.add("transition");
+  window.setTimeout(() => {
+    document.documentElement.classList.remove("transition");
+  }, 1000);
+  if(checkbox.checked) {
+    // Checkbox is checked..
+    document.documentElement.setAttribute("data-theme", "dark");
+    checkbox.checked = false;
+  } else {
+    // Checkbox is not checked..
+    document.documentElement.setAttribute("data-theme", "light");
+    checkbox.checked = true;
+  }
+}
+</script>
+{% endcomment %}

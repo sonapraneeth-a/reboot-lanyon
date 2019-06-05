@@ -3,15 +3,18 @@ layout:
 ---
 
 <!DOCTYPE html>
-<html lang={{site.lang}} data-theme="{{ site.skin | default: 'base-01' }}">
+<html lang={{site.lang}} data-theme="{{ site.skin | default: 'light' }}">
 {% include head.html %}
 <body>
+{% include switch.html %}
 {% if progress_bar.show == true %}
 <div id="progress-bar">
   <div id="current-progress"></div>
 </div>
 {% endif %}
-<a onclick="scrollToTop()" id="scroll" class="scroll" title="Go to top"></a>
+<a onclick="scrollToTop()" id="scroll" class="scroll" title="Go to top">
+  <span class="fa fa-chevron-up"></span>
+</a>
 {% include sidebar.html %}
 <div class="content" id="main-content">
     {% include navbar.html %}
