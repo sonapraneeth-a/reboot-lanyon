@@ -37,9 +37,9 @@
     box-sizing: content-box;
     border-bottom: none;
     text-decoration: none;
-    @if flat == false
+    @if $flat == false
     {
-        border-radius: 50%;
+        border-radius: var(--scroll-corner-radius);
     }
     cursor: pointer;
     color: var(--scroll-foreground-color);

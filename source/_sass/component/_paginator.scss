@@ -37,7 +37,7 @@
   }
   li.first-page
   {
-    @if flat == false
+    @if $flat == false
     {
       border-bottom-left-radius: 0.25rem;
       border-top-left-radius: 0.25rem;
@@ -46,7 +46,7 @@
   }
   li.last-page
   {
-    @if flat == false
+    @if $flat == false
     {
       border-bottom-right-radius: 0.25rem;
       border-top-right-radius: 0.25rem;

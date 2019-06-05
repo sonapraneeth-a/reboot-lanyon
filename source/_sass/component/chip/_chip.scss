@@ -21,7 +21,7 @@
     }
     @else
     {
-        border-radius: 5px;
+        border-radius: var(--chip-corner-radius);
     }
     font-size: 0.9rem;
     margin: 0.2rem;

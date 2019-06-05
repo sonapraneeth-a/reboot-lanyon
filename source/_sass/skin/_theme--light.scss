@@ -44,6 +44,9 @@ html[data-theme="light"]
     /* Links Colors */
     --link-text-color                   : #{$link-text-color};
 
+    /** Additional configuration (Paramters other than color) **/
+    --border-radius  : #{$border-radius};
+
     /** Navbar configuration **/
     /* Corner radius of navbar menu */
     --navbar-menu-corner-radius        : #{$navbar-menu-corner-radius};
@@ -75,6 +78,7 @@ html[data-theme="light"]
     /** Pager configuration (Use in pagination and (previous/next) post **/
     --pager-foreground-color   : #{$pager-foreground-color};
     --pager-background-color   : #{$pager-background-color};
+    --pager-corner-radius      : #{$pager-corner-radius};
 
     /** Footer configuration **/
     --footer-foreground-color  : #{$footer-foreground-color};
@@ -90,10 +94,12 @@ html[data-theme="light"]
     /** Scroll to top configuration **/
     --scroll-foreground-color  : #{$scroll-foreground-color};
     --scroll-background-color  : #{$scroll-background-color};
+    --scroll-corner-radius     : #{$scroll-corner-radius};
 
     /** Chip -> Tag, Category, Archive configuration **/
     --chip-foreground-color  : #{$chip-foreground-color};
     --chip-background-color  : #{$chip-background-color};
+    --chip-corner-radius     : #{$chip-corner-radius};
 
     /** Status marker colors **/
     /* Background colors */

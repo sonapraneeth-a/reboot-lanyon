@@ -41,9 +41,12 @@ $text-color                        : $primary-foreground-color;
 /* Links Colors */
 $link-text-color                   : hsl(240, 88%, 50%);//hsl(207, 97%, 65%);
 
+/** Additional configuration (Paramters other than color) **/
+$border-radius  : 0.3rem;
+
 /** Navbar configuration **/
 /* Corner radius of navbar menu */
-$navbar-menu-corner-radius        : 0.05rem;
+$navbar-menu-corner-radius        : $border-radius;
 /* Font size of Navbar header */
 $navbar-header-size               : 1.8rem;
 /* Margin for Navbar header */
@@ -72,6 +75,7 @@ $sidebar-toggle-vert-pos           : $navbar-header-vert-margin + 0.5rem;
 /** Pager configuration **/
 $pager-foreground-color   : $secondary-foreground-color;
 $pager-background-color   : $secondary-background-color;
+$pager-corner-radius      : $border-radius;
 
 /** Footer configuration **/
 $footer-foreground-color  : $primary-foreground-color;
@@ -87,10 +91,12 @@ $switch-background-color  : hsl(59, 86%, 63%);
 /** Scroll to top configuration **/
 $scroll-foreground-color  : $primary-background-color;
 $scroll-background-color  : $primary-foreground-color;
+$scroll-corner-radius     : 50%;
 
 /** Chip -> Tag, Category, Archive configuration **/
 $chip-background-color : hsl(0, 0%, 80%);
 $chip-foreground-color : hsl(0, 27%, 11%);
+$chip-corner-radius    : $border-radius;
 
 /** Status Marker Colors -> (Yet to complete) **/
 /* Background colors */
