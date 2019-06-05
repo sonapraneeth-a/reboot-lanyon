@@ -72,32 +72,36 @@ pagination:
                 </div>
             </div>
             <div class="card-footer">
-                <div style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap;">
+                <div class="project-card-footer-items">
                     {% if project.url and project.url != "" %}
-                    <div style="width: 120px; text-align: center; padding: 0.1rem;">
-                        <a href="{{site.baseurl}}{{project.url}}" style="text-decoration: none; text-align: right;">
-                        <span><i class="fa fa-info-circle" style="width: 20px;" aria-hidden="true"></i>&nbsp;Details</span>
+                    <div>
+                        <a href="{{site.baseurl}}{{project.url}}" title="Details">
+                            <span class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                            <span class="description">Details</span>
                         </a>
                     </div>
                     {% endif %}
                     {% if project.github-url and project.github-url != "" %}
-                    <div style="width: 120px; text-align: center; padding: 0.1rem;">
-                        <a href="{{project.github-url}}" style="text-decoration: none; text-align: right;">
-                        <span><i class="fa fa-code" style="width: 20px;" aria-hidden="true"></i>&nbsp;Source</span>
+                    <div>
+                        <a href="{{project.github-url}}" title="Source">
+                            <span class="icon"><i class="fa fa-code" aria-hidden="true"></i></span>
+                            <span class="description">Source</span>
                         </a>
                     </div>
                     {% endif %}
                     {% if project.report-url and project.report-url != "" %}
-                    <div style="width: 120px; text-align: center; padding: 0.1rem;">
-                        <a href="{{project.report-url}}" style="text-decoration: none;">
-                        <span><i class="fa fa-file-alt" style="width: 20px; text-align: right;" aria-hidden="true"></i>&nbsp;Report</span>
+                    <div>
+                        <a href="{{project.report-url}}" title="Report">
+                            <span class="icon"><i class="fa fa-file-alt" style="text-align: right;" aria-hidden="true"></i></span>
+                            <span class="description">Report</span>
                         </a>
                     </div>
                     {% endif %}
                     {% if project.slides-url and project.slides-url != "" %}
-                    <div style="width: 120px; text-align: center; padding: 0.1rem;">
-                        <a href="{{project.slides-url}}" style="text-decoration: none;">
-                        <span><i class="fa fa-file-powerpoint" style="width: 20px; text-align: right;" aria-hidden="true"></i>&nbsp;Presentation</span>
+                    <div>
+                        <a href="{{project.slides-url}}" title="Presentation">
+                            <span class="icon"><i class="fa fa-file-powerpoint" style="text-align: right;" aria-hidden="true"></i></span>
+                            <span class="description">Presentation</span>
                         </a>
                     </div>
                     {% endif %}
