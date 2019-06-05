@@ -82,14 +82,9 @@
     }
     padding: 0;
     color: var(--navbar-text-color);
-    li
+    > li
     {
-        display: inline-block;
-        box-sizing: border-box;
-        position: relative;
-        min-width: 4rem;
-        margin: auto 0;
-        // border: 0.1rem solid var(--navbar-menu-item-highlight-color);
+        /* Reference: https://stackoverflow.com/questions/2094508/is-there-a-css-selector-for-the-first-direct-child-only */
         &:not(:last-child)
         {
             border-right: none;
@@ -107,6 +102,15 @@
                 border-bottom-right-radius: var(--navbar-menu-corner-radius);
             }
         }
+    }
+    li
+    {
+        display: inline-block;
+        box-sizing: border-box;
+        position: relative;
+        min-width: 4rem;
+        margin: auto 0;
+        // border: 0.1rem solid var(--navbar-menu-item-highlight-color);
         color: var(--navbar-text-color);
         &:hover
         {
