@@ -26,7 +26,7 @@ $sidebar-pos : {{site.sidebar.position}};
 /** End Config options/settings from _generic.scss **/
 
 /** Begin Skin **/
-@import "skin/theme--{{ site.skin | default: 'base-01' }}";
+@import "skin/all";
 /** End Skin **/
 
 @import "base/root";
@@ -54,10 +54,16 @@ $sidebar-pos : {{site.sidebar.position}};
 @import "highlight/gist/gist-style-okaidia";
 /** End Prism highlighting **/
 
-/** Begin HTML elements **/
+/** Begin HTML tags styles **/
+@import "tags/all";
+/** End HTML tags styles **/
+
+/** Begin HTML element styles **/
 @import "elements/all";
-/** End HTML elements **/
+/** End HTML element styles **/
 
 /** Begin CSS property **/
 @import "property/all";
 /** End CSS property **/
+
+@import "media/print";

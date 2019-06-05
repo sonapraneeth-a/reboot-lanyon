@@ -9,7 +9,7 @@
     &.complete
     {
         background-color: $success;
-        color: var(--primary-foreground-color);
+        color: $primary;
         border: 0.05rem solid $success;
     }
 }

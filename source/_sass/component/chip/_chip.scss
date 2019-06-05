@@ -26,8 +26,8 @@
     font-size: 0.9rem;
     margin: 0.2rem;
     text-decoration: none;
-    background-color: #e4e4e4;
-    color: rgba(0,0,0,0.6);
+    background-color: var(--chip-background-color);
+    color: var(--chip-foreground-color);
     border: 0.05rem solid black;
     &:hover
     {
@@ -42,8 +42,12 @@
     .chip-count
     {
         padding: 0.1rem 0.2rem;
-        border-left: 0.05rem solid black;
+        border-left: 0.05rem solid var(--chip-foreground-color);
         //background-color: darken($chip-background, 10%);
         //color: lighten($chip-background, 10%);
+    }
+    i.fa
+    {
+        color: var(--chip-foreground-color);
     }
 }

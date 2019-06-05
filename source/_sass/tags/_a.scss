@@ -1,9 +1,15 @@
 a
 {
+    color: var(--link-text-color);
     border-bottom: 0.05rem var(--link-text-color) dashed;
     text-decoration: none;
-    color: var(--link-text-color);
     &.disabled-link, &.disabled-link:hover
+    {
+        border-bottom: none;
+        text-decoration: none;
+        cursor: not-allowed;
+    }
+    &.no-decor, &.no-decor:hover
     {
         border-bottom: none;
         text-decoration: none;

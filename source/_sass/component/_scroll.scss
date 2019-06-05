@@ -1,10 +1,9 @@
-.scroll::before
+/*.scroll::before
 {
-    /*@include up-icon*/
     font-family: "Font Awesome 5 Free";
     content: "\f077";
     font-weight: 700;
-}
+}*/
 /*#scroll
 {
     text-decoration: none;
@@ -23,6 +22,7 @@
     background-color: $foreground-color;
 }*/
 /* http://anacidre.com/creating-circle-text-using-html-css/ */
+/* https://datainterview.io/course/ */
 .scroll
 {
     position: fixed;
@@ -33,19 +33,28 @@
     width: 2.5rem;
     font-size: 1rem;
     text-align: center;
-    vertical-align: middle;
+    //vertical-align: middle;
+    box-sizing: content-box;
+    border-bottom: none;
+    text-decoration: none;
     @if flat == false
     {
         border-radius: 50%;
     }
     cursor: pointer;
-    color: var(--primary-foreground-color);
-    background-color: var(--primary-background-color);
-    text-decoration: none;
-    padding: 0.75rem;
+    color: var(--scroll-foreground-color);
+    background-color: var(--scroll-background-color);
+    /*padding: 0.75rem;
+    padding-top: 0.5rem;*/
+    line-height: 2.5rem;
     z-index: 1000;
+    display: inline;
     &:hover
     {
         text-decoration: none;
+    }
+    i.fa
+    {
+        color: var(--scroll-foreground-color);
     }
 }

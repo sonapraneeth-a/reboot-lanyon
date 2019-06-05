@@ -12,26 +12,26 @@
     font-size: 0.95rem;
     box-sizing: border-box;
     display: inline-block;
-    border: 0.05rem solid var(--primary-foreground-color);
-    background-color: var(--primary-background-color);
-    color: var(--primary-foreground-color-dark);
+    border: 0.05rem solid var(--pager-foreground-color);
+    background-color: var(--pager-background-color);
+    color: var(--pager-foreground-color);
     &:hover
     {
       display: inline-block;
-      background-color: var(--primary-foreground-color);
-      color: var(--primary-background-color);
+      background-color: var(--pager-foreground-color);
+      color: var(--pager-background-color);
     }
     a
     {
       padding: 0.25rem 0.45rem;
-      color: var(--primary-foreground-color);
+      color: var(--pager-foreground-color);
       text-decoration: none;
       border-bottom: none;
       display: inline-block;
       &:hover
       {
         display: inline-block;
-        color: var(--primary-background-color);
+        color: var(--pager-background-color);
       }
     }
   }
@@ -42,6 +42,7 @@
       border-bottom-left-radius: 0.25rem;
       border-top-left-radius: 0.25rem;
     }
+
   }
   li.last-page
   {
@@ -52,6 +53,22 @@
     }
   }
 }
+
+.pager-block
+{
+    li.first-page, li.last-page, li.previous, li.next
+    {
+        a i.fa
+        {
+            color: var(--pager-foreground-color);
+        }
+        a:hover i.fa
+        {
+            color: var(--pager-background-color);
+        }
+    }
+}
+
 .first-page a::before
 {
   /*content: "<<";*/

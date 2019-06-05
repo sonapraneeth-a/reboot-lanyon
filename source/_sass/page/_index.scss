@@ -18,22 +18,22 @@
     display: inline-flex;
     flex-direction: row;
     list-style: none;
-    background: #f4f4f4;
+    background: var(--surface-color);
     border-radius: 5px;
     text-align: center;
     padding: 0;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--surface-color-light);
     a
     {
         padding: 0.5rem 1rem;
         display: block;
         border-bottom: none;
         text-decoration: none;
-        color: #676767;
+        color: var(--surface-text-color-light);
     }
     li
     {
-        border-right: 0.1rem solid #e0e0e0;
+        border-right: 0.1rem solid var(--surface-color-light);
         &:last-child
         {
             border-right: 0;

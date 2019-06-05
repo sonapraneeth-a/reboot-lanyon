@@ -20,10 +20,8 @@ $secondary-background-color-dark   : darken($secondary-background-color, 10%);
 $surface-color                     : hsl(0, 0%, 98%);
 /* Background Color */
 $background-color                  : hsl(0, 0%, 98%);
-/* Dark text color */
-$dark-text-color                   : hsl(0, 0%, 98%);
 /* Light text color */
-$primary-text-color                : black;
+$text-color                        : black;
 /* Links Colors */
 $link-text-color                   : hsl(240, 88%, 50%);//hsl(207, 97%, 65%);
 
@@ -33,7 +31,7 @@ $navbar-menu-corner-radius        : 0.05rem;
 // Font size of Navbar header
 $navbar-header-size               : 1.8rem;
 // Margin for Navbar header
-$navbar-header-vert-margin        : 0.5rem;
+$navbar-header-vert-margin        : 0.8rem;
 // Text color of Navbar items
 $navbar-text-color                : $primary-foreground-color;
 // Background color of Navbar
@@ -62,3 +60,14 @@ $pager-background-color   : $primary-background-color;
 /* Footer configuration */
 $footer-foreground-color  : $primary-foreground-color;
 $footer-background-color  : $primary-background-color;
+
+/* Scrollbar configuration */
+$scrollbar-foreground-color  : $secondary-foreground-color;
+$scrollbar-background-color  : $secondary-background-color;
+
+/* Switch configuration */
+$switch-background-color  : darken($primary-background-color, 30%);
+
+/* Scroll to top configuration */
+$scroll-foreground-color  : $secondary-foreground-color;
+$scroll-background-color  : $secondary-background-color;

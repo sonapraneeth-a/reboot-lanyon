@@ -11,9 +11,9 @@
     {
         flex-direction: row;
     }
-    background-color: white;
+    background-color: var(--surface-color);
     transition: box-shadow .25s, -webkit-box-shadow .25s;
-    @if $flat == true 
+    @if $flat == true
     {
         border-radius: 0px;
     }
@@ -32,7 +32,7 @@
 
     .blog-card-image
     {
-        @if $flat == true 
+        @if $flat == true
         {
             border-radius: 0px;
         }
@@ -100,7 +100,7 @@
     .blog-card-title
     {
         margin: 0.5rem 0;
-        a 
+        a
         {
             border-bottom: none;
         }
@@ -130,7 +130,7 @@
         padding: 0.8rem;
         border-top: 0.1rem solid rgba(160,160,160,0.2);
         bottom: 0;
-        a 
+        a
         {
             border-bottom: none;
         }

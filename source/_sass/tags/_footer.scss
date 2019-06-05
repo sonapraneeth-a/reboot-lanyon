@@ -1,4 +1,4 @@
-.footer
+footer
 {
     z-index: $footer-zindex;
     width: 100%;
@@ -42,6 +42,8 @@
     {
         color: var(--footer-foreground-color);
         font-weight: bold;
+        border-bottom: none;
+        text-decoration: none;
     }
     &.center {
         text-align: center;

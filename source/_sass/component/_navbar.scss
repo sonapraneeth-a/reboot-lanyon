@@ -4,7 +4,7 @@
     flex-direction: row;
     background-color: var(--navbar-background-color);
     color: var(--navbar-text-color);
-    border-bottom: 0.1rem solid var(--navbar-text-color);
+    // border-bottom: 0.1rem solid var(--navbar-text-color);
     position: fixed;
     width: 100%;
     z-index: $navbar-zindex;
@@ -36,13 +36,16 @@
 {
     display: flex;
     margin: var(--navbar-header-vert-margin) 0;
-    color: var(--navbar-text-color);
+    // color: var(--navbar-text-color);
+    color: var(--heading-text-color);
     font-weight: 500;
     a
     {
         font-size: var(--navbar-header-size);
-        color: var(--navbar-text-color);
+        // color: var(--navbar-text-color);
+        color: var(--heading-text-color);
         text-decoration: none;
+        border-bottom: none;
         vertical-align: -webkit-baseline-middle;
         &:hover
         {
@@ -86,7 +89,7 @@
         position: relative;
         min-width: 4rem;
         margin: auto 0;
-        border: 0.1rem solid var(--navbar-menu-item-highlight-color);
+        // border: 0.1rem solid var(--navbar-menu-item-highlight-color);
         &:not(:last-child)
         {
             border-right: none;
@@ -129,6 +132,7 @@
     }
     .active
     {
+        font-weight: bold;
         background-color: var(--navbar-menu-item-highlight-color);
     }
     @include until($navbar-visible-screen)
@@ -157,6 +161,7 @@
         margin: 0;
         &:hover
         {
+            border: 0.1rem solid var(--navbar-menu-item-highlight-color);
             background-color: var(--navbar-background-color);
         }
     }

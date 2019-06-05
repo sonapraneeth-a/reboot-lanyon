@@ -4,7 +4,8 @@
 /* Color palette */
 html[data-theme="base-01"]
 {
-    /* Primary Color */
+    /** Primary Colors (Background / Foreground) **/
+    /* Primary background color and variants */
     --primary-background-color          : #{$primary-background-color};
     --primary-background-color-light    : #{$primary-background-color-light};
     --primary-background-color-dark     : #{$primary-background-color-dark};
@@ -12,24 +13,28 @@ html[data-theme="base-01"]
     --primary-foreground-color          : #{$primary-foreground-color};
     --primary-foreground-color-light    : #{$primary-foreground-color-light};
     --primary-foreground-color-dark     : #{$primary-foreground-color-dark};
+
+    /** Secondary Colors (Background / Foreground) **/
     /* "On" text colors for secondary background color */
     --secondary-foreground-color        : #{$secondary-foreground-color};
     --secondary-foreground-color-light  : #{$secondary-foreground-color-light};
     --secondary-foreground-color-dark   : #{$secondary-foreground-color-dark};
-    /* Secondary Color */
+    /* Secondary background color and variants */
     --secondary-background-color        : #{$secondary-background-color};
     --secondary-background-color-light  : #{$secondary-background-color-light};
     --secondary-background-color-dark   : #{$secondary-background-color-dark};
+
+    /** Other Colors **/
     /* Surface Color */
     --surface-color                     : #{$surface-color};
     /* Background Color */
     --background-color                  : #{$background-color};
-    /* Dark text color */
-    --dark-text-color                   : #{$dark-text-color};
     /* Light text color */
-    --primary-text-color                : #{$primary-text-color};
+    --text-color                        : #{$text-color};
     /* Links Colors */
     --link-text-color                   : #{$link-text-color};
+    /* Heading Colors */
+    --heading-text-color                : #{$link-text-color};
 
     /* Navbar configuration */
     --navbar-menu-corner-radius        : #{$navbar-menu-corner-radius};
@@ -54,5 +59,16 @@ html[data-theme="base-01"]
     /* Footer configuration */
     --footer-foreground-color  : #{$footer-foreground-color};
     --footer-background-color  : #{$footer-background-color};
+
+    /* Scrollbar configuration */
+    --scrollbar-foreground-color : #{$scrollbar-foreground-color};
+    --scrollbar-background-color : #{$scrollbar-background-color};
+
+    /* Switch configuration */
+    --switch-background-color  : #{$switch-background-color};
+
+    /* Scroll to top configuration */
+    --scroll-foreground-color  : #{$scroll-foreground-color};
+    --scroll-background-color  : #{$scroll-background-color};
 
 }

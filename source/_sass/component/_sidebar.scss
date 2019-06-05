@@ -50,7 +50,7 @@
     bottom: 0;
     background-color: var(--sidebar-background-color);
     color: var(--sidebar-text-color);
-    border-right: 0.3rem solid var(--secondary-foreground-color-dark);
+    // border-right: 0.3rem solid var(--secondary-foreground-color-dark);
     @if $sidebar-pos == left
     {
         left: -$sidebar-width;

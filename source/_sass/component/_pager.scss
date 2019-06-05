@@ -9,15 +9,25 @@
     a
     {
         text-decoration: none;
+        border-bottom: none;
         padding: 0.5rem;
-        background-color: var(--primary-foreground-color);
-        color: var(--primary-background-color);
+        background-color: var(--pager-background-color);
+        color: var(--pager-foreground-color);
         &:hover
         {
             text-decoration: none;
-            background-color: var(--primary-background-color);
-            color: var(--primary-foreground-color);
+            border-bottom: none;
+            background-color: var(--pager-foreground-color);
+            color: var(--pager-background-color);
+            i.fa
+            {
+                color: var(--pager-background-color);
+            }
         }
+    }
+    i.fa
+    {
+        color: var(--pager-foreground-color);
     }
 }
 .post-page

@@ -1,9 +1,9 @@
 .card
 {
     position: relative;
-    background-color: white;
+    background-color: var(--surface-color);
     transition: box-shadow .25s, -webkit-box-shadow .25s;
-    @if $flat == true 
+    @if $flat == true
     {
         border-radius: 0px;
     }
@@ -24,7 +24,7 @@
     {
         width: 100%;
       border-bottom: 0.05rem solid rgba(160,160,160,0.2);
-        @if $flat == true 
+        @if $flat == true
         {
             border-radius: 0px;
         }

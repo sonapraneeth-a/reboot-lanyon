@@ -1,0 +1,78 @@
+.switch-position {
+    position: fixed;
+    margin: 1.2rem 0;
+    right: 1rem;
+    z-index: 100;
+}
+/* Reference: https://www.w3schools.com/howto/howto_css_switch.asp */
+$slider-height: 28px;
+$slider-width: 56px;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: $slider-width;
+    height: $slider-height;
+    cursor: pointer;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--switch-background-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 0.1rem solid var(--switch-background-color);
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: $slider-height - 3;
+    width: $slider-height - 3;
+    /*left: 1px;
+    bottom: 1px;*/
+    background-color: white;
+    z-index: 101;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: var(--switch-background-color);
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX($slider-width - $slider-height);
+    -ms-transform: translateX($slider-width - $slider-height);
+    transform: translateX($slider-width - $slider-height);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    @if $flat != true
+      {
+          border-radius: $slider-height;
+      }
+  }
+
+  .slider.round:before {
+      @if $flat != true
+      {
+        border-radius: 50%;
+      }
+
+  }
