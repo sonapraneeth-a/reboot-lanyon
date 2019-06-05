@@ -1,0 +1,112 @@
+/* Reference URL: https://material.io/design/color/the-color-system.html#color-theme-creation */
+/* Color palette */
+
+/** Primary Colors (Background / Foreground) (Dark / Light variants) **/
+/* Primary background color and variants */
+$primary-background-color          : hsl(0, 0%, 20%);
+$primary-background-color-light    : lighten($primary-background-color, 10%);
+$primary-background-color-dark     : darken($primary-background-color, 10%);
+/* "On" text colors for primary background color */
+$primary-foreground-color          : hsl(0, 0%, 98%);
+$primary-foreground-color-light    : lighten($primary-foreground-color, 10%);
+$primary-foreground-color-dark     : darken($primary-foreground-color, 10%);
+
+/** Secondary Colors (Background / Foreground) (Dark / Light variants) **/
+/* Secondary background color and variants */
+$secondary-background-color        : hsl(200, 100%, 65%);
+$secondary-background-color-light  : lighten($secondary-background-color, 10%);
+$secondary-background-color-dark   : darken($secondary-background-color, 10%);
+/* "On" text colors for secondary background color */
+$secondary-foreground-color        : hsl(0, 0%, 25%);
+$secondary-foreground-color-light  : lighten($secondary-foreground-color, 10%);
+$secondary-foreground-color-dark   : darken($secondary-foreground-color, 10%);
+
+/** Surface Colors **/
+/* Background color */
+$surface-color             : hsl(0, 0%, 30%);
+$surface-color-light       : lighten($surface-color, 10%);
+$surface-color-dark        : darken($surface-color, 10%);
+/* Text color */
+$surface-text-color        : hsl(0, 0%, 85%);
+$surface-text-color-light  : lighten($surface-text-color, 10%);
+$surface-text-color-dark   : darken($surface-text-color, 10%);
+
+/** Overall Document Colors **/
+/* Background Color */
+$background-color       : $primary-background-color;
+/* Heading text color */
+$heading-text-color     : $secondary-background-color;
+/* Light text color */
+$text-color             : $primary-foreground-color;
+/* Links Colors */
+$link-text-color        : hsl(64, 100%, 50%);
+
+/** Navbar configuration **/
+/* Corner radius of navbar menu */
+$navbar-menu-corner-radius        : 0.05rem;
+/* Font size of Navbar header */
+$navbar-header-size               : 1.8rem;
+/* Margin for Navbar header */
+$navbar-header-vert-margin        : 0.8rem;
+/* Text color of Navbar items */
+$navbar-text-color                : $primary-foreground-color;
+/* Background color of Navbar */
+$navbar-background-color          : $primary-background-color;
+/* Color used on hover/active in navbar menu item */
+$navbar-menu-item-highlight-color : darken($navbar-background-color, 30%);
+
+/** Sidebar configuration **/
+/* Size of Sidebar toggle menu */
+$sidebar-hamburger-size            : 1.2rem;
+/* Text color of sidebar items */
+$sidebar-text-color                : $primary-foreground-color;
+/* Background color of Sidebar */
+$sidebar-background-color          : $primary-background-color;
+/* Color used on hover/active in sidebar menu item */
+$sidebar-menu-item-highlight-color : darken($sidebar-background-color, 30%);
+/* Padding for Sidebar items */
+$sidebar-item-padding              : 0.9rem 1.5rem;
+/* Vertical positioning of Sidebar toggle icon */
+$sidebar-toggle-vert-pos           : $navbar-header-vert-margin + 0.5rem;
+
+/** Pager configuration (Use in pagination and (previous/next) post **/
+$pager-foreground-color   : $secondary-background-color;
+$pager-background-color   : $background-color;
+
+/** Footer configuration **/
+$footer-foreground-color  : $primary-foreground-color;
+$footer-background-color  : $primary-background-color;
+
+/** Scrollbar configuration **/
+$scrollbar-foreground-color  : $primary-foreground-color;
+$scrollbar-background-color  : $primary-background-color;
+
+/** Switch configuration **/
+$switch-background-color  : $primary-background-color-dark;
+
+/** Scroll to top configuration **/
+$scroll-foreground-color  : $primary-background-color;
+$scroll-background-color  : $primary-foreground-color;
+
+/** Chip -> Tag, Category, Archive configuration **/
+$chip-background-color : hsl(0, 0%, 80%);
+$chip-foreground-color : hsl(0, 27%, 11%);
+
+/** Status Marker Colors -> (Yet to complete) **/
+/* Background colors */
+$default              : hsl(0, 0%, 66%);
+$primary              : hsl(0, 0%, 0%);
+$secondary            : hsl(0, 0%, 100%);
+$info                 : hsl(203, 93%, 54%);
+$success              : hsl(155, 100%, 50%);
+$warning              : hsl(49, 98%, 60%);
+$danger               : hsl(354, 70%, 54%);
+/* Text colors */
+$default-text-color   : hsl(203, 93%, 54%);
+$primary-text-color   : hsl(203, 93%, 54%);
+$secondary-text-color : hsl(203, 93%, 54%);
+$info-text-color      : hsl(203, 93%, 54%);
+$success-text-color   : hsl(155, 100%, 50%);
+$warning-text-color   : hsl(49, 98%, 60%);
+$danger-text-color    : hsl(354, 70%, 54%);
+

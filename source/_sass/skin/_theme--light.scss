@@ -1,0 +1,115 @@
+@import "light";
+
+/* Reference URL: https://material.io/design/color/the-color-system.html#color-theme-creation */
+/* Color palette */
+html[data-theme="light"]
+{
+    /** Primary Colors (Background / Foreground) (Dark / Light variants) **/
+    /* Primary background color and variants */
+    --primary-background-color          : #{$primary-background-color};
+    --primary-background-color-light    : #{$primary-background-color-light};
+    --primary-background-color-dark     : #{$primary-background-color-dark};
+    /* "On" text colors for primary background color */
+    --primary-foreground-color          : #{$primary-foreground-color};
+    --primary-foreground-color-light    : #{$primary-foreground-color-light};
+    --primary-foreground-color-dark     : #{$primary-foreground-color-dark};
+
+    /** Secondary Colors (Background / Foreground) (Dark / Light variants) **/
+    /* Secondary background color and variants */
+    --secondary-background-color        : #{$secondary-background-color};
+    --secondary-background-color-light  : #{$secondary-background-color-light};
+    --secondary-background-color-dark   : #{$secondary-background-color-dark};
+    /* "On" text colors for secondary background color */
+    --secondary-foreground-color        : #{$secondary-foreground-color};
+    --secondary-foreground-color-light  : #{$secondary-foreground-color-light};
+    --secondary-foreground-color-dark   : #{$secondary-foreground-color-dark};
+
+    /** Surface Colors **/
+    /* Background color */
+    --surface-color            : #{$surface-color};
+    --surface-color-light      : #{$surface-color-light};
+    --surface-color-dark       : #{$surface-color-dark};
+    /* Text color */
+    --surface-text-color       : #{$surface-text-color};
+    --surface-text-color-light : #{$surface-text-color-light};
+    --surface-text-color-dark  : #{$surface-text-color-dark};
+
+    /** Overall Document Colors **/
+    /* Background Color */
+    --background-color                  : #{$background-color};
+    /* Heading Colors */
+    --heading-text-color                : #{$heading-text-color};
+    /* Light text color */
+    --text-color                        : #{$text-color};
+    /* Links Colors */
+    --link-text-color                   : #{$link-text-color};
+
+    /** Navbar configuration **/
+    /* Corner radius of navbar menu */
+    --navbar-menu-corner-radius        : #{$navbar-menu-corner-radius};
+    /* Font size of Navbar header */
+    --navbar-header-size               : #{$navbar-header-size};
+    /* Margin for Navbar header */
+    --navbar-header-vert-margin        : #{$navbar-header-vert-margin};
+    /* Text color of Navbar items */
+    --navbar-text-color                : #{$navbar-text-color};
+    /* Background color of Navbar */
+    --navbar-background-color          : #{$navbar-background-color};
+    /* Color used on hover/active in navbar menu item */
+    --navbar-menu-item-highlight-color : #{$navbar-menu-item-highlight-color};
+
+    /** Sidebar configuration **/
+    /* Size of Sidebar toggle menu */
+    --sidebar-hamburger-size            : #{$sidebar-hamburger-size};
+    /* Text color of sidebar items */
+    --sidebar-text-color                : #{$sidebar-text-color};
+    /* Background color of Sidebar */
+    --sidebar-background-color          : #{$sidebar-background-color};
+    /* Color used on hover/active in sidebar menu item */
+    --sidebar-menu-item-highlight-color : #{$sidebar-menu-item-highlight-color};
+    /* Padding for Sidebar items */
+    --sidebar-item-padding              : #{$sidebar-item-padding};
+    /* Vertical positioning of Sidebar toggle icon */
+    --sidebar-toggle-vert-pos           : #{$sidebar-toggle-vert-pos};
+
+    /** Pager configuration (Use in pagination and (previous/next) post **/
+    --pager-foreground-color   : #{$pager-foreground-color};
+    --pager-background-color   : #{$pager-background-color};
+
+    /** Footer configuration **/
+    --footer-foreground-color  : #{$footer-foreground-color};
+    --footer-background-color  : #{$footer-background-color};
+
+    /* Scrollbar configuration */
+    --scrollbar-foreground-color : #{$scrollbar-foreground-color};
+    --scrollbar-background-color : #{$scrollbar-background-color};
+
+    /** Switch configuration **/
+    --switch-background-color  : #{$switch-background-color};
+
+    /** Scroll to top configuration **/
+    --scroll-foreground-color  : #{$scroll-foreground-color};
+    --scroll-background-color  : #{$scroll-background-color};
+
+    /** Chip -> Tag, Category, Archive configuration **/
+    --chip-foreground-color  : #{$chip-foreground-color};
+    --chip-background-color  : #{$chip-background-color};
+
+    /** Status marker colors **/
+    /* Background colors */
+    --default   : #{$default};
+    --primary   : #{$primary};
+    --secondary : #{$secondary};
+    --info      : #{$info};
+    --success   : #{$success};
+    --warning   : #{$warning};
+    --danger    : #{$danger};
+    /* Text colors */
+    --default-text-color   : #{$default-text-color};
+    --primary-text-color   : #{$primary-text-color};
+    --secondary-text-color : #{$secondary-text-color};
+    --info-text-color      : #{$info-text-color};
+    --success-text-color   : #{$success-text-color};
+    --warning-text-color   : #{$warning-text-color};
+    --danger-text-color    : #{$danger-text-color};
+}
