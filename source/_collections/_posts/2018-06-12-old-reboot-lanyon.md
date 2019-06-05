@@ -134,19 +134,19 @@ Currently four utility classes are supported in theme: <span class="info">info</
 
 > **Information block**  
 > First line
-{: .blockquote .info}
+{: .info}
 
 > **Danger block**  
 > First line
-{: .blockquote .danger}
+{: .danger}
 
 > **Success block**  
 > First line
-{: .blockquote .success}
+{: .success}
 
 > **Warning block**  
 > First line
-{: .blockquote .warning}
+{: .warning}
 
 ### Styled text
 
