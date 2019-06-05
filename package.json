@@ -1,6 +1,6 @@
 {
     "name": "reboot-lanyon",
-    "version": "2.1.0",
+    "version": "2.4.0",
     "description": "Gulp task runner for Reboot lanyon Jekyll theme",
     "main": "gulpfile.js",
     "scripts": {
