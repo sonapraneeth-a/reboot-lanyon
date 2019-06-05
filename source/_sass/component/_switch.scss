@@ -1,7 +1,14 @@
 .switch-position {
     position: fixed;
     margin: 1.2rem 0;
-    right: 1rem;
+    @if $sidebar-pos == left
+    {
+        right: 1rem;
+    }
+    @else
+    {
+        left: 1rem;
+    }
     z-index: 100;
 }
 /* Reference: https://www.w3schools.com/howto/howto_css_switch.asp */
