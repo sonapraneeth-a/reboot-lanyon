@@ -9,7 +9,7 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin mobile
 {
-    @media screen and (min-width: #{$mobile}) and
+    @media (min-width: #{$mobile}) and
             (max-width: #{$minitablet})
     {
         @content;
@@ -18,7 +18,7 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin minitablet
 {
-    @media screen and (min-width: #{$minitablet}) and
+    @media (min-width: #{$minitablet}) and
             (max-width: #{$tablet - 0.0001})
     {
         @content;
@@ -27,7 +27,7 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin tablet
 {
-    @media screen and (min-width: #{$tablet}) and
+    @media (min-width: #{$tablet}) and
             (max-width: #{$laptop - 0.0001})
     {
         @content;
@@ -36,7 +36,7 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin laptop
 {
-    @media screen and (min-width: #{$laptop}) and
+    @media (min-width: #{$laptop}) and
             (max-width: #{$desktop - 0.0001})
     {
         @content;
@@ -45,7 +45,7 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin desktop
 {
-    @media screen and (min-width: #{$desktop}) and
+    @media (min-width: #{$desktop}) and
             (max-width: #{$fullhd - 0.0001})
     {
         @content;
@@ -54,8 +54,8 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin fullhd
 {
-    @media screen and (min-width: #{$fullhd}) and
-    (max-width: #{$ultrahd - 0.0001})
+    @media (min-width: #{$fullhd}) and
+            (max-width: #{$ultrahd - 0.0001})
     {
         @content;
     }
@@ -63,7 +63,7 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin ultrahd
 {
-    @media screen and (min-width: #{$ultrahd})
+    @media (min-width: #{$ultrahd})
     {
         @content;
     }
@@ -71,7 +71,7 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin until($device)
 {
-    @media screen and (max-width: $device - 0.0001)
+    @media (max-width: $device - 0.0001)
     {
         @content;
     }
@@ -79,7 +79,7 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin from($device)
 {
-    @media screen and (min-width: $device - 0.0001)
+    @media (min-width: $device - 0.0001)
     {
         @content;
     }
@@ -87,7 +87,7 @@ $ultrahd        : 240rem; //3840px; - uh
 
 @mixin within($min, $max)
 {
-    @media screen and (min-width: $min) and (max-width: $max)
+    @media (min-width: $min) and (max-width: $max)
     {
         @content;
     }
