@@ -2,5 +2,10 @@
 source      : ./.tmp/source
 destination : ./.tmp/public_html_temp
 
+# Environment info
 environment : "development"
 build       : "gulp"
+
+# URLs
+baseurl     :
+url         :

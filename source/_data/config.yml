@@ -4,8 +4,17 @@ skin        : light
 sidebar:
     display  : push # push, overlay
     position : left # Currently set it from _base-01.scss
-## Not mipleted yet
+
+## Not implemented yet
 progress_bar:
     color    : red
     progress : aqua
     show     : false
+
+post:
+    related         : true
+    comments        : true
+    sharing         : true
+    comments_plugin : disqus
+words_per_minute    : 180
+

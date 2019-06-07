@@ -18,11 +18,15 @@ gulp.task("build::gulp-site", (done) =>
     if(argv.prod)
     {
         log("=== Production website ===");
-        if (argv.netlify) 
+        if (argv.netlify)
         {
             shell.exec("jekyll build --config  _dev-config-local.yml,_dev-config-gulp.yml,_prod-config-gulp.yml,url-netlify.yml");
         }
-        else if (argv.netlify_gulp) 
+        else if (argv.netlify_gulp && argv.final)
+        {
+            shell.exec("jekyll build --config  _dev-config-local.yml,_dev-config-gulp.yml,_prod-config-gulp.yml,url-netlify-gulp.yml,url-netlify-final.yml");
+        }
+        else
         {
             shell.exec("jekyll build --config  _dev-config-local.yml,_dev-config-gulp.yml,_prod-config-gulp.yml,url-netlify-gulp.yml");
         }

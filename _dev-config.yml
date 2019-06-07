@@ -2,29 +2,20 @@
 source      : source
 destination : public_html
 
+environment : "development"
+build       : "jekyll"
+
+baseurl     : ""
+url         : https://sonapraneeth-a.github.io
+
 # Site info
 title       : Reboot lanyon
 description : "Demo site for Reboot lanyon theme"
 tagline     : "Learner"
-baseurl     : ""
-url         : https://sonapraneeth-a.github.io
 favicon     :
 lang        : en-us
-version     : 2.4.0 # Please use semantic versioning (semver.org)
+version     : 2.4.0
 repository  : sonapraneeth-a.github.io/reboot-lanyon
-environment : "development"
-build       : "jekyll"
-
-# Site config
-flat        : true
-skin        : light
-sidebar:
-    display  : push # push, overlay
-    position : left # Currently set it from _base-01.scss
-progress_bar:
-    color    : red
-    progress : aqua
-    show     : false
 
 # SEO
 logo:
