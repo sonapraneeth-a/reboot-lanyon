@@ -54,7 +54,7 @@
     @if $sidebar-pos == left
     {
         left: -$sidebar-width;
-        border-right: 0.1rem solid var(--sidebar-foreground-color);
+        border-right: 0.1rem solid var(--sidebar-text-color);
     }
     @else
     {
