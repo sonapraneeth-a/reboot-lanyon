@@ -60,7 +60,7 @@ blog_query_input.addEventListener('keyup', function()
         {
             let ref = answer[index].ref;
             let title = posts[answer[index].ref].title;
-            let baseurl = `{{site.baseurl}}`;
+            let baseurl = `{{ site.baseurl }}{{ site.url }}/`;
             let url = posts[answer[index].ref].url;
             let date = posts[answer[index].ref].date;
             let date_string = new Date(date).toDateString();

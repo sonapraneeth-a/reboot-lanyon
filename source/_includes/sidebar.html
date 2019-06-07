@@ -13,7 +13,7 @@
       {% assign menu = site.data.menu %}
       {% for menuItem in menu %}
       <li class="{% if url == menuItem.url %}sidebar-active{% endif %}" style="width: 100%;">
-        <a href="{{site.baseurl}}{{menuItem.url}}">
+        <a href="{{ site.baseurl }}{{ site.url }}/{{menuItem.url}}">
           <i class="fa fa-{{menuItem.icon}}"></i>&nbsp;&nbsp;{{menuItem.title}}
           {% if menuItem.sublinks %}
           <span class="sidebar-dropdown-icon" onclick>
@@ -25,7 +25,7 @@
         <ul class="sidebar-dropdown-menu">
           {% for sublink in menuItem.sublinks %}
           <li class="{% if url == sublink.url %}active{% endif %}">
-            <a href="{{site.baseurl}}{{sublink.url}}">
+            <a href="{{ site.baseurl }}{{ site.url }}/{{sublink.url}}">
               <i class="fa fa-{{sublink.icon}}"></i>&nbsp;&nbsp;{{sublink.title}}
             </a>
           </li>

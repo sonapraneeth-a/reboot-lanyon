@@ -5,8 +5,8 @@ destination : public_html
 environment : "development"
 build       : "jekyll"
 
-baseurl     : ""
-url         : https://sonapraneeth-a.github.io
+baseurl     : https://sonapraneeth-a.github.io
+url         : /
 
 # Site info
 title       : Reboot lanyon

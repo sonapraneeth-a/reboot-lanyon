@@ -59,7 +59,7 @@ project_query_input.addEventListener('keyup', function()
         {
             let ref = answer[index].ref;
             let title = projects[answer[index].ref].title;
-            let baseurl = `{{site.baseurl}}`;
+            let baseurl = `{{ site.baseurl }}{{ site.url }}/`;
             let url = projects[answer[index].ref].url;
             let date = projects[answer[index].ref].date;
             let date_string = new Date(date).toDateString();

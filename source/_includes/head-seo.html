@@ -2,12 +2,12 @@
 {% comment %}
 {% seo %}
 {% endcomment %}
-<link rel="canonical" href="{{site.url}}{{ page.url | replace: 'index.html', '' }}">
+<link rel="canonical" href="{{ site.baseurl }}{{ site.url }}/{{ page.url | replace: 'index.html', '' }}">
 <!-- Open Graph -->
 <meta property="og:locale" content="en_us" />
 <meta property="og:title" content="{{ page.title }} | {{ site.title }}" />
-<meta property="og:url" content="{{site.baseurl}}{{page.url}}" />
-<meta property="og:image" content="{{site.baseurl}}/favicon.ico" />
+<meta property="og:url" content="{{ site.baseurl }}{{ site.url }}/{{page.url}}" />
+<meta property="og:image" content="{{ site.baseurl }}{{ site.url }}/favicon.ico" />
 <meta property="og:site_name" content="Reboot lanyon" />
 <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 150 | escape }}" />
 <!-- Twitter Card -->
@@ -23,7 +23,7 @@
     "@type"        : "WebSite",
     "name"         : "{{site.data.author.name}}",
     "author"       : {"@type":"Person","name":"{{site.data.author.name}}"},
-    "url"          : "{{site.baseurl}}{{page.url}}",
+    "url"          : "{{ site.baseurl }}{{ site.url }}/{{page.url}}",
     "headline"     : "{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}",
     "dateModified" : "{{last_modified_at}}",
     "sameAs"       : ["{{site.data.author.contact.twitter}}", "{{site.data.author.contact.facebook}}" , "{{site.data.author.contact.linkedin}}", "{{site.data.author.contact.github}}"],

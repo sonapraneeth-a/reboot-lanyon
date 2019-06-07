@@ -17,6 +17,6 @@ The source code of the project is available on Github. You can get the source co
 - [**View on Github** <br/> <i class="fab fa-github" style="font-size: 1.15em;"></i>](https://github.com/sonapraneeth-a/reboot-lanyon/tree/master-v2)
 {: .downloads}
 
-Please refer to [link]({{site.baseurl}}/blog/2018/02/12/reboot-lanyon/) for instructions on how to use and features available in the current theme.
+Please refer to [link]({{ site.baseurl }}{{ site.url }}/blog/2018/02/12/reboot-lanyon/) for instructions on how to use and features available in the current theme.
 
 Thanks!
