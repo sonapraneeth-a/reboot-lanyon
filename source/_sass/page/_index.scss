@@ -43,3 +43,28 @@
         }
     }
 }
+
+
+.profile-image
+{
+    display: block;
+    margin: auto;
+    @if $flat == false
+    {
+        border-radius: 5%;
+    }
+    @include until($mobile)
+    {
+        width: 80%;
+    }
+    @include mobile
+    {
+        width: 50%;
+    }
+    @include from($minitablet)
+    {
+        width: 80%;
+    }
+    height: auto;
+    display: block;
+}

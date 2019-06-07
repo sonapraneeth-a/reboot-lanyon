@@ -1,0 +1,37 @@
+---
+layout: page
+title: Home
+icon: home
+---
+
+<div class="row">
+	<div class="col-dp-6 col-mtb-6 col-tb-6 col-12 align-center">
+		<div style="position: sticky; top: 4.6rem;">
+			<img src="https://www.gravatar.com/avatar/{{site.data.author.gravatar}}?s=400" alt="Profile image of {{site.name}}" class="profile-image" />
+			<div style="display: flex; flex-direction: row; justify-content: space-around; margin: 1rem 0;">
+				<a href="https://www.linkedin.com/in/{{site.data.author.username.linkedin}}" target="_blank" rel="noopener" aria-label="Linkedin profile of @sona-praneeth-akula" class="no-decor">
+					<i class="fab fa-lg fa-linkedin-in" style="color:hsl(201, 100%, 35%);" aria-hidden="true"></i>
+				</a>
+				<a href="https://twitter.com/{{site.data.author.username.twitter}}" target="_blank" rel="noopener" aria-label="Twitter profile of @sonapraneeth_a" class="no-decor">
+					<i class="fab fa-lg fa-twitter" style="color:hsl(203, 89%, 53%);" aria-hidden="true"></i>
+				</a>
+				<a href="https://github.com/{{site.data.author.username.github}}" target="_blank" rel="noopener" aria-label="Github profile of @sonapraneeth-a" class="no-decor">
+					<i class="fab fa-lg fa-github" style="color:hsl(214, 50%, 50%);" aria-hidden="true"></i>
+				</a>
+				<a href="/feed.xml" class="no-decor">
+					<i class="fa fa-lg fa-rss" style="color:hsl(19, 89%, 54%);" aria-hidden="true"></i>
+				</a>
+			</div>
+			<div style="display: flex; flex-direction: column;">
+				{% for position in site.data.author.positions %}
+					<p style="margin: 0;">
+						<b>{{position.title}}</b>, {{position.company}}
+					</p>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="col-dp-6 col-mtb-6 col-tb-6 col-12">
+		{{content}}
+	</div>
+</div>
