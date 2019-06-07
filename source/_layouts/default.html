@@ -3,7 +3,7 @@ layout:
 ---
 
 <!DOCTYPE html>
-<html lang={{site.lang}} data-theme="{{ site.skin | default: 'light' }}">
+<html lang={{site.lang}} data-theme="{{ site.data.config.skin | default: 'light' }}">
 {% include head.html %}
 <body>
 {% include switch.html %}

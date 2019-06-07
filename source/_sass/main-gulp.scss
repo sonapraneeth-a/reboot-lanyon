@@ -4,8 +4,8 @@
 @charset "utf-8";
 
 /** Begin Config options/settings from _config.yml **/
-$flat        : {{site.flat}};
-$sidebar-pos : {{site.sidebar.position}};
+$flat        : {{site.data.config.flat}};
+$sidebar-pos : {{site.data.config.sidebar.position}};
 /** End Config options/settings from _config.yml **/
 
 /** Begin Text Fonts **/

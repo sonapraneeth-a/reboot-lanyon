@@ -15,17 +15,6 @@ repository  : sonapraneeth-a.github.io/reboot-lanyon
 environment : "development"
 build       : "jekyll"
 
-# Site config
-flat        : true
-skin        : light
-sidebar:
-    display  : push # push, overlay
-    position : left # Currently set it from _base-01.scss
-progress_bar:
-    color    : red
-    progress : aqua
-    show     : false
-
 # SEO
 logo:
 social:
@@ -58,7 +47,7 @@ plugins:
     - jekyll-gist
     - pygments
     - jekyll-tidy
-    #- html-proofer
+    - html-proofer
 markdown: kramdown
 kramdown:
     auto_ids           : true

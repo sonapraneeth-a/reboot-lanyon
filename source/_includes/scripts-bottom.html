@@ -12,7 +12,7 @@
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML-full" defer></script>
 {% endif %}
-{% if site.sidebar.display == "push" %}
+{% if site.data.config.sidebar.display == "push" %}
 <script type="text/javascript" src="{{site.baseurl}}/public/js/sidebar/push.js" defer></script>
 {% else %}
 <script type="text/javascript" src="{{site.baseurl}}/public/js/sidebar/fixed.js" defer></script>

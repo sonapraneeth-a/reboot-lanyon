@@ -1,0 +1,11 @@
+# Site config
+flat        : true
+skin        : light
+sidebar:
+    display  : push # push, overlay
+    position : left # Currently set it from _base-01.scss
+## Not mipleted yet
+progress_bar:
+    color    : red
+    progress : aqua
+    show     : false
