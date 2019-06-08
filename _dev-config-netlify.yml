@@ -1,2 +1,3 @@
-url         : https://reboot-lanyon.netlify.com
+baseurl     : https://v2-reboot-lanyon-netlify.netlify.com
+url         : /
 build       : "netlify"
