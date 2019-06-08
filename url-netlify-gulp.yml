@@ -1,2 +1,5 @@
-baseurl     :
+## Actual URL of the website
 url         :
+## Sub URL from where site is loaded
+baseurl     :
+

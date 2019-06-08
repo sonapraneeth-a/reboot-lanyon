@@ -5,8 +5,10 @@ destination : public_html
 environment : "development"
 build       : "jekyll"
 
-baseurl     : https://sonapraneeth-a.github.io
-url         : /
+## Actual URL of the website
+url         : https://sonapraneeth-a.github.io
+## Sub URL from where site is loaded
+baseurl     : /
 
 # Site info
 title       : Reboot lanyon

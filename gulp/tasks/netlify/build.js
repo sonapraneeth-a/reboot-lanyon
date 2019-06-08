@@ -13,8 +13,16 @@ gulp.task("build::netlify-site", (done) =>
     log("=== Generating public_html site for Netlify ===");
     if(argv.prod)
     {
-        log("=== Production Netlify website ===");
-        shell.exec("jekyll build --config _dev-config-local.yml,_prod-config-netlify.yml,url-netlify.yml");
+        if (argv.test)
+        {
+            log("=== Production Test Netlify website ===");
+            shell.exec("jekyll build --config _dev-config-local.yml,_prod-config-netlify.yml,url-test.yml");
+        }
+        else
+        {
+            log("=== Production Netlify website ===");
+            shell.exec("jekyll build --config _dev-config-local.yml,_prod-config-netlify.yml,url-netlify.yml");
+        }
     }
     else
     {
