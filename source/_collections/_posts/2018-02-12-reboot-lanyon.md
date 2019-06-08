@@ -22,7 +22,7 @@ The theme is open-sourced under MIT License.
 # Instructions to use
 
 - Fork the repository from the following [link](https://github.com/sonapraneeth-a/reboot-lanyon)
-<img class="image-full-width" src="{{ site.baseurl }}{{ site.url }}/assets/blog/2018-02-12-reboot-lanyon/fork_reboot-lanyon-marked.PNG" alt="Home page of the source of the project"/>
+<img class="image-full-width" src="{{ site.url }}{{ site.baseurl }}/assets/blog/2018-02-12-reboot-lanyon/fork_reboot-lanyon-marked.PNG" alt="Home page of the source of the project"/>
 - Update the ```_config.yml``` file present in the source folder
 
 # Features

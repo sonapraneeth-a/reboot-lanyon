@@ -23,9 +23,9 @@
   {% assign printHead = 1 %}
   {% endif %}
   <div class="related-post">
-    <!--<p><a href="{{ site.baseurl }}{{ site.url }}/{{ post.url }}">{{ post.title }}{{ commonTags }}</a> - {{post.published | date: "%d %B %Y"}}</p>-->
+    <!--<p><a href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}">{{ post.title }}{{ commonTags }}</a> - {{post.published | date: "%d %B %Y"}}</p>-->
     <span class="related-post-date">{{ post.date | date_to_string }}</span>
-    <a class="related-post-title" href="{{ site.baseurl }}{{ site.url }}/{{ post.url }}">
+    <a class="related-post-title" href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}">
       {{ post.title }}
     </a>
   </div>

@@ -13,12 +13,12 @@ pagination:
     {% if project.publish == true %}
     <div class="grid-item">
         <div class="card">
-            <!--<img class="card-image" src="{{ site.baseurl }}{{ site.url }}/assets/blog/default_banner_image.jpg" alt="Blog image" title="">-->
+            <!--<img class="card-image" src="{{ site.url }}{{ site.baseurl }}/assets/blog/default_banner_image.jpg" alt="Blog image" title="">-->
             <div class="card-content">
                 <div class="row">
                     <div class="col-8">
                         <h2 class="project-title">
-                            <a href="{{ site.baseurl }}{{ site.url }}/{{project.url}}">{{project.title}}</a>
+                            <a href="{{ site.url }}{{ site.baseurl }}/{{project.url}}">{{project.title}}</a>
                         </h2>
                     </div>
                     <div class="col-4">
@@ -53,14 +53,14 @@ pagination:
                 </div>
                 <div>
                     {% for tag in project.tags %}
-                    <a class="tag" href="{{ site.baseurl }}{{ site.url }}/projects/tags/#{{tag | slugify: 'pretty'}}">
+                    <a class="tag" href="{{ site.url }}{{ site.baseurl }}/projects/tags/#{{tag | slugify: 'pretty'}}">
                         <span class="chip">
                             <span class="chip-content"><i class="fa fa-tag"></i>&nbsp;{{tag}}</span>
                         </span>
                     </a>
                     {% endfor %}
                     {% for category in project.categories %}
-                    <a class="category" href="{{ site.baseurl }}{{ site.url }}/projects/categories/#{{category | slugify: 'pretty'}}">
+                    <a class="category" href="{{ site.url }}{{ site.baseurl }}/projects/categories/#{{category | slugify: 'pretty'}}">
                         <span class="chip">
                             <span class="chip-content"><i class="fa fa-folder-open"></i>&nbsp;{{category}}</span>
                         </span>
@@ -75,7 +75,7 @@ pagination:
                 <div class="project-card-footer-items">
                     {% if project.url and project.url != "" %}
                     <div>
-                        <a href="{{ site.baseurl }}{{ site.url }}/{{project.url}}" title="Details">
+                        <a href="{{ site.url }}{{ site.baseurl }}/{{project.url}}" title="Details">
                             <span class="icon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
                             <span class="description">Details</span>
                         </a>

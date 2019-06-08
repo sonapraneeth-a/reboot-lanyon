@@ -13,30 +13,30 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML-full" defer></script>
 {% endif %}
 {% if site.data.config.sidebar.display == "push" %}
-<script type="text/javascript" src="{{ site.baseurl }}{{ site.url }}/public/js/sidebar/push.js" defer></script>
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/public/js/sidebar/push.js" defer></script>
 {% else %}
-<script type="text/javascript" src="{{ site.baseurl }}{{ site.url }}/public/js/sidebar/fixed.js" defer></script>
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/public/js/sidebar/fixed.js" defer></script>
 {% endif %}
 {% comment %}
-<script type="text/javascript" src="{{ site.baseurl }}{{ site.url }}/public/js/sidebar/open-close.js" defer></script>
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/public/js/sidebar/open-close.js" defer></script>
 {% endcomment %}
 {% if url contains '/search' %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.2/lunr.min.js" defer></script>
 {% endif %}
 {% if url contains 'blog/search' and site.environment == "production" and site.build == "gulp" %}
-<script type="text/javascript" src="{{ site.baseurl }}{{ site.url }}/public/js/lunr/blog.js" defer></script>
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/public/js/lunr/blog.js" defer></script>
 {% elsif url contains 'blog/search' %}
-<script type="text/javascript" src="{{ site.baseurl }}{{ site.url }}/public/js/lunr/posts.js" defer></script>
-<script type="text/javascript" src="{{ site.baseurl }}{{ site.url }}/public/js/lunr/search-blogs.js" defer></script>
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/public/js/lunr/posts.js" defer></script>
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/public/js/lunr/search-blogs.js" defer></script>
 {% endif %}
 {% if url contains 'projects/search' and site.environment == "production" and site.build == "gulp" %}
-<script type="text/javascript" src="{{ site.baseurl }}{{ site.url }}/public/js/lunr/project.js" defer></script>
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/public/js/lunr/project.js" defer></script>
 {% elsif url contains 'projects/search' %}
-<script type="text/javascript" src="{{ site.baseurl }}{{ site.url }}/public/js/lunr/projects.js" defer></script>
-<script type="text/javascript" src="{{ site.baseurl }}{{ site.url }}/public/js/lunr/search-projects.js" defer></script>
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/public/js/lunr/projects.js" defer></script>
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/public/js/lunr/search-projects.js" defer></script>
 {% endif %}
 {% if page.content contains "code" %}
-<script type="text/javascript" src="{{ site.baseurl }}{{ site.url }}/public/plugins/prism/prism.min.js" defer></script>
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/public/plugins/prism/prism.min.js" defer></script>
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js" defer></script>-->
 {% endif %}
 {% if site.environment == "production" %}
@@ -77,7 +77,7 @@
     "name"         : "{{site.data.author.name}}",
     "author"       : {"@type":"Person","name":"{{site.data.author.name}}"},
     "@type"        : "WebSite",
-    "url"          : "{{ site.baseurl }}{{ site.url }}/{{page.url}}",
+    "url"          : "{{ site.url }}{{ site.baseurl }}/{{page.url}}",
     "headline"     : "Home",
     "dateModified" : "",
     "sameAs"       : ["{{site.data.author.contact.twitter}}", "{{site.data.author.contact.facebook}}" , "{{site.data.author.contact.linkedin}}", "{{site.data.author.contact.github}}"],
@@ -94,7 +94,7 @@
   document.getElementsByTagName('head')[0].appendChild(script);
   /*}*/
 </script>
-<script type="text/javascript" src="{{ site.baseurl }}{{ site.url }}/public/plugins/scrollspy/scrollspy.js"></script>
+<script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/public/plugins/scrollspy/scrollspy.js"></script>
 <script>
   //console.log("Calling scrollspy");
   const toc_menu = document.querySelector('#toc-menu');

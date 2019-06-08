@@ -66,7 +66,7 @@ icon: file-code
         <li style="margin-bottom: 0.5rem;">
             <div class="card">
                 <div class="card-content">
-                    <a href="{{ site.baseurl }}{{ site.url }}/{{ project.url }}" style="text-decoration: none;">
+                    <a href="{{ site.url }}{{ site.baseurl }}/{{ project.url }}" style="text-decoration: none;">
                         <span>{{ project.title }}</span>
                     </a>
                     <span style="float: right;">{{ project.date | date_to_string }}</span>

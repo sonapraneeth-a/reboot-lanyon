@@ -30,7 +30,7 @@ icon: pencil-alt
         <li style="margin-bottom: 0.5rem;">
             <div class="card">
                 <div class="card-content">
-                    <a href="{{ site.baseurl }}{{ site.url }}/{{ post.url }}" style="text-decoration: none;">
+                    <a href="{{ site.url }}{{ site.baseurl }}/{{ post.url }}" style="text-decoration: none;">
                         <span>{{ post.title }}</span>
                     </a>
                     <span style="float: right;">{{ post.date | date_to_string }}</span>

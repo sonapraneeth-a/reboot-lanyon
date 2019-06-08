@@ -20,7 +20,7 @@ layout: default
     </div>
     <span>
       {% for tag in page.tags %}
-      <a class="tag" href="{{ site.baseurl }}{{ site.url }}/blog/tags/#{{tag | slugify: 'pretty'}}">
+      <a class="tag" href="{{ site.url }}{{ site.baseurl }}/blog/tags/#{{tag | slugify: 'pretty'}}">
         <span class="chip">
           <span class="chip-content"><i class="fa fa-tag"></i>&nbsp;{{tag}}</span>
         </span>
@@ -29,7 +29,7 @@ layout: default
     </span>
     <span>
       {% for category in page.categories %}
-      <a class="tag" href="{{ site.baseurl }}{{ site.url }}/blog/categories/#{{category | slugify: 'pretty'}}">
+      <a class="tag" href="{{ site.url }}{{ site.baseurl }}/blog/categories/#{{category | slugify: 'pretty'}}">
         <span class="chip">
           <span class="chip-content"><i class="fa fa-folder-open"></i>&nbsp;{{category}}</span>
         </span>
