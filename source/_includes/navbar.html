@@ -2,7 +2,7 @@
 <div class="container">
   <div class="navbar-content">
     {% assign menu = site.data.menu %}
-    <h1 class="navbar-header"><a href="{{ site.url }}{{ site.baseurl }}/{{menu[0].url}}">{{site.title}}</a></h1>
+    <h1 class="navbar-header"><a href="{{ site.url }}{{ site.baseurl }}{{menu[0].url}}">{{site.title}}</a></h1>
     <ul class="navbar-menu no-print">
     {% for menuItem in menu %}
       {% assign url_size = menuItem.url | size | minus: 1 %}
@@ -14,7 +14,7 @@
                   active
                   {% endif %} navbar-menu-item">
         <span style="display:inline-block;">
-          <a href="{{ site.url }}{{ site.baseurl }}/{{menuItem.url}}">
+          <a href="{{ site.url }}{{ site.baseurl }}{{menuItem.url}}">
             <i class="fa fa-{{menuItem.icon}}"></i>&nbsp;{{menuItem.title}}
           </a>
         </span>
@@ -29,7 +29,7 @@
         <ul class="navbar-dropdown-menu">
           {% for sublink in menuItem.sublinks %}
           <li>
-            <a href="{{ site.url }}{{ site.baseurl }}/{{sublink.url}}">
+            <a href="{{ site.url }}{{ site.baseurl }}{{sublink.url}}">
               <i class="fa fa-{{sublink.icon}}"></i>&nbsp;{{sublink.title}}
             </a>
           </li>
