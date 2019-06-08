@@ -1,6 +1,6 @@
 ## Actual URL of the website
 url         : https://v2-reboot-lanyon-netlify.netlify.com
 ## Sub URL from where site is loaded
-baseurl     : /
+baseurl     : 
 
 build       : "netlify"

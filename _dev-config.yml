@@ -8,7 +8,7 @@ build       : "jekyll"
 ## Actual URL of the website
 url         : https://sonapraneeth-a.github.io
 ## Sub URL from where site is loaded
-baseurl     : /
+baseurl     : 
 
 # Site info
 title       : Reboot lanyon
