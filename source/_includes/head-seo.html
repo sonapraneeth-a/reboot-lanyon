@@ -2,10 +2,12 @@
 {% comment %}
 {% seo %}
 {% endcomment %}
+{% comment %}
 {{site.url}}
 {{site.baseurl}}
 {{page.url}}
 {{ site.url }}{{ site.baseurl }}{{ page.url}}
+{% endcomment %}
 <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url | replace: 'index.html', '' }}">
 <!-- Open Graph -->
 <meta property="og:locale" content="en_us" />
