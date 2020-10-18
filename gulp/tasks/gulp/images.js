@@ -18,7 +18,7 @@ gulp.task('gulp::compress-images', () =>
         .pipe(when(argv.prod, size({title: 'Original images'})))
         .pipe(when(argv.prod, imagemin([
             imagemin.gifsicle({interlaced: true}),
-            imagemin.jpegtran({progressive: true}),
+            imagemin.mozjpeg({progressive: true}),
             imagemin.optipng(),
             imagemin.svgo({plugins: [{cleanupIDs: false}]})
         ], {verbose: true})))
